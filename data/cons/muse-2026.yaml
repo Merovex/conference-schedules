@@ -1,0 +1,513 @@
+updated_at: "2026-08-16"
+conference: "The Muse Writers Conference"
+venue_timezone: "America/New_York"
+source: "https://conference.the-muse.org/schedule/ (times, dates, blocks) merged with https://conference.the-muse.org/sessions/ (canonical titles, presenters, descriptions)"
+filter: null
+session_count: 46
+sessions:
+
+  - id: 0
+    title: "Gather/Registration"
+    date: "2026-08-29"
+    day: Saturday
+    start: "8:00 AM"
+    duration_min: 60
+    speakers: []
+    location: null
+    tags: ["Registration"]
+    description: null
+
+  - id: 1
+    title: "Welcome and Opening Remarks"
+    date: "2026-08-29"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 15
+    speakers: ["Jessica Kelley", "Michael Khandelwal"]
+    location: null
+    tags: ["Ceremony"]
+    description: null
+
+  - id: 2
+    title: "First Page Remix: An Exercise in Flexible Openings"
+    date: "2026-08-29"
+    day: Saturday
+    start: "9:20 AM"
+    duration_min: 60
+    speakers: ["Kiana Nguyen"]
+    location: null
+    tags: ["Workshop", "Craft", "Revision"]
+    description: "First pages are often the hardest to construct, yet the life of your submission hangs on your execution. Luckily a strong opening for the same book can look a number of ways! For best participation, come with your already written first page and a pen to take notes (other tools welcome, but unnecessary). We will discuss what first pages are meant to do, how to recognize the goal of your scene, and how to revise to best execute that goal."
+
+  - id: 3
+    title: "I'm the Bad Guy: How to Write Compelling Villains"
+    date: "2026-08-29"
+    day: Saturday
+    start: "9:20 AM"
+    duration_min: 60
+    speakers: ["Hannah Capin"]
+    location: null
+    tags: ["Workshop", "Craft"]
+    description: "Villains, monsters, or the darkness within: every story needs a good \"bad guy\"! In this interactive session, we'll break down what makes a compelling antagonist, discuss examples from literature and film, and workshop fragments of our own writing for discussion and feedback. You'll leave with new ideas for developing complex antagonists readers will love to hate (or maybe just love)."
+
+  - id: 4
+    title: "Lessons from the Slush Pile"
+    date: "2026-08-29"
+    day: Saturday
+    start: "9:20 AM"
+    duration_min: 60
+    speakers: ["Linda Lee Landrigan"]
+    location: null
+    tags: ["Workshop", "Publishing", "Revision"]
+    description: "From 20+ years of reading short fiction that comes over the transom, Linda Lee Landrigan will discuss the pitfalls that bedevil many authors. This discussion will give participants tools for self-editing before submitting."
+
+  - id: 5
+    title: "The Pitch: How to Sell Your Book in 60 Seconds"
+    date: "2026-08-29"
+    day: Saturday
+    start: "9:20 AM"
+    duration_min: 60
+    speakers: ["Steven Salpeter"]
+    location: null
+    tags: ["Workshop", "Publishing", "Pitching"]
+    description: "In your pitch sessions and query letters, you have limited time to hook your reader. Come learn professional techniques to pitch your book efficiently."
+
+  - id: 6
+    title: "How to Write Sex (In a Literary Way)"
+    date: "2026-08-29"
+    day: Saturday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Hannah Capin", "Lydia Netzer"]
+    location: null
+    tags: ["Workshop", "Craft"]
+    description: "Just because you're not writing a spicy romance doesn't mean you can't put sex in your story. But a sex scene shouldn't be a pause in the narrative—it builds conflict, reveals character, and, dare we say, offers a powerful climax. Somewhere between groaning and anatomical euphemisms is a way to make sex integral to the story. In this workshop, authors Hannah Capin and Lydia Netzer will give you tips and guidelines for creating memorable sex scenes in literary novels."
+
+  - id: 7
+    title: "Poetry of Place: Mapping the Paths to Where We Are"
+    date: "2026-08-29"
+    day: Saturday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Noah Renn"]
+    location: null
+    tags: ["Workshop", "Poetry"]
+    description: "This course will guide writers through exercises designed to explore the marks the locations in our lives leave on us and those we leave on the places we've been. Students will be introduced to concepts such as the accident of birth and environmental psychology and engage in a discourse that seeks to find the difference between what it means to be somewhere and to be from somewhere."
+
+  - id: 8
+    title: "Practice your pitch LIVE!"
+    date: "2026-08-29"
+    day: Saturday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Carrie Nelson", "Toi Thomas"]
+    location: null
+    tags: ["Workshop", "Pitching"]
+    description: "You wrote your book! Can you pitch it? Come sign up to practice your pitch in our pitch practice room with one of our volunteers or a fellow pitch-prepper, get feedback, make adjustments, and try again."
+
+  - id: 9
+    title: "The Publishing Industry: Ask Me Anything"
+    date: "2026-08-29"
+    day: Saturday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Daniele Hunter", "Jessica Grace Kelley"]
+    location: null
+    tags: ["Q&A", "Publishing"]
+    description: "During this interactive and moderated Q&A, both a moderator and workshop attendees can ask Daniele questions on a wide variety of publishing-industry topics, including trends in genre and word count, the AI landscape, querying etiquette, the revision process both alone and with an agent, working with a publisher, subsidiary-rights markets, and more. Participants can also ask Daniele about her own list and preferences."
+
+  - id: 10
+    title: "Lunch and Networking Break"
+    date: "2026-08-29"
+    day: Saturday
+    start: "11:30 AM"
+    duration_min: 90
+    speakers: []
+    location: null
+    tags: ["Break", "Networking"]
+    description: null
+
+  - id: 11
+    title: "Game Writing"
+    date: "2026-08-29"
+    day: Saturday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Rebecca Tigner"]
+    location: null
+    tags: ["Workshop", "Craft"]
+    description: "Dive into the world of storytelling where every choice shapes epic adventures in video games, tabletop RPGs, D&D campaigns, board games, and even card games. Participants will discover the secrets behind crafting compelling narratives, designing captivating characters, and building immersive interactive worlds for players. Whether you dream of creating the next blockbuster video game or crafting intricate quests for tabletop adventures, this session will ignite your creativity and equip you with essential skills to bring your gaming visions to life."
+
+  - id: 12
+    title: "Newsletter Content That Readers Actually Want to Open"
+    date: "2026-08-29"
+    day: Saturday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Moni Boyce"]
+    location: null
+    tags: ["Workshop", "Marketing"]
+    description: "You know you're supposed to have an email list, but what are you supposed to send once readers join it? This workshop moves beyond the constant \"buy my book\" newsletter and shows authors how to create emails readers actually look forward to opening. We'll explore the types of content that help authors build relationships with their subscribers, keep readers engaged between releases, and naturally turn subscribers into book buyers and loyal fans. You'll leave with practical content ideas, a simple newsletter structure, and a strategy for deciding what to send even when you don't have a new book to promote."
+
+  - id: 13
+    title: "The Creative Nonfiction Pendulum: Striking a Universal Chord"
+    date: "2026-08-29"
+    day: Saturday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Shawn Girvan"]
+    location: null
+    tags: ["Workshop", "Memoir", "Nonfiction"]
+    description: "The best memoirs balance the deeply personal with the universally resonant. Find your story's universal subject and use research, perspective, and specific details to swing between you and the world. What does your memoir really mean? Connect it to something larger."
+
+  - id: 14
+    title: "The Query Letter Blueprint"
+    date: "2026-08-29"
+    day: Saturday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Daniele Hunter", "Michael Khandelwal"]
+    location: null
+    tags: ["Workshop", "Publishing"]
+    description: "In this interactive session, literary agent Daniele Hunter will discuss what catches an agent's attention, where a query loses momentum, and how to strengthen the pitch. After a quick overview of query basics, attendees will have the opportunity to share query letters for live, real-time feedback with Daniele, ask questions, and participate in group discussion."
+
+  - id: 15
+    title: "Almost Incognito: Writing Through the Mask in Persona Poems"
+    date: "2026-08-29"
+    day: Saturday
+    start: "2:10 PM"
+    duration_min: 90
+    speakers: ["Tim Seibles"]
+    location: null
+    tags: ["Workshop", "Poetry"]
+    description: "We usually associate character study with fiction or nonfiction, but persona poetry is also driven by the lives of characters—real or imagined. As with all writing, what fuels these poems is the author's interest. Characters are chosen because they connect to the poet's concerns. If I'm writing a poem in the voice of Sojourner Truth or Popeye or Mr. Rogers, I'm working with their words as I sense them, as I imagine myself being them. In this lab, we will examine persona poems and explore how a convincing persona is created. Is the poet directing the character's voice or inhabiting the character—or both?"
+
+  - id: 16
+    title: "How to Plan Your Novel in 30 Days"
+    date: "2026-08-29"
+    day: Saturday
+    start: "2:10 PM"
+    duration_min: 90
+    speakers: ["Lydia Netzer"]
+    location: null
+    tags: ["Workshop", "Craft"]
+    description: "Using the numbers 1-30 and 30 daily prompts, you can start with just your main character's first name and end with a fully developed story idea and road map for your novel. In this workshop, author Lydia Netzer will speedrun you through this unique process and answer all your questions about Novel by Numbers. You'll leave with access to a workbook you can use to plan your own story."
+
+  - id: 17
+    title: "The Biggest Mistakes Writers Miss While Revising"
+    date: "2026-08-29"
+    day: Saturday
+    start: "2:10 PM"
+    duration_min: 90
+    speakers: ["Steven Salpeter"]
+    location: null
+    tags: ["Workshop", "Revision", "Publishing"]
+    description: "Why do manuscripts that are \"almost there\" get rejected by literary agents? Come review the biggest and most common pitfalls writers miss while revising their manuscripts based on interviews with many professional literary agents on why they pass on submissions once they like an concept and get to the manuscript or after they request material from a query."
+
+  - id: 18
+    title: "The Mindful Journal: An Expressive Arts Experience for Healing, Reflection, and Renewal"
+    date: "2026-08-29"
+    day: Saturday
+    start: "2:10 PM"
+    duration_min: 90
+    speakers: ["Lisa Cooper"]
+    location: null
+    tags: ["Workshop", "Craft"]
+    description: "Reconnect with your inner wisdom through a gentle blend of creative writing, low-skill art activities, music and sound exploration, and mindfulness-based stress reduction techniques. No artistic experience needed—just an open heart and a willingness to explore. This session combines the grounding practices of mindfulness with the liberating nature of the expressive arts."
+
+  - id: 19
+    title: "Author Branding for Authors Who Hate Branding"
+    date: "2026-08-29"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 60
+    speakers: ["Moni Boyce"]
+    location: null
+    tags: ["Workshop", "Marketing"]
+    description: "If the word \"branding\" makes you think you need to become an influencer, choose three perfect colors, or turn yourself into a product, this workshop is for you. Author branding doesn't have to be complicated. At its core, it's about helping readers quickly understand who you are, what kind of stories you tell, and why your books might be for them. We'll simplify author branding into a few essential pieces, including your voice, values, vibe, ideal reader, and positioning. You'll also learn how to create a recognizable author presence without pretending to be someone you're not."
+
+  - id: 20
+    title: "Shut Up & Write"
+    date: "2026-08-29"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 60
+    speakers: ["Carrie Nelson"]
+    location: null
+    tags: ["Write-In"]
+    description: "Participants show up. Each says what they're going to write. Participants write for an hour. Everyone shares how it went! For anyone looking for a little slice of time dedicated to writing, this is a lovely, low-pressure way to show up for your words and make progress. Stay for as little or long as you'd like, and Shut Up and Write!"
+
+  - id: 21
+    title: "The Media Rights Landscape: Short Stories and Books Making Your Project Adaptable for Screen"
+    date: "2026-08-29"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 60
+    speakers: ["Steven Salpeter"]
+    location: null
+    tags: ["Workshop", "Publishing", "Screenwriting"]
+    description: "We'll review the book to film/tv landscape, discuss \"high concept writing\" and how to select which projects to focus on if adaptation to screen is your goal."
+
+  - id: 22
+    title: "Thrill me: Tension & Voice"
+    date: "2026-08-29"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 60
+    speakers: ["Hannah Capin"]
+    location: null
+    tags: ["Workshop", "Craft"]
+    description: "Crafting a page-turner takes more than a good plot and strong characters: a compelling voice draws readers in from the first line and keeps the story alive long after they've finished the last. This session will be interactive and applied, and we'll examine excerpts that showcase strong voices across genres, experiment with voice in our own work, and share our examples for discussion and feedback. You'll leave with new tools to sharpen and refine your literary voice and strengthen the tension in your writing."
+
+  - id: 23
+    title: "Conference Social & Auction"
+    date: "2026-08-29"
+    day: Saturday
+    start: "5:15 PM"
+    duration_min: 90
+    speakers: []
+    location: null
+    tags: ["Social"]
+    description: null
+
+  - id: 24
+    title: "Conference Open Mic"
+    date: "2026-08-29"
+    day: Saturday
+    start: "7:00 PM"
+    duration_min: 120
+    speakers: []
+    location: null
+    tags: ["Social"]
+    description: null
+
+  - id: 25
+    title: "Gather/Registration"
+    date: "2026-08-30"
+    day: Sunday
+    start: "8:00 AM"
+    duration_min: 60
+    speakers: []
+    location: null
+    tags: ["Registration"]
+    description: null
+
+  - id: 26
+    title: "Recap and Announcement of Contest Winners"
+    date: "2026-08-30"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 30
+    speakers: []
+    location: null
+    tags: ["Ceremony"]
+    description: null
+
+  - id: 27
+    title: "Keynote Speech with Lauren Blackwood"
+    date: "2026-08-30"
+    day: Sunday
+    start: "9:30 AM"
+    duration_min: 50
+    speakers: ["Lauren Blackwood"]
+    location: null
+    tags: ["Keynote"]
+    description: null
+
+  - id: 28
+    title: "Building a World on a Small Plot"
+    date: "2026-08-30"
+    day: Sunday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Linda Lee Landrigan"]
+    location: null
+    tags: ["Workshop", "Craft"]
+    description: "Short stories must be economical, but they must also exhibit granularity. That may sound paradoxical, but the writer needs to find a way to harmonize the two. Characters don't exist in a vacuum: they emerge from and exist in specific places, and they bear the cultural imprint of those places. A story's action likewise occurs in a specific setting, one that inevitably affects the trajectory of the plot. In this workshop we'll look at how the strategic deployment of detail is an efficient way to convey both the place and the characters' relationship to it. We will pay particular attention to the challenges of the short story, but whether you are working on a story, novel, or memoir, dealing with real or fictional places, this workshop will help you envision that world's multiple facets, understand their influence on characters and story, and vividly convey them to your reader."
+
+  - id: 29
+    title: "Creating Characters Readers Care About"
+    date: "2026-08-30"
+    day: Sunday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Moni Boyce"]
+    location: null
+    tags: ["Workshop", "Craft"]
+    description: "Readers may come for the plot, but unforgettable characters are what make them stay. In this workshop, we'll break down what makes a character feel compelling, emotionally believable, and worth following for hundreds of pages. We'll explore wants, needs, wounds, flaws, contradictions, relationships, and the internal stakes that give characters depth beyond a list of personality traits. Whether you're writing romance, mystery, fantasy, literary fiction, or something in between, you'll learn practical ways to create characters readers can connect with, even when they don't always like them."
+
+  - id: 30
+    title: "Critique Partner Match-up & Club Highlights"
+    date: "2026-08-30"
+    day: Sunday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: []
+    location: null
+    tags: ["Networking"]
+    description: "Finding the right critique partner can be hard! We want to make it a little easier. Come join fellow writers, find your table & genre, and talk about what you write and what you're looking for in a critique partner. Maybe you'll find a match, and if you don't, add your name to the critique group form for more ways to find fellow writers!"
+
+  - id: 31
+    title: "Tap Dancing on Thin Ice: Creating & Sustaining Dramatic Tension in Poetry"
+    date: "2026-08-30"
+    day: Sunday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Tim Seibles"]
+    location: null
+    tags: ["Workshop", "Poetry"]
+    description: "We want to write poems that electrify an audience. Whether they are quietly reading our work or listening to us, we want to create an experience that deeply satisfies all attention paid to our poetry, but how do we do it? Surely, surprise, clarity, and a sharp sense of craft are at the center of this concern, but what exactly do these things mean? In this lab, we will examine poems by established authors and discuss the dramatic elements that make their work memorable."
+
+  - id: 32
+    title: "Lunch and Networking Break"
+    date: "2026-08-30"
+    day: Sunday
+    start: "11:30 AM"
+    duration_min: 90
+    speakers: []
+    location: null
+    tags: ["Break", "Networking"]
+    description: null
+
+  - id: 33
+    title: "Autism and Creative Writing: An Inside Perspective"
+    date: "2026-08-30"
+    day: Sunday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Derek Spohn"]
+    location: null
+    tags: ["Workshop", "Craft"]
+    description: "Whether you are on the autism spectrum yourself, have someone on the spectrum in your life, or simply hope to learn more, this workshop is designed to spark thinking and dialogue about how autism and creative writing can overlap. The autistic mind can work very differently than the neurotypical mind in areas such as social skills, special interests, sensory perception, literal thinking, and more."
+
+  - id: 34
+    title: "Fantasy & Folklore"
+    date: "2026-08-30"
+    day: Sunday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Rebecca Tigner"]
+    location: null
+    tags: ["Workshop", "Craft"]
+    description: "Fantasy continues to be one of the most popular genres in literature. In this session, we'll examine the ways myths, fairy tales, cultural traditions, and folklore have shaped the modern fantasy writing we see today. Participants will explore how to draw inspiration from these historical roots to build rich immersive worlds and characters."
+
+  - id: 35
+    title: "The Difference Between Traditional, Hybrid & Self Publishing"
+    date: "2026-08-30"
+    day: Sunday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Moni Boyce", "Becky Hilliker", "Steven Salpeter", "Greg Fields"]
+    location: null
+    tags: ["Panel", "Publishing"]
+    description: "There's more than one way to publish a book! But which path is right for you? Join professionals who have experience with traditional, hybrid, and self-publishing, and listen and learn as they break down the differences, benefits, and challenges of each publishing path."
+
+  - id: 36
+    title: "The Importance of the First 10 Pages of Your Screenplay"
+    date: "2026-08-30"
+    day: Sunday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Diane Fine"]
+    location: null
+    tags: ["Workshop", "Screenwriting"]
+    description: "The first 10 pages of a film or TV script are the most important part of any script you're trying to sell because the readers who evaluate your work—before it will ever be shown to an agent, manager, or producer—will NOT read page 11 if the first 10 don't knock it out of the park! Using film clips, script excerpts, and free-writing exercises, we will explore all the elements necessary to craft a thrilling, memorable, and above all, cinematic story opener."
+
+  - id: 37
+    title: "Criminal Investigations for Authors: A Practical Guide to Law Enforcement Operations"
+    date: "2026-08-30"
+    day: Sunday
+    start: "2:10 PM"
+    duration_min: 90
+    speakers: ["Michael Lovely"]
+    location: null
+    tags: ["Workshop", "Research"]
+    description: "This course is designed to give writers an authentic understanding of how real investigations unfold from the first officer stepping onto a crime scene to the final arguments presented in court. Whether you write crime fiction, thrillers, true crime, or investigative journalism, this course equips you with the operational knowledge needed to portray law enforcement work with accuracy, nuance, and narrative power. Writers will explore the full investigative lifecycle: securing and processing a crime scene, collecting and interpreting evidence, interviewing witnesses and suspects, coordinating with forensic specialists, building investigative timelines, and preparing a case for prosecution. You'll learn how detectives think, how decisions are made under pressure, and how investigative missteps or breakthroughs shape the story."
+
+  - id: 38
+    title: "Poetry Prompt Roulette: You'll Never Know What Prompt You'll Get"
+    date: "2026-08-30"
+    day: Sunday
+    start: "2:10 PM"
+    duration_min: 90
+    speakers: ["Noah Renn"]
+    location: null
+    tags: ["Write-In", "Poetry"]
+    description: "A \"Write Now\" style workshop where students will spin a wheel of over 100 different poetry prompts and begin drafting right then. Don't like the prompt you got? Spin again! Once participants are able to generate a draft, they can share their poem and receive cold-reading-style feedback. The focus is on producing what you can in the time allotted and being open to the creative direction the wheel of prompts sends you toward."
+
+  - id: 39
+    title: "Publishing From an Author Perspective"
+    date: "2026-08-30"
+    day: Sunday
+    start: "2:10 PM"
+    duration_min: 90
+    speakers: ["Lauren Blackwood", "Moni Boyce", "Hannah Capin", "Greg Fields", "Becky Hilliker", "Lydia Netzer", "Jessica Grace Kelley", "Michael Khandelwal"]
+    location: null
+    tags: ["Panel", "Publishing"]
+    description: "There's no single path to publication, and no writer's journey is exactly the same. Join a panel of bestselling, traditionally published, hybrid, and independently published authors for an honest conversation about what it means to build a writing career. Our panelists will share practical advice and the lessons they wish they'd known earlier. Together, they'll offer an inside look at today's publishing industry through the experiences of authors who have found success in different ways, concluding with audience Q&A."
+
+  - id: 40
+    title: "What Goes into a Nonfiction Proposal"
+    date: "2026-08-30"
+    day: Sunday
+    start: "2:10 PM"
+    duration_min: 90
+    speakers: ["Matt Belford"]
+    location: null
+    tags: ["Workshop", "Publishing", "Nonfiction"]
+    description: "There are lots of different guides online as to what goes into a nonfiction proposal. In this session, you'll get firsthand advice from an agent working in the nonfiction space to give you the details you need on what the heck a proposal even is, what sections you need to make sure to include, and which pieces are essential for capturing an agent's attention."
+
+  - id: 41
+    title: "Crafting the \"Me\" in Memoir"
+    date: "2026-08-30"
+    day: Sunday
+    start: "3:50 PM"
+    duration_min: 60
+    speakers: ["Shawn Girvan"]
+    location: null
+    tags: ["Workshop", "Memoir", "Nonfiction"]
+    description: "Your memoir has three versions of you: the Author, the Narrator, and the Character. Point of view is the heart of your voice. Discover how shifting who tells your story changes what readers believe and feel."
+
+  - id: 42
+    title: "Creating Characters with Attitude for Film & TV"
+    date: "2026-08-30"
+    day: Sunday
+    start: "3:50 PM"
+    duration_min: 60
+    speakers: ["Diane Fine"]
+    location: null
+    tags: ["Workshop", "Screenwriting"]
+    description: "What makes a movie or TV character intriguing, compelling, and someone we really want to root for—even if their goals are abhorrent? Using film clips, script excerpts, and free-writing exercises, we will explore the ways that screenwriters craft behavior and attitude to create the most memorable screen characters."
+
+  - id: 43
+    title: "Self-Publishing 101: What Every Author Needs to Know Before Uploading a Book"
+    date: "2026-08-30"
+    day: Sunday
+    start: "3:50 PM"
+    duration_min: 60
+    speakers: ["Moni Boyce"]
+    location: null
+    tags: ["Workshop", "Publishing"]
+    description: "Finishing the manuscript is only one part of publishing a book. Before you hit \"upload,\" there are important decisions to make about editing, covers, formatting, ISBNs, copyright, pricing, distribution, metadata, print options, and more. This beginner-friendly workshop walks authors through the self-publishing process from completed manuscript to published book, explains the professionals and services you may encounter along the way, and highlights common mistakes that can cost new authors time and money. You'll leave with a clearer understanding of what self-publishing actually requires and a roadmap for approaching your first release like a publisher, not just a writer."
+
+  - id: 44
+    title: "Write Now"
+    date: "2026-08-30"
+    day: Sunday
+    start: "3:50 PM"
+    duration_min: 60
+    speakers: ["Alison Schoew"]
+    location: null
+    tags: ["Write-In"]
+    description: "We'll write, in our short time together, to prompts, both visual and verbal, and we'll share our writing (if we like) with our session-mates (if we choose) for some positive feedback."
+
+  - id: 45
+    title: "Closing Remarks"
+    date: "2026-08-30"
+    day: Sunday
+    start: "5:00 PM"
+    duration_min: 15
+    speakers: []
+    location: null
+    tags: ["Ceremony"]
+    description: null
