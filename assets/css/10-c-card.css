@@ -14,5 +14,7 @@
   .card-interactive:hover { border-color: var(--border-default); box-shadow: var(--shadow-md); }
   .card-marked { background: var(--surface-accent); border-color: var(--terra-300); }
   :root.dark .card-marked { border-color: var(--terra-800); }
-  .card-dim { opacity: .62; }
+  /* dim = de-emphasise without losing contrast: sunken surface, muted heading/prose */
+  .card-dim { background: var(--surface-sunken); box-shadow: none; }
+  .card-dim :is(h3, .u-prose) { color: var(--text-muted); }
 }

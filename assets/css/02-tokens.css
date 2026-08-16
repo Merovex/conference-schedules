@@ -188,32 +188,32 @@
 
   --text-body:       var(--sepia-950);
   --text-heading:    var(--pine-900);
-  --text-muted:      var(--sepia-700);
-  --text-faint:      var(--sepia-600);
+  --text-muted:      var(--sepia-800);   /* AAA on every light surface */
+  --text-faint:      var(--sepia-700);   /* placeholders/decorative: AA on fields */
   --text-on-inverse: var(--sepia-200);
-  --text-on-inverse-muted: var(--pine-300);
-  --text-on-inverse-soft:  var(--pine-200);
+  --text-on-inverse-muted: var(--pine-200);
+  --text-on-inverse-soft:  var(--pine-100);
   --text-on-accent:  var(--sepia-50);
   --text-link:       var(--terra-700);
   --text-link-hover: var(--terra-900);
 
   --border-subtle:  var(--sepia-300);
   --border-default: var(--sepia-400);
-  --border-strong:  var(--sepia-600);
+  --border-strong:  var(--sepia-700);   /* 3:1 for field/button boundaries */
   --rule-accent:    var(--terra-600);
 
   --action-primary:        var(--pine-700);
   --action-primary-hover:  var(--pine-800);
   --action-primary-active: var(--pine-900);
-  --action-accent:         var(--terra-600);
-  --action-accent-hover:   var(--terra-700);
-  --action-accent-active:  var(--terra-800);
+  --action-accent:         var(--terra-700);   /* white text ≥ 4.5:1 */
+  --action-accent-hover:   var(--terra-800);
+  --action-accent-active:  var(--terra-900);
   --action-quiet-hover:    var(--sepia-200);
   --action-quiet-active:   var(--sepia-300);
   --focus-ring-color:      oklch(from var(--ochre-500) l c h / 0.45);
 
   --mark-on:  var(--terra-600);   /* bookmarked star */
-  --mark-off: var(--sepia-500);
+  --mark-off: var(--sepia-700);
 
   --status-success: var(--pine-600);   --status-success-surface: var(--pine-100);
   --status-warning: var(--ochre-700);  --status-warning-surface: var(--ochre-100); --status-warning-border: var(--ochre-200);
@@ -237,27 +237,27 @@
   --text-body:       var(--sepia-200);
   --text-heading:    var(--sepia-50);
   --text-muted:      var(--sepia-500);
-  --text-faint:      var(--sepia-600);
+  --text-faint:      var(--sepia-500);   /* placeholder ≥ 4.5 on dark fields */
   --text-on-inverse: var(--sepia-100);
   --text-link:       var(--terra-400);
   --text-link-hover: var(--terra-300);
 
   --border-subtle:  var(--sepia-900);
-  --border-default: var(--sepia-800);
+  --border-default: var(--sepia-700);
   --border-strong:  var(--sepia-600);
   --rule-accent:    var(--terra-500);
 
   --action-primary:        var(--pine-500);
-  --action-primary-hover:  var(--pine-400);
-  --action-primary-active: var(--pine-600);
-  --action-accent:         var(--terra-500);
-  --action-accent-hover:   var(--terra-400);
-  --action-accent-active:  var(--terra-600);
+  --action-primary-hover:  var(--pine-600);   /* darken on hover: keeps white text ≥ 7:1 */
+  --action-primary-active: var(--pine-700);
+  --action-accent:         var(--terra-700);
+  --action-accent-hover:   var(--terra-800);
+  --action-accent-active:  var(--terra-900);
   --action-quiet-hover:    var(--sepia-800);
   --action-quiet-active:   var(--sepia-700);
 
   --mark-on:  var(--terra-400);
-  --mark-off: var(--sepia-700);
+  --mark-off: var(--sepia-600);
 
   --status-success: var(--pine-300);   --status-success-surface: var(--pine-950);
   --status-warning: var(--ochre-300);  --status-warning-surface: var(--ochre-950); --status-warning-border: var(--ochre-800);

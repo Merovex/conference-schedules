@@ -1,5 +1,5 @@
 @layer utilities {
   /* text input */
-  .u-field { width: 100%; min-width: 0; min-height: var(--tap); padding-block: var(--pad-sm); padding-inline: var(--pad); border: var(--border-hair) solid var(--border-default); border-radius: var(--radius-md); background: var(--surface-raised); color: var(--text-body); font-family: var(--font-prose); font-size: var(--text-sm); transition: var(--transition-control); }
+  .u-field { width: 100%; min-width: 0; min-height: var(--tap); padding-block: var(--pad-sm); padding-inline: var(--pad); border: var(--border-hair) solid var(--border-strong); border-radius: var(--radius-md); background: var(--surface-raised); color: var(--text-body); font-family: var(--font-prose); font-size: var(--text-sm); transition: var(--transition-control); }
   .u-field:focus-visible { border-color: var(--action-accent); }
 }
