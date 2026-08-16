@@ -1,0 +1,6 @@
+# Cloudflare Pages build configuration.
+# NOTE: build-time environment variables (e.g. HUGO_VERSION) cannot be set
+# here — Pages only reads them from the dashboard: Settings → Environment
+# variables → Build. Set HUGO_VERSION there (production AND preview).
+#name = "verkilo-website"
+#pages_build_output_dir = "public"
