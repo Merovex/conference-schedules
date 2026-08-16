@@ -3,3 +3,8 @@ _site
 .jekyll-cache
 .jekyll-metadata
 vendor
+# Hugo
+public
+resources
+.hugo_build.lock
+__pycache__/

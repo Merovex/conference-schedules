@@ -53,3 +53,14 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# Hugo migration (branch jekyll-to-hugo): keep Jekyll from processing Hugo dirs
+exclude:
+  - content/
+  - data/
+  - layouts/
+  - scripts/
+  - public/
+  - resources/
+  - hugo.toml
+  - README.md

@@ -1,0 +1,450 @@
+updated_at: "2026-08-16"
+conference: "TravellerCON/USA 2026"
+venue_timezone: "America/New_York"
+source: "https://tabletop.events/conventions/travellercon-usa-2026/schedule"
+filter: "In-person only (Panels, RPG - In-Person, Miniatures - In-Person ONLY). Online-only and Hybrid events excluded."
+session_count: 37
+sessions:
+  - id: 0
+    event_number: 36
+    title: "Friday Afternoon Panel (Burnt City Games)"
+    date: "2026-10-16"
+    day: Friday
+    start: "12:30 PM"
+    duration_min: 30
+    speakers: []
+    location: "Ballroom C & D"
+    tags: ["Panel"]
+    description: "We are pleased to welcome back the boys from Burnt City Games, where they will hold a 30-minute discussion on their new game system based around the Dumarest novels."
+
+  - id: 1
+    event_number: 39
+    title: "DGS Presents: Operation Blacksite Echo"
+    date: "2026-10-16"
+    day: Friday
+    start: "1:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG", "DGS"]
+    description: "The Fifth Frontier War has come to Efate. The Zhodani are winning. You are a Ministry of Justice special operations fireteam, inserted under cover of darkness into the occupied town of Vel'Hadesh. Three kilometers north, on an isolated ridge, the Zhodani have converted an old monitoring station into something far more dangerous — a black site holding the strategic intelligence files that coordinate their entire theater of operations on Efate. Order of battle. Psionic deployment schedules. The names of every Imperial citizen who sold out their neighbors to the occupation. Your mission is simple. Get in. Download everything. Get out. The extraction window is eight hours. After that, the shuttle leaves without you. Pre-generated characters provided."
+
+  - id: 2
+    event_number: 34
+    title: "Traveller 1700: The Hidden Prisoner"
+    date: "2026-10-16"
+    day: Friday
+    start: "1:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG"]
+    description: "A Traveller 1700 Event: The French and Indian War rages, but the deadliest moves are made in silence. At Fort Oswego on Lake Ontario, the British hold a prisoner whose true identity could reshape the war—and beyond. If they uncover it, the balance of power shifts. You are coureurs des bois, traders turned mercenaries. With your Ottawa allies, you must infiltrate the fort, find the prisoner, and extract him before time runs out. Every step risks exposure. Discovery means the noose. No backup. No mercy. No second chances. Pregens Provided"
+
+  - id: 3
+    event_number: 29
+    title: "Traveller:Encounters: 26-0 Character Creation & Intro"
+    date: "2026-10-16"
+    day: Friday
+    start: "1:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG"]
+    description: "Life beyond mustering out can be difficult. What do you do with all your newfound time, and all the skills you have developed over the years? Interestingly enough, the answer came to you via invitation: \"Serendipity Corporation is seeking individuals with differing backgrounds and skillsets to fill multiple roles inside its subsidiary companies. You are cordially invited to board the starliner Fractal Trajectory and meet with our hiring teams. Do you have what it takes to be the next Serendipity employee? Come and find out!\" This is an introductory session for players looking to play in the Traveller:Encounters living campaign. Players will work with the referee to generate characters per the Traveller Encounters campaign guide. Immediately following this, the new heroes will find themselves onboard the IMV Fractal Trajectory in an introductory module for the campaign. Seats: 6"
+
+  - id: 4
+    event_number: 1
+    title: "Friday Evening Panel with: The Emperor (Marc Miller)"
+    date: "2026-10-16"
+    day: Friday
+    start: "6:30 PM"
+    duration_min: 60
+    speakers: []
+    location: "Ballroom C & D"
+    tags: ["Panel"]
+    description: "We are beyond excited to welcome back Marc Miller to Travellercon/USA. The Emperor will join us, via Zoom, for a 45min panel where he will discuss the Fifth Frontier War and... whatever else he wants. After all... he's the Emperor!"
+
+  - id: 5
+    event_number: 46
+    title: "DGS Presents: Counting on the Countess"
+    date: "2026-10-16"
+    day: Friday
+    start: "7:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG", "DGS"]
+    description: "The 5th Frontier war is full on. Things are dicey in the Sword Worlds. Wedged between Zhodani and Imperial space these planets are under the extreme pressure of being caught in the middle. The Imperium hopes to bring Durendal on their side. There is or was a Countess who was somehow capable of ruling – recovering – Durendal. Can you find and help her? Can you help establish an Imperial tie? You have a special team onboard setup to help, but you need to deliver them safely and quietly. Good Luck. {Character Sheets will be provided}"
+
+  - id: 6
+    event_number: 41
+    title: "DGS Presents: Operation Dark Passage"
+    date: "2026-10-16"
+    day: Friday
+    start: "7:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG", "DGS"]
+    description: "You made it aboard. The module is secure. Efate is falling away behind the viewport and, for the first time in recent memory, nobody is shooting at you. Then the jump drive fails. Dark Passage is the finale of the Efate Campaign, a locked-room thriller set entirely aboard the free trader Meridian's Promise — 200 tons of aging hull, one pragmatic captain, seventy-three refugees who don't know what they're carrying, and somewhere in the passenger manifest, two Zhodani agents who sabotaged the jump drive before you ever came aboard. The drive can be repaired. It will take time you may not have. The agents need to be found and neutralized quietly, without spooking the refugees, without blowing a cover that has kept the team alive across two planets, and without letting either one transmit your position to the Zhodani intercept corvette that is already turning onto an inbound vector. Pre-generated characters provided."
+
+  - id: 7
+    event_number: 32
+    title: "DGS Presents: Refugees of the Burning Sector"
+    date: "2026-10-16"
+    day: Friday
+    start: "7:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG", "DGS"]
+    description: "DGS Presents: Refugees of the Burning Sector - A Classic Traveller Event - You burned everything you had to get your family to the orbital station—your last hope for escape. But when you arrived, the final starliner you paid for passage was already gone. No ships. No answers. No way out. As panic spreads and the thunder of advancing Zhodani forces echoes closer, a desperate offer emerges from an unlikely source: the crew of a luxury pleasure yacht, promising passage out of the doomed sector. Now, you and five other families must place your trust in strangers and make a perilous escape through a collapsing frontier… before it's too late. Pregens Provided"
+
+  - id: 8
+    event_number: 51
+    title: "Lightning Strike"
+    date: "2026-10-16"
+    day: Friday
+    start: "7:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["Miniatures"]
+    description: "A damaged Azhanti High Lightning-class cruiser hangs crippled behind the battle lines. Zhodani troops have seized its command decks and begun extracting classified naval intelligence. Now Imperial Marines must fight compartment by compartment to reclaim the ship before the enemy completes its work—or scuttles the cruiser. Command an Imperial Marine assault team or lead the Zhodani defense in a fast-moving miniatures battle through corridors, engineering spaces and command centers. Control vital ship systems, manipulate doors and gravity, and decide the fate of an Imperial capital ship. A four-hour game for 4–6 players. Miniatures and materials provided. No previous Traveller or miniatures experience required."
+
+  - id: 9
+    event_number: 18
+    title: "Perpetual Traveller: Play | Improve | Repeat"
+    date: "2026-10-16"
+    day: Friday
+    start: "7:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "Perpetual Traveller, a MgT 2e variant that rewards you for inspired gameplay, and allowing you to improve your PCs before and/or after every game, at any table, with any GM who uses the PT rules. No pre-gens provided - come with a PC, or make one at the table."
+
+  - id: 10
+    event_number: 10
+    title: "That which lurks."
+    date: "2026-10-16"
+    day: Friday
+    start: "7:30 PM"
+    duration_min: 210
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "After the Battle of Denotam /Vilis 1413 the Imperial patrol cruiser, Russel Casse, has been assigned patrol duty of one of the system gas giants. A day after the fleet has left for repairs at the starport your ship detects an artificial power source deep in the gas giant clouds. Your ship is ordered to investigate."
+
+  - id: 11
+    event_number: 30
+    title: "Traveller:Encounters: 26-02 - Blightfall"
+    date: "2026-10-16"
+    day: Friday
+    start: "7:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG"]
+    description: "A humanitarian relief mission brings your merchant crew into the uneasy grip of the Zhodani-occupied system of Talor, where every cargo manifest is suspect - and every conversation is watched. When tensions spike, inside a heavily controlled orbital station, routine procedures give way to crisis... and survival becomes a matter of timing, trust… and hard vacuum."
+
+  - id: 12
+    event_number: 40
+    title: "DGS Presents: Operation Blacksite Echo"
+    date: "2026-10-17"
+    day: Saturday
+    start: "8:00 AM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG", "DGS"]
+    description: "The Fifth Frontier War has come to Efate. The Zhodani are winning. You are a Ministry of Justice special operations fireteam, inserted under cover of darkness into the occupied town of Vel'Hadesh. Three kilometers north, on an isolated ridge, the Zhodani have converted an old monitoring station into something far more dangerous — a black site holding the strategic intelligence files that coordinate their entire theater of operations on Efate. Order of battle. Psionic deployment schedules. The names of every Imperial citizen who sold out their neighbors to the occupation. Your mission is simple. Get in. Download everything. Get out. The extraction window is eight hours. After that, the shuttle leaves without you. Pre-generated characters provided."
+
+  - id: 13
+    event_number: 33
+    title: "DGS Presents: Stranded"
+    date: "2026-10-17"
+    day: Saturday
+    start: "8:00 AM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG", "DGS"]
+    description: "DGS Presents Stranded - A MegaTraveller Event: While conducting a planetary survey, your ship is forced to make an emergency landing. Now, you and your team must survive the unforgiving wilderness, endure a relentless environment, and fend off hostile creatures as you struggle to reach a distant settlement where you can finally call for help. Pregens Provided."
+
+  - id: 14
+    event_number: 7
+    title: "Life During Wartime"
+    date: "2026-10-17"
+    day: Saturday
+    start: "8:00 AM"
+    duration_min: 240
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "The Zhodani have rolled through the Lanth system, leaving a Sword World garrison to keep order as the strike force advances. Your duty as proud Imperials: make Odin's bastard children regret joining the wrong side. Content Warning: Smoking, drinking, drug use, coarse language, graphic violence, arch sexual references, hazardous situations. Suggested viewing: Inglorious Basterds, Enemy at the Gates, and 'Allo, 'Allo!"
+
+  - id: 15
+    event_number: 50
+    title: "Lightning Strike"
+    date: "2026-10-17"
+    day: Saturday
+    start: "8:00 AM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["Miniatures"]
+    description: "A damaged Azhanti High Lightning-class cruiser hangs crippled behind the battle lines. Zhodani troops have seized its command decks and begun extracting classified naval intelligence. Now Imperial Marines must fight compartment by compartment to reclaim the ship before the enemy completes its work—or scuttles the cruiser. Command an Imperial Marine assault team or lead the Zhodani defense in a fast-moving miniatures battle through corridors, engineering spaces and command centers. Control vital ship systems, manipulate doors and gravity, and decide the fate of an Imperial capital ship. A four-hour game for 4–6 players. Miniatures and materials provided. No previous Traveller or miniatures experience required."
+
+  - id: 16
+    event_number: 15
+    title: "Perpetual Traveller: Play | Improve | Repeat"
+    date: "2026-10-17"
+    day: Saturday
+    start: "8:00 AM"
+    duration_min: 240
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "Perpetual Traveller, a MgT 2e variant that rewards you for inspired gameplay, and allowing you to improve your PCs before and/or after every game, at any table, with any GM who uses the PT rules. No pre-gens provided - come with a PC, or make one at the table."
+
+  - id: 17
+    event_number: 38
+    title: "The Governor's Gambit: Ghosts of the Fifth Frontier War"
+    date: "2026-10-17"
+    day: Saturday
+    start: "8:00 AM"
+    duration_min: 240
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "Officially, you never survived the war. Declared medically unfit for service years ago, your team vanished from Imperial records only to continue serving as one of Imperial Intelligence's most closely guarded assets. Now, after years of deniable operations behind enemy lines, you've been left on a luxury resort world to await your next assignment. An Imperial governor offers more than another mission—he offers your future. A conspiracy involving a powerful corporation, Zhodani intelligence, and a feared island warlord threatens to seize control of a prosperous agricultural world. Before a mercenary army returns with new weapons and dangerous allies, you must infiltrate the fortress of Ironhold, expose the conspiracy, sabotage its defenses, and create the political crisis that will allow Imperial forces to intervene. Stealth. Sabotage. Espionage. Every decision changes the outcome."
+
+  - id: 18
+    event_number: 12
+    title: "You are Vargr-To the Core!"
+    date: "2026-10-17"
+    day: Saturday
+    start: "8:00 AM"
+    duration_min: 180
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "The Fifth Frontier War is underway and you are undercover Vargr Agents infiltrating the Core of the 3rd Imperium! Your Strike Team is after a shadowy Arms dealer who you think is playing both sides of the Vargr/Imperium Front. You have watched a hundred hours of human holovid dramas. These space operas show Humans as bureaucratic, melodramatic sophants who tragically put the interests of the abstract noble run Imperium over personal ties and charismatic leaders. You have stolen, second hand Holomasks and your skewed understanding of their culture. This should be easy...right? (This is inspired by the Signals from the Core podcast and the Singularity Campaign)."
+
+  - id: 19
+    event_number: 3
+    title: "Saturday Afternoon Panel with Chuck Gannon & Terry Mixon"
+    date: "2026-10-17"
+    day: Saturday
+    start: "12:30 PM"
+    duration_min: 30
+    speakers: []
+    location: "Ballroom C & D"
+    tags: ["Panel"]
+    description: "A panel where sci-fi authors Charles \"Chuck\" Gannon and Terry Mixon will have a 30-minute discussion on the Fifth Frontier War."
+
+  - id: 20
+    event_number: 43
+    title: "DGS Presents: Operation Last Watch"
+    date: "2026-10-17"
+    day: Saturday
+    start: "1:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG", "DGS"]
+    description: "Operation: Last Watch picks up the moment the fireteam returns to the safe house — module in hand, cover intact, four hours until the extraction shuttle closes its window. What unfolds is a race across an occupied town with three objectives pulling in different directions at once: find the Zhodani sympathizer who burned your position before they can do it again; protect the civilians of Vel'Hadesh caught in the crossfire of a war they didn't start; and reach the commercial port where a shuttle is preparing its final run to a free trader loading refugees. It will depart with or without you. Pre-generated characters provided."
+
+  - id: 21
+    event_number: 21
+    title: "DGS Presents: X-Boat Station Theta"
+    date: "2026-10-17"
+    day: Saturday
+    start: "1:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG", "DGS"]
+    description: "DGS Presents: X-Boat Station Theta, a MegaTraveller adventure. You are a Scout team dispatched to X-Boat Station Theta, a remote Imperial X-Boat station that has sat cold and silent for nearly a year after some renovations. As power returns, and the station's systems begin to wake, you'll bring communications back online. But, when a long-silent station starts talking again - you don't always know who's going to answer. Can you bring the station back online - and survive? Characters provided."
+
+  - id: 22
+    event_number: 52
+    title: "Interstellar Lag"
+    date: "2026-10-17"
+    day: Saturday
+    start: "1:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "What could possibly go wrong on a ship that's carrying a recently released prisoner convicted of manslaughter? (Characters will be pre-generated and provided.)"
+
+  - id: 23
+    event_number: 44
+    title: "Lightning Strike"
+    date: "2026-10-17"
+    day: Saturday
+    start: "1:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["Miniatures"]
+    description: "A damaged Azhanti High Lightning-class cruiser hangs crippled behind the battle lines. Zhodani troops have seized its command decks and begun extracting classified naval intelligence. Now Imperial Marines must fight compartment by compartment to reclaim the ship before the enemy completes its work—or scuttles the cruiser. Command an Imperial Marine assault team or lead the Zhodani defense in a fast-moving miniatures battle through corridors, engineering spaces and command centers. Control vital ship systems, manipulate doors and gravity, and decide the fate of an Imperial capital ship. A four-hour game for 4–6 players. Miniatures and materials provided. No previous Traveller or miniatures experience required."
+
+  - id: 24
+    event_number: 22
+    title: "Run Silent Into the Night"
+    date: "2026-10-17"
+    day: Saturday
+    start: "1:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "With rumours of war afoot the Perfidious Angel is making good money transporting Imperial Citizens from the frontier back to Imperial Space. The crew may have stretched their good luck too far. As they finish refueling in a barren system, they discover a damaged Imperial spy ship, just as a Zhodani Fleet begins to arrive in-system. Can the crew evade the Zhodanii Ships and get back to Imperial Space? Or will they be the first casualties of the Fifth Frontier War?"
+
+  - id: 25
+    event_number: 23
+    title: "System failure."
+    date: "2026-10-17"
+    day: Saturday
+    start: "1:30 PM"
+    duration_min: 210
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "During a routine evacuation drill in the asteroid belt a shuttle containing forty children in cold sleep malfunctions. Your ship is of course closest and is requested to intercept and attempt rescue."
+
+  - id: 26
+    event_number: 35
+    title: "Traveller Encounters 26-3: In the Shadow of War"
+    date: "2026-10-17"
+    day: Saturday
+    start: "1:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG"]
+    description: "The fires of the Fifth Frontier War rage across the Imperium, and every ship, every crew, every contract matters. Amid the chaos, Serendipity and its far-reaching subsidiaries are in constant motion—jumping from crisis to crisis, keeping Imperial logistics alive by grit, ingenuity, and sheer nerve. None more so than USalvage. Their crews dive headlong into the aftermath of battle—twisted hulls, silent distress calls, and drifting graveyards of war. Search-and-rescue, high-risk recovery, and deep-space salvage are all in a day's work… if you survive it. You've been seconded to a USalvage scavenger team on a mission that's as dangerous as it is valuable. Somewhere in a vast, spinning debris field lies the shattered remains of a Zhodani battlecruiser. Broken. Scattered. Unstable. But not empty. Hidden within the wreckage is the ship's data core—packed with high-value tactical intelligence that could shift the balance of the war. The Imperium wants it recovered. Fast."
+
+  - id: 27
+    event_number: 13
+    title: "You are Vargr-To the Core!"
+    date: "2026-10-17"
+    day: Saturday
+    start: "1:30 PM"
+    duration_min: 180
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "The Fifth Frontier War is underway and you are undercover Vargr Agents infiltrating the Core of the 3rd Imperium! Your Strike Team is after a shadowy Arms dealer who you think is playing both sides of the Vargr/Imperium Front. You have watched a hundred hours of human holovid dramas. These space operas show Humans as bureaucratic, melodramatic sophants who tragically put the interests of the abstract noble run Imperium over personal ties and charismatic leaders. You have stolen, second hand Holomasks and your skewed understanding of their culture. This should be easy...right? (This is inspired by the Signals from the Core podcast and the Singularity Campaign)."
+
+  - id: 28
+    event_number: 2
+    title: "Saturday Evening Panel with: Tim Brown (Traveller 5E)"
+    date: "2026-10-17"
+    day: Saturday
+    start: "6:30 PM"
+    duration_min: 60
+    speakers: []
+    location: "Ballroom C & D"
+    tags: ["Panel"]
+    description: "Tim Brown, from Worlds Largest RPGs, will be joining us to deliver a 30-minute featured panel to talk all about the exciting new Traveller 5E system - what it is, what makes it special, and what fans of ALL editions of Traveller can look forward to. Plus, we'll have a few minutes for Q&A, so start thinking about your burning questions!"
+
+  - id: 29
+    event_number: 31
+    title: "DGS Presents: Black Ledger: Cargo of Treason"
+    date: "2026-10-17"
+    day: Saturday
+    start: "7:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG", "DGS"]
+    description: "DGS Presents: Black Ledger: Cargo of Treason - A MegaTraveller Event: The captain died. \"Accident,\" they said. You inherited the ship—and the suspicion that came with it. A year later, you're drowning in fees, stripped of contracts, and quietly blacklisted by House Tukera. Whatever really happened to your captain, they think you're part of it. Now the ship's about to be seized. Then comes the offer: one job, big payout, no questions. The kind of job crews like yours don't walk away from. Pull it off, and you're free. Screw it up… and you vanish like your captain did. Pregens Provided"
+
+  - id: 30
+    event_number: 42
+    title: "DGS Presents: Operation Dark Passage"
+    date: "2026-10-17"
+    day: Saturday
+    start: "7:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG", "DGS"]
+    description: "You made it aboard. The module is secure. Efate is falling away behind the viewport and, for the first time in recent memory, nobody is shooting at you. Then the jump drive fails. Dark Passage is the finale of the Efate Campaign, a locked-room thriller set entirely aboard the free trader Meridian's Promise — 200 tons of aging hull, one pragmatic captain, seventy-three refugees who don't know what they're carrying, and somewhere in the passenger manifest, two Zhodani agents who sabotaged the jump drive before you ever came aboard. The drive can be repaired. It will take time you may not have. The agents need to be found and neutralized quietly, without spooking the refugees, without blowing a cover that has kept the team alive across two planets, and without letting either one transmit your position to the Zhodani intercept corvette that is already turning onto an inbound vector. Pre-generated characters provided."
+
+  - id: 31
+    event_number: 47
+    title: "DGS Presents: Siege of Efate Begins"
+    date: "2026-10-17"
+    day: Saturday
+    start: "7:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["RPG", "DGS"]
+    description: "As the 5th Frontier war begins, the terrorist group Ine Givar have been softening up Efate for the arrival of the Zhodani and the expulsion of the Imperium. There are a group of Efatens attempting safe exit from the planet. Imperial assistance cannot arrive in time. Can you help them before the Zhodani Commandos or the Ine Givar terminate them. Be careful, there are reports of SORAG operatives on Efate. {Character Sheets will be provided}"
+
+  - id: 32
+    event_number: 45
+    title: "Lightning Strike"
+    date: "2026-10-17"
+    day: Saturday
+    start: "7:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Ben Franklin Room"
+    tags: ["Miniatures"]
+    description: "A damaged Azhanti High Lightning-class cruiser hangs crippled behind the battle lines. Zhodani troops have seized its command decks and begun extracting classified naval intelligence. Now Imperial Marines must fight compartment by compartment to reclaim the ship before the enemy completes its work—or scuttles the cruiser. Command an Imperial Marine assault team or lead the Zhodani defense in a fast-moving miniatures battle through corridors, engineering spaces and command centers. Control vital ship systems, manipulate doors and gravity, and decide the fate of an Imperial capital ship. A four-hour game for 4–6 players. Miniatures and materials provided. No previous Traveller or miniatures experience required."
+
+  - id: 33
+    event_number: 8
+    title: "Meet the Gang ..."
+    date: "2026-10-17"
+    day: Saturday
+    start: "7:30 PM"
+    duration_min: 240
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "Morale is critical to long term sustainability of forces in the field, and a vital component of morale is entertainment. So, tread the boards for the troops and give a foretaste of Valhalla to the lads and lasses of force Curtana in the ongoing liberation of Lanth from the effete, dishonourable fops of the Third Imperium. Content Warning: Smoking, drinking, drug use, coarse language, graphic violence, arch sexual references, hazardous situations. Suggested viewing: It Ain't Half Hot Mum and The Virgin Soldiers"
+
+  - id: 34
+    event_number: 9
+    title: "Parts is parts."
+    date: "2026-10-17"
+    day: Saturday
+    start: "7:30 PM"
+    duration_min: 210
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "While delivering components to Rena/Star Lane/Deneb 0123 a discrepancy between the ships cargo manifest and an actual physical accounting of the cargo comes to the captains attention. An investigation into the difference must be made in order to get paid."
+
+  - id: 35
+    event_number: 49
+    title: "DGS Presents: Zhodani Commando Raid"
+    date: "2026-10-18"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 240
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG", "DGS"]
+    description: "You are a member of the Zhodani SORAG elite Operations Branch of Commandos. The 5th Frontier war has dragged on for several years now. Your Scientific Branch has reported that the Imperial Scientists have been working on a \"Super Soldier\". Their leading scientist has been located on Vilis and assigned to practice general medicine. Your mission is to obtain him and all his information. {Character Sheets will be provided}"
+
+  - id: 36
+    event_number: 17
+    title: "Perpetual Traveller: Play | Improve | Repeat"
+    date: "2026-10-18"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 240
+    speakers: []
+    location: "Pennsylvania Ballroom"
+    tags: ["RPG"]
+    description: "Perpetual Traveller, a MgT 2e variant that rewards you for inspired gameplay, and allowing you to improve your PCs before and/or after every game, at any table, with any GM who uses the PT rules. No pre-gens provided - come with a PC, or make one at the table."

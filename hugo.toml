@@ -1,0 +1,19 @@
+baseURL = "/"
+languageCode = "en"
+title = "Con Schedules"
+disableKinds = ["taxonomy", "term", "page", "RSS", "sitemap"]
+
+[params]
+  siteName = "Con Schedules"
+  tagline  = "Pick your sessions, share your picks, print your agenda."
+
+# Each conference section renders its HTML page plus /<slug>/sessions.json
+[outputs]
+  home    = ["HTML"]
+  section = ["HTML", "sessions"]
+
+[outputFormats.sessions]
+  mediaType = "application/json"
+  baseName  = "sessions"
+  isPlainText = true
+  notAlternative = true

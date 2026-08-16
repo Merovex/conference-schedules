@@ -1,0 +1,838 @@
+updated_at: "2026-08-02"
+session_count: 76
+sessions:
+  - id: 0
+    title: "Registration"
+    date: "2026-11-10"
+    day: Tuesday
+    start: "9:00 AM"
+    duration_min: 300
+    speakers: ["Author Nation"]
+    location: "Palace 3"
+    tags: []
+    description: "Open registration, running all day from 9am."
+
+  - id: 1
+    title: "Vendor Expo"
+    date: "2026-11-10"
+    day: Tuesday
+    start: "10:00 AM"
+    duration_min: 360
+    speakers: ["Author Nation"]
+    location: "Platinum"
+    tags: ["Vendor"]
+    description: "Expo floor with publishing service and product providers; networking, demos and a vendor quest prize draw."
+
+  - id: 2
+    title: "Vendor Expo"
+    date: "2026-11-10"
+    day: Tuesday
+    start: "10:00 AM"
+    duration_min: 360
+    speakers: ["Author Nation"]
+    location: "Gold"
+    tags: ["Vendor"]
+    description: "Second expo room; same networking, demos and vendor quest."
+
+  - id: 3
+    title: "Marine Birthday Celebration"
+    date: "2026-11-10"
+    day: Tuesday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Jonathan Brazee", "Terry Wells-Brown"]
+    location: "Bronze 2"
+    tags: ["Entertainment", "Meetups & Networking"]
+    description: null
+
+  - id: 4
+    title: "Opening Remarks"
+    date: "2026-11-10"
+    day: Tuesday
+    start: "5:00 PM"
+    duration_min: 30
+    speakers: ["Joe Solari"]
+    location: "Event Center"
+    tags: ["Keynote", "Live Education"]
+    description: null
+
+  - id: 5
+    title: "Embrace the Shake"
+    date: "2026-11-10"
+    day: Tuesday
+    start: "5:30 PM"
+    duration_min: 90
+    speakers: ["Phil Hansen"]
+    location: "Event Center"
+    tags: ["Keynote", "Live Education"]
+    description: null
+
+  - id: 6
+    title: "How to Reach the Next Generation of Readers — Without Becoming an Influencer"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Abbie Emmons"]
+    location: "Bronze 4"
+    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
+    description: "How younger readers discover books on BookTok/Bookstagram/YouTube, plus templates, batching and light automation to route attention into sales."
+
+  - id: 7
+    title: "Draft2Digital"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Jim Azevedo"]
+    location: "Platinum"
+    tags: ["Vendor", "Vendor Session"]
+    description: null
+
+  - id: 8
+    title: "Spoken"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Phil Marshall"]
+    location: "Palace 3"
+    tags: ["Vendor", "Vendor Session", "Implementation", "All"]
+    description: "Multi-cast audio."
+
+  - id: 9
+    title: "GEO for Authors: A Step-by-Step Framework to Make Your Books Discoverable in AI Search"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Ricardo Fayet"]
+    location: "Gold"
+    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
+    description: "Framework drawn from a year of testing discovery prompts across major AI assistants, with an audit checklist for your catalogue."
+
+  - id: 10
+    title: "PublishDrive"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Danica Favorite"]
+    location: "Bronze 3"
+    tags: ["Vendor", "Vendor Session"]
+    description: null
+
+  - id: 11
+    title: "Writing Bestsellers"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Eloisa James"]
+    location: "Event Center"
+    tags: ["Craft", "Solo Presentation", "Implementation", "All"]
+    description: "Structure, tropes and chapter endings that hook readers, plus series strategy, royalties and platform; includes a draft-vs-published page comparison."
+
+  - id: 12
+    title: "Platform-Proof Progression for Authors: Building & Growing Your Author Brand In an Era Where Algorithms Are Unreliable"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Mark Leslie Lefebvre"]
+    location: "Bronze 2"
+    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
+    description: "Building reader relationships that survive algorithm shifts, using newsletters, podcasts and reader magnets rather than rented platforms."
+
+  - id: 13
+    title: "From Organic to Paid: The New Era of Book Marketing on Social Media"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Marvin Wey"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["Vendor", "Vendor Session", "Masterclass", "All"]
+    description: "Low-effort organic promotion, then turning the best-performing posts into paid ads."
+
+  - id: 14
+    title: "Amazon Joint Session"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Ian Delaney", "Amanda Romagnoli"]
+    location: "Palace 3"
+    tags: ["Vendor", "Vendor Session"]
+    description: null
+
+  - id: 15
+    title: "The Author Engine: How to Write, Launch, and Scale Like a 7-Figure Publisher"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Tony Lee / Jack Gatland"]
+    location: "Event Center"
+    tags: ["Business & Finance", "Solo Presentation", "Optimization", "All"]
+    description: "A repeatable publishing workflow built after 2020, covering catalogue-as-assets thinking, faster writing and better launches."
+
+  - id: 16
+    title: "10 Ways to Use AI to Level Up Your Writing Business"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Misty M. Beller"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["AI and Automation", "Live Education", "Optimization"]
+    description: "Practical AI workflows for analysing ad spend, read-through and retailer data, and for speeding up marketing assets without losing voice."
+
+  - id: 17
+    title: "Power Couples: Perfect Pairs"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Damon Suede"]
+    location: "Gold"
+    tags: ["Craft", "Live Education", "Implementation"]
+    description: "Characterisation technique for building vivid two-character dynamics — lovers, foils and rivals — in any genre."
+
+  - id: 18
+    title: "Creatorwood"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Michael Evans"]
+    location: "Palace 4"
+    tags: ["Vendor"]
+    description: null
+
+  - id: 19
+    title: "From Zero to Four Figures: Getting a Financial Foothold for Your Self-Published Fiction"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Paul Austin Ardoin"]
+    location: "Bronze 4"
+    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
+    description: "Low-budget strategies for published-but-not-selling authors — diagnosing gaps in books, mindset and marketing to reach steady monthly income."
+
+  - id: 20
+    title: "From Platform-Dependent to Reader-Owned: Optimizing Your Direct Sales Ecosystem for Stability and Scale"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Rae Davennor"]
+    location: "Bronze 2"
+    tags: ["Live Education", "Optimization"]
+    description: "Systems-level look at making retailers, site, email and social work as one funnel; finding bottlenecks and lifting reader lifetime value."
+
+  - id: 21
+    title: "Making Six to Seven Figures Wide"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Juliette N. Banks"]
+    location: "Platinum"
+    tags: ["Advertising and Marketing", "Solo Presentation", "Implementation", "Published Voyagers"]
+    description: "Beginner-to-intermediate wide publishing business and marketing strategy, plus the skills behind a seven-figure author business."
+
+  - id: 22
+    title: "Steal Like an Artist: Learning from Other Authors’ Novels"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["T.O. Paine"]
+    location: "Bronze 3"
+    tags: ["Craft", "Live Education", "Implementation"]
+    description: "A method for analysing other novelists' books and applying the findings to sharpen your own craft."
+
+  - id: 23
+    title: "Vibe Coding for Your Publishing Business: Build Custom Tools Without Writing Code"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Ekello Harrid"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["AI and Automation", "Live Education", "Implementation"]
+    description: "Live build of a custom author tool using plain-English prompting with AI coding assistants, plus a replicable workflow."
+
+  - id: 24
+    title: "Writing distinctive character voices"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Penny Reid"]
+    location: "Event Center"
+    tags: ["Craft", "Live Education", "Implementation"]
+    description: "Building character lexicons and internal narrative structure for distinct dual first-person POVs."
+
+  - id: 25
+    title: "Forget Followers: How to Cultivate Super Fans Through Your Newsletter"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Elaine Canyon"]
+    location: "Gold"
+    tags: ["Solo Presentation", "Implementation", "Published Voyagers"]
+    description: "Hands-on workshop on what to send when there's no book news, selling without apology, and sustaining high open rates."
+
+  - id: 26
+    title: "The Invisible Author: Why Readers and AI Can’t Find You and How to Fix It"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Stuart Grant"]
+    location: "Bronze 2"
+    tags: ["Live Education", "Optimization"]
+    description: "Optimising an existing author website (home, about, books pages) and retailer profiles so AI recommendation engines describe you accurately."
+
+  - id: 27
+    title: "How Many Words for Snow: Does Your World Actually Work?"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Lyn Worthen"]
+    location: "Bronze 3"
+    tags: ["Craft", "Live Education", "Optimization"]
+    description: "Applying anthropological field-note thinking to worldbuilding so cultures feel internally consistent and lived-in."
+
+  - id: 28
+    title: "Book Vault Session"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Alex Smith"]
+    location: "Palace 3"
+    tags: ["Vendor", "Vendor Session"]
+    description: null
+
+  - id: 29
+    title: "10 Strategies to Level Up Facebook Ads (2026 Edition)"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Misty M. Beller"]
+    location: "Platinum"
+    tags: ["Advertising and Marketing", "Live Education", "Optimization"]
+    description: "Current Meta ad tactics, ROAS measurement and troubleshooting the three main failure points (CPC, CTR, conversion leaks)."
+
+  - id: 30
+    title: "High-Converting Product Pages for Direct-Selling Authors"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Jessica Deen Norris"]
+    location: "Palace 4"
+    tags: ["Live Education", "Optimization"]
+    description: "Product photography, social proof and page structure changes that lifted a direct store to six figures; includes a checklist."
+
+  - id: 31
+    title: "Identity Is the Edge: The Science of Becoming a High-Performance Writer"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Chris Banks"]
+    location: "Bronze 4"
+    tags: ["Mindset & Wellness", "Foundations"]
+    description: "The psychology of alter egos and deliberate identity shifts as a tool against self-doubt, perfectionism and procrastination."
+
+  - id: 32
+    title: "From Subscriber to Superfan: 3 Ways to Weaponize your Email List for Success"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Naomi Rawlings"]
+    location: "Bronze 3"
+    tags: ["Live Education", "Optimization"]
+    description: "Campaign and automation structures that turn subscribers into repeat buyers year-round, with case studies and list-building basics."
+
+  - id: 33
+    title: "The Smart Author-Publisher’s Book Marketing Workshop: Plan, Launch, Scale"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Christopher Locke"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["Advertising and Marketing", "Workshop", "Implementation", "Published Voyagers"]
+    description: "Interactive exercises to build a personalised pre-launch, launch and post-launch marketing plan."
+
+  - id: 34
+    title: "Increase Demand For Your Books"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Becca Syme"]
+    location: "Event Center"
+    tags: ["Craft", "Solo Presentation", "Foundations", "All"]
+    description: "The four essentials of reader resonance and how alignment psychology explains rising demand in a saturated market."
+
+  - id: 35
+    title: "Tax Mistakes Costing Authors Money"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Seth Norris", "CPA"]
+    location: "Palace 4"
+    tags: ["Business & Finance", "Live Education", "Implementation"]
+    description: "A CPA debunks common author tax myths and covers legitimate write-offs, compliance and what draws IRS attention."
+
+  - id: 36
+    title: "BookBub"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Carlyn Robertson"]
+    location: "Palace 3"
+    tags: ["Vendor", "Vendor Session"]
+    description: null
+
+  - id: 37
+    title: "How To Make Your Stories Immortal: The Power of the Eight Great Endings"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["T.D. Donnelly"]
+    location: "Gold"
+    tags: ["Craft", "Live Education", "Implementation"]
+    description: "Why endings need surprise and inevitability, walking through four twist forms and four payoff forms and how to build toward them."
+
+  - id: 38
+    title: "The Reader’s Yes: Why Every Purchase Follows the Same Path—No Matter the Price"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["David Viergutz"]
+    location: "Bronze 2"
+    tags: ["Live Education", "Implementation"]
+    description: "Buying psychology is constant across price points; price only changes how much certainty a reader needs first."
+
+  - id: 39
+    title: "When Success Stops Working: A Step-by-Step Framework for Pivoting Your Author Career Without Burning It Down"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Rae Davennor"]
+    location: "Bronze 4"
+    tags: ["Business & Finance", "Live Education", "Implementation"]
+    description: "Diagnosing whether you need a strategy, product, platform or pace pivot, and a 90-day plan that protects revenue while you change."
+
+  - id: 40
+    title: "Building Direct Reader Relationships When Algorithms Are Unreliable"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Mark Leslie Lefebvre"]
+    location: "Platinum"
+    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
+    description: "Framework for direct reader connection as business foundation, using diversified distribution, value exchanges and reader magnets."
+
+  - id: 41
+    title: "It's Alive! Creating your 24/7 MBA level Business Manager"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Ekello Harrid"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["AI and Automation", "Live Education", "Implementation"]
+    description: "Building an agentic system that tracks and enforces profitability across your publishing business."
+
+  - id: 42
+    title: "How to Build a Book Marketing Machine That Actually Runs Without You"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Alex Strathdee"]
+    location: "Event Center"
+    tags: ["Production & Workflow", "Live Education", "Implementation"]
+    description: "Systems-first marketing: what to delegate, how to start with a VA, hiring frameworks and turning scattered efforts into a weekly workflow."
+
+  - id: 43
+    title: "Amazon’s New Book Discovery Formula: How to Get Amazon to Show Your Book in 2026"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Dave Chesson"]
+    location: "Platinum"
+    tags: ["Advertising and Marketing", "Keynote", "Implementation", "All"]
+    description: "Findings from Publisher Rocket's monitoring data on Amazon's current ranking signals and 2026 discoverability trends."
+
+  - id: 44
+    title: "Red Flags & Rip-Offs: How Authors Can Avoid Scams"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Ross Lynch"]
+    location: "Palace 3"
+    tags: ["Vendor", "Solo Presentation", "Foundations", "All"]
+    description: "ALLi outreach session on fake agents, predatory anthologies, phishing and trap contracts, including the SALSA test for vetting offers."
+
+  - id: 45
+    title: "Six Figures with Three Books: The Power of Premium Editions and Merch"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Jessica Deen Norris"]
+    location: "Palace 4"
+    tags: ["Intellectual Property Beyond the Book", "Live Education", "Optimization"]
+    description: "Growing revenue per reader with a small catalogue via special editions and merch — what sells, pricing, bundling and pitfalls."
+
+  - id: 46
+    title: "Adding Romance to Any Genre"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Elizabeth Boyle"]
+    location: "Bronze 3"
+    tags: ["Craft", "Solo Presentation", "Implementation", "All"]
+    description: "Layering believable attraction into non-romance genres using the romance arc and the mechanics of attraction."
+
+  - id: 47
+    title: "Scaling Without Losing Control: Building Systems That Run Your Author Business"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["David Viergutz"]
+    location: "Bronze 2"
+    tags: ["Production & Workflow", "Live Education", "Optimization"]
+    description: "Clarity, systems and culture for authors growing a small team without becoming founder-dependent or bureaucratic."
+
+  - id: 48
+    title: "Scrivener"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Oliver Evensen"]
+    location: "Bronze 4"
+    tags: ["Vendor", "Vendor Session", "Implementation"]
+    description: null
+
+  - id: 49
+    title: "The Superfan Funnel: How to Turn Strangers into Superfans For Life"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Lydia Sherrer"]
+    location: "Gold"
+    tags: ["Advertising and Marketing", "Solo Presentation", "Implementation", "All"]
+    description: "The four stages and four driving actions of a superfan funnel, built from lead magnets, welcome sequences and exclusive content."
+
+  - id: 50
+    title: "Wild cards: Awakening your muse"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "5:30 PM"
+    duration_min: 60
+    speakers: ["Lyla Bellatas"]
+    location: "Gold"
+    tags: ["Entertainment", "Meetups & Networking", "Live Education", "Foundations"]
+    description: "Interactive session using Lenormand cards as a problem-solving tool for plot, world and character."
+
+  - id: 51
+    title: "Designing an Author Business That Supports Your Life — and Outlives Your Writing Seasons"
+    date: "2026-11-12"
+    day: Thursday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["J.A. Armitage"]
+    location: "Palace 4"
+    tags: ["Business & Finance", "Live Education", "Innovation"]
+    description: "Strategic session for established authors on financial structure, ownership and designing a business that adapts across life seasons."
+
+  - id: 52
+    title: "How to outline a Thriller series"
+    date: "2026-11-12"
+    day: Thursday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Mary Stone"]
+    location: "Event Center"
+    tags: ["Craft", "Live Education", "Implementation"]
+    description: null
+
+  - id: 53
+    title: "Why “Just Write” Doesn’t Work: Trauma, ADHD, and Building a Writing Life That Lasts"
+    date: "2026-11-12"
+    day: Thursday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Shalana Battles"]
+    location: "Bronze 4"
+    tags: ["Mindset & Wellness", "Live Education", "Implementation"]
+    description: "Why standard discipline advice fails trauma-affected and ADHD writers, and how to build flexible, sustainable writing systems instead."
+
+  - id: 54
+    title: "Create Character Voices Readers Can't Stop Listening To"
+    date: "2026-11-12"
+    day: Thursday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Jeff Elkins"]
+    location: "Bronze 3"
+    tags: ["Craft", "Live Education", "Foundations"]
+    description: "Five components of character voice and how to design and revise dialogue so each character stays distinct."
+
+  - id: 55
+    title: "Sudowrite"
+    date: "2026-11-12"
+    day: Thursday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Michael Stewart"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["Vendor", "Vendor Session", "Implementation"]
+    description: null
+
+  - id: 56
+    title: "Maggie Marr State of the industry for IP beyond the book"
+    date: "2026-11-12"
+    day: Thursday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Maggie Marr"]
+    location: "Palace 3"
+    tags: ["Intellectual Property Beyond the Book", "Live Education", "Implementation"]
+    description: null
+
+  - id: 57
+    title: "Moving from $100K to $500K: The Systems Behind Sustainable Author Income"
+    date: "2026-11-12"
+    day: Thursday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Misty M. Beller"]
+    location: "Gold"
+    tags: ["Business & Finance", "Live Education", "Optimization"]
+    description: "Production scheduling, profitability, series read-through, ad planning and quarterly cashflow modelling for scaling without burnout."
+
+  - id: 58
+    title: "Written Word Media"
+    date: "2026-11-12"
+    day: Thursday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Ricci Wolman"]
+    location: "Bronze 2"
+    tags: ["Vendor", "Vendor Session", "Implementation"]
+    description: null
+
+  - id: 59
+    title: "Demonza"
+    date: "2026-11-12"
+    day: Thursday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Damon Freeman"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["Vendor", "Vendor Session"]
+    description: null
+
+  - id: 60
+    title: "The Data Detective: Auditing Your Ads and Sales with Conversational AI"
+    date: "2026-11-12"
+    day: Thursday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Jeremy Harper"]
+    location: "Palace 4"
+    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
+    description: "Cleaning and loading KDP/Meta/Amazon Ads exports into an LLM to question your data in plain English, with privacy safeguards."
+
+  - id: 61
+    title: "Spotify Session"
+    date: "2026-11-12"
+    day: Thursday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Anders Larsen"]
+    location: "Bronze 2"
+    tags: ["Vendor", "Vendor Session"]
+    description: null
+
+  - id: 62
+    title: "Multi Six-Seven Figure Romance Success Without Click-ads"
+    date: "2026-11-12"
+    day: Thursday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Juliette N. Banks"]
+    location: "Event Center"
+    tags: ["Advertising and Marketing", "Solo Presentation", "Advanced", "Well-Pubbed Catalog Builders"]
+    description: "Building a high-profit romance business without spending anything on click ads."
+
+  - id: 63
+    title: "Powers Don't Lie: the emotional bridge of character and world"
+    date: "2026-11-12"
+    day: Thursday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Elizabeth Hunter"]
+    location: "Platinum"
+    tags: ["Craft", "Workshop", "Implementation", "Published Voyagers"]
+    description: "Intermediate speculative-fiction workshop on magic systems that grow out of character and world rather than sitting apart from them."
+
+  - id: 64
+    title: "Maggie Marr session two"
+    date: "2026-11-12"
+    day: Thursday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Maggie Marr"]
+    location: "Palace 3"
+    tags: ["Intellectual Property Beyond the Book", "Live Education"]
+    description: null
+
+  - id: 65
+    title: "Beyond the Cliffhanger: Designing Page-Turning Fiction"
+    date: "2026-11-12"
+    day: Thursday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Robin Patchen"]
+    location: "Bronze 3"
+    tags: ["Craft", "Live Education", "Implementation"]
+    description: "Building momentum through unanswered questions, esc"
+
+  - id: 66
+    title: "Design a Future Proof Marketing System"
+    date: "2026-11-13"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 180
+    speakers: ["Joe Solari", "Ricardo Fayet"]
+    location: "Event Center"
+    tags: ["Advertising and Marketing", "Workshop", "Implementation"]
+    description: "A three-hour working session on building a marketing system grounded in reader psychology and behavioral science rather than platform algorithms. Fayet and Solari contrast transactional marketing with a compounding system that self-selects the right readers and holds value regardless of what Meta or Amazon do next, using real case studies. Attendees leave with a framework meant to outlast platform cycles and a one-page marketing plan for beyond 2027."
+
+  - id: 67
+    title: "Audio Masterclass"
+    date: "2026-11-13"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 180
+    speakers: ["Christopher Boucher"]
+    location: "Bronze 2"
+    tags: ["Audio and Narration", "Live Education"]
+    description: "This is a 180 minute Audio Masterclas"
+
+  - id: 68
+    title: "Non Fiction Panel"
+    date: "2026-11-13"
+    day: Friday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Theresa L. Goodrich"]
+    location: "Bronze 2"
+    tags: ["Panel"]
+    description: "Non-fiction panel organized by Theresa Goodrich"
+
+  - id: 69
+    title: "Mystery Thriller Suspense Panel"
+    date: "2026-11-13"
+    day: Friday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Cheryl Bradshaw", "Douglas Pratt", "Mary Stone"]
+    location: "Platinum"
+    tags: ["Panel"]
+    description: null
+
+  - id: 70
+    title: "Cozy Mystery Panel"
+    date: "2026-11-13"
+    day: Friday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Sara Rosett", "T. Thorn Coyle", "Jolie Tunnell", "Melissa Bourbon"]
+    location: "Bronze 3"
+    tags: ["Panel"]
+    description: null
+
+  - id: 71
+    title: "Fantasy Panel"
+    date: "2026-11-13"
+    day: Friday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["AC Cobble", "Z.S. Diamanti", "S.L. Rowland"]
+    location: "Gold"
+    tags: ["Panel"]
+    description: null
+
+  - id: 72
+    title: "Happily Ever After is a Business Model"
+    date: "2026-11-13"
+    day: Friday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Eloisa James", "Penny Reid", "Elizabeth Hunter", "Theodora Taylor", "Damon Suede"]
+    location: "Event Center"
+    tags: ["Craft", "Panel"]
+    description: "A money-focused romance panel: moderator Eloisa James questions four bestselling authors who have worked across traditional, indie, and hybrid publishing about series strategy, pricing, what actually pays, and costly lessons. Closes with a live experiment where the panel turns an audience plot idea into a bestseller premise positioned across sub-genres. Attendees are asked to bring a plot idea."
+
+  - id: 73
+    title: "Science Fiction Panel"
+    date: "2026-11-13"
+    day: Friday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Skyler Ramirez", "Anthony Melchiorri", "Julia Huni", "Andrew Moriarty"]
+    location: "Bronze 4"
+    tags: ["Panel"]
+    description: null
+
+  - id: 74
+    title: "YA Panel"
+    date: "2026-11-13"
+    day: Friday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Cidney Swanson"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["Panel"]
+    description: null
+
+  - id: 75
+    title: "Andy Weir Interview"
+    date: "2026-11-13"
+    day: Friday
+    start: "4:00 PM"
+    duration_min: 90
+    speakers: ["JN Chaney"]
+    location: "Event Center"
+    tags: ["Keynote", "Live Education"]
+    description: null

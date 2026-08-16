@@ -1,0 +1,4 @@
+{{- /* /<slug>/sessions.json — { updated_at, count, sessions } from data/cons/<slug>.yaml */ -}}
+{{- $d := index site.Data.cons .Section -}}
+{{- if not $d }}{{ errorf "no data file data/cons/%s.yaml for section %q" .Section .RelPermalink }}{{ end -}}
+{{- dict "updated_at" $d.updated_at "count" (len $d.sessions) "sessions" $d.sessions | jsonify (dict "indent" "  ") -}}
