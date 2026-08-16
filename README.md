@@ -10,11 +10,6 @@ step — Tailwind and pdfmake load from CDNs; the page fetches its
 Currently hosted: **Author Nation 2026** (`/author-nation-2026/`) and
 **TravellerCON/USA 2026** (`/travellercon-usa-2026/`).
 
-> Migration note: this branch (`jekyll-to-hugo`) still contains the original
-> Jekyll files (`_config.yml`, `Gemfile*`, root `index.html`, `_sessions.yml`,
-> `sessions.json`, `parse_sessions.rb`; docs in `README-jekyll.md`). They are
-> excluded from Hugo and will be removed once the Hugo build is accepted.
-
 ## Layout
 
 ```
@@ -44,7 +39,7 @@ hugo                   # build → public/  (deploy that directory to any static
      `python3 scripts/convert_tabletop_events.py scripts/<slug>.events.json data/cons/<slug>.yaml`
      (tabletop.events-style JSON) or
      `python3 scripts/sessions_json_to_yaml.py old-sessions.json data/cons/<slug>.yaml`
-     (legacy `sessions.json`), or
+     (a legacy `{updated_at, sessions}` JSON export), or
    - use the **prompt in the next section** to have an LLM turn a web page /
      PDF / pasted listing straight into the YAML.
 2. **Page** — create `content/<slug>/_index.md`:
