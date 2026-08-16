@@ -1,4 +1,4 @@
-baseURL = "/"
+baseURL = 'https://conferences.merovexpress.com/'
 languageCode = "en"
 title = "Con Schedules"
 disableKinds = ["taxonomy", "term", "page", "RSS", "sitemap"]
