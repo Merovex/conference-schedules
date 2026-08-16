@@ -13,4 +13,5 @@ pdfFilename: "author-nation-2026-schedule.pdf"
 aiPlaceholder: "Describe your interests — e.g. cozy-mystery marketing without ads, plus AI writing tools"
 source: "https://authornation.live/"
 endTags: ["Keynote", "Vendor", "Vendor Session", "Panel", "Solo Presentation", "Workshop"]
+sponsor: software   # sponsor key or category (see data/sponsors.yaml)
 ---

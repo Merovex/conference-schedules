@@ -3,7 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>{{ .Params.conference }} · Sessions</title>
+<script>
+  // Apply the site-wide theme before first paint (shared key across all pages)
+  try { if (localStorage.getItem('cons.theme') === 'light') document.documentElement.classList.remove('dark'); } catch (e) {}
+</script>
 <script src="https://cdn.tailwindcss.com"></script>
 <!-- pdfmake: client-side PDF generation, no server -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.10/pdfmake.min.js"></script>
@@ -158,6 +165,7 @@
   <div id="status" class="py-20 text-center text-slate-500">Loading sessions…</div>
   <div id="days" class="space-y-8"></div>
   <div id="empty" class="hidden py-20 text-center text-slate-500">No sessions match your filters.</div>
+  {{ partial "sponsor-card.html" . }}
 </main>
 
 <!-- toast -->
@@ -174,6 +182,7 @@
 
 // ---------- State ----------
 const LS_PREFIX = {{ .Params.storagePrefix | jsonify | safeJS }};
+const THEME_KEY = 'cons.theme';   // shared across every con + the landing page
 const LS_KEY = LS_PREFIX + '.bookmarks';
 const LS_SAVED_AT = LS_PREFIX + '.savedAt';        // schedule version the picks were made against
 const LS_STALE_DISMISS = LS_PREFIX + '.staleDismissed';
@@ -652,7 +661,7 @@ document.querySelectorAll('[data-panel]').forEach(btn => btn.addEventListener('c
 
 $('#themeBtn').addEventListener('click', () => {
   const dark = document.documentElement.classList.toggle('dark');
-  try { localStorage.setItem(LS_PREFIX + '.theme', dark ? 'dark' : 'light'); } catch (e) {}
+  try { localStorage.setItem(THEME_KEY, dark ? 'dark' : 'light'); } catch (e) {}
 });
 
 $('#shareBtn').addEventListener('click', async () => {
@@ -788,7 +797,7 @@ $('#pdfBtn').addEventListener('click', buildPdf);
 // ---------- Init ----------
 (function initTheme() {
   try {
-    const saved = localStorage.getItem(LS_PREFIX + '.theme');
+    const saved = localStorage.getItem(THEME_KEY);
     if (saved === 'light') document.documentElement.classList.remove('dark');
     else document.documentElement.classList.add('dark'); // default dark
   } catch (e) {}

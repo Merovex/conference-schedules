@@ -1,0 +1,29 @@
+{{- /* "Brought to you by" card. Pass the page (.).
+       .Params.sponsor may be a sponsor key, a category, or empty.
+       All sponsors are rendered hidden; a tiny script reveals one:
+       exact key → random within category → random across all. */ -}}
+{{- $pin := .Params.sponsor | default "" -}}
+<aside id="sponsor" data-pin="{{ $pin }}" class="mt-8" aria-label="Sponsor">
+  {{- range site.Data.sponsors }}
+  <div data-sponsor="{{ .key }}" data-category="{{ .category }}" hidden
+       class="rounded-xl border border-slate-200 bg-white px-5 py-4 shadow-sm dark:border-slate-800 dark:bg-slate-900">
+    <p class="text-[11px] font-semibold uppercase tracking-[0.2em] text-sage-600 dark:text-sage-400">Brought to you by</p>
+    <h3 class="mt-1.5 text-lg font-bold leading-snug text-slate-900 dark:text-white">{{ .headline }}</h3>
+    <p class="mt-1.5 text-sm leading-relaxed text-slate-600 dark:text-slate-400">{{ .blurb }}</p>
+    <a href="{{ .url }}" target="_blank" rel="noopener"
+       class="mt-3 inline-flex items-center gap-1 text-sm font-semibold text-sage-700 hover:underline dark:text-sage-300">{{ .cta }} <span aria-hidden="true">&rarr;</span></a>
+  </div>
+  {{- end }}
+</aside>
+<script>
+  (function () {
+    const box = document.getElementById('sponsor');
+    const cards = [...box.querySelectorAll('[data-sponsor]')];
+    if (!cards.length) return;
+    const pin = box.dataset.pin;
+    let pool = cards.filter(c => c.dataset.sponsor === pin);            // exact key
+    if (!pool.length) pool = cards.filter(c => c.dataset.category === pin); // category
+    if (!pool.length) pool = cards;                                        // anything
+    pool[Math.floor(Math.random() * pool.length)].hidden = false;
+  })();
+</script>

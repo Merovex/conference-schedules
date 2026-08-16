@@ -1,0 +1,27 @@
+# "Brought to you by" cards.
+# In a conference's _index.md, `sponsor:` may be a key (always that card), a
+# category (random card from that category on each page load), or omitted
+# (random across all). The pick happens in the browser — Hugo output is static.
+- key: verkilo
+  category: software
+  name: Verkilo
+  headline: "Verkilo. One window, everything your series needs."
+  blurb: "A desktop manuscript app for series authors. One purchase, yours forever."
+  cta: "See how it works"
+  url: "https://verkilo.com"
+
+- key: kindredquill
+  category: software
+  name: Kindred Quill
+  headline: "Kindred Quill. One login, the whole author platform."
+  blurb: "Website, book catalog, blog, newsletter, and reader community — on a domain you own. Built for authors juggling pen names and imprints."
+  cta: "Get early access"
+  url: "https://kindredquill.com"
+
+- key: merovex
+  category: novels
+  name: Merovex Press
+  headline: "Worlds break. People don't."
+  blurb: "Science fiction, fantasy, and alternate history from Ben Wilson — the Strand trilogy and the Postal Marines quartet."
+  cta: "Browse the books"
+  url: "https://merovex.press"

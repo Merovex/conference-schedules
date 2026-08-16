@@ -13,4 +13,5 @@ pdfFilename: "muse-2026-schedule.pdf"
 aiPlaceholder: "Describe your interests — e.g. revising a first page, pitching to agents, or poetry craft"
 source: "https://conference.the-muse.org/schedule/"
 endTags: ["Workshop", "Panel", "Keynote", "Ceremony", "Registration", "Break", "Social", "Networking", "Write-In", "Q&A"]
+sponsor: software   # sponsor key or category (see data/sponsors.yaml)
 ---
