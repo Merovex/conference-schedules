@@ -1,0 +1,6 @@
+@layer utilities {
+  .u-icon { width: 1em; height: 1em; flex: none; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
+  .u-icon-fill { fill: currentColor; }
+  .u-icon-lg { font-size: var(--text-lg); }
+  .u-icon-xl { font-size: var(--text-2xl); }
+}

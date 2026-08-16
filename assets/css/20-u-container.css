@@ -1,0 +1,4 @@
+@layer utilities {
+  .u-container { width: 100%; max-width: var(--u-container-max, var(--container-lg)); margin-inline: auto; padding-inline: var(--gutter); }
+  .u-container-xl { --u-container-max: var(--container-xl); }
+}

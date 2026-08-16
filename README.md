@@ -32,6 +32,30 @@ hugo server            # develop at http://localhost:1313/
 hugo                   # build → public/  (deploy that directory to any static host)
 ```
 
+## Styling
+
+CUBE-style, utility-first CSS on top of vendored [Open Props](https://open-props.style) —
+no Tailwind, no inline styles. Hugo's asset pipeline concatenates, minifies and
+fingerprints `assets/css/*.css` (`layouts/partials/head-css.html`).
+
+```
+assets/css/00-layers.css        @layer base, components, utilities
+assets/css/01-open-props.css    vendored, immutable
+assets/css/02-tokens.css        palette ladders (50–950) + semantic tokens + type/space/motion aliases
+assets/css/03-fonts.css         self-hosted @font-face (Crimson Pro, Lora, Public Sans, IBM Plex Mono → static/fonts/)
+assets/css/04-base.css          resets, element defaults, focus ring, reduced motion
+assets/css/10-c-*.css           components: button, card, tag, tabs, notice/toast, deck (the slot-deck shell)
+assets/css/20-u-*.css           utilities, one intent per file: stack, cluster, pad, surface, eyebrow, type, …
+scripts/palette.py              regenerates the palette ladders (fitted in OKLCH to the design anchors)
+```
+
+Rules of the road: every design value is a `var()` (semantic token first, Open
+Props step second); utilities express intent (`u-stack`, `u-cluster`, `u-eyebrow`)
+and are configured through custom properties; BEM blocks only when named,
+structured and single-sourced (`.deck` is the one). Breakpoints are `48em` /
+`64em`. Dark mode remaps the semantic tokens under `:root.dark`; the theme is
+stored site-wide under `cons.theme`.
+
 ## Adding a conference
 
 1. **Data** — produce `data/cons/<slug>.yaml` (schema below). Either:

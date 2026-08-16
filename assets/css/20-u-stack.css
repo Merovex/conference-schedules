@@ -1,0 +1,7 @@
+@layer utilities {
+  .u-stack { display: flex; flex-direction: column; gap: var(--u-stack-gap, var(--pad)); }
+  .u-stack-xs { --u-stack-gap: var(--pad-xs); }
+  .u-stack-sm { --u-stack-gap: var(--pad-sm); }
+  .u-stack-lg { --u-stack-gap: var(--pad-lg); }
+  .u-self-start { align-self: flex-start; }   /* opt out of column stretch */
+}

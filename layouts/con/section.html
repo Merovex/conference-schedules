@@ -1,234 +1,229 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>{{ .Params.conference }} · Sessions</title>
-<script>
-  // Apply the site-wide theme before first paint (shared key across all pages)
-  try { if (localStorage.getItem('cons.theme') === 'light') document.documentElement.classList.remove('dark'); } catch (e) {}
-</script>
-<script src="https://cdn.tailwindcss.com"></script>
+{{ partial "head-meta.html" . }}
 <!-- pdfmake: client-side PDF generation, no server -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.10/pdfmake.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.10/vfs_fonts.js"></script>
-<script>
-  // Configure Tailwind: class-based dark mode + custom "sage" accent (~half saturation, OKLCH)
-  tailwind.config = {
-    darkMode: 'class',
-    theme: {
-      extend: {
-        colors: {
-          // "Sage" = #9CAF88 -> oklch(0.729 0.0585 129). Accent uses HALF that
-          // chroma (C 0.029), tapering toward the light/dark ends of the scale.
-          sage: {
-            50:  'oklch(0.972 0.006 129)',
-            100: 'oklch(0.940 0.011 129)',
-            200: 'oklch(0.885 0.017 129)',
-            300: 'oklch(0.810 0.023 129)',
-            400: 'oklch(0.740 0.028 129)',
-            500: 'oklch(0.665 0.029 129)',
-            600: 'oklch(0.580 0.028 129)',
-            700: 'oklch(0.490 0.024 129)',
-            800: 'oklch(0.410 0.020 129)',
-            900: 'oklch(0.330 0.015 129)',
-          }
-        }
-      }
-    }
-  }
-</script>
-<style>
-  /* Smooth expand/collapse without measuring heights */
-  .grid-rows-anim { display: grid; transition: grid-template-rows .25s ease; }
-  .icon { width: 1em; height: 1em; fill: none; stroke: currentColor; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; }
-  .icon-fill { fill: currentColor; stroke: currentColor; }
-  html { scroll-behavior: smooth; }
-</style>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.10/pdfmake.min.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.2.10/vfs_fonts.js" defer></script>
 </head>
-<body class="bg-slate-100 text-slate-800 dark:bg-slate-950 dark:text-slate-200 antialiased">
+<body>
+<a href="#stage" class="u-skip button button-accent">Skip to sessions</a>
+{{ partial "icons.html" . }}
 
-<!-- ===== Lucide icon sprite (inlined = single request, most efficient) ===== -->
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-bookmark" viewBox="0 0 24 24"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></symbol>
-  <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></symbol>
-  <symbol id="i-user" viewBox="0 0 24 24"><path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
-  <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
-  <symbol id="i-chevron" viewBox="0 0 24 24"><path d="m6 9 6 6 6-6"/></symbol>
-  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
-  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
-  <symbol id="i-share" viewBox="0 0 24 24"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><line x1="8.59" x2="15.42" y1="13.51" y2="17.49"/><line x1="15.41" x2="8.59" y1="6.51" y2="10.49"/></symbol>
-  <symbol id="i-filter" viewBox="0 0 24 24"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"/></symbol>
-  <symbol id="i-check" viewBox="0 0 24 24"><path d="M20 6 9 17l-5-5"/></symbol>
-  <symbol id="i-download" viewBox="0 0 24 24"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></symbol>
-  <symbol id="i-alert" viewBox="0 0 24 24"><path d="m21.73 18-8-14a2 2 0 0 0-3.48 0l-8 14A2 2 0 0 0 4 21h16a2 2 0 0 0 1.73-3Z"/><path d="M12 9v4"/><path d="M12 17h.01"/></symbol>
-  <symbol id="i-x" viewBox="0 0 24 24"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></symbol>
-  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z"/><circle cx="7.5" cy="7.5" r=".5" fill="currentColor"/></symbol>
-  <symbol id="i-sparkles" viewBox="0 0 24 24"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></symbol>
-</svg>
+<div class="deck" id="deck">
 
-<!-- ===== Sticky header / filter bar ===== -->
-<header class="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
-  <div class="mx-auto max-w-4xl px-4 py-3">
-    <div class="flex items-center justify-between gap-3">
-      <div>
-        <a href="{{ site.Home.RelPermalink }}" class="text-[11px] font-medium uppercase tracking-wide text-slate-400 hover:text-sage-600 dark:hover:text-sage-400">&larr; {{ site.Params.siteName }}</a>
-        <h1 class="text-lg font-bold text-slate-900 dark:text-white">{{ .Params.conference }}</h1>
-        <p class="text-xs text-slate-500 dark:text-slate-400">{{ .Params.subtitle }}</p>
+  <!-- ===== Top: brand · day tabs · actions ===== -->
+  <header class="deck__top u-stack u-stack-sm u-surface-raised u-hairline-bottom u-pad-gutter u-pad-y u-pad-sm">
+    <div class="u-cluster u-cluster-between u-cluster-nowrap u-cluster-start">
+      <div class="u-stack u-stack-xs u-grow">
+        <a href="{{ site.Home.RelPermalink }}" class="button button-sm button-ghost button-flush u-eyebrow u-self-start"><svg class="u-icon"><use href="#i-chevron-left"/></svg> {{ site.Params.siteName }}</a>
+        <h1 class="u-title">{{ .Params.conference }}</h1>
+        <p class="u-eyebrow u-balance">{{ .Params.subtitle }}</p>
       </div>
-      <div class="flex items-center gap-2">
-        <button id="pdfBtn" title="Download your bookmarked sessions as a PDF"
-          class="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-100 disabled:cursor-not-allowed disabled:opacity-40 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800">
-          <svg class="icon text-base"><use href="#i-download"/></svg><span class="hidden sm:inline">PDF</span>
-        </button>
-        <button id="shareBtn" title="Copy a shareable link with your bookmarks"
-          class="inline-flex items-center gap-1.5 rounded-lg border border-slate-300 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800">
-          <svg class="icon text-base"><use href="#i-share"/></svg><span class="hidden sm:inline">Share</span>
-        </button>
-        <button id="themeBtn" title="Toggle light / dark"
-          class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800">
-          <svg class="icon text-base dark:hidden"><use href="#i-moon"/></svg>
-          <svg class="icon text-base hidden dark:block"><use href="#i-sun"/></svg>
-        </button>
-      </div>
-    </div>
-
-    <div class="mt-3 flex flex-wrap items-center gap-2">
-      <svg class="icon text-base text-slate-400"><use href="#i-filter"/></svg>
-      <div id="dayFilter" class="flex flex-wrap gap-1.5"></div>
-      <span class="mx-1 h-4 w-px bg-slate-300 dark:bg-slate-700"></span>
-      <button id="bmOnlyBtn"
-        class="inline-flex items-center gap-1.5 rounded-full border border-slate-300 px-3 py-1 text-sm font-medium text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800">
-        <svg class="icon text-sm"><use href="#i-bookmark"/></svg>
-        <span>Bookmarked</span>
-        <span id="bmCount" class="rounded-full bg-slate-200 px-1.5 text-xs text-slate-700 dark:bg-slate-800 dark:text-slate-100">0</span>
-      </button>
-      <span class="ml-auto flex items-center gap-1.5">
-        <button id="toggleAI" data-panel="ai" title="Show/hide the AI filter"
-          class="inline-flex items-center gap-1.5 rounded-full border border-slate-300 px-3 py-1 text-sm font-medium text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800">
-          <svg class="icon text-sm"><use href="#i-sparkles"/></svg><span>AI</span>
-        </button>
-        <button id="toggleTags" data-panel="tags" title="Show/hide the tag filters"
-          class="inline-flex items-center gap-1.5 rounded-full border border-slate-300 px-3 py-1 text-sm font-medium text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800">
-          <svg class="icon text-sm"><use href="#i-tag"/></svg><span>Tags</span>
-        </button>
-      </span>
-    </div>
-
-    <!-- AI-based semantic filter (runs entirely in the browser) -->
-    <div id="aiPanel">
-      <form id="aiForm" class="mt-3 flex items-center gap-2">
-        <div class="relative flex-1">
-          <svg class="icon pointer-events-none absolute left-3 top-1/2 -translate-y-1/2 text-base text-sage-500"><use href="#i-sparkles"/></svg>
-          <input id="aiInput" type="text" autocomplete="off"
-            placeholder="{{ .Params.aiPlaceholder }}"
-            class="w-full rounded-lg border border-slate-300 bg-white py-2 pl-9 pr-3 text-sm text-slate-800 placeholder:text-slate-400 focus:border-sage-500 focus:outline-none focus:ring-2 focus:ring-sage-500/30 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:placeholder:text-slate-500" />
+      <div class="u-cluster u-cluster-nowrap">
+        <span class="u-meta u-accent u-nowrap" title="Bookmarked sessions"><span aria-hidden="true">&#9733;</span> <span id="bmCount">0</span><span class="u-visually-hidden"> bookmarked</span></span>
+        <div class="u-cluster u-cluster-nowrap u-lg-only">
+          <button id="shareBtn" class="button button-sm" title="Copy a shareable link with your bookmarks"><svg class="u-icon"><use href="#i-share"/></svg> Share</button>
+          <button id="pdfBtn" class="button button-sm button-secondary" title="Download your bookmarked sessions as a PDF"><svg class="u-icon"><use href="#i-download"/></svg> Export</button>
+          <button id="tailorFocusBtn" class="button button-sm button-secondary" title="Rank this slot against your interests"><svg class="u-icon"><use href="#i-sparkles"/></svg> Tailor</button>
+          <button id="tagsBtn" class="button button-sm button-secondary" aria-pressed="false" aria-controls="tagsBar" title="Show/hide the tag filters"><svg class="u-icon"><use href="#i-tag"/></svg> Tags</button>
         </div>
-        <button id="aiGo" type="submit"
-          class="inline-flex items-center gap-1.5 rounded-lg bg-sage-600 px-3 py-2 text-sm font-semibold text-white hover:bg-sage-700 disabled:opacity-50">
-          <svg class="icon text-base"><use href="#i-sparkles"/></svg><span>Tailor</span>
+        <button id="themeBtn" class="button button-sm button-ghost button-icon" title="Toggle light / dark" aria-label="Toggle light / dark">
+          <svg class="u-icon theme-moon"><use href="#i-moon"/></svg><svg class="u-icon theme-sun" hidden><use href="#i-sun"/></svg>
         </button>
-        <button id="aiClear" type="button"
-          class="hidden items-center gap-1 rounded-lg border border-slate-300 px-3 py-2 text-sm font-medium text-slate-600 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800">
-          <svg class="icon text-base"><use href="#i-x"/></svg><span>Clear</span>
-        </button>
-      </form>
-      <p id="aiStatus" class="mt-2 hidden text-xs text-slate-500 dark:text-slate-400"></p>
-    </div>
-
-    <!-- Alphabetized tag filters -->
-    <div id="tagsPanel" class="mt-3">
-      <div class="mb-1.5 flex items-center gap-2 text-xs font-medium uppercase tracking-wide text-slate-400">
-        <svg class="icon text-sm"><use href="#i-tag"/></svg><span>Filter by tag</span>
-        <button id="tagsClear" class="hidden rounded px-1.5 text-[11px] font-normal normal-case text-sage-600 hover:underline dark:text-sage-400">clear</button>
       </div>
-      <div id="tagFilter" class="flex flex-wrap gap-1.5"></div>
+    </div>
+    <nav aria-label="Days"><div id="dayTabs" class="tabs" role="tablist"></div></nav>
+  </header>
+
+  <!-- ===== Tag filter bar (toggle) ===== -->
+  <div id="tagsBar" class="deck__tags u-cluster u-pad-gutter u-pad-y u-pad-sm u-surface-raised u-hairline-bottom" hidden>
+    <span class="u-eyebrow">Tags</span>
+    <div id="tagFilter" class="u-cluster u-cluster-xs u-grow" role="group" aria-label="Filter by tag"></div>
+    <button id="tagsClear" class="button button-sm button-ghost" hidden>Clear</button>
+  </div>
+
+  <!-- ===== Slot rail (desktop) ===== -->
+  <nav class="deck__rail u-lg-only u-scroll u-stack u-stack-sm u-pad-y" aria-label="Time slots">
+    <p class="u-eyebrow u-pad-x u-pad-lg">Time slots</p>
+    <div id="rail"></div>
+  </nav>
+
+  <!-- ===== Slot header ===== -->
+  <header class="deck__slot u-surface-inverse u-pad-gutter u-pad-y">
+    <p id="slotDay" class="u-eyebrow u-eyebrow-on-inverse">&nbsp;</p>
+    <div class="u-cluster u-cluster-baseline u-cluster-lg">
+      <h2 id="slotTime" class="u-title u-title-display">&nbsp;</h2>
+      <p id="slotSub" class="u-prose u-prose-on-inverse"></p>
+    </div>
+  </header>
+
+  <!-- ===== Tailor (AI ranking, in-browser) ===== -->
+  <form id="aiForm" class="deck__tailor u-stack u-stack-sm u-pad-gutter u-pad-y u-pad-sm u-surface-sunken u-hairline-bottom">
+    <p class="u-eyebrow u-eyebrow-accent">Tailor</p>
+    <div class="u-cluster u-cluster-nowrap">
+      <label for="aiInput" class="u-visually-hidden">Describe your interests</label>
+      <input id="aiInput" class="u-field u-grow" type="text" autocomplete="off" placeholder="{{ .Params.aiPlaceholder }}">
+      <button id="aiGo" type="submit" class="button button-accent">Tailor</button>
+      <button id="aiClear" type="button" class="button button-secondary" hidden aria-label="Clear tailoring"><svg class="u-icon"><use href="#i-x"/></svg></button>
+    </div>
+    <p id="aiStatus" class="u-prose u-prose-xs u-prose-muted" aria-live="polite">Runs in your browser. Ranks every slot against your description; nothing is hidden.</p>
+  </form>
+  <!-- Mobile: compact strip when tailoring and/or tag filters are active (the controls live in the sheet) -->
+  <div id="aiStrip" class="deck__tailor u-below-lg-only u-cluster u-cluster-nowrap u-pad-gutter u-pad-y u-pad-sm u-surface-marginalia u-hairline-bottom" hidden>
+    <span class="u-eyebrow u-eyebrow-accent u-grow u-truncate"><svg class="u-icon"><use href="#i-sparkles"/></svg> <span id="aiStripText"></span></span>
+    <button id="aiStripEdit" class="button button-sm button-ghost">Edit</button>
+    <button id="aiStripClear" class="button button-sm button-secondary">Clear</button>
+  </div>
+
+  <!-- ===== Stage: cards for the current slot ===== -->
+  <main id="stage" class="deck__stage u-scroll u-stack u-pad-gutter u-pad-y" tabindex="-1">
+    <div id="staleWarn" class="notice" hidden>
+      <svg class="u-icon u-icon-lg"><use href="#i-alert"/></svg>
+      <div class="u-stack u-stack-xs u-grow">
+        <p class="u-strong">The schedule changed since these picks were saved.</p>
+        <p>Sessions are matched by position, so a few of your bookmarks may now point to different talks — please double-check them. <span id="staleDates" class="u-meta"></span></p>
+      </div>
+      <button id="staleDismiss" class="button button-sm button-ghost button-icon" title="Dismiss" aria-label="Dismiss"><svg class="u-icon"><use href="#i-x"/></svg></button>
+    </div>
+    <p id="status" class="u-prose u-prose-muted u-center u-pad-y u-pad-xl">Loading sessions…</p>
+    <div id="cards" class="deck__cards" aria-live="polite"></div>
+    <p id="empty" class="u-prose u-prose-muted u-center u-pad-y u-pad-xl" hidden>No sessions in this slot match your tags.</p>
+    <div class="u-below-lg-only u-stack">
+      <div id="mobileSponsor" hidden>{{ partial "sponsor-card.html" (dict "page" . "class" "") }}</div>
+      <p class="u-prose u-prose-xs u-prose-muted">Bookmarks are saved in this browser and encoded in the Share link. <span id="updatedAt"></span></p>
+    </div>
+  </main>
+
+  <!-- ===== Aside (desktop): your picks + sponsor ===== -->
+  <aside class="deck__aside u-lg-only u-scroll u-stack u-stack-lg u-pad u-pad-lg" aria-label="Your picks">
+    <section class="u-stack u-stack-sm u-rule-top">
+      <h2 class="u-eyebrow u-eyebrow-accent">Your picks today</h2>
+      <div id="picks" class="u-hairline-y"></div>
+      <p id="picksEmpty" class="u-prose u-prose-muted" hidden>Nothing saved for this day yet.</p>
+    </section>
+    {{ partial "sponsor-card.html" (dict "page" . "class" "") }}
+    <p class="u-prose u-prose-xs u-prose-muted"><span id="updatedAtAside"></span>{{ with .Params.source }} Source: <a href="{{ . }}">{{ . }}</a>{{ end }}</p>
+  </aside>
+
+  <!-- ===== Stepper (mobile) ===== -->
+  <footer class="deck__stepper u-below-lg-only">
+    <p id="stepPos" class="u-eyebrow u-center u-hairline-bottom u-pad-y u-pad-sm">&nbsp;</p>
+    <div class="u-cluster u-cluster-between u-cluster-nowrap u-pad">
+      <button id="prevBtn" class="button button-secondary button-round" aria-label="Previous slot"><svg class="u-icon u-icon-lg"><use href="#i-chevron-left"/></svg></button>
+      <button id="sheetBtn" class="button button-round deck__mark" aria-label="Open actions" aria-expanded="false" aria-controls="sheet"><svg class="u-icon u-icon-fill"><use href="#i-mark"/></svg></button>
+      <button id="nextBtn" class="button button-secondary button-round" aria-label="Next slot"><svg class="u-icon u-icon-lg"><use href="#i-chevron-right"/></svg></button>
+    </div>
+  </footer>
+
+  <!-- ===== Action sheet (mobile) ===== -->
+  <div id="scrim" class="deck__scrim u-below-lg-only"></div>
+  <div id="sheet" class="deck__sheet u-below-lg-only u-stack u-pad" role="dialog" aria-label="Filters and actions" aria-modal="true">
+    <div class="deck__grip"></div>
+    {{ with .Params.source }}<p class="u-meta u-truncate u-center">Source: <a href="{{ . }}" target="_blank" rel="noopener">{{ . }}</a></p>{{ end }}
+    <div id="sheetTailor" class="u-stack u-stack-sm"><!-- #aiForm is moved here on mobile --></div>
+    <div id="sheetTags" class="u-stack u-stack-sm"><!-- #tagsBar is moved here on mobile --></div>
+    <div class="deck__sheetgrid">
+      <button class="card card-interactive u-stack u-stack-xs u-start" data-sheet="share"><span class="u-title u-title-sm">Share</span><span class="u-prose u-prose-xs u-prose-muted">Your picks, encoded in a link.</span></button>
+      <button class="card card-interactive u-stack u-stack-xs u-start" data-sheet="pdf"><span class="u-title u-title-sm">Export</span><span class="u-prose u-prose-xs u-prose-muted">A PDF of your picks.</span></button>
     </div>
   </div>
-</header>
+</div>
 
-<main id="app" class="mx-auto max-w-4xl px-4 py-6">
-  <div id="staleWarn" class="hidden mb-6 flex items-start gap-3 rounded-xl border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-900 dark:border-amber-500/40 dark:bg-amber-500/10 dark:text-amber-200">
-    <svg class="icon mt-0.5 shrink-0 text-base text-amber-500"><use href="#i-alert"/></svg>
-    <div class="flex-1">
-      <p class="font-semibold">The schedule changed since these picks were saved.</p>
-      <p class="mt-0.5 text-amber-800 dark:text-amber-300/90">Sessions are matched by position, so a few of your bookmarks may now point to different talks — please double-check them. <span id="staleDates" class="font-mono text-xs"></span></p>
-    </div>
-    <button id="staleDismiss" title="Dismiss" class="shrink-0 rounded-md p-1 text-amber-500 hover:bg-amber-100 dark:hover:bg-amber-500/20">
-      <svg class="icon text-base"><use href="#i-x"/></svg>
-    </button>
-  </div>
-  <div id="status" class="py-20 text-center text-slate-500">Loading sessions…</div>
-  <div id="days" class="space-y-8"></div>
-  <div id="empty" class="hidden py-20 text-center text-slate-500">No sessions match your filters.</div>
-  {{ partial "sponsor-card.html" . }}
-</main>
-
-<!-- toast -->
-<div id="toast" class="pointer-events-none fixed bottom-6 left-1/2 z-30 -translate-x-1/2 translate-y-4 rounded-lg bg-slate-900 px-4 py-2 text-sm font-medium text-white opacity-0 shadow-lg transition-all dark:bg-white dark:text-slate-900"></div>
-
-<footer class="mx-auto max-w-4xl px-4 pb-10 text-center text-xs text-slate-400">
-  Bookmarks are saved in this browser and encoded in the <span class="font-mono">Share</span> link so you can carry them between devices.
-  <span id="updatedAt" class="block mt-1"></span>
-  {{ with .Params.source }}<span class="block mt-1">Source: <a class="underline hover:text-slate-500" href="{{ . }}">{{ . }}</a></span>{{ end }}
-</footer>
+<div id="toast" class="toast" role="status" aria-live="polite"></div>
+{{ partial "sponsor-script.html" . }}
 
 <script>
 "use strict";
 
-// ---------- State ----------
+// ---------- Config (from front matter) ----------
 const LS_PREFIX = {{ .Params.storagePrefix | jsonify | safeJS }};
-const THEME_KEY = 'cons.theme';   // shared across every con + the landing page
+const CONFERENCE = {{ .Params.conference | jsonify | safeJS }};
+const TZ_LABEL = {{ .Params.tzLabel | jsonify | safeJS }};
+const TZ_LONG = {{ .Params.tzLong | jsonify | safeJS }};
+const PDF_FILENAME = {{ .Params.pdfFilename | jsonify | safeJS }};
+const SESSIONS_URL = {{ (.OutputFormats.Get "sessions").RelPermalink | jsonify | safeJS }};
+const THEME_KEY = 'cons.theme';                    // shared across every con + the landing page
 const LS_KEY = LS_PREFIX + '.bookmarks';
-const LS_SAVED_AT = LS_PREFIX + '.savedAt';        // schedule version the picks were made against
+const LS_SAVED_AT = LS_PREFIX + '.savedAt';         // schedule version the picks were made against
 const LS_STALE_DISMISS = LS_PREFIX + '.staleDismissed';
+const LS_TAGS_OPEN = LS_PREFIX + '.showTags';
+const LS_POS = LS_PREFIX + '.pos';                  // last day/slot viewed
+
+// ---------- State ----------
 let SESSIONS = [];
-let SCHEDULE_UPDATED_AT = null;      // "YYYY-MM-DD" from sessions.json
-let bookmarks = new Set();           // set of session ids
+let SCHEDULE_UPDATED_AT = null;
+let DAYS = [];                       // [{ name, date, slots: [{ time, sessions: [] }] }]
+let bookmarks = new Set();
 const state = {
-  day: 'all',
-  bookmarkedOnly: false,
-  collapsedBlocks: new Set(),        // "day|time" keys
-  expandedCards: new Set(),          // session ids
-  aiActive: false,                   // semantic filter engaged
-  aiQuery: '',
-  aiTopK: 15,                        // how many best matches to keep
+  day: 0, slot: 0,
   tags: new Set(),                   // selected tag filters (OR)
+  expanded: new Set(),               // session ids with description opened
+  aiActive: false, aiQuery: '', aiTopK: 15,
+  sheetOpen: false,
 };
 let aiScores = null;                 // Map(id -> cosine similarity)
-let aiMax = 0;                       // top score this render (for % display)
+let aiFits = null;                   // Set of ids in the global top-K
+let lastFitCount = 0;                // fits in the current slot (last render)
+const mqDesktop = matchMedia('(min-width: 64em)');   /* --breakpoint-lg */
 
 // ---------- Helpers ----------
 const $ = (sel, el = document) => el.querySelector(sel);
-const icon = (id, cls = '') => `<svg class="icon ${cls}"><use href="#${id}"/></svg>`;
-const esc = (s) => (s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
-
+const esc = (s) => String(s ?? '').replace(/[&<>"]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
+const icon = (id, cls = '') => `<svg class="u-icon ${cls}"><use href="#${id}"/></svg>`;
 function timeToMin(t) {
   const m = /(\d+):(\d+)\s*(AM|PM)/i.exec(t || '');
   if (!m) return 0;
-  let h = (+m[1]) % 12;
-  if (/pm/i.test(m[3])) h += 12;
+  let h = (+m[1]) % 12; if (/pm/i.test(m[3])) h += 12;
   return h * 60 + (+m[2]);
 }
 function fmtDuration(d) {
   if (!d) return '';
-  if (d < 120) return d + 'm';
-  return d % 60 === 0 ? (d / 60) + 'h' : Math.floor(d / 60) + 'h ' + (d % 60) + 'm';
+  if (d < 120) return d + ' min';
+  return d % 60 === 0 ? (d / 60) + ' hr' : Math.floor(d / 60) + ' hr ' + (d % 60) + ' min';
 }
-function fmtDate(iso) {
+function fmtDate(iso, opts) {
   const [y, mo, da] = (iso || '').split('-').map(Number);
   if (!y) return '';
-  return new Date(y, mo - 1, da).toLocaleDateString(undefined,
-    { month: 'long', day: 'numeric', year: 'numeric' });
+  return new Date(y, mo - 1, da).toLocaleDateString(undefined, opts || { month: 'long', day: 'numeric' });
+}
+function shortDate(iso) { return fmtDate(iso, { month: 'short', day: 'numeric' }); }
+function pluralize(n, one, many) { return n + ' ' + (n === 1 ? one : (many || one + 's')); }
+
+// ---------- Build the day/slot model ----------
+function buildModel() {
+  const byDay = new Map();
+  for (const s of SESSIONS) {
+    if (!byDay.has(s.date)) byDay.set(s.date, { name: s.day, date: s.date, slotsMap: new Map() });
+    const d = byDay.get(s.date);
+    if (!d.slotsMap.has(s.start)) d.slotsMap.set(s.start, { time: s.start, sessions: [] });
+    d.slotsMap.get(s.start).sessions.push(s);
+  }
+  DAYS = [...byDay.values()].sort((a, b) => a.date.localeCompare(b.date)).map(d => ({
+    name: d.name, date: d.date,
+    slots: [...d.slotsMap.values()].sort((a, b) => timeToMin(a.time) - timeToMin(b.time)),
+  }));
+}
+function currentDay() { return DAYS[state.day]; }
+function currentSlot() { const d = currentDay(); return d ? d.slots[Math.min(state.slot, d.slots.length - 1)] : null; }
+// One sponsor slot per day: the slot closest to noon inside 10:00–14:00; if a day has
+// nothing in that window, the slot closest to noon overall.
+function sponsorSlotIndex(day) {
+  const NOON = 12 * 60, lo = 10 * 60, hi = 14 * 60;
+  const dist = sl => Math.abs(timeToMin(sl.time) - NOON);
+  let best = -1, bestD = Infinity;
+  day.slots.forEach((sl, i) => { const m = timeToMin(sl.time); if (m >= lo && m <= hi && dist(sl) < bestD) { best = i; bestD = dist(sl); } });
+  if (best < 0) day.slots.forEach((sl, i) => { if (dist(sl) < bestD) { best = i; bestD = dist(sl); } });
+  return best;
+}
+function slotSub(slot, idx, total) {
+  const durs = new Set(slot.sessions.map(s => s.duration_min).filter(Boolean));
+  const dur = durs.size === 1 ? fmtDuration([...durs][0]) : pluralize(slot.sessions.length, 'session');
+  return `Slot ${idx + 1} of ${total} · ${dur}`;
 }
 
 // ---------- Bookmark persistence (localStorage + compressed URL) ----------
-// stampVersion: the schedule version these picks correspond to. Defaults to the
-// current schedule — i.e. actively editing your picks marks them as up to date.
 function saveLocal(stampVersion) {
   try {
     localStorage.setItem(LS_KEY, JSON.stringify([...bookmarks]));
@@ -237,602 +232,401 @@ function saveLocal(stampVersion) {
   } catch (e) {}
 }
 function loadLocal() {
-  try {
-    const raw = localStorage.getItem(LS_KEY);
-    if (raw) new Set(JSON.parse(raw)).forEach(id => bookmarks.add(id));
-  } catch (e) {}
+  try { const raw = localStorage.getItem(LS_KEY); if (raw) new Set(JSON.parse(raw)).forEach(id => bookmarks.add(id)); } catch (e) {}
 }
-// Warn if the schedule changed after the picks were saved (positional ids may
-// have shifted). Shows once per new version until dismissed or picks re-saved.
 function maybeWarnStale() {
   const banner = $('#staleWarn');
-  if (!banner) return;
   const savedAt = (() => { try { return localStorage.getItem(LS_SAVED_AT); } catch (e) { return null; } })();
   const dismissed = (() => { try { return localStorage.getItem(LS_STALE_DISMISS); } catch (e) { return null; } })();
-  const stale = savedAt && SCHEDULE_UPDATED_AT && savedAt < SCHEDULE_UPDATED_AT
-    && bookmarks.size > 0 && dismissed !== SCHEDULE_UPDATED_AT;
-  if (!stale) { banner.classList.add('hidden'); return; }
-  $('#staleDates').textContent = `saved for ${savedAt}, schedule now ${SCHEDULE_UPDATED_AT}`;
-  banner.classList.remove('hidden');
+  const stale = savedAt && SCHEDULE_UPDATED_AT && savedAt < SCHEDULE_UPDATED_AT && bookmarks.size > 0 && dismissed !== SCHEDULE_UPDATED_AT;
+  banner.hidden = !stale;
+  if (stale) $('#staleDates').textContent = `saved for ${savedAt}, schedule now ${SCHEDULE_UPDATED_AT}`;
 }
-// Compact: bitset over session ids -> base64url (66 sessions = ~9 bytes = ~12 chars)
+// Compact: bitset over session ids -> base64url
 function encodeBookmarks() {
   if (bookmarks.size === 0) return '';
   const max = Math.max(...bookmarks);
   const bytes = new Uint8Array(Math.floor(max / 8) + 1);
   bookmarks.forEach(id => { bytes[id >> 3] |= 1 << (id & 7); });
-  let bin = '';
-  bytes.forEach(b => bin += String.fromCharCode(b));
+  let bin = ''; bytes.forEach(b => bin += String.fromCharCode(b));
   return btoa(bin).replace(/\+/g, '-').replace(/\//g, '_').replace(/=+$/, '');
 }
 function decodeBookmarks(str) {
   try {
     const bin = atob(str.replace(/-/g, '+').replace(/_/g, '/'));
-    for (let i = 0; i < bin.length; i++) {
-      const b = bin.charCodeAt(i);
-      for (let bit = 0; bit < 8; bit++) if (b & (1 << bit)) bookmarks.add(i * 8 + bit);
-    }
+    for (let i = 0; i < bin.length; i++) { const b = bin.charCodeAt(i); for (let bit = 0; bit < 8; bit++) if (b & (1 << bit)) bookmarks.add(i * 8 + bit); }
   } catch (e) {}
 }
 
 // ---------- Rendering ----------
-const DAY_ORDER = {}; // day -> sort key (date)
 function render() {
-  const daysEl = $('#days');
-  daysEl.innerHTML = '';
+  const day = currentDay(); if (!day) return;
+  state.slot = Math.min(state.slot, day.slots.length - 1);
+  const slot = currentSlot();
+  try { localStorage.setItem(LS_POS, state.day + ',' + state.slot); } catch (e) {}
 
-  // group by day, preserving date order
-  const byDay = new Map();
-  for (const s of SESSIONS) {
-    if (!byDay.has(s.day)) byDay.set(s.day, []);
-    byDay.get(s.day).push(s);
-  }
-  const dayNames = [...byDay.keys()].sort((a, b) =>
-    (byDay.get(a)[0].date).localeCompare(byDay.get(b)[0].date));
+  renderTabs();
+  renderRail();
+  renderTagFilter();
 
-  // AI semantic filter: keep the top-K best-matching sessions
-  let aiAllowed = null;
-  aiMax = 0;
+  // slot header
+  $('#slotDay').textContent = `${day.name} · ${shortDate(day.date)}`;
+  $('#slotTime').textContent = slot.time;
+  $('#slotSub').textContent = slotSub(slot, state.slot, day.slots.length);
+  $('#stepPos').textContent = `${day.name} · slot ${state.slot + 1} of ${day.slots.length}`;
+
+  // cards
+  let list = slot.sessions.slice();
+  if (state.tags.size) list = list.filter(s => (s.tags || []).some(t => state.tags.has(t)));
+  let fitCount = 0;
   if (state.aiActive && aiScores) {
-    const ranked = [...aiScores.entries()].sort((a, b) => b[1] - a[1]);
-    aiMax = ranked.length ? ranked[0][1] : 0;
-    aiAllowed = new Set(ranked.slice(0, state.aiTopK).map(([id]) => id));
+    list.sort((a, b) => (aiScores.get(b.id) || 0) - (aiScores.get(a.id) || 0));
+    fitCount = list.filter(s => aiFits.has(s.id)).length;
+  }
+  $('#cards').innerHTML = list.map(cardHTML).join('');
+  $('#empty').hidden = list.length > 0;
+  $('#mobileSponsor').hidden = state.slot !== sponsorSlotIndex(day);
+  $('#stage').scrollTop = 0;
+
+  lastFitCount = fitCount;
+  syncControls();
+
+  // tailor note
+  if (state.aiActive) {
+    const q = state.aiQuery;
+    aiStatus(fitCount
+      ? `${pluralize(fitCount, 'session')} in this slot ${fitCount === 1 ? 'fits' : 'fit'} “${q}”. Best matches first; the rest are dimmed, not hidden.`
+      : `Nothing in this slot fits “${q}” — the rest are still listed. Step to another slot.`, true);
   }
 
-  let anyVisible = false;
-
-  for (const day of dayNames) {
-    if (state.day !== 'all' && state.day !== day) continue;
-    let sessions = byDay.get(day);
-    if (aiAllowed) sessions = sessions.filter(s => aiAllowed.has(s.id));
-    if (state.tags.size) sessions = sessions.filter(s => (s.tags || []).some(t => state.tags.has(t)));
-    if (state.bookmarkedOnly) sessions = sessions.filter(s => bookmarks.has(s.id));
-    if (sessions.length === 0) continue;
-    anyVisible = true;
-
-    const bmInDay = byDay.get(day).filter(s => bookmarks.has(s.id)).length;
-
-    // group by start time
-    const byTime = new Map();
-    for (const s of sessions) {
-      if (!byTime.has(s.start)) byTime.set(s.start, []);
-      byTime.get(s.start).push(s);
-    }
-    const times = [...byTime.keys()].sort((a, b) => timeToMin(a) - timeToMin(b));
-
-    const section = document.createElement('section');
-    section.className = 'space-y-3';
-
-    // ----- Day header (H2) -----
-    section.innerHTML = `
-      <div class="flex items-center justify-between rounded-xl border border-slate-200 bg-white px-4 py-3 shadow-sm dark:border-slate-800 dark:bg-slate-900">
-        <div class="flex items-center gap-3">
-          ${icon('i-calendar', 'text-2xl text-slate-400')}
-          <div>
-            <h2 class="text-xl font-bold text-slate-900 dark:text-white">${esc(day)}</h2>
-            <p class="text-sm text-slate-500 dark:text-slate-400">${fmtDate(sessions[0].date)}</p>
-          </div>
-        </div>
-        <div class="flex items-center gap-2 text-sm">
-          <span class="inline-flex items-center gap-1 rounded-full bg-sage-600 px-2.5 py-1 font-semibold text-white">
-            ${icon('i-bookmark', 'icon-fill text-xs')} ${bmInDay}
-          </span>
-          <span class="rounded-full bg-slate-200 px-2.5 py-1 font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-100">
-            ${sessions.length} session${sessions.length === 1 ? '' : 's'}
-          </span>
-        </div>
-      </div>`;
-
-    // ----- Time blocks (H3) -----
-    for (const time of times) {
-      const blockKey = day + '|' + time;
-      const collapsed = state.collapsedBlocks.has(blockKey);
-      const list = byTime.get(time);
-
-      const block = document.createElement('div');
-      block.className = 'ml-0 sm:ml-2';
-      block.innerHTML = `
-        <button data-block="${esc(blockKey)}" class="flex w-full items-center gap-2 px-1 py-2 text-left">
-          ${icon('i-chevron', 'text-base text-slate-400 transition-transform ' + (collapsed ? '-rotate-90' : ''))}
-          <h3 class="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">${esc(time)}</h3>
-          <span class="text-xs text-slate-400">· ${list.length}</span>
-          <span class="h-px flex-1 bg-slate-200 dark:bg-slate-800"></span>
-        </button>
-        <div class="grid-rows-anim" style="grid-template-rows:${collapsed ? '0fr' : '1fr'}">
-          <div class="overflow-hidden">
-            <div class="space-y-2 pb-2">${list.map(cardHTML).join('')}</div>
-          </div>
-        </div>`;
-      section.appendChild(block);
-    }
-
-    daysEl.appendChild(section);
-  }
-
-  $('#empty').classList.toggle('hidden', anyVisible);
+  renderPicks();
   updateBmCount();
 }
 
-function cardHTML(s) {
-  const expandable = !!(s.description && s.description.trim());
-  const expanded = state.expandedCards.has(s.id);
-  const marked = bookmarks.has(s.id);
-  let aiBadge = '';
-  if (state.aiActive && aiScores && aiScores.has(s.id) && aiMax > 0) {
-    const pct = Math.round((aiScores.get(s.id) / aiMax) * 100);
-    aiBadge = `<span class="inline-flex items-center gap-1 rounded-md bg-sage-600 px-1.5 py-0.5 text-xs font-semibold text-white">${icon('i-sparkles', 'text-xs')} ${pct}%</span>`;
-  }
-  const tags = (s.tags || []).map((t, i) => i === 0
-    ? `<span class="rounded-md bg-sage-100 px-2 py-0.5 text-xs font-semibold text-sage-700 dark:bg-sage-900 dark:text-sage-200">${esc(t)}</span>`
-    : `<span class="rounded-md bg-slate-200 px-2 py-0.5 text-xs font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-100">${esc(t)}</span>`
-  ).join('');
+function renderTabs() {
+  $('#dayTabs').innerHTML = DAYS.map((d, i) =>
+    `<button role="tab" class="tab" data-day="${i}" aria-selected="${i === state.day}" tabindex="${i === state.day ? 0 : -1}">${esc(d.name.slice(0, 3))} ${esc(shortDate(d.date).replace(/^\S+\s/, ''))}</button>`).join('');
+}
 
+function renderRail() {
+  const day = currentDay();
+  $('#rail').innerHTML = day.slots.map((sl, i) => {
+    const picks = sl.sessions.filter(s => bookmarks.has(s.id)).length;
+    const note = picks ? `${pluralize(picks, 'pick')} · ${sl.sessions.length} running` : pluralize(sl.sessions.length, 'session');
+    return `<button class="deck__slotbtn" data-slot="${i}" aria-current="${i === state.slot}">
+      <span class="u-time">${esc(sl.time)}</span>
+      <span class="u-meta u-meta-2xs u-block">${esc(note)}</span></button>`;
+  }).join('');
+}
+
+function cardHTML(s) {
+  const marked = bookmarks.has(s.id);
+  const expanded = state.expanded.has(s.id);
+  const hasDesc = !!(s.description && s.description.trim());
+  const primary = (s.tags || [])[0];
+  const rest = (s.tags || []).slice(1);
+  const meta = [
+    (s.speakers && s.speakers.length) ? s.speakers.join(', ') : '',
+    s.location || '',
+    fmtDuration(s.duration_min),
+    ...rest,
+  ].filter(Boolean).join(' · ');
+  let match = '', dim = '';
+  if (state.aiActive && aiScores) {
+    const fit = aiFits.has(s.id);
+    if (fit) { const pct = Math.round((aiScores.get(s.id) / aiMax) * 100); match = `<span class="tag tag-match">${icon('i-sparkles')} ${pct}% match</span>`; }
+    else dim = ' card-dim';
+  }
   return `
-  <article data-card="${s.id}" class="group rounded-xl border ${expanded ? 'border-sage-400 dark:border-sage-600' : 'border-slate-200 dark:border-slate-800'} bg-white shadow-sm dark:bg-slate-900">
-    <div class="flex items-start gap-3 p-3 ${expandable ? 'cursor-pointer' : ''}" data-toggle="${expandable ? s.id : ''}">
-      <!-- bookmark -->
-      <button data-bm="${s.id}" title="Bookmark this session"
-        class="mt-0.5 shrink-0 rounded-md p-1 text-lg ${marked ? 'text-sage-600 dark:text-sage-400' : 'text-slate-300 hover:text-slate-500 dark:text-slate-600 dark:hover:text-slate-400'}">
-        ${icon('i-bookmark', marked ? 'icon-fill' : '')}
-      </button>
-      <!-- time / duration -->
-      <div class="w-16 shrink-0 pt-0.5 text-right sm:w-20">
-        <div class="text-sm font-bold text-slate-900 dark:text-white">${esc(s.start)}</div>
-        <div class="mt-0.5 flex items-center justify-end gap-1 text-xs text-slate-400">
-          ${icon('i-clock', 'text-xs')} ${fmtDuration(s.duration_min)}
-        </div>
-      </div>
-      <!-- main -->
-      <div class="min-w-0 flex-1">
-        <h4 class="pr-6 font-semibold leading-snug text-slate-900 dark:text-white">${esc(s.title)}</h4>
-        ${(s.speakers && s.speakers.length) ? `
-        <div class="mt-1 flex items-center gap-1.5 text-sm text-slate-500 dark:text-slate-400">
-          ${icon('i-user', 'text-sm')} <span class="truncate">${esc(s.speakers.join(', '))}</span>
-        </div>` : ''}
-        <div class="mt-2 flex flex-wrap items-center gap-1.5">
-          ${aiBadge}${tags}
-          ${s.location ? `<span class="ml-auto inline-flex items-center gap-1 text-xs text-slate-400">${icon('i-pin','text-xs')} ${esc(s.location)}</span>` : ''}
-        </div>
-      </div>
-      ${expandable ? `<svg class="icon shrink-0 self-center text-base text-slate-400 transition-transform ${expanded ? 'rotate-180' : ''}"><use href="#i-chevron"/></svg>` : '<span class="w-4 shrink-0"></span>'}
+  <article class="card card-interactive u-stack u-stack-sm${marked ? ' card-marked' : ''}${dim}" data-card="${s.id}" aria-labelledby="t${s.id}">
+    <div class="u-cluster u-cluster-between u-cluster-nowrap u-cluster-start">
+      <span class="u-cluster u-cluster-xs">${primary ? `<span class="tag tag-accent">${esc(primary)}</span>` : ''}${match}</span>
+      <button class="u-mark u-mark-sm" data-bm="${s.id}" aria-pressed="${marked}" aria-label="${marked ? 'Remove bookmark' : 'Bookmark this session'}" title="${marked ? 'Bookmarked' : 'Bookmark this session'}">${marked ? '&#9733;' : '&#9734;'}</button>
     </div>
-    ${expandable ? `
-    <div class="grid-rows-anim" style="grid-template-rows:${expanded ? '1fr' : '0fr'}">
-      <div class="overflow-hidden">
-        <p class="border-t border-slate-100 px-3 py-3 pl-[7.25rem] text-sm leading-relaxed text-slate-600 dark:border-slate-800 dark:text-slate-400">${esc(s.description)}</p>
-      </div>
-    </div>` : ''}
+    <h3 id="t${s.id}" class="u-title">${esc(s.title)}</h3>
+    ${hasDesc ? `<p class="u-prose u-prose-muted u-clamp${expanded ? ' is-open' : ''}" data-desc="${s.id}">${esc(s.description)}</p>` : ''}
+    <p class="u-meta">${esc(meta)}</p>
   </article>`;
 }
 
-// ---------- Day filter chips ----------
-function buildDayFilter() {
-  const days = [...new Set(SESSIONS.map(s => s.day))]
-    .sort((a, b) => SESSIONS.find(s => s.day === a).date.localeCompare(SESSIONS.find(s => s.day === b).date));
-  const opts = ['all', ...days];
-  $('#dayFilter').innerHTML = opts.map(d => {
-    const active = state.day === d;
-    const label = d === 'all' ? 'All days' : d;
-    return `<button data-day="${esc(d)}"
-      class="rounded-full px-3 py-1 text-sm font-medium transition ${active
-        ? 'bg-sage-600 text-white'
-        : 'border border-slate-300 text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800'}">${esc(label)}</button>`;
-  }).join('');
+function renderPicks() {
+  const day = currentDay();
+  const picks = SESSIONS.filter(s => s.date === day.date && bookmarks.has(s.id)).sort((a, b) => timeToMin(a.start) - timeToMin(b.start));
+  $('#picks').innerHTML = picks.map(s => `
+    <div class="u-cluster u-cluster-nowrap u-cluster-start u-pad-y u-pad-sm">
+      <span class="u-time">${esc(s.start)}</span>
+      <span class="u-stack u-stack-xs u-grow">
+        <span class="u-strong">${esc(s.title)}</span>
+        <span class="u-meta u-meta-2xs">${esc([s.location, (s.tags||[])[0]].filter(Boolean).join(' · '))}</span>
+      </span>
+    </div>`).join('');
+  $('#picksEmpty').hidden = picks.length > 0;
 }
 
-// ---------- Tag filter chips (alphabetized) ----------
-function buildTagFilter() {
-  // "All" first, format tags pushed to the end, everything else alphabetical
+function renderTagFilter() {
   const END = new Set({{ .Params.endTags | jsonify | safeJS }});
-  const rank = t => t === 'All' ? 0 : END.has(t) ? 2 : 1;
-  const tags = [...new Set(SESSIONS.flatMap(s => s.tags || []))]
-    .sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
-  $('#tagFilter').innerHTML = tags.map(t => {
-    const active = state.tags.has(t);
-    return `<button data-tag="${esc(t)}"
-      class="rounded-md px-2 py-0.5 text-xs font-medium transition ${active
-        ? 'bg-sage-600 text-white'
-        : 'bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-slate-800 dark:text-slate-300 dark:hover:bg-slate-700'}">${esc(t)}</button>`;
-  }).join('');
-  $('#tagsClear').classList.toggle('hidden', state.tags.size === 0);
+  const rank = t => END.has(t) ? 1 : 0;
+  const tags = [...new Set(SESSIONS.flatMap(s => s.tags || []))].sort((a, b) => rank(a) - rank(b) || a.localeCompare(b));
+  $('#tagFilter').innerHTML = tags.map(t => `<button class="tag" data-tag="${esc(t)}" aria-pressed="${state.tags.has(t)}">${esc(t)}</button>`).join('');
+  $('#tagsClear').hidden = state.tags.size === 0;
 }
 
 function updateBmCount() {
   $('#bmCount').textContent = bookmarks.size;
-  const btn = $('#bmOnlyBtn');
-  btn.classList.toggle('bg-sage-600', state.bookmarkedOnly);
-  btn.classList.toggle('text-white', state.bookmarkedOnly);
-  btn.classList.toggle('border-sage-600', state.bookmarkedOnly);
-  const pdf = $('#pdfBtn');
-  if (pdf) pdf.disabled = bookmarks.size === 0;
+  $('#pdfBtn').disabled = bookmarks.size === 0;
 }
 
 function toast(msg) {
   const t = $('#toast');
-  t.textContent = msg;
-  t.classList.remove('opacity-0', 'translate-y-4');
-  clearTimeout(t._t);
-  t._t = setTimeout(() => t.classList.add('opacity-0', 'translate-y-4'), 2200);
+  t.textContent = msg; t.classList.add('is-visible');
+  clearTimeout(t._t); t._t = setTimeout(() => t.classList.remove('is-visible'), 2200);
 }
 
-// ---------- AI semantic filter (transformers.js, 100% in-browser) ----------
-// The library + ~25MB model load from a CDN on first use and are cached by the
-// browser; session embeddings are computed on-device and cached in localStorage.
-// Nothing large is stored in the repo.
-const AI = {
-  MODEL: 'Xenova/gte-small',               // 384-dim; strong small retrieval model
-  CDN: 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2',
-  extractor: null,      // loaded pipeline
-  sessionVecs: null,    // Float32Array[nSessions][384] flattened
-  dim: 384,
-};
+// ---------- Control placement ----------
+// Desktop: tailor form in the right rail (grid area), tag bar under the header (toggle).
+// Mobile: both live inside the action sheet; a compact strip under the slot header
+// summarises what's active. The SAME elements are moved, so markup stays single-sourced.
+function syncControls() {
+  const desktop = mqDesktop.matches;
+  const form = $('#aiForm'), tags = $('#tagsBar'), strip = $('#aiStrip');
+  if (desktop) {
+    if (form.parentElement !== $('#deck')) { $('#deck').insertBefore(form, $('#stage')); $('#deck').insertBefore(tags, $('#deck > .deck__rail')); }
+    form.hidden = false;
+    let open = false; try { open = localStorage.getItem(LS_TAGS_OPEN) === '1'; } catch (e) {}
+    tags.hidden = !open; $('#tagsBtn').setAttribute('aria-pressed', open);
+    strip.hidden = true;
+  } else {
+    if (form.parentElement !== $('#sheetTailor')) { $('#sheetTailor').appendChild(form); $('#sheetTags').appendChild(tags); }
+    form.hidden = false; tags.hidden = false;
+    const parts = [];
+    if (state.aiActive) parts.push(`Tailored to “${state.aiQuery}” · ${lastFitCount ? pluralize(lastFitCount, 'fit') + ' here' : 'none fit here'}`);
+    if (state.tags.size) parts.push('Tags: ' + [...state.tags].join(', '));
+    strip.hidden = parts.length === 0;
+    $('#aiStripText').textContent = parts.join(' · ');
+  }
+}
+mqDesktop.addEventListener('change', syncControls);
+$('#aiStripEdit').addEventListener('click', () => { setSheet(true); $('#aiInput').focus(); });
+$('#aiStripClear').addEventListener('click', () => { state.tags.clear(); if (state.aiActive) clearAi(); else render(); });
 
-function aiStatus(msg, show = true) {
-  const el = $('#aiStatus');
-  el.textContent = msg || '';
-  el.classList.toggle('hidden', !show || !msg);
+// ---------- Navigation ----------
+function step(d) {
+  let di = state.day, si = state.slot + d;
+  if (si < 0) { di = (di - 1 + DAYS.length) % DAYS.length; si = DAYS[di].slots.length - 1; }
+  else if (si >= DAYS[di].slots.length) { di = (di + 1) % DAYS.length; si = 0; }
+  state.day = di; state.slot = si; render();
+}
+function setSheet(open) {
+  state.sheetOpen = open;
+  $('#deck').classList.toggle('is-sheet-open', open);
+  const b = $('#sheetBtn'); b.setAttribute('aria-expanded', open); b.setAttribute('aria-label', open ? 'Close actions' : 'Open actions');
+}
+function setTagsBar(open, persist = true) {
+  $('#tagsBar').hidden = !open;
+  $('#tagsBtn').setAttribute('aria-pressed', open);
+  if (persist) try { localStorage.setItem(LS_TAGS_OPEN, open ? '1' : '0'); } catch (e) {}
 }
 
-// tiny stable hash of the corpus so cached embeddings invalidate on data change
-function hashText(str) {
-  let h = 2166136261;
-  for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); }
-  return (h >>> 0).toString(36);
-}
-function sessionText(s) {
-  return [s.title, (s.speakers || []).join(', '), (s.tags || []).join(', '), s.description || '']
-    .filter(Boolean).join('. ');
-}
-
+// ---------- AI tailor (transformers.js, 100% in-browser) ----------
+const AI = { MODEL: 'Xenova/gte-small', CDN: 'https://cdn.jsdelivr.net/npm/@xenova/transformers@2.17.2', extractor: null, sessionVecs: null, dim: 384 };
+let aiMax = 0;
+function aiStatus(msg, show = true) { const el = $('#aiStatus'); el.textContent = msg || ''; el.hidden = !show || !msg; }
+function hashText(str) { let h = 2166136261; for (let i = 0; i < str.length; i++) { h ^= str.charCodeAt(i); h = Math.imul(h, 16777619); } return (h >>> 0).toString(36); }
+function sessionText(s) { return [s.title, (s.speakers || []).join(', '), (s.tags || []).join(', '), s.description || ''].filter(Boolean).join('. '); }
 async function ensureExtractor() {
   if (AI.extractor) return AI.extractor;
   aiStatus('Loading the AI model (~33 MB, one-time — then cached)…');
   const { pipeline, env } = await import(AI.CDN);
-  env.allowLocalModels = false;                 // fetch from the HF CDN, not disk
-  AI.extractor = await pipeline('feature-extraction', AI.MODEL, {
-    quantized: true,
-    progress_callback: (p) => {
-      if (p.status === 'progress' && p.file && p.total)
-        aiStatus(`Downloading model — ${p.file.split('/').pop()} ${Math.round(p.progress)}%`);
-    },
-  });
+  env.allowLocalModels = false;
+  AI.extractor = await pipeline('feature-extraction', AI.MODEL, { quantized: true,
+    progress_callback: (p) => { if (p.status === 'progress' && p.file && p.total) aiStatus(`Downloading model — ${p.file.split('/').pop()} ${Math.round(p.progress)}%`); } });
   return AI.extractor;
 }
-
-async function embed(texts) {
-  const out = await AI.extractor(texts, { pooling: 'mean', normalize: true });
-  return out.data; // Float32Array, length texts.length * dim
-}
-
+async function embed(texts) { const out = await AI.extractor(texts, { pooling: 'mean', normalize: true }); return out.data; }
 async function ensureSessionVecs() {
   if (AI.sessionVecs) return AI.sessionVecs;
   const corpus = SESSIONS.map(sessionText);
   const cacheKey = LS_PREFIX + '.emb.' + hashText(AI.MODEL + '|' + corpus.join('␟'));
-  try {
-    const cached = localStorage.getItem(cacheKey);
-    if (cached) { AI.sessionVecs = new Float32Array(base64ToBytes(cached).buffer); return AI.sessionVecs; }
-  } catch (e) {}
+  try { const cached = localStorage.getItem(cacheKey); if (cached) { AI.sessionVecs = new Float32Array(base64ToBytes(cached).buffer); return AI.sessionVecs; } } catch (e) {}
   aiStatus(`Analyzing ${SESSIONS.length} sessions… (one-time)`);
-  const data = await embed(corpus);
-  AI.sessionVecs = new Float32Array(data);      // copy
+  AI.sessionVecs = new Float32Array(await embed(corpus));
   try { localStorage.setItem(cacheKey, bytesToBase64(new Uint8Array(AI.sessionVecs.buffer))); } catch (e) {}
   return AI.sessionVecs;
 }
-
 function bytesToBase64(bytes) { let b = ''; for (const x of bytes) b += String.fromCharCode(x); return btoa(b); }
 function base64ToBytes(b64) { const bin = atob(b64); const u = new Uint8Array(bin.length); for (let i = 0; i < bin.length; i++) u[i] = bin.charCodeAt(i); return u; }
-
 async function runAi(query) {
   try {
     $('#aiGo').disabled = true;
     await ensureExtractor();
     const vecs = await ensureSessionVecs();
     aiStatus('Finding your best matches…');
-    const q = await embed([query]);             // normalized query vector
-    const d = AI.dim;
+    const q = await embed([query]);
     aiScores = new Map();
-    for (let i = 0; i < SESSIONS.length; i++) {
-      let dot = 0;
-      for (let k = 0; k < d; k++) dot += q[k] * vecs[i * d + k];   // cosine (both normalized)
-      aiScores.set(SESSIONS[i].id, dot);
-    }
-    state.aiActive = true;
-    state.aiQuery = query;
-    aiStatus(`✨ Showing your ${state.aiTopK} best matches for “${query}”. Combine with the day / tag / Bookmarked filters, or Clear.`);
-    $('#aiClear').classList.remove('hidden');
-    $('#aiClear').classList.add('inline-flex');
+    for (let i = 0; i < SESSIONS.length; i++) { let dot = 0; for (let k = 0; k < AI.dim; k++) dot += q[k] * vecs[i * AI.dim + k]; aiScores.set(SESSIONS[i].id, dot); }
+    const ranked = [...aiScores.entries()].sort((a, b) => b[1] - a[1]);
+    aiMax = ranked.length ? ranked[0][1] : 0;
+    aiFits = new Set(ranked.slice(0, state.aiTopK).map(([id]) => id));
+    state.aiActive = true; state.aiQuery = query;
+    if (!mqDesktop.matches) setSheet(false);          // mobile: close the sheet, the strip takes over
+    $('#aiClear').hidden = false;
+    $('#aiGo').classList.replace('button-accent', 'button-secondary');
     render();
   } catch (err) {
     aiStatus('Could not load the AI model (needs internet on first use). ' + (err && err.message ? err.message : ''));
-  } finally {
-    $('#aiGo').disabled = false;
-  }
+  } finally { $('#aiGo').disabled = false; }
 }
-
 function clearAi() {
-  state.aiActive = false;
-  state.aiQuery = '';
-  aiScores = null;
-  $('#aiInput').value = '';
-  $('#aiClear').classList.add('hidden');
-  $('#aiClear').classList.remove('inline-flex');
-  aiStatus('', false);
+  state.aiActive = false; state.aiQuery = ''; aiScores = null; aiFits = null;
+  $('#aiInput').value = ''; $('#aiClear').hidden = true;
+  $('#aiGo').classList.replace('button-secondary', 'button-accent');
+  aiStatus('Runs in your browser. Ranks every slot against your description; nothing is hidden.');
   render();
 }
 
 // ---------- Events ----------
 document.addEventListener('click', (e) => {
-  const dayBtn = e.target.closest('[data-day]');
-  if (dayBtn) { state.day = dayBtn.dataset.day; buildDayFilter(); render(); return; }
-
+  const tab = e.target.closest('[data-day]');
+  if (tab) { state.day = +tab.dataset.day; state.slot = 0; render(); return; }
+  const rail = e.target.closest('[data-slot]');
+  if (rail) { state.slot = +rail.dataset.slot; render(); return; }
   const tagBtn = e.target.closest('[data-tag]');
-  if (tagBtn) {
-    const t = tagBtn.dataset.tag;
-    state.tags.has(t) ? state.tags.delete(t) : state.tags.add(t);
-    buildTagFilter(); render(); return;
-  }
-
+  if (tagBtn) { const t = tagBtn.dataset.tag; state.tags.has(t) ? state.tags.delete(t) : state.tags.add(t); render(); return; }
   const bm = e.target.closest('[data-bm]');
   if (bm) {
     e.stopPropagation();
     const id = +bm.dataset.bm;
     bookmarks.has(id) ? bookmarks.delete(id) : bookmarks.add(id);
-    saveLocal();                 // re-stamps to the current version → no longer stale
-    $('#staleWarn').classList.add('hidden');
-    render();
+    saveLocal(); $('#staleWarn').hidden = true; render(); return;
+  }
+  const card = e.target.closest('[data-card]');
+  if (card && !e.target.closest('a')) {
+    const id = +card.dataset.card;
+    if (card.querySelector('[data-desc]')) { state.expanded.has(id) ? state.expanded.delete(id) : state.expanded.add(id); card.querySelector('[data-desc]').classList.toggle('is-open'); }
     return;
   }
-
-  const blockBtn = e.target.closest('[data-block]');
-  if (blockBtn) {
-    const k = blockBtn.dataset.block;
-    state.collapsedBlocks.has(k) ? state.collapsedBlocks.delete(k) : state.collapsedBlocks.add(k);
-    render();
-    return;
-  }
-
-  const toggle = e.target.closest('[data-toggle]');
-  if (toggle && toggle.dataset.toggle !== '') {
-    const id = +toggle.dataset.toggle;
-    state.expandedCards.has(id) ? state.expandedCards.delete(id) : state.expandedCards.add(id);
-    render();
+  const sheetAct = e.target.closest('[data-sheet]');
+  if (sheetAct) {
+    setSheet(false);
+    const a = sheetAct.dataset.sheet;
+    if (a === 'share') $('#shareBtn').click();
+    else if (a === 'pdf') buildPdf();
     return;
   }
 });
-
-$('#staleDismiss').addEventListener('click', () => {
-  try { localStorage.setItem(LS_STALE_DISMISS, SCHEDULE_UPDATED_AT); } catch (e) {}
-  $('#staleWarn').classList.add('hidden');
-});
-
-$('#bmOnlyBtn').addEventListener('click', () => {
-  state.bookmarkedOnly = !state.bookmarkedOnly;
-  render();
-});
-
-$('#aiForm').addEventListener('submit', (e) => {
-  e.preventDefault();
-  const q = $('#aiInput').value.trim();
-  if (q) runAi(q);
-});
+$('#prevBtn').addEventListener('click', () => step(-1));
+$('#nextBtn').addEventListener('click', () => step(1));
+$('#sheetBtn').addEventListener('click', () => setSheet(!state.sheetOpen));
+$('#scrim').addEventListener('click', () => setSheet(false));
+$('#tagsBtn').addEventListener('click', () => setTagsBar($('#tagsBar').hidden));
+$('#tagsClear').addEventListener('click', () => { state.tags.clear(); render(); });
+$('#tailorFocusBtn').addEventListener('click', () => $('#aiInput').focus());
+$('#staleDismiss').addEventListener('click', () => { try { localStorage.setItem(LS_STALE_DISMISS, SCHEDULE_UPDATED_AT); } catch (e) {} $('#staleWarn').hidden = true; });
+$('#aiForm').addEventListener('submit', (e) => { e.preventDefault(); const q = $('#aiInput').value.trim(); if (q) runAi(q); });
 $('#aiClear').addEventListener('click', clearAi);
+document.addEventListener('keydown', (e) => {
+  if (e.target.closest('input, textarea')) return;
+  if (e.key === 'ArrowRight') step(1);
+  else if (e.key === 'ArrowLeft') step(-1);
+  else if (e.key === 'Escape' && state.sheetOpen) setSheet(false);
+});
+// day tabs: arrow keys move between tabs
+$('#dayTabs').addEventListener('keydown', (e) => {
+  if (e.key !== 'ArrowLeft' && e.key !== 'ArrowRight') return;
+  e.stopPropagation();
+  state.day = (state.day + (e.key === 'ArrowRight' ? 1 : -1) + DAYS.length) % DAYS.length; state.slot = 0; render();
+  $('#dayTabs [aria-selected="true"]').focus();
+});
 
-$('#tagsClear').addEventListener('click', () => { state.tags.clear(); buildTagFilter(); render(); });
-
-// Panel show/hide toggles (AI + Tags), remembered across visits
-const PANELS = { ai: { el: 'aiPanel', btn: 'toggleAI', ls: LS_PREFIX + '.showAI' },
-                 tags: { el: 'tagsPanel', btn: 'toggleTags', ls: LS_PREFIX + '.showTags' } };
-function applyPanel(name) {
-  const p = PANELS[name];
-  let show = true;
-  try { show = localStorage.getItem(p.ls) !== '0'; } catch (e) {}
-  $('#' + p.el).classList.toggle('hidden', !show);
-  const btn = $('#' + p.btn);
-  btn.classList.toggle('bg-sage-600', show);
-  btn.classList.toggle('text-white', show);
-  btn.classList.toggle('border-sage-600', show);
+function applyThemeIcons() {
+  const dark = document.documentElement.classList.contains('dark');
+  $('.theme-moon').hidden = dark; $('.theme-sun').hidden = !dark;
 }
-document.querySelectorAll('[data-panel]').forEach(btn => btn.addEventListener('click', () => {
-  const name = btn.dataset.panel, p = PANELS[name];
-  const showing = !$('#' + p.el).classList.contains('hidden');
-  try { localStorage.setItem(p.ls, showing ? '0' : '1'); } catch (e) {}
-  applyPanel(name);
-}));
-
 $('#themeBtn').addEventListener('click', () => {
   const dark = document.documentElement.classList.toggle('dark');
   try { localStorage.setItem(THEME_KEY, dark ? 'dark' : 'light'); } catch (e) {}
+  applyThemeIcons();
 });
 
 $('#shareBtn').addEventListener('click', async () => {
   const code = encodeBookmarks();
-  // stamp the link with the version the picks were made against, so recipients
-  // are warned if the schedule has changed since.
   const savedAt = (() => { try { return localStorage.getItem(LS_SAVED_AT); } catch (e) { return null; } })();
   const ver = savedAt || SCHEDULE_UPDATED_AT;
   const url = location.origin + location.pathname + (code ? '?b=' + code + (ver ? '&d=' + ver : '') : '');
-  try {
-    await navigator.clipboard.writeText(url);
-    toast(bookmarks.size ? `Link copied · ${bookmarks.size} bookmark${bookmarks.size === 1 ? '' : 's'}` : 'Link copied');
-  } catch (e) {
-    prompt('Copy your shareable link:', url);
-  }
+  try { await navigator.clipboard.writeText(url); toast(bookmarks.size ? `Link copied · ${pluralize(bookmarks.size, 'bookmark')}` : 'Link copied'); }
+  catch (e) { prompt('Copy your shareable link:', url); }
 });
 
 // ---------- PDF export (pdfmake, fully client-side) ----------
-// Set a name here (or in localStorage '<prefix>.name') to show "— Name" on the PDF.
+// Colors mirror the design tokens (pdfmake needs literal hex): pine-700, sepia-950, sepia-700, sepia-600, sepia-300, terra-600
 const ATTENDEE = (() => { try { return localStorage.getItem(LS_PREFIX + '.name') || ''; } catch (e) { return ''; } })();
-
-const PDF = {
-  navy: '#1f3f66', ink: '#243244', gray: '#5b6672', mute: '#8a94a0',
-  hair: '#e4e8ed', red: '#e0483d',
-};
-const PIN_SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">'
-  + '<path fill="' + PDF.red + '" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Z"/>'
-  + '<circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>';
-
-function longDate(iso) {
-  const [y, m, d] = iso.split('-').map(Number);
-  return new Date(y, m - 1, d).toLocaleDateString(undefined,
-    { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' });
-}
-function hairline(w) {
-  return { canvas: [{ type: 'line', x1: 0, y1: 0, x2: w, y2: 0, lineWidth: 1, lineColor: PDF.hair }] };
-}
-
+const PDF = { navy: '#254739', ink: '#2a2520', gray: '#7d7060', mute: '#a3937c', hair: '#e9dfcf', red: '#b85c38' };
+const PIN_SVG = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24"><path fill="' + PDF.red + '" d="M12 2a7 7 0 0 0-7 7c0 5.2 7 13 7 13s7-7.8 7-13a7 7 0 0 0-7-7Z"/><circle cx="12" cy="9" r="2.5" fill="#fff"/></svg>';
+function longDate(iso) { const [y, m, d] = iso.split('-').map(Number); return new Date(y, m - 1, d).toLocaleDateString(undefined, { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' }); }
+function hairline(w) { return { canvas: [{ type: 'line', x1: 0, y1: 0, x2: w, y2: 0, lineWidth: 1, lineColor: PDF.hair }] }; }
 function buildPdf() {
+  if (typeof pdfMake === 'undefined') { toast('PDF library still loading — try again in a moment'); return; }
   const picks = SESSIONS.filter(s => bookmarks.has(s.id));
   if (picks.length === 0) { toast('Bookmark some sessions first'); return; }
-
-  // group by day (date order) -> time (chronological)
   const byDay = new Map();
   for (const s of picks) { if (!byDay.has(s.day)) byDay.set(s.day, []); byDay.get(s.day).push(s); }
   const days = [...byDay.keys()].sort((a, b) => byDay.get(a)[0].date.localeCompare(byDay.get(b)[0].date));
-
-  const CW = 515; // content width for A4 at 40pt margins
-  const body = [];
-
-  // ---- Masthead ----
-  body.push({
-    columns: [
-      {
-        width: '*',
-        stack: [
-          { text: {{ .Params.conference | jsonify | safeJS }}, color: PDF.navy, bold: true, fontSize: 26 },
-          { text: 'My Conference Schedule' + (ATTENDEE ? ' — ' + ATTENDEE : ''),
-            color: PDF.gray, fontSize: 12, margin: [0, 3, 0, 0] },
-        ],
-      },
-      {
-        width: 'auto',
-        stack: [
-          { text: picks.length + ' session' + (picks.length === 1 ? '' : 's') + ' selected', color: PDF.gray, fontSize: 11, alignment: 'right' },
-          { text: {{ .Params.tzLong | jsonify | safeJS }}, color: PDF.mute, fontSize: 11, alignment: 'right', margin: [0, 3, 0, 0] },
-        ],
-      },
-    ],
-  });
+  const CW = 515, body = [];
+  body.push({ columns: [
+    { width: '*', stack: [ { text: CONFERENCE, color: PDF.navy, bold: true, fontSize: 26 }, { text: 'My Conference Schedule' + (ATTENDEE ? ' — ' + ATTENDEE : ''), color: PDF.gray, fontSize: 12, margin: [0, 3, 0, 0] } ] },
+    { width: 'auto', stack: [ { text: pluralize(picks.length, 'session') + ' selected', color: PDF.gray, fontSize: 11, alignment: 'right' }, { text: TZ_LONG, color: PDF.mute, fontSize: 11, alignment: 'right', margin: [0, 3, 0, 0] } ] },
+  ] });
   body.push({ canvas: [{ type: 'line', x1: 0, y1: 0, x2: CW, y2: 0, lineWidth: 2.5, lineColor: PDF.navy }], margin: [0, 10, 0, 0] });
-
-  // ---- Days ----
   for (const day of days) {
     const list = byDay.get(day).sort((a, b) => timeToMin(a.start) - timeToMin(b.start));
-    body.push({
-      columns: [
-        { width: '*', text: [
-            { text: day, color: PDF.navy, bold: true, fontSize: 17 },
-            { text: '   ' + longDate(list[0].date), color: PDF.mute, fontSize: 11 },
-          ] },
-        { width: 'auto', text: list.length + ' session' + (list.length === 1 ? '' : 's'),
-          color: PDF.mute, fontSize: 11, alignment: 'right', margin: [0, 6, 0, 0] },
-      ],
-      margin: [0, 22, 0, 0],
-    });
+    body.push({ columns: [
+      { width: '*', text: [ { text: day, color: PDF.navy, bold: true, fontSize: 17 }, { text: '   ' + longDate(list[0].date), color: PDF.mute, fontSize: 11 } ] },
+      { width: 'auto', text: pluralize(list.length, 'session'), color: PDF.mute, fontSize: 11, alignment: 'right', margin: [0, 6, 0, 0] } ], margin: [0, 22, 0, 0] });
     body.push({ ...hairline(CW), margin: [0, 6, 0, 0] });
-
     list.forEach((s, i) => {
       const tagLine = (s.tags || []).join('   ·   ');
-      body.push({
-        columns: [
-          { width: 84, stack: [
-              { text: s.start + ' ' + {{ .Params.tzLabel | jsonify | safeJS }}, bold: true, color: PDF.navy, fontSize: 10.5 },
-              { text: fmtDuration(s.duration_min).replace('m', ' min').replace('h', ' hr'), color: PDF.mute, fontSize: 9.5, margin: [0, 2, 0, 0] },
-            ] },
-          { width: '*', stack: [
-              { text: s.title, bold: true, color: PDF.navy, fontSize: 12.5 },
-              (s.speakers && s.speakers.length)
-                ? { text: s.speakers.join(', '), color: PDF.gray, fontSize: 10.5, margin: [0, 3, 0, 0] } : null,
-              { columns: [
-                  { svg: PIN_SVG, width: 8, margin: [0, 1.5, 0, 0] },
-                  { text: [
-                      { text: '  ' + (s.location || ''), color: PDF.mute },
-                      tagLine ? { text: '      ' + tagLine, color: PDF.mute } : null,
-                    ].filter(Boolean), fontSize: 9.5 },
-                ], columnGap: 0, margin: [0, 5, 0, 0] },
-            ].filter(Boolean) },
-        ],
-        columnGap: 8,
-        margin: [0, 14, 0, 0],
-      });
+      body.push({ columns: [
+        { width: 84, stack: [ { text: s.start + ' ' + TZ_LABEL, bold: true, color: PDF.navy, fontSize: 10.5 }, { text: fmtDuration(s.duration_min), color: PDF.mute, fontSize: 9.5, margin: [0, 2, 0, 0] } ] },
+        { width: '*', stack: [
+          { text: s.title, bold: true, color: PDF.navy, fontSize: 12.5 },
+          (s.speakers && s.speakers.length) ? { text: s.speakers.join(', '), color: PDF.gray, fontSize: 10.5, margin: [0, 3, 0, 0] } : null,
+          { columns: [ { svg: PIN_SVG, width: 8, margin: [0, 1.5, 0, 0] }, { text: [ { text: '  ' + (s.location || ''), color: PDF.mute }, tagLine ? { text: '      ' + tagLine, color: PDF.mute } : null ].filter(Boolean), fontSize: 9.5 } ], columnGap: 0, margin: [0, 5, 0, 0] },
+        ].filter(Boolean) } ], columnGap: 8, margin: [0, 14, 0, 0] });
       if (i < list.length - 1) body.push({ ...hairline(CW), margin: [0, 12, 0, 0] });
     });
   }
-
   const now = new Date().toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' });
-  const doc = {
-    pageSize: 'A4',
-    pageMargins: [40, 44, 40, 54],
-    content: body,
-    footer: () => ({
-      columns: [{ text: 'Generated from the ' + {{ .Params.conference | jsonify | safeJS }} + ' schedule · ' + now, alignment: 'center', color: PDF.mute, fontSize: 9 }],
-      margin: [40, 16, 40, 0],
-    }),
-    defaultStyle: { font: 'Roboto', lineHeight: 1.15 },
-  };
-  pdfMake.createPdf(doc).download({{ .Params.pdfFilename | jsonify | safeJS }});
+  pdfMake.createPdf({ pageSize: 'A4', pageMargins: [40, 44, 40, 54], content: body,
+    footer: () => ({ columns: [{ text: 'Generated from the ' + CONFERENCE + ' schedule · ' + now, alignment: 'center', color: PDF.mute, fontSize: 9 }], margin: [40, 16, 40, 0] }),
+    defaultStyle: { font: 'Roboto', lineHeight: 1.15 } }).download(PDF_FILENAME);
 }
-
 $('#pdfBtn').addEventListener('click', buildPdf);
 
 // ---------- Init ----------
-(function initTheme() {
-  try {
-    const saved = localStorage.getItem(THEME_KEY);
-    if (saved === 'light') document.documentElement.classList.remove('dark');
-    else document.documentElement.classList.add('dark'); // default dark
-  } catch (e) {}
-})();
-
-fetch({{ (.OutputFormats.Get "sessions").RelPermalink | jsonify | safeJS }})
+applyThemeIcons();
+syncControls();
+fetch(SESSIONS_URL)
   .then(r => { if (!r.ok) throw new Error(r.status); return r.json(); })
   .then(data => {
-    // sessions.json is { updated_at, count, sessions }; tolerate a bare array too
     SESSIONS = Array.isArray(data) ? data : data.sessions;
     SCHEDULE_UPDATED_AT = Array.isArray(data) ? null : (data.updated_at || null);
-
+    buildModel();
     // bookmarks: URL param wins as the shared source, then merge local
     const params = new URLSearchParams(location.search);
-    const code = params.get('b');
-    const urlVersion = params.get('d');   // schedule version the link was made for
+    const code = params.get('b'), urlVersion = params.get('d');
     if (code) decodeBookmarks(code);
     loadLocal();
-    // Persist a shared link into this browser, stamped with ITS version (not the
-    // current one) so staleness is detected if the schedule has since changed.
     if (code) saveLocal(urlVersion || SCHEDULE_UPDATED_AT);
-
+    // restore last position (or open on the first slot of the first day)
+    try { const p = (localStorage.getItem(LS_POS) || '').split(',').map(Number); if (p.length === 2 && DAYS[p[0]]) { state.day = p[0]; state.slot = p[1] || 0; } } catch (e) {}
+    try { setTagsBar(localStorage.getItem(LS_TAGS_OPEN) === '1', false); } catch (e) {}
     $('#status').remove();
-    if (SCHEDULE_UPDATED_AT) $('#updatedAt').textContent = 'Schedule last updated ' + SCHEDULE_UPDATED_AT;
-    buildDayFilter();
-    buildTagFilter();
-    applyPanel('ai');
-    applyPanel('tags');
+    if (SCHEDULE_UPDATED_AT) { $('#updatedAt').textContent = 'Schedule last updated ' + SCHEDULE_UPDATED_AT + '.'; $('#updatedAtAside').textContent = 'Schedule last updated ' + SCHEDULE_UPDATED_AT + '.'; }
     render();
     maybeWarnStale();
   })
   .catch(err => {
-    $('#status').innerHTML =
-      `<p class="font-medium text-slate-700 dark:text-slate-300">Couldn't load <span class="font-mono">sessions.json</span>.</p>
-       <p class="mt-1 text-sm">Serve this folder over HTTP (e.g. <span class="font-mono">python3 -m http.server</span>) — opening the file directly blocks the fetch.</p>`;
+    $('#status').innerHTML = `Couldn't load <span class="u-meta">sessions.json</span> (${esc(err.message)}). Serve this site over HTTP.`;
   });
 </script>
 </body>

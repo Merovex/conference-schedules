@@ -1,0 +1,12 @@
+/* .tabs — role=tablist of buttons; underline variant. */
+@layer components {
+  .tabs { display: flex; gap: var(--pad-lg); overflow-x: auto; scrollbar-width: none; font-family: var(--font-ui); }
+  .tabs::-webkit-scrollbar { display: none; }
+  .tab {
+    flex: none; border: 0; background: transparent; padding-block: 0 var(--pad-sm); padding-inline: 0;
+    font-size: var(--text-sm); font-weight: var(--weight-regular); color: var(--text-muted);
+    border-radius: 0; box-shadow: none; transition: var(--transition-control);
+  }
+  .tab:hover { color: var(--text-heading); }
+  .tab[aria-selected="true"] { color: var(--text-heading); font-weight: var(--weight-semibold); box-shadow: inset 0 calc(-1 * var(--border-rule)) 0 var(--rule-accent); }
+}

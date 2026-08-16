@@ -1,0 +1,8 @@
+{{- /* Build one stylesheet: layers → Open Props → tokens → fonts → base → components → utilities.
+       Order matters for the unlayered files; layered files may load in any order but we keep them grouped. */ -}}
+{{- $ordered := slice "css/00-layers.css" "css/01-open-props.css" "css/02-tokens.css" "css/03-fonts.css" "css/04-base.css" -}}
+{{- $all := slice -}}
+{{- range $ordered }}{{ $all = $all | append (resources.Get .) }}{{ end -}}
+{{- $all = $all | append (resources.Match "css/10-c-*.css") | append (resources.Match "css/20-u-*.css") -}}
+{{- $css := $all | resources.Concat "css/site.css" | minify | fingerprint -}}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" crossorigin="anonymous">

@@ -1,49 +1,26 @@
 <!DOCTYPE html>
-<html lang="en" class="dark">
+<html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link rel="icon" href="/favicon.svg" type="image/svg+xml">
-<link rel="icon" href="/favicon.ico" sizes="32x32">
-<link rel="apple-touch-icon" href="/apple-touch-icon.png">
 <title>{{ site.Params.siteName }}</title>
-<script>
-  // Apply the site-wide theme before first paint (shared key across all pages)
-  try { if (localStorage.getItem('cons.theme') === 'light') document.documentElement.classList.remove('dark'); } catch (e) {}
-</script>
-<script src="https://cdn.tailwindcss.com"></script>
-<script>
-  tailwind.config = { darkMode: 'class', theme: { extend: { colors: { sage: {
-    50:'oklch(0.972 0.006 129)',100:'oklch(0.940 0.011 129)',200:'oklch(0.885 0.017 129)',300:'oklch(0.810 0.023 129)',
-    400:'oklch(0.740 0.028 129)',500:'oklch(0.665 0.029 129)',600:'oklch(0.580 0.028 129)',700:'oklch(0.490 0.024 129)',
-    800:'oklch(0.410 0.020 129)',900:'oklch(0.330 0.015 129)' } } } } }
-</script>
-<style>.icon{width:1em;height:1em;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}</style>
+{{ partial "head-meta.html" . }}
 </head>
-<body class="bg-slate-100 text-slate-800 dark:bg-slate-950 dark:text-slate-200 antialiased">
-<svg width="0" height="0" style="position:absolute" aria-hidden="true">
-  <symbol id="i-calendar" viewBox="0 0 24 24"><path d="M8 2v4"/><path d="M16 2v4"/><rect width="18" height="18" x="3" y="4" rx="2"/><path d="M3 10h18"/></symbol>
-  <symbol id="i-pin" viewBox="0 0 24 24"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></symbol>
-  <symbol id="i-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2"/><path d="M12 20v2"/><path d="m4.93 4.93 1.41 1.41"/><path d="m17.66 17.66 1.41 1.41"/><path d="M2 12h2"/><path d="M20 12h2"/><path d="m6.34 17.66-1.41 1.41"/><path d="m19.07 4.93-1.41 1.41"/></symbol>
-  <symbol id="i-moon" viewBox="0 0 24 24"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></symbol>
-  <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></symbol>
-</svg>
+<body>
+<a href="#cons" class="u-skip button button-accent">Skip to conferences</a>
+{{ partial "icons.html" . }}
 
-<header class="sticky top-0 z-20 border-b border-slate-200 bg-white/80 backdrop-blur dark:border-slate-800 dark:bg-slate-950/80">
-  <div class="mx-auto flex max-w-4xl items-center justify-between gap-3 px-4 py-3">
-    <div>
-      <h1 class="text-lg font-bold text-slate-900 dark:text-white">{{ site.Params.siteName }}</h1>
-      <p class="text-xs text-slate-500 dark:text-slate-400">{{ site.Params.tagline }}</p>
+<header class="u-surface-raised u-hairline-bottom">
+  <div class="u-container u-cluster u-cluster-between u-cluster-nowrap u-pad-y">
+    <div class="u-stack u-stack-xs">
+      <h1 class="u-title">{{ site.Params.siteName }}</h1>
+      <p class="u-eyebrow">{{ site.Params.tagline }}</p>
     </div>
-    <button id="themeBtn" title="Toggle light / dark"
-      class="inline-flex h-9 w-9 items-center justify-center rounded-lg border border-slate-300 text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-200 dark:hover:bg-slate-800">
-      <svg class="icon text-base dark:hidden"><use href="#i-moon"/></svg>
-      <svg class="icon text-base hidden dark:block"><use href="#i-sun"/></svg>
+    <button id="themeBtn" class="button button-sm button-ghost button-icon" title="Toggle light / dark" aria-label="Toggle light / dark">
+      <svg class="u-icon theme-moon"><use href="#i-moon"/></svg><svg class="u-icon theme-sun" hidden><use href="#i-sun"/></svg>
     </button>
   </div>
 </header>
 
-<main class="mx-auto max-w-4xl space-y-3 px-4 py-6">
+<main id="cons" class="u-container u-stack u-pad-y u-pad-lg" tabindex="-1">
 {{- $cons := where site.Sections "Type" "con" -}}
 {{- $cons = sort $cons "Params.startDate" "desc" -}}
 {{- range $cons }}
@@ -51,34 +28,37 @@
   {{- $n := 0 }}{{ with $d }}{{ $n = len .sessions }}{{ end }}
   {{- $start := time.AsTime (.Params.startDate | default "2000-01-01") }}
   {{- $end := time.AsTime (.Params.endDate | default .Params.startDate | default "2000-01-01") }}
-  <a href="{{ .RelPermalink }}" class="group flex items-center gap-4 rounded-xl border border-slate-200 bg-white p-4 shadow-sm transition hover:border-sage-400 dark:border-slate-800 dark:bg-slate-900 dark:hover:border-sage-600">
-    <svg class="icon shrink-0 text-3xl text-slate-400"><use href="#i-calendar"/></svg>
-    <div class="min-w-0 flex-1">
-      <h2 class="font-semibold leading-snug text-slate-900 dark:text-white">{{ .Params.conference | default .Title }}</h2>
-      <p class="mt-0.5 text-sm text-slate-500 dark:text-slate-400">
+  <a href="{{ .RelPermalink }}" class="card card-interactive u-cluster u-cluster-nowrap u-cluster-lg">
+    <svg class="u-icon u-icon-xl u-faint"><use href="#i-calendar"/></svg>
+    <div class="u-stack u-stack-xs u-grow">
+      <h2 class="u-title u-title-sm">{{ .Params.conference | default .Title }}</h2>
+      <p class="u-prose u-prose-muted">
         {{ if .Params.startDate }}{{ $start.Format "January 2" }}{{ if ne $start $end }} – {{ if eq $start.Month $end.Month }}{{ $end.Format "2" }}{{ else }}{{ $end.Format "January 2" }}{{ end }}{{ end }}, {{ $end.Format "2006" }}{{ end }}
-        {{ with .Params.city }} · <span class="inline-flex items-center gap-1"><svg class="icon text-xs"><use href="#i-pin"/></svg>{{ . }}</span>{{ end }}
+        {{ with .Params.city }} · {{ . }}{{ end }}
       </p>
-      <div class="mt-2 flex flex-wrap items-center gap-1.5 text-xs">
-        <span class="rounded-md bg-sage-100 px-2 py-0.5 font-semibold text-sage-700 dark:bg-sage-900 dark:text-sage-200">{{ $n }} session{{ if ne $n 1 }}s{{ end }}</span>
-        {{ with .Params.tzLabel }}<span class="rounded-md bg-slate-200 px-2 py-0.5 font-medium text-slate-700 dark:bg-slate-800 dark:text-slate-100">{{ . }}</span>{{ end }}
-        {{ with $d }}{{ with .updated_at }}<span class="text-slate-400">updated {{ . }}</span>{{ end }}{{ end }}
+      <div class="u-cluster u-cluster-xs">
+        <span class="tag tag-accent">{{ $n }} session{{ if ne $n 1 }}s{{ end }}</span>
+        {{ with .Params.tzLabel }}<span class="tag">{{ . }}</span>{{ end }}
+        {{ with $d }}{{ with .updated_at }}<span class="u-meta">updated {{ . }}</span>{{ end }}{{ end }}
       </div>
     </div>
-    <svg class="icon shrink-0 text-base text-slate-400 transition group-hover:translate-x-0.5 group-hover:text-sage-600"><use href="#i-arrow"/></svg>
+    <span class="u-faint" aria-hidden="true">&rarr;</span>
   </a>
 {{- end }}
-  {{ partial "sponsor-card.html" . }}
+  {{ partial "sponsor-card.html" (dict "page" . "class" "") }}
+  <p class="u-prose u-prose-xs u-prose-muted u-center">Each schedule keeps its own bookmarks in this browser and encodes them in its Share link.</p>
 </main>
 
-<footer class="mx-auto max-w-4xl px-4 pb-10 text-center text-xs text-slate-400">
-  Each schedule keeps its own bookmarks in this browser and encodes them in its Share link.
-</footer>
+{{ partial "sponsor-script.html" . }}
 <script>
   (function () {
+    const moon = document.querySelector('.theme-moon'), sun = document.querySelector('.theme-sun');
+    const apply = () => { const d = document.documentElement.classList.contains('dark'); moon.hidden = d; sun.hidden = !d; };
+    apply();
     document.getElementById('themeBtn').addEventListener('click', () => {
       const dark = document.documentElement.classList.toggle('dark');
       try { localStorage.setItem('cons.theme', dark ? 'dark' : 'light'); } catch (e) {}
+      apply();
     });
   })();
 </script>

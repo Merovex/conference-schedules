@@ -1,0 +1,91 @@
+/* .deck — the slot-deck app shell (one time slot fills the screen; step through
+   slots). Earned BEM: named, structured, rendered from exactly one layout
+   (layouts/con/section.html). Everything inside composes utilities; this file
+   only owns the grid and the parts that have no utility equivalent.
+
+   Mobile (default): single column, stepper footer, action sheet.
+   ≥ --breakpoint-lg: three columns — slot rail | stage | aside; no stepper.
+   Responsive show/hide of parts is done in MARKUP with .u-lg-only / .u-below-lg-only
+   (utilities layer beats this layer, so display:none here would lose to u-stack). */
+@layer components {
+  .deck {
+    display: grid;
+    height: 100dvh;
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: auto auto auto auto minmax(0, 1fr) auto;
+    grid-template-areas:
+      "top"
+      "tags"
+      "slot"
+      "tailor"
+      "stage"
+      "stepper";
+    max-width: var(--container-xl);
+    margin-inline: auto;
+    background: var(--surface-page);
+    position: relative;
+    overflow: hidden;
+  }
+  .deck__top     { grid-area: top; }
+  .deck__tags    { grid-area: tags; }
+  .deck__slot    { grid-area: slot; }
+  .deck__tailor  { grid-area: tailor; }
+  .deck__stage   { grid-area: stage; }
+  .deck__stepper { grid-area: stepper; }
+
+  /* stage: cards */
+  .deck__cards { display: grid; grid-template-columns: 1fr; gap: var(--pad-sm); }
+
+  /* slot rail entries (desktop) */
+  .deck__slotbtn {
+    display: block; width: 100%; text-align: start; border: 0; background: transparent;
+    padding-block: var(--pad-sm); padding-inline: var(--pad-lg);
+    color: var(--text-body); border-radius: 0;
+    transition: var(--transition-control);
+  }
+  .deck__slotbtn:hover { background: var(--action-quiet-hover); }
+  .deck__slotbtn[aria-current="true"] { background: var(--surface-sunken); box-shadow: inset var(--border-rule) 0 0 var(--rule-accent); }
+
+  /* stepper (mobile) */
+  .deck__stepper { background: var(--surface-raised); border-top: var(--border-hair) solid var(--border-subtle); }
+  .deck__mark { width: var(--size-9); height: var(--size-9); font-size: var(--text-2xl); box-shadow: var(--shadow-md); }
+  .deck__mark[aria-expanded="true"] { --_bg: var(--action-accent); --_bg-hover: var(--action-accent-hover); }
+
+  /* action sheet + scrim (mobile) */
+  .deck__scrim {
+    position: absolute; inset: 0; z-index: var(--z-sheet);
+    background: var(--surface-scrim); backdrop-filter: blur(var(--blur-scrim));
+    opacity: 0; pointer-events: none;
+    transition: opacity var(--dur-base) var(--ease-standard);
+  }
+  .deck__sheet {
+    position: absolute; inset-inline: 0; bottom: 0; z-index: calc(var(--z-sheet) + 1);
+    background: var(--surface-page); border-top: var(--border-rule) solid var(--rule-accent);
+    border-start-start-radius: var(--radius-lg); border-start-end-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    max-height: 90%; overflow-y: auto; overscroll-behavior: contain;
+    transform: translateY(110%);
+    transition: transform var(--dur-slow) var(--ease-standard);
+  }
+  .deck.is-sheet-open .deck__scrim { opacity: 1; pointer-events: auto; }
+  .deck.is-sheet-open .deck__sheet { transform: none; }
+  .deck__grip { width: var(--size-7); height: var(--pad-xs); border-radius: var(--radius-pill); background: var(--border-default); margin-inline: auto; }
+  .deck__sheetgrid { display: grid; grid-template-columns: 1fr 1fr; gap: var(--pad-sm); }
+
+  @media (min-width: 64em) { /* --breakpoint-lg */
+    .deck {
+      grid-template-columns: var(--rail-w) minmax(0, 1fr) var(--aside-w);
+      grid-template-rows: auto auto auto minmax(0, 1fr);
+      grid-template-areas:
+        "top   top    top"
+        "tags  tags   tags"
+        "rail  slot   tailor"
+        "rail  stage  aside";
+      border-inline: var(--border-hair) solid var(--border-subtle);
+    }
+    .deck__rail  { grid-area: rail;  border-inline-end: var(--border-hair) solid var(--border-subtle); }
+    .deck__aside { grid-area: aside; border-inline-start: var(--border-hair) solid var(--border-subtle); background: var(--surface-raised); }
+    .deck__tailor { border-inline-start: var(--border-hair) solid var(--border-subtle); background: var(--surface-raised); }
+    .deck__cards { grid-template-columns: repeat(auto-fill, minmax(var(--size-13), 1fr)); gap: var(--pad); }
+  }
+}

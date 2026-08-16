@@ -1,0 +1,3 @@
+@layer utilities {
+  .u-scroll { overflow-y: auto; min-height: 0; overscroll-behavior: contain; scrollbar-width: thin; scrollbar-color: var(--border-default) transparent; }
+}

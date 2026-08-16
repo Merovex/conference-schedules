@@ -1,0 +1,5 @@
+@layer utilities {
+  /* responsive visibility — house breakpoints only */
+  @media (max-width: 63.99em) { /* below --breakpoint-lg */ .u-lg-only { display: none !important; } }
+  @media (min-width: 64em)    { /* --breakpoint-lg */       .u-below-lg-only { display: none !important; } }
+}

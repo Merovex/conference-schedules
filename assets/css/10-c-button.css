@@ -1,0 +1,35 @@
+/* .button — one-liner component (no elements). Variants set custom props. */
+@layer components {
+  .button {
+    --_bg: var(--action-primary); --_bg-hover: var(--action-primary-hover); --_bg-active: var(--action-primary-active);
+    --_fg: var(--text-on-accent); --_bd: transparent; --_px: var(--pad);
+    display: inline-flex; align-items: center; justify-content: center; gap: var(--pad-sm);
+    min-height: var(--tap);
+    padding-block: var(--pad-sm); padding-inline: var(--_px);
+    border: var(--border-hair) solid var(--_bd); border-radius: var(--radius-pill);
+    background: var(--_bg); color: var(--_fg);
+    font-family: var(--font-ui); font-size: var(--text-sm); font-weight: var(--weight-semibold);
+    line-height: var(--leading-snug); letter-spacing: var(--tracking-wide);
+    text-decoration: none; white-space: nowrap;
+    transition: var(--transition-control), transform var(--dur-instant) var(--ease-standard);
+  }
+  .button:hover { background: var(--_bg-hover); color: var(--_fg); text-decoration: none; }
+  .button:active { background: var(--_bg-active); transform: translateY(1px); }
+  .button:disabled { opacity: .55; transform: none; }
+  .button[aria-pressed="true"] { --_bg: var(--action-primary); --_fg: var(--text-on-accent); --_bd: transparent; }
+
+  .button-accent    { --_bg: var(--action-accent); --_bg-hover: var(--action-accent-hover); --_bg-active: var(--action-accent-active); }
+  .button-secondary { --_bg: transparent; --_bg-hover: var(--action-quiet-hover); --_bg-active: var(--action-quiet-active); --_fg: var(--text-heading); --_bd: var(--border-strong); }
+  .button-ghost     { --_bg: transparent; --_bg-hover: var(--action-quiet-hover); --_bg-active: var(--action-quiet-active); --_fg: var(--text-heading); }
+  .button-sm        { --_px: var(--pad-sm); min-height: var(--size-7); padding-block: var(--pad-xs); font-size: var(--text-xs); }
+  .button-flush     { margin-inline-start: calc(-1 * var(--_px)); }   /* align label with surrounding text */
+  .button-icon      { --_px: var(--pad-sm); aspect-ratio: 1; }
+  .button-round     { border-radius: var(--radius-pill); aspect-ratio: 1; padding: 0; width: var(--tap); }
+  .button-full      { display: flex; width: 100%; }
+
+  /* Touch: icon-only buttons stay finger-sized below the desktop breakpoint */
+  @media (max-width: 63.99em) { /* below --breakpoint-lg */
+    .button-sm   { min-height: var(--tap-sm); }
+    .button-icon { min-height: var(--tap); min-width: var(--tap); }
+  }
+}

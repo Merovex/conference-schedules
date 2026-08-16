@@ -1,0 +1,6 @@
+@layer utilities {
+  /* microcaps label: mono, uppercase, tracked */
+  .u-eyebrow { font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: var(--weight-medium); letter-spacing: var(--tracking-eyebrow); text-transform: uppercase; color: var(--text-muted); }
+  .u-eyebrow-accent { color: var(--text-link); }
+  .u-eyebrow-on-inverse { color: var(--text-on-inverse-muted); }
+}

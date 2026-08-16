@@ -1,0 +1,9 @@
+@layer utilities {
+  .u-surface-raised  { background: var(--surface-raised); }
+  .u-surface-sunken  { background: var(--surface-sunken); }
+  .u-surface-page    { background: var(--surface-page); }
+  .u-surface-accent  { background: var(--surface-accent); }
+  .u-surface-marginalia { background: var(--surface-marginalia); }
+  .u-surface-inverse { background: var(--surface-inverse); color: var(--text-on-inverse); }
+  .u-surface-inverse :is(h1,h2,h3,h4) { color: inherit; }
+}

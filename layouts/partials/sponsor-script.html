@@ -1,0 +1,12 @@
+<script>
+  // Reveal one sponsor card per .sponsor container: key → category → any.
+  document.querySelectorAll('.sponsor').forEach(box => {
+    const cards = [...box.querySelectorAll('[data-sponsor]')];
+    if (!cards.length) return;
+    const pin = box.dataset.pin;
+    let pool = cards.filter(c => c.dataset.sponsor === pin);
+    if (!pool.length) pool = cards.filter(c => c.dataset.category === pin);
+    if (!pool.length) pool = cards;
+    pool[Math.floor(Math.random() * pool.length)].hidden = false;
+  });
+</script>

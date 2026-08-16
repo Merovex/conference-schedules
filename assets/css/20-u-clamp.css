@@ -1,0 +1,5 @@
+@layer utilities {
+  /* collapse long text to N lines; toggle .is-open to release */
+  .u-clamp { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: var(--u-clamp-lines, 3); overflow: hidden; }
+  .u-clamp.is-open { display: block; -webkit-line-clamp: unset; }
+}

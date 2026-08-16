@@ -1,0 +1,6 @@
+@layer utilities {
+  .u-rule-top { border-top: var(--border-rule) solid var(--rule-accent); padding-block-start: var(--pad); }
+  .u-hairline-top { border-top: var(--border-hair) solid var(--border-subtle); }
+  .u-hairline-bottom { border-bottom: var(--border-hair) solid var(--border-subtle); }
+  .u-hairline-y > * + * { border-top: var(--border-hair) solid var(--border-subtle); }
+}

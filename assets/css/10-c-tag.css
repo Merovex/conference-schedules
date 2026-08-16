@@ -1,0 +1,19 @@
+/* .tag — pill label; as <button> it toggles (aria-pressed). */
+@layer components {
+  .tag {
+    display: inline-flex; align-items: center; gap: var(--pad-sm);
+    padding-block: var(--pad-xs); padding-inline: var(--pad-sm);
+    border-radius: var(--radius-pill);
+    border: var(--border-hair) solid var(--border-default);
+    background: var(--surface-raised); color: var(--text-body);
+    font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: var(--weight-medium);
+    letter-spacing: var(--tracking-wide); text-transform: uppercase; white-space: nowrap;
+    line-height: var(--leading-snug);
+    transition: var(--transition-control);
+  }
+  button.tag:hover { background: var(--action-quiet-hover); }
+  .tag[aria-pressed="true"] { background: var(--action-primary); border-color: var(--action-primary); color: var(--text-on-accent); }
+  .tag-accent { background: var(--surface-accent); border-color: var(--terra-200); color: var(--text-link); }
+  :root.dark .tag-accent { border-color: var(--terra-800); }
+  .tag-match  { background: var(--surface-marginalia); border-color: var(--status-warning-border); color: var(--status-warning); }
+}

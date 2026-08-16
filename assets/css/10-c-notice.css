@@ -1,0 +1,20 @@
+/* .notice — inline status banner; .toast — transient announcement. */
+@layer components {
+  .notice {
+    display: flex; gap: var(--pad-sm); align-items: flex-start;
+    padding: var(--pad); border-radius: var(--radius-md);
+    border: var(--border-hair) solid var(--status-warning-border);
+    background: var(--status-warning-surface); color: var(--status-warning);
+    font-size: var(--text-sm);
+  }
+  .toast {
+    position: fixed; inset-inline: 0; bottom: var(--pad-lg); margin-inline: auto; width: max-content; max-width: 90%;
+    z-index: var(--z-toast); pointer-events: none;
+    padding-block: var(--pad-sm); padding-inline: var(--pad);
+    border-radius: var(--radius-md); background: var(--surface-inverse); color: var(--text-on-inverse);
+    font-size: var(--text-sm); font-weight: var(--weight-medium); box-shadow: var(--shadow-lg);
+    opacity: 0; transform: translateY(var(--pad));
+    transition: opacity var(--dur-base) var(--ease-standard), transform var(--dur-base) var(--ease-standard);
+  }
+  .toast.is-visible { opacity: 1; transform: none; }
+}

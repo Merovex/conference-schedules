@@ -2,7 +2,7 @@
 title: "TravellerCON/USA 2026"
 type: con
 conference: "TravellerCON/USA 2026"
-subtitle: "Event schedule · In-person events · ET"
+subtitle: "Event schedule · In person · ET"
 city: ""   # TODO: fill in venue city
 startDate: "2026-10-16"
 endDate: "2026-10-18"

@@ -1,0 +1,3 @@
+/* Cascade layers — order is fixed here; every author sheet wraps its rules
+   in one of these. Token definitions and vendored Open Props stay unlayered. */
+@layer base, components, utilities;
