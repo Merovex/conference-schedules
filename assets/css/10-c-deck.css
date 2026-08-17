@@ -34,7 +34,7 @@
   .deck__stepper { grid-area: stepper; }
 
   /* stage: cards */
-  .deck__cards { display: grid; grid-template-columns: 1fr; gap: var(--pad-sm); }
+  .deck__cards { display: grid; grid-template-columns: minmax(0, 1fr); gap: var(--pad-sm); }
 
   /* slot rail entries (desktop) */
   .deck__slotbtn {
@@ -46,10 +46,17 @@
   .deck__slotbtn:hover { background: var(--action-quiet-hover); }
   .deck__slotbtn[aria-current="true"] { background: var(--surface-sunken); box-shadow: inset var(--border-rule) 0 0 var(--rule-accent); }
 
-  /* stepper (mobile) */
+  /* stepper (mobile): ‹ day tabs › ; the mark is a FAB floating above it */
   .deck__stepper { background: var(--surface-raised); border-top: var(--border-hair) solid var(--border-subtle); }
-  .deck__mark { width: var(--size-9); height: var(--size-9); font-size: var(--text-2xl); box-shadow: var(--shadow-md); }
-  .deck__mark[aria-expanded="true"] { --_bg: var(--action-accent); --_bg-hover: var(--action-accent-hover); }
+  .deck__days { display: flex; justify-content: center; min-width: 0; }
+  .deck__days .tabs { gap: var(--pad); }
+  .deck__days .tab { padding-block: var(--pad-sm); font-size: var(--text-sm); }
+  .deck__mark {
+    position: absolute; inset-inline-end: var(--pad); bottom: calc(var(--tap) + var(--pad-sm) + var(--pad-lg));
+    z-index: var(--z-sticky);
+    width: var(--size-9); height: var(--size-9); font-size: var(--text-2xl); box-shadow: var(--shadow-lg);
+  }
+  .deck__mark[aria-expanded="true"] { --_bg: var(--action-accent); --_bg-hover: var(--action-accent-hover); z-index: calc(var(--z-sheet) + 2); }
 
   /* action sheet + scrim (mobile) */
   .deck__scrim {

@@ -8,6 +8,7 @@
     background: var(--surface-raised); color: var(--text-body);
     font-family: var(--font-mono); font-size: var(--text-2xs); font-weight: var(--weight-medium);
     letter-spacing: var(--tracking-wide); text-transform: uppercase; white-space: nowrap;
+    max-width: 100%; overflow: hidden; text-overflow: ellipsis;   /* never widen the layout */
     line-height: var(--leading-snug);
     transition: var(--transition-control);
   }

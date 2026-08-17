@@ -15,11 +15,10 @@
 
   <!-- ===== Top: brand · day tabs · actions ===== -->
   <header class="deck__top u-stack u-stack-sm u-surface-raised u-hairline-bottom u-pad-gutter u-pad-y u-pad-sm">
-    <div class="u-cluster u-cluster-between u-cluster-nowrap u-cluster-start">
-      <div class="u-stack u-stack-xs u-grow">
-        <a href="{{ site.Home.RelPermalink }}" class="button button-sm button-ghost button-flush u-eyebrow u-self-start"><svg class="u-icon"><use href="#i-chevron-left"/></svg> {{ site.Params.siteName }}</a>
-        <h1 class="u-title">{{ .Params.conference }}</h1>
-        <p class="u-eyebrow u-balance">{{ .Params.subtitle }}</p>
+    <div class="u-cluster u-cluster-between u-cluster-nowrap">
+      <div class="u-cluster u-cluster-nowrap u-grow">
+        <a href="{{ site.Home.RelPermalink }}" class="button button-sm button-ghost button-icon button-flush" aria-label="{{ site.Params.siteName }}" title="{{ site.Params.siteName }}"><svg class="u-icon u-icon-lg"><use href="#i-chevron-left"/></svg></a>
+        <h1 class="u-title u-title-sm">{{ .Params.conference }}</h1>
       </div>
       <div class="u-cluster u-cluster-nowrap">
         <span class="u-meta u-accent u-nowrap" title="Bookmarked sessions"><span aria-hidden="true">&#9733;</span> <span id="bmCount">0</span><span class="u-visually-hidden"> bookmarked</span></span>
@@ -34,7 +33,7 @@
         </button>
       </div>
     </div>
-    <nav aria-label="Days"><div id="dayTabs" class="tabs" role="tablist"></div></nav>
+    <nav id="dayNav" aria-label="Days"><div id="dayTabs" class="tabs" role="tablist"></div></nav>
   </header>
 
   <!-- ===== Tag filter bar (toggle) ===== -->
@@ -51,11 +50,11 @@
   </nav>
 
   <!-- ===== Slot header ===== -->
-  <header class="deck__slot u-surface-inverse u-pad-gutter u-pad-y">
-    <p id="slotDay" class="u-eyebrow u-eyebrow-on-inverse">&nbsp;</p>
-    <div class="u-cluster u-cluster-baseline u-cluster-lg">
+  <header class="deck__slot u-surface-inverse u-pad-gutter u-pad-y u-pad-sm">
+    <p id="slotDay" class="u-eyebrow u-eyebrow-on-inverse u-lg-only">&nbsp;</p>
+    <div class="u-cluster u-cluster-baseline u-cluster-nowrap u-cluster-lg">
       <h2 id="slotTime" class="u-title u-title-display">&nbsp;</h2>
-      <p id="slotSub" class="u-prose u-prose-on-inverse"></p>
+      <p id="slotSub" class="u-prose u-prose-on-inverse u-truncate"></p>
     </div>
   </header>
 
@@ -90,7 +89,7 @@
     <p id="status" class="u-prose u-prose-muted u-center u-pad-y u-pad-xl">Loading sessions…</p>
     <div id="cards" class="deck__cards" aria-live="polite"></div>
     <p id="empty" class="u-prose u-prose-muted u-center u-pad-y u-pad-xl" hidden>No sessions in this slot match your tags.</p>
-    <div class="u-below-lg-only u-stack">
+    <div class="u-below-lg-only u-stack u-pad-b u-pad-xl"><!-- bottom room so the FAB never covers content -->
       <div id="mobileSponsor" hidden>{{ partial "sponsor-card.html" (dict "page" . "class" "") }}</div>
       <p class="u-prose u-prose-xs u-prose-muted">Bookmarks are saved in this browser and encoded in the Share link. <span id="updatedAt"></span></p>
     </div>
@@ -109,13 +108,13 @@
 
   <!-- ===== Stepper (mobile) ===== -->
   <footer class="deck__stepper u-below-lg-only">
-    <p id="stepPos" class="u-eyebrow u-center u-hairline-bottom u-pad-y u-pad-sm">&nbsp;</p>
-    <div class="u-cluster u-cluster-between u-cluster-nowrap u-pad">
+    <div class="u-cluster u-cluster-between u-cluster-nowrap u-pad-x u-pad-y u-pad-sm">
       <button id="prevBtn" class="button button-secondary button-round" aria-label="Previous slot"><svg class="u-icon u-icon-lg"><use href="#i-chevron-left"/></svg></button>
-      <button id="sheetBtn" class="button button-round deck__mark" aria-label="Open actions" aria-expanded="false" aria-controls="sheet"><svg class="u-icon u-icon-fill"><use href="#i-mark"/></svg></button>
+      <div id="stepperDays" class="deck__days u-grow"><!-- #dayNav is moved here on mobile --></div>
       <button id="nextBtn" class="button button-secondary button-round" aria-label="Next slot"><svg class="u-icon u-icon-lg"><use href="#i-chevron-right"/></svg></button>
     </div>
   </footer>
+  <button id="sheetBtn" class="button button-round deck__mark u-below-lg-only" aria-label="Open actions" aria-expanded="false" aria-controls="sheet"><svg class="u-icon u-icon-fill"><use href="#i-mark"/></svg></button>
 
   <!-- ===== Action sheet (mobile) ===== -->
   <div id="scrim" class="deck__scrim u-below-lg-only"></div>
@@ -273,7 +272,6 @@ function render() {
   $('#slotDay').textContent = `${day.name} · ${shortDate(day.date)}`;
   $('#slotTime').textContent = slot.time;
   $('#slotSub').textContent = slotSub(slot, state.slot, day.slots.length);
-  $('#stepPos').textContent = `${day.name} · slot ${state.slot + 1} of ${day.slots.length}`;
 
   // cards
   let list = slot.sessions.slice();
@@ -340,7 +338,7 @@ function cardHTML(s) {
   return `
   <article class="card card-interactive u-stack u-stack-sm${marked ? ' card-marked' : ''}${dim}" data-card="${s.id}" aria-labelledby="t${s.id}">
     <div class="u-cluster u-cluster-between u-cluster-nowrap u-cluster-start">
-      <span class="u-cluster u-cluster-xs">${primary ? `<span class="tag tag-accent">${esc(primary)}</span>` : ''}${match}</span>
+      <span class="u-cluster u-cluster-xs u-grow">${primary ? `<span class="tag tag-accent">${esc(primary)}</span>` : ''}${match}</span>
       <button class="u-mark u-mark-sm" data-bm="${s.id}" aria-pressed="${marked}" aria-label="${marked ? 'Remove bookmark' : 'Bookmark this session'}" title="${marked ? 'Bookmarked' : 'Bookmark this session'}">${marked ? '&#9733;' : '&#9734;'}</button>
     </div>
     <h3 id="t${s.id}" class="u-title">${esc(s.title)}</h3>
@@ -389,14 +387,17 @@ function toast(msg) {
 function syncControls() {
   const desktop = mqDesktop.matches;
   const form = $('#aiForm'), tags = $('#tagsBar'), strip = $('#aiStrip');
+  const nav = $('#dayNav');
   if (desktop) {
     if (form.parentElement !== $('#deck')) { $('#deck').insertBefore(form, $('#stage')); $('#deck').insertBefore(tags, $('#deck > .deck__rail')); }
+    if (nav.parentElement !== $('.deck__top')) $('.deck__top').appendChild(nav);
     form.hidden = false;
     let open = false; try { open = localStorage.getItem(LS_TAGS_OPEN) === '1'; } catch (e) {}
     tags.hidden = !open; $('#tagsBtn').setAttribute('aria-pressed', open);
     strip.hidden = true;
   } else {
     if (form.parentElement !== $('#sheetTailor')) { $('#sheetTailor').appendChild(form); $('#sheetTags').appendChild(tags); }
+    if (nav.parentElement !== $('#stepperDays')) $('#stepperDays').appendChild(nav);
     form.hidden = false; tags.hidden = false;
     const parts = [];
     if (state.aiActive) parts.push(`Tailored to “${state.aiQuery}” · ${lastFitCount ? pluralize(lastFitCount, 'fit') + ' here' : 'none fit here'}`);

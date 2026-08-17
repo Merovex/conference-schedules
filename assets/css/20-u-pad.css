@@ -5,5 +5,6 @@
   .u-pad-xl { --u-pad: var(--pad-xl); }
   .u-pad-x { padding-inline: var(--u-pad, var(--pad)); }
   .u-pad-y { padding-block: var(--u-pad, var(--pad)); }
+  .u-pad-b { padding-block-end: var(--u-pad, var(--pad)); }
   .u-pad-gutter { padding-inline: var(--gutter); }
 }
