@@ -21,7 +21,7 @@
         <h1 class="u-title u-title-sm">{{ .Params.conference }}</h1>
       </div>
       <div class="u-cluster u-cluster-nowrap">
-        <span class="u-meta u-accent u-nowrap" title="Bookmarked sessions"><span aria-hidden="true">&#9733;</span> <span id="bmCount">0</span><span class="u-visually-hidden"> bookmarked</span></span>
+        <span class="u-meta u-accent u-nowrap" title="Bookmarked sessions"><span class="u-mark-icon-wrap" aria-hidden="true"><svg class="u-mark-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></span> <span id="bmCount">0</span><span class="u-visually-hidden"> bookmarked</span></span>
         <div class="u-cluster u-cluster-nowrap u-lg-only">
           <button id="shareBtn" class="button button-sm" title="Copy a shareable link with your bookmarks"><svg class="u-icon"><use href="#i-share"/></svg> Share</button>
           <button id="pdfBtn" class="button button-sm button-secondary" title="Download your bookmarked sessions as a PDF"><svg class="u-icon"><use href="#i-download"/></svg> Export</button>
@@ -339,7 +339,7 @@ function cardHTML(s) {
   <article class="card card-interactive u-stack u-stack-sm${marked ? ' card-marked' : ''}${dim}" data-card="${s.id}" aria-labelledby="t${s.id}">
     <div class="u-cluster u-cluster-between u-cluster-nowrap u-cluster-start">
       <span class="u-cluster u-cluster-xs u-grow">${primary ? `<span class="tag tag-accent">${esc(primary)}</span>` : ''}${match}</span>
-      <button class="u-mark u-mark-sm" data-bm="${s.id}" aria-pressed="${marked}" aria-label="${marked ? 'Remove bookmark' : 'Bookmark this session'}" title="${marked ? 'Bookmarked' : 'Bookmark this session'}">${marked ? '&#9733;' : '&#9734;'}</button>
+      <button class="u-mark u-mark-sm" data-bm="${s.id}" aria-pressed="${marked}" aria-label="${marked ? 'Remove bookmark' : 'Bookmark this session'}" title="${marked ? 'Bookmarked' : 'Bookmark this session'}"><svg class="u-mark-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="1em" height="1em" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="m19 21-7-4-7 4V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2v16z"/></svg></button>
     </div>
     <h3 id="t${s.id}" class="u-title">${esc(s.title)}</h3>
     ${hasDesc ? `<p class="u-prose u-prose-muted u-clamp${expanded ? ' is-open' : ''}" data-desc="${s.id}">${esc(s.description)}</p>` : ''}

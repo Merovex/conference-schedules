@@ -1,8 +1,13 @@
 @layer utilities {
-  /* bookmark star toggle */
+  /* bookmark toggle — outline when off, filled when on */
   .u-mark { border: 0; background: transparent; padding: 0; width: var(--tap); height: var(--tap); display: inline-flex; align-items: center; justify-content: center; flex: none; color: var(--mark-off); font-size: var(--text-xl); line-height: 1; border-radius: var(--radius-pill); transition: var(--transition-control); }
   .u-mark:hover { color: var(--mark-on); background: var(--action-quiet-hover); }
   .u-mark[aria-pressed="true"] { color: var(--mark-on); }
+  .u-mark-icon { display: block; width: 1em; height: 1em; }
+  .u-mark-icon path { transition: var(--transition-control); }
+  .u-mark[aria-pressed="true"] .u-mark-icon path { fill: currentColor; }
+  .u-mark-icon-wrap { display: inline-flex; vertical-align: -0.15em; }
+  .u-mark-icon-wrap .u-mark-icon path { fill: currentColor; }
   .u-mark-sm { width: var(--size-7); height: var(--size-7); font-size: var(--text-lg); }
   @media (max-width: 63.99em) { /* below --breakpoint-lg: finger-sized */
     .u-mark-sm { width: var(--tap); height: var(--tap); }

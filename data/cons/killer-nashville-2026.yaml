@@ -1,0 +1,2547 @@
+updated_at: "2026-08-17"
+conference: "2026 Killer Nashville International Writers' Conference"
+venue_timezone: "America/Chicago"
+source: "https://www.killernashville.com/schedule — daily pages /thursday-2026, /friday-2026, /saturday-2026, /sunday-2026 (retrieved 2026-08-17)"
+filter: "All events listed on the four daily schedule pages. Agent/Editor manuscript critique and agent-critique blocks are collapsed to one entry per time slot, with every listed critiquer in speakers. The separate /agent-editor-critique-schedule and /agent-round-table-schedule pages were not used, as they detail the same slots."
+session_count: 224
+sessions:
+
+  - id: 0
+    title: "Registration"
+    date: "2026-08-20"
+    day: Thursday
+    start: "1:00 PM"
+    duration_min: 300
+    speakers: []
+    location: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea)"
+    tags: ["Logistics"]
+    description: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea) open to receive incoming consignment books"
+
+  - id: 1
+    event_number: "MC 1"
+    title: "MC 1 – Pitching Session"
+    date: "2026-08-20"
+    day: Thursday
+    start: "2:00 PM"
+    duration_min: 180
+    speakers: ["Nicola Pittam"]
+    location: "Oak"
+    tags: ["Master Class", "Ticketed"]
+    description: "Ticketed Event – Advance Registration Required"
+
+  - id: 2
+    event_number: "MC 2"
+    title: "MC 2 - Deadly Details: Medical & Forensic Truths Every Crime Writer Must Know"
+    date: "2026-08-20"
+    day: Thursday
+    start: "2:00 PM"
+    duration_min: 180
+    speakers: ["DP Lyle"]
+    location: "Maple"
+    tags: ["Master Class", "Ticketed"]
+    description: "Ticketed Event – Advance Registration Required"
+
+  - id: 3
+    event_number: "MC 3"
+    title: "MC 3 - The #1 Structural Mistakes We See in Manuscripts (And How to Fix It)"
+    date: "2026-08-20"
+    day: Thursday
+    start: "2:00 PM"
+    duration_min: 180
+    speakers: ["JJ Cagney", "Carol Potenza"]
+    location: "Hickory"
+    tags: ["Master Class", "Ticketed"]
+    description: "Ticketed Event – Advance Registration Required"
+
+  - id: 4
+    event_number: "MC 4"
+    title: "MC 4 - Buffing and Polishing: The Art of the Rewrite"
+    date: "2026-08-20"
+    day: Thursday
+    start: "2:00 PM"
+    duration_min: 180
+    speakers: ["John DeDakis", "Christine Fairchild", "Traci Abramson"]
+    location: "Sycamore"
+    tags: ["Master Class", "Ticketed"]
+    description: "Ticketed Event – Advance Registration Required"
+
+  - id: 5
+    event_number: "MC 5"
+    title: "MC 5 - Pivots and Payoff: How to Write an Unforgettable Ending Every Time"
+    date: "2026-08-20"
+    day: Thursday
+    start: "2:00 PM"
+    duration_min: 180
+    speakers: ["Steven James"]
+    location: "Redbud"
+    tags: ["Master Class", "Ticketed"]
+    description: "Ticketed Event – Advance Registration Required"
+
+  - id: 6
+    event_number: "MC 6"
+    title: "MC 6 - The Anatomy of Mystery: Deconstructing The Scene"
+    date: "2026-08-20"
+    day: Thursday
+    start: "2:00 PM"
+    duration_min: 180
+    speakers: ["Steven Womack", "Jaden (Beth) Terrell", "Lisa Wysocky"]
+    location: "Poplar"
+    tags: ["Master Class", "Ticketed"]
+    description: "Ticketed Event – Advance Registration Required"
+
+  - id: 7
+    event_number: "MC 7"
+    title: "MC 7 - Unputdownable Openings"
+    date: "2026-08-20"
+    day: Thursday
+    start: "2:00 PM"
+    duration_min: 180
+    speakers: ["Miranda Darrow"]
+    location: "Williamson"
+    tags: ["Master Class", "Ticketed"]
+    description: "Ticketed Event – Advance Registration Required"
+
+  - id: 8
+    title: "Ready! Set! Pitch! One-on-One Coaching"
+    date: "2026-08-20"
+    day: Thursday
+    start: "5:00 PM"
+    duration_min: 60
+    speakers: []
+    location: "Franklin"
+    tags: ["Pitch", "Ticketed", "SEMWA"]
+    description: "Sponsored by Southeast Mystery Writers of America – Ticketed Event – Advance Registration Required"
+
+  - id: 9
+    title: "Killer Nashville Open Bar"
+    date: "2026-08-20"
+    day: Thursday
+    start: "5:30 PM"
+    duration_min: 90
+    speakers: []
+    location: "Atrium Rear"
+    tags: ["Social"]
+    description: "Free to Those Staying at Embassy Suites, Bar Tab for Those Not Staying at Embassy Suites"
+
+  - id: 10
+    title: "Killer Nashville ‘Shine ‘n’ Wine Shindig"
+    date: "2026-08-20"
+    day: Thursday
+    start: "6:00 PM"
+    duration_min: 180
+    speakers: []
+    location: "Birch/Chestnut"
+    tags: ["Social", "Ticketed"]
+    description: "Nashville music, local moonshine, local wine, hors d’oeuvres – Ticketed Event – Advance Registration Required / Open to the public. 6:00-7:00 • Local wines and moonshine begin / hors d'oeuvres / live music; 7:00-7:15 • Introduction of agents, editors, and guests of honor; 7:15-9:00 • Guests optionally can sing with the band and impress their fellow attendees"
+
+  - id: 11
+    title: "Registration Closes"
+    date: "2026-08-20"
+    day: Thursday
+    start: "6:00 PM"
+    duration_min: null
+    speakers: []
+    location: "Registration Desk (Atrium) and Bookstore (Maple / Oak)"
+    tags: ["Logistics"]
+    description: "Registration Desk (Atrium) and Bookstore (Maple / Oak) close"
+
+  - id: 12
+    title: "Killer Nashville Network Breakfast"
+    date: "2026-08-21"
+    day: Friday
+    start: "7:00 AM"
+    duration_min: 210
+    speakers: []
+    location: "Atrium"
+    tags: ["Meal"]
+    description: "Free to Those Staying at Embassy Suites (Atrium) – $19.99 for Those Not Staying at Embassy Suites (Atrium)"
+
+  - id: 13
+    title: "Registration"
+    date: "2026-08-21"
+    day: Friday
+    start: "7:00 AM"
+    duration_min: 660
+    speakers: []
+    location: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea)"
+    tags: ["Logistics"]
+    description: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea) open to receive incoming consignment books"
+
+  - id: 14
+    title: "Welcome to Killer Nashville 2026"
+    date: "2026-08-21"
+    day: Friday
+    start: "8:00 AM"
+    duration_min: 10
+    speakers: ["Clay Stafford"]
+    location: "Chestnut/Birch"
+    tags: ["Welcome"]
+    description: null
+
+  - id: 15
+    title: "Why the World Needs Writers Now More Than Ever"
+    date: "2026-08-21"
+    day: Friday
+    start: "8:10 AM"
+    duration_min: 20
+    speakers: ["Christine Fairchild"]
+    location: "Chestnut/Birch"
+    tags: ["Keynote"]
+    description: null
+
+  - id: 16
+    event_number: "EC1"
+    title: "Agent / Editor Manuscript Critiques [EC1]"
+    date: "2026-08-21"
+    day: Friday
+    start: "8:35 AM"
+    duration_min: 20
+    speakers: ["Dawn Barclay"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 17
+    title: "Action That Moves: Mastering Pace in Storytelling"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Susan Tanner", "Amy Denton", "D.L. Wood", "Robert T. Kelley", "Ley Esses", "Jim Nesbitt"]
+    location: "Redbud"
+    tags: ["Panel"]
+    description: null
+
+  - id: 18
+    event_number: "EC2"
+    title: "Agent / Editor Manuscript Critiques [EC2]"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 20
+    speakers: ["Miranda Darrow", "Dawn Barclay", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 19
+    event_number: "ART1"
+    title: "Agent Roundtable 1 (ART1)"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Tommy Dean", "Ronald Gerber", "Nikki Carrero", "Dean Krystek", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Roundtable", "Advance Registration"]
+    description: "Advance Registration Required. Tommy Dean, Ronald Gerber, Nikki Carrero, Dean Krystek (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 20
+    title: "Beyond Writing the \"End.\" What Happens Next?"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["T.O. Paine", "Traci Abramson", "Melissa Collings", "Heather Graham", "Kathleen Kaska"]
+    location: "Birch"
+    tags: ["Panel"]
+    description: null
+
+  - id: 21
+    title: "Building Action-Driven Stories"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Nina Wachsman", "Sean Hagerty", "CB Wilson", "Charles D'Amico", "Jeffrey Philips"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 22
+    title: "Building Unforgettable Characters Readers Just Can’t Quit"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["DP Lyle"]
+    location: "Oak"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 23
+    event_number: "Breakout 1"
+    title: "Developmental Editing: Getting Your Manuscript Ready for Prime Time [Breakout 1]"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["John DeDakis"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed Event"
+
+  - id: 24
+    title: "How to Die: A Primer for Authors"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Alan Spira"]
+    location: "Sycamore"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 25
+    title: "Strategic Blogging for Writers"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Sherry Shealy Martschink", "Camen Amato", "Nate Hoffelder", "Lynn Slaughter"]
+    location: "Chestnut"
+    tags: ["Panel"]
+    description: null
+
+  - id: 26
+    title: "Who Solves the Mystery: Writing the Mystery Investigator"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Stephen Wallace", "Elise Burke Brown", "Stephen Eoannou", "Bruce Robert Coffin", "David Williams"]
+    location: "Poplar"
+    tags: ["Panel"]
+    description: null
+
+  - id: 27
+    title: "Writing the Novella"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Paula Benson", "Carolyn Rowland"]
+    location: "Maple"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 28
+    event_number: "EC3"
+    title: "Agent / Editor Manuscript Critiques [EC3]"
+    date: "2026-08-21"
+    day: Friday
+    start: "9:30 AM"
+    duration_min: 20
+    speakers: ["Miranda Darrow", "Dawn Barclay", "Amber Meyer", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 29
+    event_number: "EC4"
+    title: "Agent / Editor Manuscript Critiques [EC4]"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:00 AM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "Amber Meyer", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 30
+    event_number: "ART2"
+    title: "Agent Roundtable 2 (ART2)"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Tommy Dean", "Ronald Gerber", "Nikki Carrero", "Dean Krystek", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Roundtable", "Advance Registration"]
+    description: "Advance Registration Required. Tommy Dean, Ronald Gerber, Nikki Carrero, Dean Krystek (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 31
+    event_number: "Breakout 2"
+    title: "Audiobook Creation; a Painless Step-by-Step Approach [Breakout 2]"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Scott Ellis"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed Event"
+
+  - id: 32
+    title: "Building the Past that Drives the Present"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Teresa Michael", "Carol Amorosi", "Lauren Whitley", "Franklin Horton", "Yvonne Ventresca", "Jim Nesbitt"]
+    location: "Redbud"
+    tags: ["Panel"]
+    description: null
+
+  - id: 33
+    title: "Courtroom Techniques for Storytelling"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Lori B. Duff"]
+    location: "Sycamore"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 34
+    title: "Crime Capers and Comic Timing"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Dee Armstrong", "Vanessa M. Knight", "Marty Ludlum", "Mike Faricy", "Elizabeth Crowens", "Ellen Butler"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 35
+    title: "Feisty Women Protagonists in Historicals"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Randy Overbeck", "Nina Wachsman", "Nancy Locklin", "Nancy Herriman", "V.P. Chandler", "Joy Allyson"]
+    location: "Oak"
+    tags: ["Panel"]
+    description: null
+
+  - id: 36
+    title: "How to Handle Rejection"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["IM Jones", "John Bukowski", "Dianne McCartney", "Sandy Clements", "Tom Wood", "Melissa Collings"]
+    location: "Chestnut"
+    tags: ["Panel"]
+    description: null
+
+  - id: 37
+    title: "The Power of Short-Form Nonfiction: From Idea to Article"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Lisa Wysocky", "Becky Tuch", "James Siburt", "John Bradshaw"]
+    location: "Maple"
+    tags: ["Panel"]
+    description: null
+
+  - id: 38
+    event_number: "Breakout 3"
+    title: "Writing Edge-of-Your-Seat Fiction: Crafting Gripping Mysteries, Thrillers & Suspense Stories [Breakout 3]"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["DP Lyle"]
+    location: "Poplar"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed Event"
+
+  - id: 39
+    title: "Writing the Mind of a Killer, While Not Losing Your Own"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Michael Cody", "T.O. Paine", "Patrick Kendrick", "Charles Damico", "James L. Hill", "Susan Hatters Friedman, MD"]
+    location: "Birch"
+    tags: ["Panel"]
+    description: null
+
+  - id: 40
+    event_number: "EC5"
+    title: "Agent / Editor Manuscript Critiques [EC5]"
+    date: "2026-08-21"
+    day: Friday
+    start: "10:30 AM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 41
+    event_number: "AC1"
+    title: "Agent / Editor Manuscript Critiques [AC1]"
+    date: "2026-08-21"
+    day: Friday
+    start: "11:00 AM"
+    duration_min: 20
+    speakers: ["Tommy Dean", "Ronald Gerber", "Nikki Carrero", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required. Tommy Dean, Ronald Gerber, Nikki Carrero (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 42
+    event_number: "EC6"
+    title: "Agent / Editor Manuscript Critiques [EC6]"
+    date: "2026-08-21"
+    day: Friday
+    start: "11:00 AM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "Amber Meyer", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 43
+    title: "Authors Book Signing"
+    date: "2026-08-21"
+    day: Friday
+    start: "11:00 AM"
+    duration_min: 20
+    speakers: []
+    location: "Magnolia/Iris/Azalea"
+    tags: ["Book Signing"]
+    description: "Killer Nashville Bookstore – Free and open to the public. (Will Add Names Later)"
+
+  - id: 44
+    title: "Killer Nashville Networking Lunch"
+    date: "2026-08-21"
+    day: Friday
+    start: "11:30 AM"
+    duration_min: 100
+    speakers: []
+    location: null
+    tags: ["Meal", "Ticketed"]
+    description: "Free to all paid attendees with ticket"
+
+  - id: 45
+    title: "Presentation of Agents & Editors"
+    date: "2026-08-21"
+    day: Friday
+    start: "11:35 AM"
+    duration_min: 10
+    speakers: []
+    location: null
+    tags: ["Presentation"]
+    description: null
+
+  - id: 46
+    title: "Friday Lunch Keynote Speech: Throw Your Hat Over the Wall: Taking the Leap Into a Bold, Creative Writing Life"
+    date: "2026-08-21"
+    day: Friday
+    start: "12:00 PM"
+    duration_min: 20
+    speakers: ["Steven James"]
+    location: "Birch/Chestnut"
+    tags: ["Keynote", "Ticketed"]
+    description: "Free to all paid attendees with lunch ticket"
+
+  - id: 47
+    title: "Guest of Honor Interview"
+    date: "2026-08-21"
+    day: Friday
+    start: "12:30 PM"
+    duration_min: 40
+    speakers: ["Clay Stafford", "Noelle Ihli"]
+    location: "Birch/Chestnut"
+    tags: ["Interview"]
+    description: "Clay Stafford Interviews Guest of Honor Noelle Ihli"
+
+  - id: 48
+    event_number: "AC2"
+    title: "Agent / Editor Manuscript Critiques [AC2]"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:20 PM"
+    duration_min: 20
+    speakers: ["Tommy Dean", "Nikki Carrero", "Mason Rowlee", "Nicola Pittam"]
+    location: "Franklin / Harpeth"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required. Tommy Dean, Nikki Carrero (Franklin); Mason Rowlee, Nicola Pittam (Harpeth)"
+
+  - id: 49
+    event_number: "EC7"
+    title: "Agent / Editor Manuscript Critiques [EC7]"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:20 PM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 50
+    title: "Authors Book Signing"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:20 PM"
+    duration_min: 20
+    speakers: []
+    location: "Magnolia/Iris/Azalea"
+    tags: ["Book Signing"]
+    description: "Killer Nashville Bookstore – Free and open to the public. (Will Add Names Later)"
+
+  - id: 51
+    event_number: "EC8"
+    title: "Agent / Editor Manuscript Critiques [EC8]"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:50 PM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "John DeDakis", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 52
+    event_number: "ART3"
+    title: "Agent Roundtable 3 (ART3)"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Tommy Dean", "Ronald Gerber", "Nikki Carrero", "Dean Krystek", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Roundtable", "Advance Registration"]
+    description: "Advance Registration Required. Tommy Dean, Ronald Gerber, Nikki Carrero, Dean Krystek (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 53
+    title: "Building Buzz for Your Event"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Steven Fisher", "Traci Abramson", "Teresa Michael", "Chris Underwood", "Joy Allyson"]
+    location: "Chestnut"
+    tags: ["Panel"]
+    description: null
+
+  - id: 54
+    title: "Crime Without Murder: Keeping Stakes High When No One Dies"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Elizabeth Crowens", "Ellen Butler", "Charles Salzberg", "Thomas Burns", "Nancy G. West"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 55
+    title: "How to Build a Solid Writing Community"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Sherry Shealy Martschink", "Dianne McCartney", "Douglas Pratt", "Robert T. Kelley", "Ley Esses"]
+    location: "Poplar"
+    tags: ["Panel"]
+    description: null
+
+  - id: 56
+    title: "How to Co-Write a Book with a Friend – and Stay Friends"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["David Bruns"]
+    location: "Birch"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 57
+    title: "Narco-Terrorists In This Hemisphere"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Mike Chavarria"]
+    location: "Sycamore"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 58
+    title: "Ordinary Heroes in Extraordinary Trouble"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Millie Hast", "Noelle Ihili", "Jeffrey Philips", "Michael Balter", "Stephen Wallace", "Bill Rapp"]
+    location: "Oak"
+    tags: ["Panel"]
+    description: null
+
+  - id: 59
+    event_number: "Breakout 4"
+    title: "Pitching, Querying, Synopsis: Goal, Motivation & Conflict: The Three Essential Building Blocks of Every Novel, Synopsis, Pitch, & Back Cover Copy [Breakout 4]"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Lois Winston"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed Event"
+
+  - id: 60
+    title: "Sisters In Crime Panel: Form Without Formula: How a Novel's Structure Supports Creative Freedom"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Lisa Wysocky", "Steve Womack", "DW Hogan", "Tom Wood"]
+    location: "Maple"
+    tags: ["Panel", "Sisters in Crime"]
+    description: null
+
+  - id: 61
+    title: "Writing the Book Is the Easy Part: What Comes Next?"
+    date: "2026-08-21"
+    day: Friday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["E.R. Kaye", "Heather Graham", "Nate Hoffelder", "CB Wilson", "Sandy Clements", "Emmett Tatter"]
+    location: "Redbud"
+    tags: ["Panel"]
+    description: null
+
+  - id: 62
+    event_number: "EC9"
+    title: "Agent / Editor Manuscript Critiques [EC9]"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:20 PM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "Amber Meyer", "John DeDakis", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 63
+    event_number: "EC10"
+    title: "Agent / Editor Manuscript Critiques [EC10]"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:50 PM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "Amber Meyer", "John DeDakis", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 64
+    event_number: "ART4"
+    title: "Agent Roundtable 4 (ART4)"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:50 PM"
+    duration_min: 50
+    speakers: ["Tommy Dean", "Ronald Gerber", "Nikki Carrero", "Dean Krystek", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Roundtable", "Advance Registration"]
+    description: "Advance Registration Required. Tommy Dean, Ronald Gerber, Nikki Carrero, Dean Krystek (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 65
+    title: "Be a Better Podcast Guest and a Fabulous Podcast Host"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:50 PM"
+    duration_min: 50
+    speakers: ["GP Gottlieb"]
+    location: "Chestnut"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 66
+    title: "Blueprints for Other Worlds: Building Immersive Settings From Reality to Sci-Fi, Fantasy, and Horror That Keep Readers Turning Pages"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:50 PM"
+    duration_min: 50
+    speakers: ["H. Fields Grenée", "Peregrine Finn", "Susan Reiss", "John Morrison", "Aimee Hardy"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 67
+    title: "Conflictology: The Art of Creating Conflict in Your Writing"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:50 PM"
+    duration_min: 50
+    speakers: ["Ellen Butler", "Michaeon", "Avram Lavinsky", "CB Wilson", "Michael Maloof"]
+    location: "Redbud"
+    tags: ["Panel"]
+    description: null
+
+  - id: 68
+    title: "How Detectives Think: Building the Case on the Page"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:50 PM"
+    duration_min: 50
+    speakers: ["Bill Gormley", "David Williams", "BJ Bourg", "Chris Berg", "John Lamb", "Bruce Robert Coffin"]
+    location: "Sycamore"
+    tags: ["Panel"]
+    description: null
+
+  - id: 69
+    title: "The Basics of Military Ranks and Organization"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:50 PM"
+    duration_min: 50
+    speakers: ["John Bukowski"]
+    location: "Poplar"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 70
+    event_number: "Breakout 5"
+    title: "The Book Launch Plan: Turning Publication into Visibility, Connection, and Sales [Breakout 5]"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:50 PM"
+    duration_min: 50
+    speakers: ["Jeniffer Thompson"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed Event"
+
+  - id: 71
+    title: "The One-Two Punch: Crafting Character's Setbacks and Payoffs That Transform a Characters' Arc"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:50 PM"
+    duration_min: 50
+    speakers: ["Janet Boydell", "Dee Armstrong", "Maxine Schur", "Marty Ludlum", "Reed Farrel Coleman", "Nancy G. West"]
+    location: "Birch"
+    tags: ["Panel"]
+    description: null
+
+  - id: 72
+    title: "The Phone Always Talks: What Your Devices Confess to a Professional Investigator"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:50 PM"
+    duration_min: 50
+    speakers: ["Cody Breunig", "Traci Abramson"]
+    location: "Maple"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 73
+    title: "Writing Diverse Characters"
+    date: "2026-08-21"
+    day: Friday
+    start: "2:50 PM"
+    duration_min: 50
+    speakers: ["Tina Austin", "J.E. Weiner", "Jo Loveday", "Denise Jendusa", "Martha Reed", "James L. Hill"]
+    location: "Oak"
+    tags: ["Panel"]
+    description: null
+
+  - id: 74
+    event_number: "EC11"
+    title: "Agent / Editor Manuscript Critiques [EC11]"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:20 PM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "Amber Meyer", "John DeDakis", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 75
+    event_number: "EC12"
+    title: "Agent / Editor Manuscript Critiques [EC12]"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:50 PM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "Amber Meyer", "John DeDakis"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 76
+    event_number: "ART5"
+    title: "Agent Roundtable 5 (ART5)"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Tommy Dean", "Ronald Gerber", "Nikki Carrero", "Dean Krystek", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Roundtable", "Advance Registration"]
+    description: "Advance Registration Required. Tommy Dean, Ronald Gerber, Nikki Carrero, Dean Krystek (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 77
+    title: "Best Self-Publishing Practices"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Teresa Michael", "Gary Minder", "Leah Orr", "Chris Underwood", "Douglas Pratt", "Walter Sticht"]
+    location: "Birch"
+    tags: ["Panel"]
+    description: null
+
+  - id: 78
+    title: "From Survival to Story: Translating Lived Experience into a Compelling Memoir"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Alan Schmadtke", "Emmett Tatter", "Lorena Peter", "John Bradshaw", "Franklin Horton"]
+    location: "Maple"
+    tags: ["Panel"]
+    description: null
+
+  - id: 79
+    title: "Grow Your Audience One Newsletter at a Time"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Becky Tuch"]
+    location: "Chestnut"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 80
+    title: "Historical Mystery: The Dusty Corners of The Past"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["James Siburt", "Carol Amorosi", "C.S. Devereaux", "Stephen Eoannou", "Bill Rapp", "Randy Overbeck"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 81
+    title: "History of Forensics"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Bradley Harper"]
+    location: "Sycamore"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 82
+    event_number: "Breakout 6"
+    title: "INSIDE THE DETECTIVE'S HEAD: The Real Thinking Process Behind Crime-Solving [Breakout 6]"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Chris Berg"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed Event"
+
+  - id: 83
+    title: "The Architecture of Dread: Sensory Details in Fiction"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Jody Madala", "Roy Hiller", "Christine M. Fairchild", "Nina Wachsman"]
+    location: "Redbud"
+    tags: ["Panel"]
+    description: null
+
+  - id: 84
+    title: "The Buddy Dynamic: When Two Protagonists are Better Than One"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Jeffrey Philips", "Sarah P. Blanchard", "Rebecca Barrett", "Mitchell S. Karnes", "Jim Nesbitt", "Bill Gormley"]
+    location: "Oak"
+    tags: ["Panel"]
+    description: null
+
+  - id: 85
+    title: "Using the News and Current Events to Develop Plot"
+    date: "2026-08-21"
+    day: Friday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["David Bruns", "Leigh Stroh", "Lois Winston", "Mike McKinley", "Brian Montross"]
+    location: "Poplar"
+    tags: ["Panel"]
+    description: null
+
+  - id: 86
+    event_number: "EC13"
+    title: "Agent / Editor Manuscript Critiques [EC13]"
+    date: "2026-08-21"
+    day: Friday
+    start: "4:20 PM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "Jaden (Beth) Terrell", "Amber Meyer", "John DeDakis"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 87
+    event_number: "AC3"
+    title: "Agent / Editor Manuscript Critiques [AC3]"
+    date: "2026-08-21"
+    day: Friday
+    start: "5:00 PM"
+    duration_min: 20
+    speakers: ["Tommy Dean", "Ronald Gerber", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required. Tommy Dean, Ronald Gerber (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 88
+    event_number: "EC14"
+    title: "Agent / Editor Manuscript Critiques [EC14]"
+    date: "2026-08-21"
+    day: Friday
+    start: "5:00 PM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "Amber Meyer"]
+    location: "Atrium Front"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 89
+    title: "Authors Book Signing"
+    date: "2026-08-21"
+    day: Friday
+    start: "5:00 PM"
+    duration_min: 20
+    speakers: []
+    location: "Magnolia/Iris/Azalea"
+    tags: ["Book Signing"]
+    description: "Killer Nashville Bookstore – Free and open to the public"
+
+  - id: 90
+    event_number: "AC4"
+    title: "Agent / Editor Manuscript Critiques [AC4]"
+    date: "2026-08-21"
+    day: Friday
+    start: "5:20 PM"
+    duration_min: 20
+    speakers: ["Tommy Dean", "Ronald Gerber", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required. Tommy Dean, Ronald Gerber (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 91
+    event_number: "EC15"
+    title: "Agent / Editor Manuscript Critiques [EC15]"
+    date: "2026-08-21"
+    day: Friday
+    start: "5:20 PM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "John DeDakis"]
+    location: "Atrium Front"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 92
+    title: "Dinner on your own"
+    date: "2026-08-21"
+    day: Friday
+    start: "5:20 PM"
+    duration_min: 160
+    speakers: []
+    location: null
+    tags: ["Meal"]
+    description: "Dinner on your own"
+
+  - id: 93
+    title: "Killer Nashville Open Bar"
+    date: "2026-08-21"
+    day: Friday
+    start: "5:30 PM"
+    duration_min: 90
+    speakers: []
+    location: "Atrium"
+    tags: ["Social"]
+    description: "Free to Those Staying at Embassy Suites (Atrium) – Bar Tab for Those Not Staying at Embassy Suites (Atrium)"
+
+  - id: 94
+    event_number: "AC5"
+    title: "Agent / Editor Manuscript Critiques [AC5]"
+    date: "2026-08-21"
+    day: Friday
+    start: "5:40 PM"
+    duration_min: 20
+    speakers: ["Nicola Pittam", "Mason Rowlee", "Kristen Terrette", "Tommy Dean"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required. Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room); Tommy Dean (Franklin)"
+
+  - id: 95
+    event_number: "EC16"
+    title: "Agent / Editor Manuscript Critiques [EC16]"
+    date: "2026-08-21"
+    day: Friday
+    start: "5:40 PM"
+    duration_min: 20
+    speakers: ["Dawn Barclay", "John DeDakis"]
+    location: "Atrium Front"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 96
+    title: "Registration Closes"
+    date: "2026-08-21"
+    day: Friday
+    start: "6:00 PM"
+    duration_min: null
+    speakers: []
+    location: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea)"
+    tags: ["Logistics"]
+    description: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea) close"
+
+  - id: 97
+    title: "Killer Nashville Network Breakfast"
+    date: "2026-08-22"
+    day: Saturday
+    start: "7:00 AM"
+    duration_min: 210
+    speakers: []
+    location: "Atrium"
+    tags: ["Meal"]
+    description: "Free to Those Staying at Embassy Suites (Atrium) – $19.99 For Those Not Staying at Embassy Suites (Atrium)"
+
+  - id: 98
+    title: "Registration"
+    date: "2026-08-22"
+    day: Saturday
+    start: "7:00 AM"
+    duration_min: 660
+    speakers: []
+    location: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea)"
+    tags: ["Logistics"]
+    description: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea) open"
+
+  - id: 99
+    title: "Guest of Honor Interview"
+    date: "2026-08-22"
+    day: Saturday
+    start: "8:00 AM"
+    duration_min: 40
+    speakers: ["Clay Stafford", "Reed Farrel Coleman"]
+    location: null
+    tags: ["Interview"]
+    description: "Clay Stafford interviews Guest of Honor Reed Farrel Coleman"
+
+  - id: 100
+    event_number: "EC17"
+    title: "Agent / Editor Manuscript Critiques [EC17]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 20
+    speakers: ["John DeDakis", "Dawn Barclay", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 101
+    event_number: "ART6"
+    title: "Agent Roundtable 6 (ART6)"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Tommy Dean", "Ronald Gerber", "Dean Krystek", "Nikki Carrero", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Roundtable", "Advance Registration"]
+    description: "Advance Registration Required. Tommy Dean, Ronald Gerber, Dean Krystek, Nikki Carrero (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 102
+    event_number: "Breakout 7"
+    title: "Author Branding & Your Book Marketing Roadmap [Breakout 7]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Jeniffer Thompson"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed Event"
+
+  - id: 103
+    title: "Choosing a Point of View and Avoiding Pesky POV Pitfalls"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Susan Tanner", "Zelly Ruskin", "Lauren Whitley", "Yvonne Ventresca", "Terry Friedman", "John Morrison"]
+    location: "Poplar"
+    tags: ["Panel"]
+    description: null
+
+  - id: 104
+    title: "Getting and Keeping Newsletter Subscribers"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Carmen Amato", "Melissa Collings", "Avram Lavinsky", "Dee Armstrong", "Renda Knapp", "Dawn Barclay"]
+    location: "Oak"
+    tags: ["Panel"]
+    description: null
+
+  - id: 105
+    title: "How to Succeed as a Self-Published Author"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Chris Lengquist", "Franklin Horton", "Mike Faricy", "Mary Stone", "Noelle Ihli", "Leah Orr"]
+    location: "Chestnut"
+    tags: ["Panel"]
+    description: null
+
+  - id: 106
+    title: "Interrogation, Memory, and Truth: Writing Realistic Police and Witness Encounters"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["John Peragine"]
+    location: "Sycamore"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 107
+    title: "Regional Writing"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Stacey Horan", "Carol Potenza", "Roy Hiller", "Cat Wyatt", "James Owen", "Patrick Balester"]
+    location: "Birch"
+    tags: ["Panel"]
+    description: null
+
+  - id: 108
+    title: "Revealing Plot and Emotion with Natural Dialogue"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["T.O. Paine"]
+    location: "Redbud"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 109
+    title: "Using Poetry Techniques to Develop Your Prose"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Robert Mangeot", "Reed Farrel Coleman"]
+    location: "Maple"
+    tags: ["Panel"]
+    description: null
+
+  - id: 110
+    title: "Writing Stories That Actually Terrify"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:00 AM"
+    duration_min: 45
+    speakers: ["Suzanne Junered", "Aimee Hardy", "Elise Burke Brown", "Jo Loveday", "Patrick Kendrick"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 111
+    event_number: "EC18"
+    title: "Agent / Editor Manuscript Critiques [EC18]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "9:30 AM"
+    duration_min: 20
+    speakers: ["Amber Meyer", "John DeDakis", "Dawn Barclay", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 112
+    title: "After the Twist: Why the Ending Isn’t the End"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:00 AM"
+    duration_min: 50
+    speakers: ["Amy Denton", "Christine M. Fairchild", "Robert T. Kelley", "Robert Mangeot", "Carol Potenza", "Denise Jendusa"]
+    location: "Redbud"
+    tags: ["Panel"]
+    description: null
+
+  - id: 113
+    event_number: "EC19"
+    title: "Agent / Editor Manuscript Critiques [EC19]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:00 AM"
+    duration_min: 20
+    speakers: ["Jaden (Beth) Terrell", "Amber Meyer", "John DeDakis", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 114
+    event_number: "ART7"
+    title: "Agent Roundtable 7 (ART7)"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:00 AM"
+    duration_min: 50
+    speakers: ["Tommy Dean", "Ronald Gerber", "Dean Krystek", "Nikki Carrero", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Roundtable", "Advance Registration"]
+    description: "Advance Registration Required. Tommy Dean, Ronald Gerber, Dean Krystek, Nikki Carrero (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 115
+    title: "Big Ideas, Bigger Stakes: Writing High-Concept Novels"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:00 AM"
+    duration_min: 50
+    speakers: ["Jody Madala", "Michael Maloof", "T.O. Paine", "Peregrine Finn"]
+    location: "Poplar"
+    tags: ["Panel"]
+    description: null
+
+  - id: 116
+    event_number: "Breakout 8"
+    title: "Debut Authors: Publishing Tips for New Writers [Breakout 8]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:00 AM"
+    duration_min: 50
+    speakers: ["Reed Farrel Coleman"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed Event"
+
+  - id: 117
+    title: "Medical Scenes In Fiction"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:00 AM"
+    duration_min: 50
+    speakers: ["Dan Parrish", "Jo Loveday", "Rosy Fenwicke", "Alan Spira", "Cheryl Fallin", "Ronda Wells, MD"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 118
+    title: "Organic Writing: How to Abandon Your Outline and Elevate Your Story"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:00 AM"
+    duration_min: 50
+    speakers: ["Steven James"]
+    location: "Oak"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 119
+    title: "SEMWA Panel: From Cozy to Creepy – The Range of Crime Fiction Genres"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:00 AM"
+    duration_min: 50
+    speakers: ["Valerie Burns", "Paula Gail Benson", "Jeffrey Philips", "Clay Stafford", "Steven Womack", "Rick Glaze", "Dennis Murphy"]
+    location: "Birch"
+    tags: ["Panel", "SEMWA"]
+    description: null
+
+  - id: 120
+    title: "Serial Offenders and Forensic Plot Points: Real Cases for Writers"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:00 AM"
+    duration_min: 50
+    speakers: ["Kimberly Lander"]
+    location: "Sycamore"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 121
+    title: "What Happens Next: Organizing and Plotting"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:00 AM"
+    duration_min: 50
+    speakers: ["James L. Hill", "Leigh Stroh", "Maxine Schur", "Kim Lajevardi", "D.L. Wood", "Susan Reiss"]
+    location: "Chestnut"
+    tags: ["Panel"]
+    description: null
+
+  - id: 122
+    title: "What They’re Hiding: Using Secrets to Build Tension and Depth"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:00 AM"
+    duration_min: 50
+    speakers: ["Janet Boydell", "Nancy G. West", "SL Woeppel", "Gledé Browne Kabongo", "Sandra J. Cady", "Yvonne Ventresca"]
+    location: "Maple"
+    tags: ["Panel"]
+    description: null
+
+  - id: 123
+    event_number: "EC20"
+    title: "Agent / Editor Manuscript Critiques [EC20]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "10:30 AM"
+    duration_min: 20
+    speakers: ["Jaden (Beth) Terrell", "Amber Meyer", "John DeDakis", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 124
+    event_number: "AC6"
+    title: "Agent / Editor Manuscript Critiques [AC6]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "11:00 AM"
+    duration_min: 20
+    speakers: ["Ronald Gerber", "Nikki Carrero", "Kristen Terrette"]
+    location: "Franklin / Board Room"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required. Ronald Gerber, Nikki Carrero (Franklin); Kristen Terrette (Board Room)"
+
+  - id: 125
+    event_number: "EC21"
+    title: "Agent / Editor Manuscript Critiques [EC21]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "11:00 AM"
+    duration_min: 20
+    speakers: ["Amber Meyer", "Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 126
+    title: "Authors Book Signing"
+    date: "2026-08-22"
+    day: Saturday
+    start: "11:00 AM"
+    duration_min: 20
+    speakers: []
+    location: "Magnolia/Iris/Azalea"
+    tags: ["Book Signing"]
+    description: "Killer Nashville Bookstore – Free and open to the public"
+
+  - id: 127
+    title: "Killer Nashville Networking Lunch"
+    date: "2026-08-22"
+    day: Saturday
+    start: "11:30 AM"
+    duration_min: 100
+    speakers: []
+    location: "Birch/Chestnut"
+    tags: ["Meal", "Ticketed"]
+    description: "Free to all paid attendees with ticket"
+
+  - id: 128
+    title: "Presentation of Debut Authors"
+    date: "2026-08-22"
+    day: Saturday
+    start: "11:35 AM"
+    duration_min: 10
+    speakers: []
+    location: null
+    tags: ["Presentation"]
+    description: null
+
+  - id: 129
+    title: "Saturday Lunch Keynote Speech: Facing Your Writing Fears"
+    date: "2026-08-22"
+    day: Saturday
+    start: "12:00 PM"
+    duration_min: 20
+    speakers: ["John DeDakis"]
+    location: "Birch/Chestnut"
+    tags: ["Keynote", "Ticketed"]
+    description: "Free to all paid attendees with lunch ticket"
+
+  - id: 130
+    title: "Guest of Honor Interview"
+    date: "2026-08-22"
+    day: Saturday
+    start: "12:30 PM"
+    duration_min: 40
+    speakers: ["Clay Stafford", "Heather Graham"]
+    location: "Birch/Chestnut"
+    tags: ["Interview"]
+    description: "Clay Stafford Interviews Guest of Honor Heather Graham"
+
+  - id: 131
+    event_number: "AC7"
+    title: "Agent / Editor Manuscript Critiques [AC7]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:20 PM"
+    duration_min: 20
+    speakers: ["Tommy Dean", "Nikki Carrero", "Nicola Pittam", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required. Tommy Dean, Nikki Carrero (Franklin); Nicola Pittam (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 132
+    event_number: "EC22"
+    title: "Agent / Editor Manuscript Critiques [EC22]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:20 PM"
+    duration_min: 20
+    speakers: ["Miranda Darrow", "Helen Thornton-Gussy"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 133
+    title: "Authors Book Signing"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:20 PM"
+    duration_min: 20
+    speakers: []
+    location: "Magnolia/Iris/Azalea"
+    tags: ["Book Signing"]
+    description: "Killer Nashville Bookstore – Free and open to the public"
+
+  - id: 134
+    event_number: "EC23"
+    title: "Agent / Editor Manuscript Critiques [EC23]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:50 PM"
+    duration_min: 20
+    speakers: ["Miranda Darrow", "Helen Thornton-Gussy", "Amber Meyer", "John DeDakis"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 135
+    event_number: "ART8"
+    title: "Agent Roundtable 8 (ART8)"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Tommy Dean", "Ronald Gerber", "Dean Krystek", "Nikki Carrero", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Roundtable", "Advance Registration"]
+    description: "Advance Registration Required. Tommy Dean, Ronald Gerber, Dean Krystek, Nikki Carrero (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 136
+    title: "Bridging Multiple Genres"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Tom Wood", "Elizabeth Crowens", "Kim Lajevardi", "SL Woeppel", "Darin Werkmeister", "Brian Montross"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 137
+    title: "Developing Theme in Fiction"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Thomas Burns", "Martha Reed", "Ashley Hagan", "Charles Salzberg", "Zelly Ruskin"]
+    location: "Poplar"
+    tags: ["Panel"]
+    description: null
+
+  - id: 138
+    title: "Humor and Intensity - The Twins in the Mirror"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Matthew Minson", "Christine Mager Wevik", "Shelley Marsh", "Lois Winston", "Kathleen Kaska", "Michael Balter"]
+    location: "Redbud"
+    tags: ["Panel"]
+    description: null
+
+  - id: 139
+    title: "Nowhere to Run: Writing Stories in Isolated and Cut-Off Settings"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Noelle Ihil"]
+    location: "Chestnut"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 140
+    title: "Sex Trafficking"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Mark Rein"]
+    location: "Sycamore"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 141
+    title: "Taking Charge of Your Author Business"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Lynda Rees"]
+    location: "Oak"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 142
+    event_number: "Breakout 9"
+    title: "Writing for Hollywood [Breakout 9]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["Scott Moore"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed"
+
+  - id: 143
+    title: "Writing the Short Story"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["John Bukowski", "Avram Lavinsky", "Robert Mangeot", "Rich Hosek", "Warren Moore", "Tim \"Cajun\" Hardy Bischoff"]
+    location: "Maple"
+    tags: ["Panel"]
+    description: null
+
+  - id: 144
+    title: "Writing Tools and Techniques"
+    date: "2026-08-22"
+    day: Saturday
+    start: "1:50 PM"
+    duration_min: 45
+    speakers: ["K.M. Freeman", "Kim Megahee", "Michael Lucker", "Leigh Hull"]
+    location: "Birch"
+    tags: ["Panel"]
+    description: null
+
+  - id: 145
+    event_number: "EC24"
+    title: "Agent / Editor Manuscript Critiques [EC24]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:20 PM"
+    duration_min: 20
+    speakers: ["Miranda Darrow", "Helen Thornton-Gussy", "Amber Meyer", "John DeDakis", "Jaden (Beth Terrell)", "Dawn Barclay"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 146
+    event_number: "EC25"
+    title: "Agent / Editor Manuscript Critiques [EC25]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:50 PM"
+    duration_min: 20
+    speakers: ["Miranda Darrow", "Helen Thornton-Gussy", "Amber Meyer", "John DeDakis", "Jaden (Beth Terrell)", "Dawn Barclay"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 147
+    event_number: "ART9"
+    title: "Agent Roundtable 9 (ART9)"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:50 PM"
+    duration_min: 45
+    speakers: ["Tommy Dean", "Ronald Gerber", "Dean Krystek", "Nikki Carrero", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Roundtable", "Advance Registration"]
+    description: "Advance Registration Required. Tommy Dean, Ronald Gerber, Dean Krystek, Nikki Carrero (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 148
+    title: "Building a Social Media Following Before You Get an Agent"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:50 PM"
+    duration_min: 45
+    speakers: ["Jack Sharman", "Renda Knapp", "Nate Hoffelder", "Roy Hiller"]
+    location: "Chestnut"
+    tags: ["Panel"]
+    description: null
+
+  - id: 149
+    event_number: "Breakout 10"
+    title: "How to Bring Publishers to YOU through Indie Publishing [Breakout 10]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:50 PM"
+    duration_min: 45
+    speakers: ["Noelle Ihil"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed"
+
+  - id: 150
+    title: "How to Create a Villain"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:50 PM"
+    duration_min: 45
+    speakers: ["Steven Fisher", "Terry Friedman", "R.C. Reid", "SL Woeppel", "Ley Esses", "Jim Nesbitt"]
+    location: "Oak"
+    tags: ["Panel"]
+    description: null
+
+  - id: 151
+    title: "Intel 101: Understanding US Intelligence Agencies"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:50 PM"
+    duration_min: 45
+    speakers: ["Traci Abramson"]
+    location: "Sycamore"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 152
+    title: "Mystery and Magic: Can They Work Together?"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:50 PM"
+    duration_min: 45
+    speakers: ["Rick Glaze", "Martha Reed", "Sandra J. Cady", "Christine Mager Wevik", "Lorena Peter", "Carolyn Rowland"]
+    location: "Poplar"
+    tags: ["Panel"]
+    description: null
+
+  - id: 153
+    title: "The Reality of Novel Violence"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:50 PM"
+    duration_min: 45
+    speakers: ["Patrick Kendrick", "J.T. Ellison", "T.G. Brown", "John Lamb", "J.E. Weiner", "Michael Maloof"]
+    location: "Redbud"
+    tags: ["Panel"]
+    description: null
+
+  - id: 154
+    title: "Using Music in Crime Fiction"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:50 PM"
+    duration_min: 45
+    speakers: ["Michael Cody"]
+    location: "Maple"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 155
+    title: "Writers and Taxes"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:50 PM"
+    duration_min: 45
+    speakers: ["Patrick Balester"]
+    location: "Birch"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 156
+    title: "Writing the Amateur Sleuth"
+    date: "2026-08-22"
+    day: Saturday
+    start: "2:50 PM"
+    duration_min: 45
+    speakers: ["Amy Denton", "J.J. Cagney", "Kirsten Shuford", "Vanessa M. Knight", "Nancy Herriman", "Lynn Slaughter"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 157
+    event_number: "EC26"
+    title: "Agent / Editor Manuscript Critiques [EC26]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:20 PM"
+    duration_min: 20
+    speakers: ["Miranda Darrow", "Helen Thornton-Gussy", "Amber Meyer", "John DeDakis", "Dawn Barclay"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 158
+    event_number: "EC27"
+    title: "Agent / Editor Manuscript Critiques [EC27]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 20
+    speakers: ["Amber Meyer", "John DeDakis", "Dawn Barclay"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 159
+    event_number: "ART10"
+    title: "Agent Roundtable 10 (ART10)"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Tommy Dean", "Ronald Gerber", "Dean Krystek", "Nikki Carrero", "Nicola Pittam", "Mason Rowlee", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Roundtable", "Advance Registration"]
+    description: "Advance Registration Required. Tommy Dean, Ronald Gerber, Dean Krystek, Nikki Carrero (Franklin); Nicola Pittam, Mason Rowlee (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 160
+    title: "Building Suspense"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Cathey Rhamy", "Helen Thornton-Gussy", "Jennifer Sadera", "J.T. Ellison", "Rick Hosek", "Rick Glaze"]
+    location: "Poplar"
+    tags: ["Panel"]
+    description: null
+
+  - id: 161
+    title: "Crafting Mystery Without the Gore: Cozy Mysteries"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Michael Rigg", "John Lamb", "J.J. Cagney", "Nancy Herriman", "Marty Ludlum", "Shelley Marsh"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 162
+    title: "Moving Through The Muddled Middle"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Christine M. Fairchild", "Zelly Ruskin"]
+    location: "Redbud"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 163
+    event_number: "Breakout 11"
+    title: "Protecting Yourself and Your Work: The Four Pillars Every Writer Should Know [Breakout 11]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Tisha Morris"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed"
+
+  - id: 164
+    title: "Running Your Writing Like a Business"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Stephen Eoannou", "Carolyn Rowland", "Lori B. Duff", "Mary Stone", "T.G. Brown", "Tiara Platt"]
+    location: "Maple"
+    tags: ["Panel"]
+    description: null
+
+  - id: 165
+    event_number: "Breakout 12"
+    title: "The Power of Enneagrams - Ticketed Breakout [Breakout 12]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Susan Reiss"]
+    location: "Birch"
+    tags: ["Breakout", "Ticketed"]
+    description: null
+
+  - id: 166
+    title: "Websites 101"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Jeniffer Thompson"]
+    location: "Oak"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 167
+    title: "Writing With Medical Accuracy"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:50 PM"
+    duration_min: 45
+    speakers: ["Rosy Fenwicke", "Harper Barrow", "Renda Knapp", "Cheryl Fallin", "John Bukowski"]
+    location: "Sycamore"
+    tags: ["Panel"]
+    description: null
+
+  - id: 168
+    title: "Killer Nashville Author Speed Date"
+    date: "2026-08-22"
+    day: Saturday
+    start: "3:55 PM"
+    duration_min: 50
+    speakers: ["Carmen Amato", "Ashley Hagan", "Bruce Coffin", "Mike Faricy", "Deb Gaskill", "Avram Lavinsky", "Robert Mangeot", "Lois Winston", "Lisa Wysocky", "Chris Berg", "Carol Potenza", "Beth Terrell", "Mary Lynn Cloghesy", "Bradley Harper", "James Glass", "Ama Adair", "David Bruns", "Steven Womack", "CB (Cheryl) Wilson", "Traci Abramson", "Randy Overbeck", "DP (Doug) Lyle"]
+    location: "Chestnut"
+    tags: ["Speed Date", "Ticketed"]
+    description: "Presented by: The Dangerous Pen Society [Ticketed Event]. Hosts: Carmen Amato, Ashley Hagan"
+
+  - id: 169
+    event_number: "EC28"
+    title: "Agent / Editor Manuscript Critiques [EC28]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "4:20 PM"
+    duration_min: 20
+    speakers: ["Amber Meyer", "John DeDakis", "Dawn Barclay"]
+    location: "Athletic Club"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 170
+    event_number: "AC8"
+    title: "Agent / Editor Manuscript Critiques [AC8]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "5:00 PM"
+    duration_min: 20
+    speakers: ["Tommy Dean", "Ronald Gerber", "Nikki Carrero", "Nicola Pittam", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required. Tommy Dean, Ronald Gerber, Nikki Carrero (Franklin); Nicola Pittam (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 171
+    event_number: "EC29"
+    title: "Agent / Editor Manuscript Critiques [EC29]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "5:00 PM"
+    duration_min: 20
+    speakers: ["Dawn Barclay"]
+    location: "Atrium Front"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 172
+    title: "Authors Book Signing"
+    date: "2026-08-22"
+    day: Saturday
+    start: "5:00 PM"
+    duration_min: 20
+    speakers: []
+    location: "Magnolia/Iris/Azalea"
+    tags: ["Book Signing"]
+    description: "Killer Nashville Bookstore – Free and open to the public"
+
+  - id: 173
+    event_number: "AC9"
+    title: "Agent / Editor Manuscript Critiques [AC9]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "5:20 PM"
+    duration_min: 20
+    speakers: ["Tommy Dean", "Ronald Gerber", "Nikki Carrero", "Nicola Pittam", "Kristen Terrette"]
+    location: "Franklin / Harpeth / Board Room"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required. Tommy Dean, Ronald Gerber, Nikki Carrero (Franklin); Nicola Pittam (Harpeth); Kristen Terrette (Board Room)"
+
+  - id: 174
+    event_number: "EC30"
+    title: "Agent / Editor Manuscript Critiques [EC30]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "5:20 PM"
+    duration_min: 20
+    speakers: ["John DeDakis", "Dawn Barclay"]
+    location: "Atrium Front"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 175
+    title: "Killer Nashville Open Bar"
+    date: "2026-08-22"
+    day: Saturday
+    start: "5:30 PM"
+    duration_min: 90
+    speakers: []
+    location: "Atrium"
+    tags: ["Social"]
+    description: "Free to Those Staying at Embassy Suites (Atrium) – Bar Tab for Those Not Staying at Embassy Suites (Atrium)"
+
+  - id: 176
+    event_number: "AC10"
+    title: "Agent / Editor Manuscript Critiques [AC10]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "5:40 PM"
+    duration_min: 20
+    speakers: ["Tommy Dean", "Nicola Pittam"]
+    location: "Franklin / Harpeth"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required. Tommy Dean (Franklin); Nicola Pittam (Harpeth)"
+
+  - id: 177
+    event_number: "EC31"
+    title: "Agent / Editor Manuscript Critiques [EC31]"
+    date: "2026-08-22"
+    day: Saturday
+    start: "5:40 PM"
+    duration_min: 20
+    speakers: ["John DeDakis", "Dawn Barclay"]
+    location: "Atrium Front"
+    tags: ["Critique", "Advance Registration"]
+    description: "Agent / Editor Manuscript Critiques – Advance Registration Required"
+
+  - id: 178
+    title: "Registration Closes"
+    date: "2026-08-22"
+    day: Saturday
+    start: "6:00 PM"
+    duration_min: null
+    speakers: []
+    location: "Registration Desk (Atrium) and Bookstore (Maple / Oak)"
+    tags: ["Logistics"]
+    description: "Registration Desk (Atrium) and Bookstore (Maple / Oak) close"
+
+  - id: 179
+    title: "Killer Nashville Awards Dinner"
+    date: "2026-08-22"
+    day: Saturday
+    start: "7:00 PM"
+    duration_min: 240
+    speakers: []
+    location: "Birch/Chestnut"
+    tags: ["Awards", "Ticketed"]
+    description: "Nashville music, buffet, awards – Advance Registration Required – Ticket Required / Open to the public"
+
+  - id: 180
+    title: "Killer Nashville Network Breakfast"
+    date: "2026-08-23"
+    day: Sunday
+    start: "7:00 AM"
+    duration_min: 210
+    speakers: []
+    location: "Atrium"
+    tags: ["Meal"]
+    description: "Free to Those Staying at Embassy Suites (Atrium) – $19.99 For Those Not Staying at Embassy Suites (Atrium)"
+
+  - id: 181
+    title: "Registration"
+    date: "2026-08-23"
+    day: Sunday
+    start: "8:00 AM"
+    duration_min: 420
+    speakers: []
+    location: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea)"
+    tags: ["Logistics"]
+    description: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea) open"
+
+  - id: 182
+    title: "Clay Stafford Closing Remarks"
+    date: "2026-08-23"
+    day: Sunday
+    start: "8:15 AM"
+    duration_min: 10
+    speakers: ["Clay Stafford"]
+    location: null
+    tags: ["Closing"]
+    description: null
+
+  - id: 183
+    title: "Sunday Keynote Speech: Redefining Success: Beyond the Myth of Arrival"
+    date: "2026-08-23"
+    day: Sunday
+    start: "8:25 AM"
+    duration_min: 20
+    speakers: ["Mary Lynn Cloghesy"]
+    location: null
+    tags: ["Keynote"]
+    description: null
+
+  - id: 184
+    title: "Books Under Fire: Censorship and Book Banning and How It Affects Writers"
+    date: "2026-08-23"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 40
+    speakers: ["Reed Farrel Coleman"]
+    location: "Chestnut"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 185
+    title: "Defining Characteristics of YA Novels"
+    date: "2026-08-23"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 40
+    speakers: ["Maxine Schur", "Judy Lynn Gregg", "Lynn Slaughter"]
+    location: "Birch"
+    tags: ["Panel"]
+    description: null
+
+  - id: 186
+    title: "How Secondary Characters Drive the Story"
+    date: "2026-08-23"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 40
+    speakers: ["Carolyn Rowland", "Stacey Horan", "Mitchell S. Karnes", "Sean Hagerty", "R.C. Reid", "Sandra J. Cady"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 187
+    event_number: "Breakout 15"
+    title: "How to Get the Attention of an Agent [Breakout 15]"
+    date: "2026-08-23"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 40
+    speakers: ["Nikki Carerro", "Ronald Gerber", "Dean Krystek"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed"
+
+  - id: 188
+    event_number: "Breakout 13"
+    title: "How to Work With an Editor [Breakout 13]"
+    date: "2026-08-23"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 40
+    speakers: ["Dawn Barclay", "Miranda Darrow", "John DeDakis", "Helen Thornton-Gussy", "Amber Meyer", "Jaden (Beth) Terrell"]
+    location: "Redbud"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed"
+
+  - id: 189
+    title: "Redefining the Purpose, Process, and Role of Literary Awards in Creative Growth"
+    date: "2026-08-23"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 40
+    speakers: ["Jennifer Sadera"]
+    location: "Sycamore"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 190
+    title: "The Evolution of Gothic: Southern & Traditional"
+    date: "2026-08-23"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 40
+    speakers: ["Elise Burke Brown", "J.E. Weiner", "Thomas Burns", "Michael Cody", "Aimee Hardy"]
+    location: "Oak"
+    tags: ["Panel"]
+    description: null
+
+  - id: 191
+    event_number: "Breakout 14"
+    title: "What Agents Expect from Their Clients [Breakout 14]"
+    date: "2026-08-23"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 40
+    speakers: ["Tommy Dean", "Nicola Pittam", "Kristen Terrette"]
+    location: "Poplar"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed"
+
+  - id: 192
+    title: "What Neuroscience Really Says About Creativity, Focus, and Productivity for Writers"
+    date: "2026-08-23"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 40
+    speakers: ["Brent Maguire"]
+    location: "Franklin"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 193
+    title: "Writing Forensics: Getting the Science Right"
+    date: "2026-08-23"
+    day: Sunday
+    start: "9:00 AM"
+    duration_min: 40
+    speakers: ["T.O. Paine", "Stephen Wallace", "Susan Hatters Friedman, MD", "Rosy Fenwicke"]
+    location: "Maple"
+    tags: ["Panel"]
+    description: null
+
+  - id: 194
+    title: "Conducting Research for True Crime and Fiction"
+    date: "2026-08-23"
+    day: Sunday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Kimberly Wall", "Dawn Barclay", "James Owen", "Nancy Locklin", "Robert T. Kelley", "Jim Nesbitt"]
+    location: "Maple"
+    tags: ["Panel"]
+    description: null
+
+  - id: 195
+    title: "Critique Groups Dos and Don'ts"
+    date: "2026-08-23"
+    day: Sunday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Leigh Hull", "Henry Kaye", "Miranda Darrow", "Debra Gaskill", "Mark Greene", "Kim Megahee"]
+    location: "Chestnut"
+    tags: ["Panel"]
+    description: null
+
+  - id: 196
+    title: "Ending Every Chapter With a Bang"
+    date: "2026-08-23"
+    day: Sunday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Susan Tanner", "Judy Lyn Gregg", "Michael Balter", "Cat Wyatt", "Brad Harper", "BJ Sloan"]
+    location: "Oak"
+    tags: ["Panel"]
+    description: null
+
+  - id: 197
+    event_number: "Breakout 16"
+    title: "Illuminating the Shadows: First Pages that Intrigue and Haunt [Breakout 16]"
+    date: "2026-08-23"
+    day: Sunday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Tommy Dean"]
+    location: "Poplar"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed"
+
+  - id: 198
+    title: "Law Enforcement Procedures"
+    date: "2026-08-23"
+    day: Sunday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Alan Schmadtke", "Darin Werkmeister", "BJ Bourg", "Jack Sharman", "David Williams"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 199
+    title: "Native/Indigenous American Crime Fiction"
+    date: "2026-08-23"
+    day: Sunday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Michael Cody"]
+    location: "Redbud"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 200
+    title: "Serial Killers I Have Known and Hated"
+    date: "2026-08-23"
+    day: Sunday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Patrick Kendrick"]
+    location: "Williamson"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 201
+    title: "Show, Don't Tell. What Editors Actually Mean"
+    date: "2026-08-23"
+    day: Sunday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Helen Thornton-Gussy"]
+    location: "Sycamore"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 202
+    title: "The Art of Misdirection: Using Red-Herrings to Drive Your Mystery"
+    date: "2026-08-23"
+    day: Sunday
+    start: "10:00 AM"
+    duration_min: 45
+    speakers: ["Gledé Browne Kabongo", "Lynda Rees", "Ashley Hagan", "Michael Rigg", "Kirsten Shuford"]
+    location: "Birch"
+    tags: ["Panel"]
+    description: null
+
+  - id: 203
+    title: "Authors Book Signing"
+    date: "2026-08-23"
+    day: Sunday
+    start: "11:00 AM"
+    duration_min: 20
+    speakers: []
+    location: "Magnolia/Iris/Azalea"
+    tags: ["Book Signing"]
+    description: "Killer Nashville Bookstore – Free and open to the public"
+
+  - id: 204
+    event_number: "Breakout 17"
+    title: "Being Your Own Storyteller [Breakout 17] / Author Interviews"
+    date: "2026-08-23"
+    day: Sunday
+    start: "11:30 AM"
+    duration_min: 45
+    speakers: ["Stacey Horan"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed"
+
+  - id: 205
+    title: "Beyond the Uniform: Portraying Authentic Military Complexity in Fiction"
+    date: "2026-08-23"
+    day: Sunday
+    start: "11:30 AM"
+    duration_min: 45
+    speakers: ["Luna Nuntia", "David Bruns", "Dean Krystek", "Chris Kudlacz"]
+    location: "Sycamore"
+    tags: ["Panel"]
+    description: null
+
+  - id: 206
+    title: "Debut Year from the Other Side: The Reality of Your First Year Published"
+    date: "2026-08-23"
+    day: Sunday
+    start: "11:30 AM"
+    duration_min: 45
+    speakers: ["K.M. Freeman", "Jennifer Sadera", "Shelley Marsh", "Kirsten Shuford", "Aimee Hardy"]
+    location: "Birch"
+    tags: ["Panel"]
+    description: null
+
+  - id: 207
+    title: "Dismal Dialogue and How to Fix It"
+    date: "2026-08-23"
+    day: Sunday
+    start: "11:30 AM"
+    duration_min: 45
+    speakers: ["I.M. Jones", "BJ Sloan", "Mike McKinley", "C.S. Devereaux", "Alan Schmadtke", "Carmen Amato"]
+    location: "Chestnut"
+    tags: ["Panel"]
+    description: "*Attendees are encouraged to bring a short section of dialogue to the panel; the panelists will randomly choose someone to read their dialogue to have it critiqued*"
+
+  - id: 208
+    title: "Mirrors, and Murder: Magician Techniques for Mystery Writers"
+    date: "2026-08-23"
+    day: Sunday
+    start: "11:30 AM"
+    duration_min: 45
+    speakers: ["Sabrina Thatcher"]
+    location: "Poplar"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 209
+    title: "Morality in Thrillers & Mysteries"
+    date: "2026-08-23"
+    day: Sunday
+    start: "11:30 AM"
+    duration_min: 45
+    speakers: ["Dan Parrish", "Rich Hosek", "Sean Hagerty", "Warren Moore", "Walter Sticht", "Jack Sharman"]
+    location: "Maple"
+    tags: ["Panel"]
+    description: null
+
+  - id: 210
+    title: "Setting as a Character"
+    date: "2026-08-23"
+    day: Sunday
+    start: "11:30 AM"
+    duration_min: 45
+    speakers: ["Sarah P. Blanchard", "Jim Nesbitt", "Steven Womack", "John Morrison", "Rebecca Barrett", "Henry Kaye"]
+    location: "Oak"
+    tags: ["Panel"]
+    description: null
+
+  - id: 211
+    title: "Weaving Conflict Through Every Storyline"
+    date: "2026-08-23"
+    day: Sunday
+    start: "11:30 AM"
+    duration_min: 45
+    speakers: ["Sherry Shealy Martschink", "J.J. Cagney", "Heather Graham"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 212
+    title: "Writing In the World of AI"
+    date: "2026-08-23"
+    day: Sunday
+    start: "11:30 AM"
+    duration_min: 45
+    speakers: ["John DeDakis", "Leigh Hull", "Nate Hoffelder", "Sandy Clements", "Walter Sticht"]
+    location: "Redbud"
+    tags: ["Panel"]
+    description: null
+
+  - id: 213
+    event_number: "Breakout 18"
+    title: "5 Key Relationships Your Main Character Must Have [Breakout 18]"
+    date: "2026-08-23"
+    day: Sunday
+    start: "12:30 PM"
+    duration_min: 45
+    speakers: ["Christine Fairchild"]
+    location: "Williamson"
+    tags: ["Breakout", "Ticketed"]
+    description: "Breakout, Ticketed"
+
+  - id: 214
+    title: "Courtroom Procedures"
+    date: "2026-08-23"
+    day: Sunday
+    start: "12:30 PM"
+    duration_min: 45
+    speakers: ["Jack Sharman", "Tina Austin", "Lori B. Duff", "BJ Bourg", "Paula Gail Benson"]
+    location: "Sycamore"
+    tags: ["Panel"]
+    description: null
+
+  - id: 215
+    title: "Digging Deeper: Research Techniques Every Writer Needs"
+    date: "2026-08-23"
+    day: Sunday
+    start: "12:30 PM"
+    duration_min: 45
+    speakers: ["Patrick Kendrick", "Nancy Locklin"]
+    location: "Oak"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 216
+    title: "Plotting a Mystery"
+    date: "2026-08-23"
+    day: Sunday
+    start: "12:30 PM"
+    duration_min: 45
+    speakers: ["D.L. Wood", "Elise Burke Brown"]
+    location: "Birch"
+    tags: ["Presentation"]
+    description: null
+
+  - id: 217
+    title: "Psychological Stakes & Tension in Mystery & Thriller Fiction"
+    date: "2026-08-23"
+    day: Sunday
+    start: "12:30 PM"
+    duration_min: 45
+    speakers: ["Luna Nuntia", "Denise Jendusa", "Charles D'Amico", "Dawn Barclay", "Jennifer Sadera", "Gledé Browne Kabongo"]
+    location: "Maple"
+    tags: ["Panel"]
+    description: null
+
+  - id: 218
+    title: "The Craft and Art of Literary Storytelling"
+    date: "2026-08-23"
+    day: Sunday
+    start: "12:30 PM"
+    duration_min: 45
+    speakers: ["Sarah P. Blanchard", "Michael Cody", "Peregrine Finn"]
+    location: "Chestnut"
+    tags: ["Panel"]
+    description: null
+
+  - id: 219
+    title: "Writing and Selling a Series"
+    date: "2026-08-23"
+    day: Sunday
+    start: "12:30 PM"
+    duration_min: 45
+    speakers: ["Cathey Rhamy", "Judy Lyn Gregg", "Mitchell S. Karnes", "Mary Stone", "Chris Underwood", "Bill Rapp"]
+    location: "Redbud"
+    tags: ["Panel"]
+    description: null
+
+  - id: 220
+    title: "Writing as A Healing Practice"
+    date: "2026-08-23"
+    day: Sunday
+    start: "12:30 PM"
+    duration_min: 45
+    speakers: ["John DeDakis", "Emmett Tatter", "John Bradshaw", "Harper Barrow", "Suzanne Junered", "Tim Cajun Hardy Bischoff"]
+    location: "Poplar"
+    tags: ["Panel"]
+    description: null
+
+  - id: 221
+    title: "Writing Romantic Suspense"
+    date: "2026-08-23"
+    day: Sunday
+    start: "12:30 PM"
+    duration_min: 45
+    speakers: ["Joy Allyson", "Debra Gaskill", "Ronda Wells, MD", "R.C. Reid", "Vanessa M. Knight"]
+    location: "Hickory"
+    tags: ["Panel"]
+    description: null
+
+  - id: 222
+    title: "Authors Book Signing"
+    date: "2026-08-23"
+    day: Sunday
+    start: "1:30 PM"
+    duration_min: 20
+    speakers: []
+    location: "Magnolia/Iris/Azalea"
+    tags: ["Book Signing"]
+    description: "Killer Nashville Bookstore – Free and open to the public"
+
+  - id: 223
+    title: "Registration Closes / Conference Ends"
+    date: "2026-08-23"
+    day: Sunday
+    start: "3:00 PM"
+    duration_min: null
+    speakers: []
+    location: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea)"
+    tags: ["Logistics"]
+    description: "Registration Desk (Atrium) and Bookstore (Magnolia/Iris/Azalea) close"
