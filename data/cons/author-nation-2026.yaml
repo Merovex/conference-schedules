@@ -1,7 +1,9 @@
-updated_at: "2026-08-02"
-session_count: 76
+updated_at: "2026-10-20"
+source: "Zite schedule app, getScheduleData export (author-nation-2026.zite.json)"
+session_count: 144
 sessions:
   - id: 0
+    source_id: "recRGsCyJ8glkeP6M"
     title: "Registration"
     date: "2026-11-10"
     day: Tuesday
@@ -10,9 +12,10 @@ sessions:
     speakers: ["Author Nation"]
     location: "Palace 3"
     tags: []
-    description: "Open registration, running all day from 9am."
+    description: "Open Registration begins at 9 am and runs all day."
 
   - id: 1
+    source_id: "recF4RuuWyKc1FEoD"
     title: "Vendor Expo"
     date: "2026-11-10"
     day: Tuesday
@@ -21,9 +24,10 @@ sessions:
     speakers: ["Author Nation"]
     location: "Platinum"
     tags: ["Vendor"]
-    description: "Expo floor with publishing service and product providers; networking, demos and a vendor quest prize draw."
+    description: "Join us on the Mix and Mingle Midway to meet with the largest collection of service and product providers for publishing. Win a full ride including travel to Author Nation 2027 by participating in our vendor quest. This day is a great way to get started with networking, product demos and a chance to ask questions in person."
 
   - id: 2
+    source_id: "recofT21TDyyvLcjT"
     title: "Vendor Expo"
     date: "2026-11-10"
     day: Tuesday
@@ -32,20 +36,22 @@ sessions:
     speakers: ["Author Nation"]
     location: "Gold"
     tags: ["Vendor"]
-    description: "Second expo room; same networking, demos and vendor quest."
+    description: "Join us on the Mix and Mingle Midway to meet with the largest collection of service and product providers for publishing. Win a full ride including travel to Author Nation 2027 by participating in our vendor quest. This day is a great way to get started with networking, product demos and a chance to ask questions in person."
 
   - id: 3
+    source_id: "recuT2XGu7TsIHryG"
     title: "Marine Birthday Celebration"
     date: "2026-11-10"
     day: Tuesday
     start: "4:00 PM"
     duration_min: 60
-    speakers: ["Jonathan Brazee", "Terry Wells-Brown"]
+    speakers: ["Jonathan Brazee"]
     location: "Bronze 2"
     tags: ["Entertainment", "Meetups & Networking"]
     description: null
 
   - id: 4
+    source_id: "recKiMBkyuGJKz3Z9"
     title: "Opening Remarks"
     date: "2026-11-10"
     day: Tuesday
@@ -54,9 +60,10 @@ sessions:
     speakers: ["Joe Solari"]
     location: "Event Center"
     tags: ["Keynote", "Live Education"]
-    description: null
+    description: "What are the elements necessary to succeed in the fast paced uncertain world of publishing? Our focus is on helping you lean into your uniqueness and authenticity when others bet on mimicry. By defining what makes you and your brand promise incomparable it becomes easier for you to send that signal to readers and them to hear it in all the noise."
 
   - id: 5
+    source_id: "recWrbwbYYSWaI0TW"
     title: "Embrace the Shake"
     date: "2026-11-10"
     day: Tuesday
@@ -68,6 +75,7 @@ sessions:
     description: null
 
   - id: 6
+    source_id: "recGmhw9O1UbCILoW"
     title: "How to Reach the Next Generation of Readers — Without Becoming an Influencer"
     date: "2026-11-11"
     day: Wednesday
@@ -75,32 +83,35 @@ sessions:
     duration_min: 60
     speakers: ["Abbie Emmons"]
     location: "Bronze 4"
-    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
-    description: "How younger readers discover books on BookTok/Bookstagram/YouTube, plus templates, batching and light automation to route attention into sales."
+    tags: ["Advertising and Marketing", "Live Education"]
+    description: "Session Description There’s a massive, invisible gap between how many authors market their books and how younger readers actually discover and fall in love with stories today. Platforms like BookTok, Bookstagram, and YouTube aren’t driven by polished marketing—they’re driven by emotional connection, relatability, and peer-to-peer energy. But for many authors, showing up in these spaces feels confusing, time-consuming, or inauthentic. In this session, Abbie breaks down how younger readers actually discover and engage with books across genres like romance, fantasy, sci-fi, and thriller—and where those readers are gathering online. More importantly, she shows how to translate your existing voice into evergreen content that sparks conversation—all without becoming an influencer or chasing trends. Then, she takes it a step further: showing how to turn that attention into a simple, automated sales pipeline. Attendees will learn how to create scroll-stopping content using repeatable post templates, batch and schedule their content in just a few hours per week, and use lightweight automation tools to seamlessly guide readers from social media to their book page. The result? A sustainable, low-effort system that increases visibility, sparks ongoing conversation, and leads to consistent book sales. You don’t need to spend more time on social media—you need a light-touch system that works in the background, so you can focus on what you do best: writing the next book."
 
   - id: 7
-    title: "Draft2Digital"
+    source_id: "recYq56ibJ5N0QriP"
+    title: "Beyond KU: Unlocking Library Distribution for Kindle Unlimited Authors (D2D)"
     date: "2026-11-11"
     day: Wednesday
     start: "9:00 AM"
     duration_min: 60
-    speakers: ["Jim Azevedo"]
+    speakers: ["Megan Spann"]
     location: "Platinum"
     tags: ["Vendor", "Vendor Session"]
-    description: null
+    description: "Libraries are discovery engines. And Amazon’s recent decision to loosen its KDP Select/Kindle Unlimited (KU) exclusivity clause to allow library distribution opens a major new market for KU authors. In this session, you’ll learn about the size of the global library opportunity, you’ll see recent growth statistics, and you’ll come away understanding how different library lending models work. You’ll also gain knowledge of who the major library players are, how to get your books considered for merchandising promotions, and leave with practical tips for getting your books discovered by library readers."
 
   - id: 8
-    title: "Spoken"
+    source_id: "reccKL6wNzl5CB3AD"
+    title: "Black & White Just Became Color: The New, Immersive World of Spoken Multi-Cast™ Audio"
     date: "2026-11-11"
     day: Wednesday
     start: "9:00 AM"
     duration_min: 60
-    speakers: ["Phil Marshall"]
+    speakers: []
     location: "Palace 3"
-    tags: ["Vendor", "Vendor Session", "Implementation", "All"]
-    description: "Multi-cast audio."
+    tags: ["Vendor", "Vendor Session", "All"]
+    description: "Audio continues to grow, and listener tastes continue to change. As an indie author, getting your works into audio can be daunting. The cost, workflow and time challenges are real, and traditional narration can often feel flat. But there's a new way to deliver vivid, multi-cast audio of your story. It's not just less expensive and easier to manage. It's what listeners want, as proven by an Edison Research survey of over 1,000 audiobook listeners. \"Black & White Just Became Color!\" Join Spoken founder and CEO Phil Marshall for a look at what today's listeners actually want — and how Spoken Multi-Cast™ makes it possible to produce immersive, character-driven audiobooks quickly and affordably. In a live demo of Spoken Studio, watch a manuscript transformed into a fully-narrated, multi-cast performance in real time, with voices designed around every character. Then hear it straight from the source. Authors of sci-fi, romance, mystery and horror share their experience publishing with Spoken – from manuscript to audiobook — and how they're reaching new readers in a market where quality and immersiveness matter. Bring your questions for a candid, author-to-author conversation about what's working."
 
   - id: 9
+    source_id: "rechPFBvFCcU3GiA4"
     title: "GEO for Authors: A Step-by-Step Framework to Make Your Books Discoverable in AI Search"
     date: "2026-11-11"
     day: Wednesday
@@ -108,21 +119,23 @@ sessions:
     duration_min: 60
     speakers: ["Ricardo Fayet"]
     location: "Gold"
-    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
-    description: "Framework drawn from a year of testing discovery prompts across major AI assistants, with an audit checklist for your catalogue."
+    tags: ["Advertising and Marketing", "Live Education"]
+    description: "Understanding AI search is one thing. Making your books visible inside it is another. Drawing from a year-long analysis of 1,000+ structured discovery prompts across ChatGPT, Gemini, Claude, and Amazon Rufus, this session will offer you a practical framework for improving your discoverability AI search. You’ll leave with a clear action plan and an audit checklist you can immediately apply to your catalog."
 
   - id: 10
-    title: "PublishDrive"
+    source_id: "recn7BtXPvUkuSViK"
+    title: "PublishDrive: Beyond the Big Store: Find More Readers, Keep More Royalties, and Build a Global Author Business"
     date: "2026-11-11"
     day: Wednesday
     start: "9:00 AM"
     duration_min: 60
     speakers: ["Danica Favorite"]
     location: "Bronze 3"
-    tags: ["Vendor", "Vendor Session"]
-    description: null
+    tags: ["Vendor", "Vendor Session", "Published Voyagers"]
+    description: "Your readers aren’t shopping in just one place, and your publishing business shouldn’t depend on a single retailer. In this practical session, discover how PublishDrive helps authors distribute ebooks, audiobooks, and print books to hundreds of stores and thousands of libraries around the world while keeping 100% of their retailer royalties. We’ll explore what “going wide” actually looks like, where authors may be leaving readers and revenue behind, and how the right tools can simplify global distribution, metadata, royalty management, team collaboration, and book promotion. Whether you’re considering expanding beyond Amazon or already publishing wide, you’ll leave with actionable ways to strengthen your distribution strategy and build a more resilient author business."
 
   - id: 11
+    source_id: "recplqQyofoWr8Ecj"
     title: "Writing Bestsellers"
     date: "2026-11-11"
     day: Wednesday
@@ -130,10 +143,11 @@ sessions:
     duration_min: 60
     speakers: ["Eloisa James"]
     location: "Event Center"
-    tags: ["Craft", "Solo Presentation", "Implementation", "All"]
-    description: "Structure, tropes and chapter endings that hook readers, plus series strategy, royalties and platform; includes a draft-vs-published page comparison."
+    tags: ["Craft", "Live Education", "All"]
+    description: "What do twenty-plus New York Times bestsellers and a chart-topping Kindle Vella serial have in common? Not luck. In her famously frank Big Ten, Eloisa James shows how bestsellers are actually built: the story structure and tropes that hook readers, chapter endings that refuse to let go, the mistakes that quietly kill a book in your genre — and then the career side: series strategy, royalties, author platform, marketing. Plus one first-draft page beside its published version, because bestsellers are revised into existence. Traditional, self-publishing, or hybrid: the list isn't a lottery. Learn to play it on purpose."
 
   - id: 12
+    source_id: "recvZihnbAxJcoGeV"
     title: "Platform-Proof Progression for Authors: Building & Growing Your Author Brand In an Era Where Algorithms Are Unreliable"
     date: "2026-11-11"
     day: Wednesday
@@ -141,32 +155,23 @@ sessions:
     duration_min: 60
     speakers: ["Mark Leslie Lefebvre"]
     location: "Bronze 2"
-    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
-    description: "Building reader relationships that survive algorithm shifts, using newsletters, podcasts and reader magnets rather than rented platforms."
-
-  - id: 13
-    title: "From Organic to Paid: The New Era of Book Marketing on Social Media"
-    date: "2026-11-11"
-    day: Wednesday
-    start: "9:00 AM"
-    duration_min: 60
-    speakers: ["Marvin Wey"]
-    location: "Bronze 1 / Learning Lab"
-    tags: ["Vendor", "Vendor Session", "Masterclass", "All"]
-    description: "Low-effort organic promotion, then turning the best-performing posts into paid ads."
+    tags: ["Advertising and Marketing", "Live Education"]
+    description: "Every author has experienced algorithm shifts, visibility drops, and getting lost in the digital slush pile. Whether it's Amazon's constantly changing recommendation engine, Facebook's organic reach collapse, or newsletter deliverability challenges, authors who build their careers on rented land remain perpetually vulnerable. This session examines how to cultivate genuine, lasting connections with readers that exist independently of any single platform—without the need to abandon any of those platforms entirely. Drawing upon three decades of work in the book industry and practical experience building reader communities through newsletters, podcasts, and strategic reader magnets, this talk will over a concrete framework for thinking about direct relationships as the foundation of a sustainable long-term author business rather than just another marketing tactic. We'll explore why diversified distribution channels can complement the creation and curation of those direct connections, how to create value exchanges that readers genuinely appreciate and come back for, and the mindset shift required for authors to stop chasing algorithms and start building foundational audiences that will follow you wherever you go."
 
   - id: 14
-    title: "Amazon Joint Session"
+    source_id: "recEA5lrOAHEoSR1E"
+    title: "Publishing Successfully with Amazon: KDP, ACX, and Amazon Ads"
     date: "2026-11-11"
     day: Wednesday
     start: "10:30 AM"
     duration_min: 60
-    speakers: ["Ian Delaney", "Amanda Romagnoli"]
+    speakers: ["Ian Delaney", "Amanda Hedger"]
     location: "Palace 3"
     tags: ["Vendor", "Vendor Session"]
-    description: null
+    description: "Hear directly from KDP, ACX, and Amazon Ads about best practices and what's new."
 
   - id: 15
+    source_id: "recH48ye1DbuhQpP9"
     title: "The Author Engine: How to Write, Launch, and Scale Like a 7-Figure Publisher"
     date: "2026-11-11"
     day: Wednesday
@@ -174,10 +179,11 @@ sessions:
     duration_min: 60
     speakers: ["Tony Lee / Jack Gatland"]
     location: "Event Center"
-    tags: ["Business & Finance", "Solo Presentation", "Optimization", "All"]
-    description: "A repeatable publishing workflow built after 2020, covering catalogue-as-assets thinking, faster writing and better launches."
+    tags: ["Business & Finance", "All"]
+    description: "Are you a writer who self-publishes — or a publisher who writes? In this presentation, New York Times #1 Bestseller Tony Lee reveals the system he built after losing everything during the 2020 pandemic — and how it helped him publish over sixty books and earn over $3 million in six years as an indie author. In this author business talk, you’ll learn how to think like a publisher, treat your catalogue like scalable assets, and build a repeatable workflow that allows you to write faster, launch better, and grow your audience without burning out. This is not just a motivational talk — it’s a strategic, actionable roadmap for long-term author business success. Whether you’re starting your first book or managing a growing backlist, The Author Engine is the upgrade your publishing career needs."
 
   - id: 16
+    source_id: "recJARW4obXtZNw47"
     title: "10 Ways to Use AI to Level Up Your Writing Business"
     date: "2026-11-11"
     day: Wednesday
@@ -185,32 +191,35 @@ sessions:
     duration_min: 60
     speakers: ["Misty M. Beller"]
     location: "Bronze 1 / Learning Lab"
-    tags: ["AI and Automation", "Live Education", "Optimization"]
-    description: "Practical AI workflows for analysing ad spend, read-through and retailer data, and for speeding up marketing assets without losing voice."
+    tags: ["AI and Automation", "Live Education"]
+    description: "AI is a powerful lever for author business growth—but only when applied ethically and strategically. This session teaches practical, real-world AI workflows authors can use to analyze business performance and marketing data, including ad spend and conversion metrics, to identify what is working, where money is being wasted, and how to scale profitably. Led by a USA Today bestselling author and publisher with deep marketing experience and 13 years in professional project management, the session demonstrates how AI can surface patterns in audience behavior, series read-through, retailer trends, and advertising outcomes. Attendees will learn how to apply AI to accelerate marketing assets (blurbs, emails, ads, retailer pages), generate ideas, and make smarter business decisions—without compromising voice or values."
 
   - id: 17
+    source_id: "recpjk6CFsypfGqqf"
     title: "Power Couples: Perfect Pairs"
     date: "2026-11-11"
     day: Wednesday
     start: "10:30 AM"
     duration_min: 60
     speakers: ["Damon Suede"]
-    location: "Gold"
-    tags: ["Craft", "Live Education", "Implementation"]
-    description: "Characterisation technique for building vivid two-character dynamics — lovers, foils and rivals — in any genre."
+    location: "Platinum"
+    tags: ["Craft", "Live Education"]
+    description: "Build the perfect duo to dazzle your readers in any genre. Intriguing relationships drive every great story: it takes two to tangle. Bring your fictional folks to the next level with a technique for characterization and dramatization that will strengthen your ideas, your voice, and your projects at any stage. Amp the action, attraction, and interaction between your toothsome twosome with practical, hands-­on strategies for making lovers, foils, and fighters who pop off the page."
 
   - id: 18
-    title: "Creatorwood"
+    source_id: "recxRqBGz55V8OFrq"
+    title: "Behind the Curtain of the Next Gold Rush"
     date: "2026-11-11"
     day: Wednesday
-    start: "10:30 AM"
+    start: "9:00 AM"
     duration_min: 60
     speakers: ["Michael Evans"]
-    location: "Palace 4"
-    tags: ["Vendor"]
-    description: null
+    location: "Bronze 1 / Learning Lab"
+    tags: ["Vendor", "Solo Presentation", "All"]
+    description: "For a century, Hollywood has ruled the world of filmmaking. Publishing used to be the same way (ahem, New York). Until the indies came. We are coming for the studios now. Gatekeepers be bygones. Welcome to the world we call Creatorwood, the platform where you can turn your stories into movies & shows with AI and sell them directly to viewers. It's the beginning of the biggest revolution in storytelling since the dawn of the internet. AI has made it radically more cost effective to make high quality films. Today, I'm going to show you how to go beyond the book to do just that – and give you the inside scoop on how fellow indie authors are turning their movies into real income today. Storytellers Rule the World. Here's how you can rule the entertainment world of tomorrow with us."
 
   - id: 19
+    source_id: "recPoEVuIarcZTRwJ"
     title: "From Zero to Four Figures: Getting a Financial Foothold for Your Self-Published Fiction"
     date: "2026-11-11"
     day: Wednesday
@@ -218,10 +227,11 @@ sessions:
     duration_min: 60
     speakers: ["Paul Austin Ardoin"]
     location: "Bronze 4"
-    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
-    description: "Low-budget strategies for published-but-not-selling authors — diagnosing gaps in books, mindset and marketing to reach steady monthly income."
+    tags: ["Advertising and Marketing", "Live Education"]
+    description: "Getting on the road to financial success as an indie author can be daunting, especially if you don't have much money to invest in marketing. If you've published one or more books but are struggling to get sales, this session can help you develop strategies to build an audience and get your author business off the ground. Increasing your sales requires the right books, mindset, and marketing — many new authors lack one or more of these pillars. USA TODAY Bestselling Author (speaker name) will guide you through the process of identifying the gaps and mistakes that are holding you back. You’ll learn how (and why) to analyze your books to set yourself up for good results, an overview of marketing mindsets, and best practices for inexpensive tools to help you succeed. This isn't about promises of quitting your day job, getting seven-figure sales, or putting a down payment on a yacht—this is real-world advice to get consistent monthly income for people who are struggling to get sales today. These guidelines are repeatable, proven, inexpensive, and attainable—and can help you grow your self-published fiction business."
 
   - id: 20
+    source_id: "recdbtge8KlMKIN1j"
     title: "From Platform-Dependent to Reader-Owned: Optimizing Your Direct Sales Ecosystem for Stability and Scale"
     date: "2026-11-11"
     day: Wednesday
@@ -229,21 +239,11 @@ sessions:
     duration_min: 60
     speakers: ["Rae Davennor"]
     location: "Bronze 2"
-    tags: ["Live Education", "Optimization"]
-    description: "Systems-level look at making retailers, site, email and social work as one funnel; finding bottlenecks and lifting reader lifetime value."
-
-  - id: 21
-    title: "Making Six to Seven Figures Wide"
-    date: "2026-11-11"
-    day: Wednesday
-    start: "10:30 AM"
-    duration_min: 60
-    speakers: ["Juliette N. Banks"]
-    location: "Platinum"
-    tags: ["Advertising and Marketing", "Solo Presentation", "Implementation", "Published Voyagers"]
-    description: "Beginner-to-intermediate wide publishing business and marketing strategy, plus the skills behind a seven-figure author business."
+    tags: ["Websites, Email & Direct Sales", "Live Education"]
+    description: "For many authors, direct sales begin as an experiment—adding Shopify, a newsletter, or TikTok Shop alongside Amazon. But without a cohesive strategy, these tools become fragmented and underperforming. This session focuses on optimizing a direct-to-reader ecosystem so it functions as a stable, scalable revenue foundation rather than a collection of disconnected platforms. Attendees will learn how to define the role of each channel (retailers, website, email, social, serialization platforms), identify bottlenecks in their sales funnel, and prioritize optimizations that increase conversion, reader lifetime value, and revenue consistency. This is not a setup workshop. It’s a systems-level look at how to reduce platform dependency and build a reader-owned business that performs even when algorithms fluctuate."
 
   - id: 22
+    source_id: "recyuWjtC4jALqmrI"
     title: "Steal Like an Artist: Learning from Other Authors’ Novels"
     date: "2026-11-11"
     day: Wednesday
@@ -251,10 +251,11 @@ sessions:
     duration_min: 60
     speakers: ["T.O. Paine"]
     location: "Bronze 3"
-    tags: ["Craft", "Live Education", "Implementation"]
-    description: "A method for analysing other novelists' books and applying the findings to sharpen your own craft."
+    tags: ["Craft", "Live Education"]
+    description: "Stephen King wrote, “Sooner or later, everything old is new again.” It’s true. In many ways, every plot, character, and setting has already been written, and this is a wonderful thing. We have so much to learn from other authors. In this presentation, we will explore a specific method for analyzing other authors’ novels and how to use the results to hone our craft. The goal isn’t to copy. It’s to learn and improve."
 
   - id: 23
+    source_id: "rec4NDupeg1u4tsTi"
     title: "Vibe Coding for Your Publishing Business: Build Custom Tools Without Writing Code"
     date: "2026-11-11"
     day: Wednesday
@@ -262,10 +263,11 @@ sessions:
     duration_min: 60
     speakers: ["Ekello Harrid"]
     location: "Bronze 1 / Learning Lab"
-    tags: ["AI and Automation", "Live Education", "Implementation"]
-    description: "Live build of a custom author tool using plain-English prompting with AI coding assistants, plus a replicable workflow."
+    tags: ["AI and Automation", "Live Education"]
+    description: "What if you could build the exact tools your author business needs—without learning to code, without hiring developers, and without paying monthly fees to platforms that don't quite fit how you work? This hands-on session introduces vibe coding and immediately puts it into practice. You'll watch the process unfold live as we build a simple author tool from scratch—describing what we want in plain English and letting AI tools like Claude Cowork, Claude Code, or OpenAI Codex build it in real time. When something breaks, the AI reads the logs and fixes it. When we want a new feature, we just ask. You'll see real examples of what authors are building: social media content generators that match your voice, marketing tools that create ad copy and email sequences, book production machines, and business dashboards that replace expensive subscriptions. By the end, you'll have a clear, replicable workflow you can apply to build your own custom tools—becoming your own SaaS instead of paying for someone else's."
 
   - id: 24
+    source_id: "recAtKYFKgb4X5JGE"
     title: "Writing distinctive character voices"
     date: "2026-11-11"
     day: Wednesday
@@ -273,10 +275,11 @@ sessions:
     duration_min: 60
     speakers: ["Penny Reid"]
     location: "Event Center"
-    tags: ["Craft", "Live Education", "Implementation"]
-    description: "Building character lexicons and internal narrative structure for distinct dual first-person POVs."
+    tags: ["Craft", "Live Education"]
+    description: "Creating lexicons for writing dual point-of-view in first person, ideas for crafting two distinct characters and using internal narrative structure to form unique character voices."
 
   - id: 25
+    source_id: "recHfEiEmxt3cplf4"
     title: "Forget Followers: How to Cultivate Super Fans Through Your Newsletter"
     date: "2026-11-11"
     day: Wednesday
@@ -284,10 +287,11 @@ sessions:
     duration_min: 60
     speakers: ["Elaine Canyon"]
     location: "Gold"
-    tags: ["Solo Presentation", "Implementation", "Published Voyagers"]
-    description: "Hands-on workshop on what to send when there's no book news, selling without apology, and sustaining high open rates."
+    tags: ["Websites, Email & Direct Sales", "Published Voyagers"]
+    description: "You know why you need a newsletter: social media is borrowed land, algorithms shift, etc, etc, etc. But no one tells you how to get past the block of what to write in your newsletter, let alone how to turn your newsletter into the most valuable asset in your business. Until now. Because when you treat your newsletter right, it becomes the place where you grow super fans. In this hands-on workshop, Elaine Canyon breaks down how she has made her subscriber list the most important part of her business and maintained a 40% open rate. You'll learn how to think like a super fan so you can write for super fans, what to put in your emails when you don't have book news, how to sell without apology, and how to build the kind of authentic relationships that turn casual subscribers into evangelists for your work. With exercises that will help you apply these lessons to your newsletter immediately, this session will give you the confidence to not just write your newsletter, but to start cultivating super fans. Followers can forget you. Super fans never will."
 
   - id: 26
+    source_id: "recLJpnJxePJDAroU"
     title: "The Invisible Author: Why Readers and AI Can’t Find You and How to Fix It"
     date: "2026-11-11"
     day: Wednesday
@@ -295,43 +299,47 @@ sessions:
     duration_min: 60
     speakers: ["Stuart Grant"]
     location: "Bronze 2"
-    tags: ["Live Education", "Optimization"]
-    description: "Optimising an existing author website (home, about, books pages) and retailer profiles so AI recommendation engines describe you accurately."
+    tags: ["Websites, Email & Direct Sales", "Live Education"]
+    description: "Readers are now using AI to choose what to read next, not just Google or Amazon. They’re asking things like “what should I read next?” and getting instant recommendations. The real question is: can AI find you, and when it does, does it actually understand what you write and who it’s for? The way readers find you is changing. In this new world of search, your author website needs to “talk to” AI in a way that makes it instantly clear what you write, who your books are for, and how to recommend you to the right readers. Because of this shift, your website is more important than ever, but only if it’s structured so both readers and AI can understand it. This session is focused on optimisation: improving what already exists. We’ll also demystify GEO (Generative Engine Optimisation): what it is, why it matters, and how it connects to the author website decisions that influence whether AI recommends you or ignores you. We’ll look at the pages that matter most (Home, About, and Books pages), plus the other places AI checks (retailer listings and author profiles), and diagnose the issues that reduce visibility or cause inaccurate AI recommendations. Attendees will learn what “good” looks like, which signals matter most (structure, internal linking, clarity, consistency, and schema markup), and how to prioritise fixes for the biggest impact first. It’s not just about being found by AI, it’s about knowing where AI looks, what it looks for, and making sure the right information is structured in the right way. Attendees will leave with a prioritised optimisation checklist and an understanding of exactly what they can do now, and why. Ideal for authors who already have a website and want stronger visibility in search and more accurate AI-driven recommendations. This session is one not miss if you want to be found in the future."
 
   - id: 27
+    source_id: "rec4uT23RuGtEJpsE"
     title: "How Many Words for Snow: Does Your World Actually Work?"
     date: "2026-11-11"
     day: Wednesday
-    start: "1:00 PM"
+    start: "2:30 PM"
     duration_min: 60
-    speakers: ["Lyn Worthen"]
+    speakers: ["Lauryn Christopher"]
     location: "Bronze 3"
-    tags: ["Craft", "Live Education", "Optimization"]
-    description: "Applying anthropological field-note thinking to worldbuilding so cultures feel internally consistent and lived-in."
+    tags: ["Craft", "Live Education"]
+    description: "A world is more than a map; it’s a web of social logic, the sum of its people’s habits, beliefs, and histories. In this session, we’ll explore ways you can apply anthropological \"field notes\" to your worldbuilding to create the hidden structures that support your story’s society. By building a foundation rooted in social logic, you can create cultures that feel authentic and consistent. Turn your worldbuilding from merely drawing static backdrops into creating vibrant, functioning civilizations on worlds that feel like they existed long before the first page was turned."
 
   - id: 28
-    title: "Book Vault Session"
-    date: "2026-11-11"
-    day: Wednesday
-    start: "1:00 PM"
+    source_id: "recwc8StUfCW7R9ZX"
+    title: "What can Bookvault do for me?"
+    date: "2026-11-12"
+    day: Thursday
+    start: "10:30 AM"
     duration_min: 60
     speakers: ["Alex Smith"]
-    location: "Palace 3"
-    tags: ["Vendor", "Vendor Session"]
-    description: null
+    location: "Bronze 4"
+    tags: ["Vendor", "Vendor Session", "All"]
+    description: "In this session we’ll cover how Bookvault can help you and your books. Whether its listing your book on the Bookvault Shop, creating special editions from a single copy, fulfilling Kickstarters across the globe or linking your titles on an ecommerce platform such as Shopify, WooCommerce, Wix or Payhip. We’ll give a brief overview followed by some time for Q&A to answer any questions you may have!"
 
   - id: 29
+    source_id: "rec9NbsEIhS6PvXA9"
     title: "10 Strategies to Level Up Facebook Ads (2026 Edition)"
     date: "2026-11-11"
     day: Wednesday
-    start: "1:00 PM"
+    start: "4:00 PM"
     duration_min: 60
     speakers: ["Misty M. Beller"]
     location: "Platinum"
-    tags: ["Advertising and Marketing", "Live Education", "Optimization"]
-    description: "Current Meta ad tactics, ROAS measurement and troubleshooting the three main failure points (CPC, CTR, conversion leaks)."
+    tags: ["Advertising and Marketing", "Live Education"]
+    description: "Meta advertising has changed—again. This session breaks down 10 proven, up-to-date strategies designed for authors who want profitable ad spend in 2026. Drawing on the instructor’s experience running over $500k/year in profitable ad spend, the session focuses on unique targeting angles, what to measure to confirm ROAS, and how to troubleshoot the three core failure points (high CPC, low CTR, and conversion leaks). Attendees will leave with a simple diagnostic approach they can apply immediately to improve performance and increase profitable spend."
 
   - id: 30
+    source_id: "recpk3eOEMpSjmAhv"
     title: "High-Converting Product Pages for Direct-Selling Authors"
     date: "2026-11-11"
     day: Wednesday
@@ -339,10 +347,11 @@ sessions:
     duration_min: 60
     speakers: ["Jessica Deen Norris"]
     location: "Palace 4"
-    tags: ["Live Education", "Optimization"]
-    description: "Product photography, social proof and page structure changes that lifted a direct store to six figures; includes a checklist."
+    tags: ["Websites, Email & Direct Sales", "Live Education"]
+    description: "Most author product pages are treated like simple book listings: a cover, a blurb, and a buy button. But your website doesn’t come with Amazon’s built-in traffic or trust, so your pages have to do more work. In this session, you’ll learn how to build high-converting product pages that turn browsers into buyers and increase revenue per reader. Based on real results growing a direct-sales store from zero to six figures in one year—with only three books—you’ll see exactly what changed conversion: - Product photos that sell, not just look pretty - Social proof that builds instant trust - Page structures that increase average order value - Simple tweaks that dramatically improve results You’ll leave with a practical checklist you can apply to your own product pages right away. Whether you’re new to direct sales or already have a store that isn’t converting the way you hoped, this session will show you what actually works."
 
   - id: 31
+    source_id: "recuxHDuxVMr5jkiR"
     title: "Identity Is the Edge: The Science of Becoming a High-Performance Writer"
     date: "2026-11-11"
     day: Wednesday
@@ -350,32 +359,35 @@ sessions:
     duration_min: 60
     speakers: ["Chris Banks"]
     location: "Bronze 4"
-    tags: ["Mindset & Wellness", "Foundations"]
-    description: "The psychology of alter egos and deliberate identity shifts as a tool against self-doubt, perfectionism and procrastination."
+    tags: ["Mindset & Wellness"]
+    description: "What if the version of you that struggles to write isn’t the only version available? High performers in sport, business, and the arts often use a psychological tool that sounds theatrical but is deeply scientific: the alter ego. From Beyoncé’s Sasha Fierce to elite athletes who “step into character” before competition, identity shifting is one of the most powerful performance tools we have. In this talk, I will explore the neuroscience and psychology behind alter egos—and show writers how to use identity intentionally to overcome self-doubt, perfectionism, procrastination, and fear of judgment. This isn’t about pretending to be someone else. It’s about activating parts of yourself that already exist. If mindset is the biggest obstacle to finishing great work, identity may be the key."
 
   - id: 32
+    source_id: "reckmiVyyzGD1yjr1"
     title: "From Subscriber to Superfan: 3 Ways to Weaponize your Email List for Success"
     date: "2026-11-11"
     day: Wednesday
     start: "2:30 PM"
     duration_min: 60
     speakers: ["Naomi Rawlings"]
-    location: "Bronze 3"
-    tags: ["Live Education", "Optimization"]
-    description: "Campaign and automation structures that turn subscribers into repeat buyers year-round, with case studies and list-building basics."
+    location: "Gold"
+    tags: ["Websites, Email & Direct Sales", "Live Education"]
+    description: "We all have email lists of our readers. We’ve all heard about how important they are. But how well are you using this resource? Can you put a book into Amazon’s Top 500 using nothing more than your email list? In an era where advertising costs continually rise and paid promos deliver diminishing returns, your email list can become the most reliable revenue driver in your business — if it’s structured correctly. In this session, a multi-six figure author and former book marketing consultant will break down how to turn subscribers into repeat buyers through strategic campaigns and automated sequences that generate sales every month, not just at launch. Through real case studies (including an example of a single email campaign that pushed a book into the Top 500 with no paid promotion), you’ll learn how to structure emails that readers both look forward to opening and are motivated to act on. We’ll cover key elements every revenue-driving email should include, how to build automation that works year-round, and how to create predictable income from your list, as well as a brief overview of list-building strategies."
 
   - id: 33
+    source_id: "rec5HF8QOB0UEIQ7u"
     title: "The Smart Author-Publisher’s Book Marketing Workshop: Plan, Launch, Scale"
     date: "2026-11-11"
     day: Wednesday
     start: "2:30 PM"
     duration_min: 60
-    speakers: ["Christopher Locke"]
+    speakers: ["Christopher Locke", "Lee Wind"]
     location: "Bronze 1 / Learning Lab"
-    tags: ["Advertising and Marketing", "Workshop", "Implementation", "Published Voyagers"]
-    description: "Interactive exercises to build a personalised pre-launch, launch and post-launch marketing plan."
+    tags: ["Advertising and Marketing", "Workshop", "Published Voyagers"]
+    description: "If you’re investing time and money into book marketing, you deserve a clear, actionable plan that actually works. In this interactive workshop, two publishing industry professionals (who are authors themselves) will guide participants through hands-on exercises and practical strategies to create a connected, scalable marketing plan. Instead of simply hearing what worked for others, you’ll actively apply tactics to your own book, budget, and audience, leaving with a personalized plan you can implement immediately. This workshop covers marketing across pre-publication, launch, and post-publication — not as isolated activities, but as a coordinated strategy designed to build lasting momentum and visibility for your book’s reach and long-term author brand."
 
   - id: 34
+    source_id: "recB6t892mn0hfDMW"
     title: "Increase Demand For Your Books"
     date: "2026-11-11"
     day: Wednesday
@@ -383,54 +395,35 @@ sessions:
     duration_min: 60
     speakers: ["Becca Syme"]
     location: "Event Center"
-    tags: ["Craft", "Solo Presentation", "Foundations", "All"]
-    description: "The four essentials of reader resonance and how alignment psychology explains rising demand in a saturated market."
+    tags: ["Craft", "All"]
+    description: "In a market where the supply is saturated, it's tempting to feel that there's no more demand, but the demand is higher than ever. What's it highest for? Resonance. In this workshop, we will cover the four essentials of resonance, using alignment psychology to illustrate their importance and show you how to take action today. We need to learn to increase the resonance in our books, so we can meet the increasing reader demand."
 
   - id: 35
+    source_id: "recb4QfgQMI7BaJxP"
     title: "Tax Mistakes Costing Authors Money"
     date: "2026-11-11"
     day: Wednesday
     start: "2:30 PM"
     duration_min: 60
-    speakers: ["Seth Norris", "CPA"]
+    speakers: ["Seth Norris, CPA"]
     location: "Palace 4"
-    tags: ["Business & Finance", "Live Education", "Implementation"]
-    description: "A CPA debunks common author tax myths and covers legitimate write-offs, compliance and what draws IRS attention."
-
-  - id: 36
-    title: "BookBub"
-    date: "2026-11-11"
-    day: Wednesday
-    start: "2:30 PM"
-    duration_min: 60
-    speakers: ["Carlyn Robertson"]
-    location: "Palace 3"
-    tags: ["Vendor", "Vendor Session"]
-    description: null
+    tags: ["Business & Finance", "Live Education"]
+    description: "Authors hear a lot of tax advice online, but not all of it is accurate, and some of it can cost you serious money or create problems with the IRS. In this session, a CPA who specializes in working with authors will break down the most common tax myths in the author world and explain what actually works. You’ll learn: - Which popular tax tips are misleading or outdated - The right way to write off author expenses - How to stay compliant while still minimizing taxes - What triggers IRS scrutiny for small creative businesses - Simple habits that make tax season much easier If you’ve ever wondered whether the tax advice you’ve heard is legit, this session will give you clear, practical answers you can trust."
 
   - id: 37
+    source_id: "recg7de32N4xPjEAa"
     title: "How To Make Your Stories Immortal: The Power of the Eight Great Endings"
     date: "2026-11-11"
     day: Wednesday
-    start: "2:30 PM"
+    start: "1:00 PM"
     duration_min: 60
     speakers: ["T.D. Donnelly"]
-    location: "Gold"
-    tags: ["Craft", "Live Education", "Implementation"]
-    description: "Why endings need surprise and inevitability, walking through four twist forms and four payoff forms and how to build toward them."
-
-  - id: 38
-    title: "The Reader’s Yes: Why Every Purchase Follows the Same Path—No Matter the Price"
-    date: "2026-11-11"
-    day: Wednesday
-    start: "2:30 PM"
-    duration_min: 60
-    speakers: ["David Viergutz"]
-    location: "Bronze 2"
-    tags: ["Live Education", "Implementation"]
-    description: "Buying psychology is constant across price points; price only changes how much certainty a reader needs first."
+    location: "Platinum"
+    tags: ["Craft", "Live Education"]
+    description: "Frequently we hear about the importance of the first page of your story, of the first chapter, of the first act. And yes, of course it's very important to hook your reader so they keep reading, but why do we so rarely focus on the importance of the Killer Ending? A great ending is a force multiplier. It stays in the reader's head, long after the book has been put down. It comes back to a reader, again, and again over time. A great ending is a brainworm that can turn a single read into a lifelong fan. But good endings are HARD. And a truly GREAT ending? That's a literary magic trick. In this hour, we will dive into what makes an ending truly great and lasting in the minds of our readers. We will investigate the importance of both aspects almost all great endings share: Surprise and Inevitability. And we will look at eight great ending forms, in two main varieties: the four Great Twists, and the four Great Payoffs, with plenty of examples of each. And finally we will talk about how we construct a great ending in our stories. (HINT: it involves constructing your story out of order)"
 
   - id: 39
+    source_id: "rectvu6nqblARnXJX"
     title: "When Success Stops Working: A Step-by-Step Framework for Pivoting Your Author Career Without Burning It Down"
     date: "2026-11-11"
     day: Wednesday
@@ -438,10 +431,11 @@ sessions:
     duration_min: 60
     speakers: ["Rae Davennor"]
     location: "Bronze 4"
-    tags: ["Business & Finance", "Live Education", "Implementation"]
-    description: "Diagnosing whether you need a strategy, product, platform or pace pivot, and a 90-day plan that protects revenue while you change."
+    tags: ["Business & Finance", "Live Education"]
+    description: "You've built a successful author business. The revenue is real. The strategy worked. So why does it suddenly feel unsustainable? Many authors hit a point where the very model that created their success begins to strain their energy, creativity, or long-term viability. Sales fluctuate. Ad costs rise. Burnout creeps in. Or the market shifts—and what once worked flawlessly now feels fragile. This session provides a practical, step-by-step framework for evaluating when a pivot is necessary and executing it without sabotaging your income, audience, or brand. Attendees will learn how to diagnose whether they need a strategic pivot, a product pivot, a platform pivot, or a pace pivot—and how to implement a 90-day stability-first plan that protects revenue while allowing room for recalibration. This is not a talk about starting over. It’s about evolving intelligently so your success remains sustainable."
 
   - id: 40
+    source_id: "recvmJoM5GzCodLbQ"
     title: "Building Direct Reader Relationships When Algorithms Are Unreliable"
     date: "2026-11-11"
     day: Wednesday
@@ -449,10 +443,11 @@ sessions:
     duration_min: 60
     speakers: ["Mark Leslie Lefebvre"]
     location: "Platinum"
-    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
-    description: "Framework for direct reader connection as business foundation, using diversified distribution, value exchanges and reader magnets."
+    tags: ["Advertising and Marketing", "Live Education"]
+    description: "Every author has experienced the algorithm shifts, the visibility drops, and the inability for readers who loved your work unable to find you in the digital slush. Whether it's Amazon's recommendation engine, the fact their catalog has become a pay-to-play free-for-all rewarding only authors with deeper pockets, or Facebook's organic reach collapse and growingly expensive ads, authors who build their careers on rented land remain perpetually vulnerable. This session examines how to cultivate genuine, lasting connections with readers that exist independently of any single platform—without abandoning those platforms entirely. Drawing from three decades in the book industry, forty years as a writer, and practical experience building reader communities through newsletters, podcasts, and strategic reader magnets, this talk offers a framework for thinking about direct relationships as the foundation of a sustainable author business rather than just another marketing tactic. We'll explore why diversified distribution channels complement rather than replace direct connections, how to create value exchanges that readers genuinely appreciate, and the mindset shift required to stop chasing algorithms and start building audiences that follow you wherever you go."
 
   - id: 41
+    source_id: "rec2zFWAxaYakawP8"
     title: "It's Alive! Creating your 24/7 MBA level Business Manager"
     date: "2026-11-11"
     day: Wednesday
@@ -460,10 +455,11 @@ sessions:
     duration_min: 60
     speakers: ["Ekello Harrid"]
     location: "Bronze 1 / Learning Lab"
-    tags: ["AI and Automation", "Live Education", "Implementation"]
-    description: "Building an agentic system that tracks and enforces profitability across your publishing business."
+    tags: ["AI and Automation", "Live Education"]
+    description: "What would happen to your publishing business if we build an system of agents to track and enforce profitability? In this session we will help you to build an agentic business system that does all the important work that either you don't like to do or are unsure how to do it."
 
   - id: 42
+    source_id: "rec64zOgygwhKbKCj"
     title: "How to Build a Book Marketing Machine That Actually Runs Without You"
     date: "2026-11-11"
     day: Wednesday
@@ -471,21 +467,23 @@ sessions:
     duration_min: 60
     speakers: ["Alex Strathdee"]
     location: "Event Center"
-    tags: ["Production & Workflow", "Live Education", "Implementation"]
-    description: "Systems-first marketing: what to delegate, how to start with a VA, hiring frameworks and turning scattered efforts into a weekly workflow."
+    tags: ["Production & Workflow", "Live Education"]
+    description: "Most authors aren’t failing at marketing because they’re lazy or untalented. They’re failing because they’re trying to do everything themselves. They look at prolific creators with massive platforms and think, “Why can’t I keep up?” That’s like comparing your home coffee maker to Starbucks and wondering why you’re exhausted. In this session, Alex breaks down how successful authors build systems, teams that create consistent visibility without burnout. You’ll learn how to stop relying on willpower and start building a marketing engine that runs week after week. Whether you’re publishing your first book or scaling your brand. This is not a talk about “posting more.” It’s about building leverage. What You’ll Learn (and Walk Away Ready to Implement): 1. The “Systems First” Rule for Author Marketing You’ll learn how to decide what not to commit to—and how to design simple systems before starting blogs, podcasts, newsletters, or social media so consistency becomes automatic instead of exhausting. 2. Exactly What to Delegate (Even If You’ve Never Hired Anyone Before) You’ll leave with a clear list of high-impact tasks authors should never be doing themselves—and how to outsource them for under $10/hour without losing quality or control. 3. A Low-Risk Way to Start Using Virtual Assistants This Week (speaker name) will show you two beginner-friendly VA tasks you can hand off immediately—even if you only have 10–20 minutes of work to delegate. 4. How to Avoid “Random Acts of Marketing” Learn how to turn scattered efforts into a repeatable weekly workflow that compounds over time—so your marketing keeps working even when you’re writing, traveling, or taking a break. 5. A Simple Hiring Framework for VAs, Agencies, and Experts You’ll walk away knowing: * What questions to ask before hiring anyone * How to spot red flags early * When paying more is worth it—and when it’s not Who This Talk Is For: * Authors who feel overwhelmed by marketing * Authors who start strong and burn out * Authors who know visibility matters, but don’t want it to consume their life * Authors ready to trade hustle for systems * Bottom Line: If you’re tired of trying to do everything yourself, and want your book marketing to feel sustainable, focused, and repeatable then this session will give you a clear playbook you can start using immediately. You don’t need to work harder."
 
   - id: 43
+    source_id: "recK73qfruSTfNog2"
     title: "Amazon’s New Book Discovery Formula: How to Get Amazon to Show Your Book in 2026"
     date: "2026-11-11"
     day: Wednesday
-    start: "4:00 PM"
+    start: "10:30 AM"
     duration_min: 60
     speakers: ["Dave Chesson"]
-    location: "Platinum"
-    tags: ["Advertising and Marketing", "Keynote", "Implementation", "All"]
-    description: "Findings from Publisher Rocket's monitoring data on Amazon's current ranking signals and 2026 discoverability trends."
+    location: "Gold"
+    tags: ["Advertising and Marketing", "Keynote", "All"]
+    description: "Amazon’s search and discovery systems have evolved rapidly over the past year, with new technologies, processes, and ranking signals reshaping how books are surfaced to readers. Using millions of data points collected through Publisher Rocket’s monitoring systems and data center, Dave Chesson will reveal the latest findings behind Amazon’s Algorithm and the emerging trends shaping book discoverability in 2026."
 
   - id: 44
+    source_id: "recAU4McxUHbig8kN"
     title: "Red Flags & Rip-Offs: How Authors Can Avoid Scams"
     date: "2026-11-11"
     day: Wednesday
@@ -493,10 +491,11 @@ sessions:
     duration_min: 60
     speakers: ["Ross Lynch"]
     location: "Palace 3"
-    tags: ["Vendor", "Solo Presentation", "Foundations", "All"]
-    description: "ALLi outreach session on fake agents, predatory anthologies, phishing and trap contracts, including the SALSA test for vetting offers."
+    tags: ["Vendor", "All"]
+    description: "You work hard as an author to build your publishing business, don’t let a scammer undo it. Michael La Ronn, Outreach Manager for the Alliance of Independent Authors, exposes the tactics targeting writers today: bogus literary agents, predatory anthologies, phishing dressed up as flattery, and contracts designed to trap you. Learn the SALSA test, real red-flag examples, and practical steps to protect your rights and royalties. As the global nonprofit for ethics and excellence in indie publishing, the Alliance of Independent Authors (ALLi) is your watchdog, vetting service providers, publishing scam alerts, and giving you a trusted community to turn to. Because a savvy, protected author is an empowered author. Visit ALLi at AllianceIndependentAuthors.org Michael La Ronn is the Outreach Manager for the Alliance of Independent Authors (ALLi). He has published many science fiction & fantasy books and self-help books for writers. He built a writing career publishing 10-12 books per year while raising a family, working a full-time job, and even attending law school classes in the evenings."
 
   - id: 45
+    source_id: "recEOYkH0ACXw3qxj"
     title: "Six Figures with Three Books: The Power of Premium Editions and Merch"
     date: "2026-11-11"
     day: Wednesday
@@ -504,10 +503,11 @@ sessions:
     duration_min: 60
     speakers: ["Jessica Deen Norris"]
     location: "Palace 4"
-    tags: ["Intellectual Property Beyond the Book", "Live Education", "Optimization"]
-    description: "Growing revenue per reader with a small catalogue via special editions and merch — what sells, pricing, bundling and pitfalls."
+    tags: ["Intellectual Property Beyond the Book", "Live Education"]
+    description: "Many indie authors believe they need a large backlist before they can earn meaningful income. But what if your biggest revenue opportunities aren’t more ebooks—but better products? In this session, you’ll learn how premium editions and carefully chosen merchandise helped grow a direct-sales store to six figures in one year with only three books available. You’ll see what actually worked, what didn’t, and how physical products can dramatically increase revenue per reader—even with a small catalog. This session will cover: - Why premium editions convert better than standard formats - The psychology behind collector-focused products - Which types of merch actually sell (and which don’t) - How to price and bundle physical products for profit - Mistakes to avoid when entering the premium market If you’ve ever felt like your backlist is too small to build a real business, this session will show you another path—one focused on deeper reader engagement and higher-value products."
 
   - id: 46
+    source_id: "recSTc4B2NohmrfUt"
     title: "Adding Romance to Any Genre"
     date: "2026-11-11"
     day: Wednesday
@@ -515,32 +515,23 @@ sessions:
     duration_min: 60
     speakers: ["Elizabeth Boyle"]
     location: "Bronze 3"
-    tags: ["Craft", "Solo Presentation", "Implementation", "All"]
-    description: "Layering believable attraction into non-romance genres using the romance arc and the mechanics of attraction."
-
-  - id: 47
-    title: "Scaling Without Losing Control: Building Systems That Run Your Author Business"
-    date: "2026-11-11"
-    day: Wednesday
-    start: "4:00 PM"
-    duration_min: 60
-    speakers: ["David Viergutz"]
-    location: "Bronze 2"
-    tags: ["Production & Workflow", "Live Education", "Optimization"]
-    description: "Clarity, systems and culture for authors growing a small team without becoming founder-dependent or bureaucratic."
+    tags: ["Craft", "All"]
+    description: "We all know there is nothing worse than a creaky or creepy love story in a book. So let this romance writer teach you how to add that believable and relatable layer of attraction and discovery to your novel so your story is more \"awww\" and less cringe. We'll look at the Romance Story ARC, the Laws of Attraction, and why two seemingly imperfect people can fall in love. And then, whether you are writing mysteries, fantasies, westerns, or literary novels, you'll know how to layer a believable romance into your story to make it more relatable and satisfying."
 
   - id: 48
-    title: "Scrivener"
+    source_id: "recoV3HVGFrCrFkfi"
+    title: "Start Writing with Scrivener Before Your Coffee Gets Cold"
     date: "2026-11-11"
     day: Wednesday
     start: "4:00 PM"
     duration_min: 60
     speakers: ["Oliver Evensen"]
     location: "Bronze 4"
-    tags: ["Vendor", "Vendor Session", "Implementation"]
-    description: null
+    tags: ["Vendor", "Workshop", "All"]
+    description: "Scrivener 3 is one of the most powerful writing tools out there, but only if you know how to use it. Here’s what you’ll learn: Simple, actionable steps to set up your project, navigate the Binder, Editor, and Compiler, and import and export your work like a pro in one focused session. No more frustration. No more guesswork. Just a clear, confident path to mastering Scrivener fast."
 
   - id: 49
+    source_id: "recslFWgOg3S4Ohah"
     title: "The Superfan Funnel: How to Turn Strangers into Superfans For Life"
     date: "2026-11-11"
     day: Wednesday
@@ -548,21 +539,23 @@ sessions:
     duration_min: 60
     speakers: ["Lydia Sherrer"]
     location: "Gold"
-    tags: ["Advertising and Marketing", "Solo Presentation", "Implementation", "All"]
-    description: "The four stages and four driving actions of a superfan funnel, built from lead magnets, welcome sequences and exclusive content."
+    tags: ["Advertising and Marketing", "All"]
+    description: "Superfans are the mythical unicorn, the pie-in-the-sky dream of every fresh-faced writer starting on their publishing journey. Except they're not as rare as we assume. They are the person who sees your Facebook ad, or that comic con attendee who slows down to look at your table. Potential superfans are everywhere, and it's up to you to excite their imagination and provide them a reason and mechanism to become your superfan. Join USA Today bestselling author Lydia Sherrer as she shows you step by step how to create and maintain a Superfan Funnel that will build you a loyal and lasting fan base. By bringing together well-known author tools like lead magnets, newsletters with a welcome sequence, interactive content, genuine social media interaction, and exclusive subscription content, authors can use pre-set up systems and recycled content to continually invite their target audience into an ecosystem of fun that creates lasting connection. This is an excellent panel for authors of all stages who have great content but want to do a better job of building a loyal and engaged fan base who will follow you everywhere and buy whatever you put out. By the end of session you will know: - The four stages of a superfan funnel. - The four essential actions that drive a superfan funnel. - How to build a superfan funnel from the ground up. - The single biggest factor that will supercharge your funnel and increase its success. - What are flexible alternatives for each stage to make it fit your genre, audience, and business model. - What are realistic expectations of a superfan funnel and how to evaluate yours to know if it is working."
 
   - id: 50
+    source_id: "receqSOC6QLS1KnVF"
     title: "Wild cards: Awakening your muse"
     date: "2026-11-11"
     day: Wednesday
-    start: "5:30 PM"
-    duration_min: 60
+    start: "7:00 PM"
+    duration_min: 90
     speakers: ["Lyla Bellatas"]
     location: "Gold"
-    tags: ["Entertainment", "Meetups & Networking", "Live Education", "Foundations"]
-    description: "Interactive session using Lenormand cards as a problem-solving tool for plot, world and character."
+    tags: ["Entertainment", "Meetups & Networking", "Live Education"]
+    description: "An interactive event where the attendees will learn to think of the Lenormand as a Swiss army knife for writers. The cards can be applied to fix any creative problem a writer may encounter, like dealing dynamic plots, richer worlds, deeper characters, etc."
 
   - id: 51
+    source_id: "recRFWDe7YhbTXspA"
     title: "Designing an Author Business That Supports Your Life — and Outlives Your Writing Seasons"
     date: "2026-11-12"
     day: Thursday
@@ -570,21 +563,23 @@ sessions:
     duration_min: 60
     speakers: ["J.A. Armitage"]
     location: "Palace 4"
-    tags: ["Business & Finance", "Live Education", "Innovation"]
-    description: "Strategic session for established authors on financial structure, ownership and designing a business that adapts across life seasons."
+    tags: ["Business & Finance", "Live Education"]
+    description: "Every quest reaches a point where the focus shifts from growth to sustainability, freedom, and long-term design. This forward-looking session is designed for established authors who want to intentionally shape the next chapter of their author business — not just financially, but creatively and personally. Building on the Four Financial Pillars, we’ll explore how financial structure, ownership, and long-term planning influence creative longevity, workload, and life priorities. Attendees will be encouraged to step back from constant optimization and instead consider what their business is meant to support in different seasons of life. This is not a tactical session. It’s a strategic conversation about designing an author business that adapts, simplifies, and continues to create value long after writing pace or priorities change."
 
   - id: 52
-    title: "How to outline a Thriller series"
+    source_id: "reca1pMvw6rErEoZx"
+    title: "How to Outline a Thriller Series"
     date: "2026-11-12"
     day: Thursday
     start: "9:00 AM"
     duration_min: 60
     speakers: ["Mary Stone"]
     location: "Event Center"
-    tags: ["Craft", "Live Education", "Implementation"]
-    description: null
+    tags: ["Craft", "Live Education"]
+    description: "How do you keep readers turning pages for ten books instead of two? Every successful series, regardless of genre, creates narrative tension. Thrillers create it through danger. Romance creates it through emotional uncertainty. Fantasy creates it through escalating stakes. Mystery creates it through unanswered questions. Different genres. Same psychological engine. The real challenge isn't creating that tension. It's sustaining it across hundreds of chapters and multiple books. This session explores how a series outline becomes more than a timeline of events. By mapping character arcs, emotional wounds, relationship dynamics, supporting characters, and long-term antagonists, you'll build a flexible roadmap that continually creates fresh questions, deepens reader investment, and gives readers one compelling reason after another to keep turning the page...and buying the next book."
 
   - id: 53
+    source_id: "recapTDiHGVsCOYNI"
     title: "Why “Just Write” Doesn’t Work: Trauma, ADHD, and Building a Writing Life That Lasts"
     date: "2026-11-12"
     day: Thursday
@@ -592,10 +587,11 @@ sessions:
     duration_min: 60
     speakers: ["Shalana Battles"]
     location: "Bronze 4"
-    tags: ["Mindset & Wellness", "Live Education", "Implementation"]
-    description: "Why standard discipline advice fails trauma-affected and ADHD writers, and how to build flexible, sustainable writing systems instead."
+    tags: ["Mindset & Wellness", "Live Education"]
+    description: "Writers are often told that discipline is the solution to every creative block: just write every day, push through, try harder. But for many authors—especially those living with trauma, ADHD, or both—that advice doesn’t just fail. It causes shame, burnout, and a fractured relationship with the page. In this session, author (speaker name) explores why traditional writing advice breaks down for nonlinear brains and trauma-impacted nervous systems. Drawing from lived experience and years of navigating creativity through chaos, she unpacks how trauma and ADHD affect focus, motivation, emotional regulation, and consistency—and why “productivity hacks” alone aren’t enough. Attendees will learn how to: Recognize when resistance is neurological, not a lack of discipline Build flexible writing systems that work with their brain, not against it Create sustainable creative rhythms without re-traumatizing themselves Let go of guilt while still producing meaningful, professional work This session is equal parts validation and strategy—offering authors permission to stop forcing themselves into systems that don’t fit, and tools to build a writing life that can survive real life."
 
   - id: 54
+    source_id: "recfp7UBs7S6VJ1tW"
     title: "Create Character Voices Readers Can't Stop Listening To"
     date: "2026-11-12"
     day: Thursday
@@ -603,32 +599,35 @@ sessions:
     duration_min: 60
     speakers: ["Jeff Elkins"]
     location: "Bronze 3"
-    tags: ["Craft", "Live Education", "Foundations"]
-    description: "Five components of character voice and how to design and revise dialogue so each character stays distinct."
+    tags: ["Craft", "Live Education"]
+    description: "Many writers struggle to create character voices that feel distinct, believable, and unmistakably unique. The issue isn’t a lack of imagination or the ability to hear characters clearly in their mind. It’s that most writers have never been taught how to translate the voice in their head into intentional and repeatable words on the page. Without that framework, dialogue blurs together and even strong characters begin to sound the same. In this session, writers will learn the five core components of character voice, how to design those voices based on a character’s personality, and how to write and revise dialogue so each character sounds clear, consistent, and recognizable."
 
   - id: 55
-    title: "Sudowrite"
+    source_id: "recmufsjuHHZtgQgl"
+    title: "Build Your Backlist: Rapid Series Development with Sudowrite"
     date: "2026-11-12"
     day: Thursday
     start: "9:00 AM"
     duration_min: 60
     speakers: ["Michael Stewart"]
     location: "Bronze 1 / Learning Lab"
-    tags: ["Vendor", "Vendor Session", "Implementation"]
-    description: null
+    tags: ["AI and Automation", "All"]
+    description: "Want to publish more books and build a stronger backlist? This session demonstrates how Sudowrite can help you develop (and wrangle) your entire series without losing track of the story along the way. Learn practical approaches for moving from early ideas to a connected, publishable series: shaping book and series plans, tracking characters, worldbuilding, and open plot threads, and using AI to work through story problems as complexity grows. We'll also review Sudowrite's new instant feedback features, which give you clear next steps for your works-in-progress. Spend less time keeping a chat on track, and more time developing—and writing—your next book."
 
   - id: 56
-    title: "Maggie Marr State of the industry for IP beyond the book"
+    source_id: "recowQcatXBd4OqVS"
+    title: "State of the Industry for IP rights in TV, Film, Streaming and what to watch out for"
     date: "2026-11-12"
     day: Thursday
     start: "9:00 AM"
     duration_min: 60
     speakers: ["Maggie Marr"]
     location: "Palace 3"
-    tags: ["Intellectual Property Beyond the Book", "Live Education", "Implementation"]
-    description: null
+    tags: ["Intellectual Property Beyond the Book", "Live Education"]
+    description: "IP Rights for Film & TV: What Every Author Needs to Know"
 
   - id: 57
+    source_id: "recsCVobr3sEgFsdc"
     title: "Moving from $100K to $500K: The Systems Behind Sustainable Author Income"
     date: "2026-11-12"
     day: Thursday
@@ -636,32 +635,35 @@ sessions:
     duration_min: 60
     speakers: ["Misty M. Beller"]
     location: "Gold"
-    tags: ["Business & Finance", "Live Education", "Optimization"]
-    description: "Production scheduling, profitability, series read-through, ad planning and quarterly cashflow modelling for scaling without burnout."
+    tags: ["Business & Finance", "Live Education"]
+    description: "Predictions and hustle do not scale—systems do. This session outlines the critical business systems that allow authors to make the jump from $100K to $500K in annual revenue without burnout. Taught by an author currently making high six-figures, the session covers production scheduling, profitability refinement, series strategy for read-through, advertising planning, and quarterly cashflow modeling. Attendees will learn what actually scales in an author business, what does not, and how to build a sustainable operating model that supports consistent growth."
 
   - id: 58
+    source_id: "recv1WwcflckRv6Bm"
     title: "Written Word Media"
     date: "2026-11-12"
     day: Thursday
     start: "9:00 AM"
     duration_min: 60
-    speakers: ["Ricci Wolman"]
+    speakers: ["Ricci Wolman", "Ferol Vernon"]
     location: "Bronze 2"
-    tags: ["Vendor", "Vendor Session", "Implementation"]
-    description: null
+    tags: ["Vendor", "Vendor Session"]
+    description: "Join the Written Word Media team to discover all the ways we can help grow your author business. Learn how to reach millions of readers, drive targeted traffic to your books on Amazon and other retailers or your direct store, and build an email list you own. Whether Written Word Media is brand new to you or already a key part of your marketing, you’ll leave with new ideas and actionable ways to reach more readers and sell more books."
 
   - id: 59
-    title: "Demonza"
+    source_id: "rec29cpcjaAEGIgbP"
+    title: "Nobody Cares What Your Book Cover Means: What readers actually respond to, why authors often get it wrong, and how AI makes it worse"
     date: "2026-11-12"
     day: Thursday
     start: "10:30 AM"
     duration_min: 60
     speakers: ["Damon Freeman"]
     location: "Bronze 1 / Learning Lab"
-    tags: ["Vendor", "Vendor Session"]
-    description: null
+    tags: ["Vendor", "Vendor Session", "All"]
+    description: "Nobody buys a book because the cover is beautiful. They buy because the cover said \"this is the kind of book you like.\" In two seconds. As a thumbnail in a sea of other thumbnails. A lot of good books never get past those two seconds. Damon Freeman, Creative Director of Damonza — the team behind 14,000+ covers for first-timers, indie and trad bestsellers, and major publishers — will walk through how readers really browse, the mistakes that sinks many self-published covers, and how AI has changed the game for better or worse, and then look at attendee covers LIVE and say what he'd change. To finish, Damonza's animation expert will show you how to animate your own cover with AI, because on social media, motion is what gets attention. Free to use for your own promotion. If you'd like your cover reviewed live on stage, SUBMIT YOUR COVER at Damonza.com/ANReview. Damon will select a few for an honest appraisal."
 
   - id: 60
+    source_id: "rec3Ye07qv4k4qs1I"
     title: "The Data Detective: Auditing Your Ads and Sales with Conversational AI"
     date: "2026-11-12"
     day: Thursday
@@ -669,32 +671,23 @@ sessions:
     duration_min: 60
     speakers: ["Jeremy Harper"]
     location: "Palace 4"
-    tags: ["Advertising and Marketing", "Live Education", "Implementation"]
-    description: "Cleaning and loading KDP/Meta/Amazon Ads exports into an LLM to question your data in plain English, with privacy safeguards."
+    tags: ["Advertising and Marketing", "Live Education"]
+    description: "Authors are drowning in data but starving for insights. We have ton's of CSV files, KDP royalty reports, Facebook Ad performance sheets, Amazon Advertising bulk files, but extracting actionable strategy from them usually requires advanced Excel skills or hiring an expensive consultant. Most authors simply stare at the dashboards, guess at their ROI, and hope for the best. This session turns the same Large Language Models (LLMs) used for writing into a high-powered, private Data Analyst. By leveraging Large Context Windows, we can ingest messy, raw data files and perform \"Conversational Analytics.\" Instead of learning pivot tables, you will learn how to ask your data questions in plain English, like \"Which ad hook has the highest read-through rate?\" or \"Plot my profit by series for Q4\" and get instant, visualized answers. We will also cover the critical privacy architecture ensuring your financial data remains confidential and is never used to train public models. What will attendees be able to DO after your session? Attendees will be able to use their own real-world data during this session if they choose. By the end, they will: Sanitize & Export Data: Learn the quick workflow to export and \"clean\" raw CSVs from KDP, Facebook, and Amazon Ads to make them AI-readable without exposing PII (Personally Identifiable Information). Perform Conversational Audits: Ingest their financial data into a secure LLM environment and execute specific prompts to calculate true ROI, identifying exactly which series or ad campaigns are burning money. Visualize Trends: Generate instant charts and graphs via the AI to visualize sales curves, helping them identify seasonal trends and \"read-through\" drop-off points that are invisible in standard dashboard views. Why are YOU the right person to teach this? I am a Data Scientist and Biomedical Informatician with over 15 years of experience. In my professional life, I analyze complex, high-stakes healthcare datasets to improve patient outcomes. I bring that same analytical rigor to the author business. I don't just teach \"prompts\"; I teach the data science principles behind them. I bridge the gap between complex analytics and the independent author, showing them how to stop fearing spreadsheets and start having a conversation with their business data."
 
   - id: 61
-    title: "Spotify Session"
+    source_id: "recG2qVybqmd6RgvZ"
+    title: "Growing the Audiobook Market for Indie Authors"
     date: "2026-11-12"
     day: Thursday
     start: "10:30 AM"
     duration_min: 60
-    speakers: ["Anders Larsen"]
+    speakers: ["Christina Calderone"]
     location: "Bronze 2"
     tags: ["Vendor", "Vendor Session"]
     description: null
 
-  - id: 62
-    title: "Multi Six-Seven Figure Romance Success Without Click-ads"
-    date: "2026-11-12"
-    day: Thursday
-    start: "10:30 AM"
-    duration_min: 60
-    speakers: ["Juliette N. Banks"]
-    location: "Event Center"
-    tags: ["Advertising and Marketing", "Solo Presentation", "Advanced", "Well-Pubbed Catalog Builders"]
-    description: "Building a high-profit romance business without spending anything on click ads."
-
   - id: 63
+    source_id: "recKoeBEFqYNsinOR"
     title: "Powers Don't Lie: the emotional bridge of character and world"
     date: "2026-11-12"
     day: Thursday
@@ -702,11 +695,12 @@ sessions:
     duration_min: 60
     speakers: ["Elizabeth Hunter"]
     location: "Platinum"
-    tags: ["Craft", "Workshop", "Implementation", "Published Voyagers"]
-    description: "Intermediate speculative-fiction workshop on magic systems that grow out of character and world rather than sitting apart from them."
+    tags: ["Craft", "Workshop", "Published Voyagers"]
+    description: "A practical workshop on impractical powers. In speculative fiction, character informs world, world informs magic, and magic informs character right back. Learn to build magic systems with depth and fluidity by tapping into the powers that drive your characters and their world. Join us for a one-hour skill-builder to take your characterization and plotting to the next level in this intermediate craft class for fantasy, science fiction, and paranormal writers."
 
   - id: 64
-    title: "Maggie Marr session two"
+    source_id: "recO8jFDXW24ZplDT"
+    title: "Intellectual Property Rights Management: What Every Author Needs to Know"
     date: "2026-11-12"
     day: Thursday
     start: "10:30 AM"
@@ -717,6 +711,7 @@ sessions:
     description: null
 
   - id: 65
+    source_id: "reckRwDDLEZ4dvGvN"
     title: "Beyond the Cliffhanger: Designing Page-Turning Fiction"
     date: "2026-11-12"
     day: Thursday
@@ -724,109 +719,119 @@ sessions:
     duration_min: 60
     speakers: ["Robin Patchen"]
     location: "Bronze 3"
-    tags: ["Craft", "Live Education", "Implementation"]
-    description: "Building momentum through unanswered questions, esc"
+    tags: ["Craft", "Live Education"]
+    description: "Every writer wants to provide that \"just one more chapter\" experience for readers. This class will show you how to create addictive fiction—not through constant action or cliffhangers, but by weaving anticipation into your plot structure. In this craft-focused session, you'll discover how to build momentum at the macro level, where page-turning power originates. We'll explore what keeps readers emotionally invested and desperate to know what happens next. We’ll cover the power of unanswered questions and unsolved mysteries, how to craft characters your readers pull for, and how to escalate stakes by making the danger more acute or the consequences more meaningful. We'll examine how to design antagonistic forces powerful enough to make victory feel uncertain. Walk away knowing what makes plots compulsive—and how to apply those principles to any story you write. Whether you're drafting or revising, no matter the genre, this approach will help you build fiction readers can't put down. Robin Patchen is a USA Today bestselling author of 40 books and a former editor with years of experience studying what makes readers turn pages."
 
   - id: 66
-    title: "Design a Future Proof Marketing System"
+    source_id: "recm8eIsF4TXuQSLK"
+    title: "Marketing to Market Workshop"
     date: "2026-11-13"
     day: Friday
     start: "9:00 AM"
     duration_min: 180
     speakers: ["Joe Solari", "Ricardo Fayet"]
     location: "Event Center"
-    tags: ["Advertising and Marketing", "Workshop", "Implementation"]
-    description: "A three-hour working session on building a marketing system grounded in reader psychology and behavioral science rather than platform algorithms. Fayet and Solari contrast transactional marketing with a compounding system that self-selects the right readers and holds value regardless of what Meta or Amazon do next, using real case studies. Attendees leave with a framework meant to outlast platform cycles and a one-page marketing plan for beyond 2027."
+    tags: ["Advertising and Marketing", "Workshop", "Published Voyagers"]
+    description: "This session is about building an incomparable marketing system unique to your business. This is an advanced session Ricardo Fayet and Joe Solari will break down what separates a transactional marketing approach from a system that compounds over time, self-selects the right readers, and holds its value regardless of what third party retailers does next. In this three-hour working session, you'll learn through real case studies how to build an on-brand marketing system grounded in reader psychology and behavioral science — one that nurtures the right readers toward your work rather than chasing anyone with a credit card. We'll introduce you to technologies that accelerate this system, not replace it, because tools change but trust doesn't. What won't change: profitability is still the goal. Reader trust is still the currency. You'll leave with a framework built to outlast platform cycles, and a one-page marketing plan designed to take you beyond 2027."
 
   - id: 67
-    title: "Audio Masterclass"
+    source_id: "recyDnzrrsSCGnBvf"
+    title: "Audiobook Workshop"
     date: "2026-11-13"
     day: Friday
     start: "9:00 AM"
     duration_min: 180
-    speakers: ["Christopher Boucher"]
+    speakers: ["Christopher Boucher", "Cindy Gunderson", "Jim Patton", "Michael James Bell"]
     location: "Bronze 2"
     tags: ["Audio and Narration", "Live Education"]
-    description: "This is a 180 minute Audio Masterclas"
+    description: "Author Nation presents a 3 hour interactive seminar on audiobooks, the industry in all its mayhem and glory, and the process of turning the written page into the spoken word. Presented by a collaboration of authors, narrators and producers that have collectively written hundreds of books, and produced thousands of audiobooks."
 
   - id: 68
-    title: "Non Fiction Panel"
+    source_id: "rec3l18TCTbHBTtj3"
+    title: "Panel: Marketing Beyond the Book: Creative Strategies for Nonfiction Authors"
     date: "2026-11-13"
     day: Friday
     start: "1:00 PM"
     duration_min: 60
-    speakers: ["Theresa L. Goodrich"]
+    speakers: []
     location: "Bronze 2"
     tags: ["Panel"]
-    description: "Non-fiction panel organized by Theresa Goodrich"
+    description: "Nonfiction authors have opportunities to market their books that go far beyond traditional book promotion. In this panel, we’ll explore creative ways to reach readers, build trust and authority, engage niche communities, and turn expertise into opportunities. From speaking and partnerships to media, content repurposing, courses, and other platforms, our panelists will share their experiences connecting with audiences beyond the page. Whether you write memoir, how-to, history, travel, business, or another form of nonfiction, join us for a conversation about expanding your reach and finding new ways to connect your books with the people who need them."
 
   - id: 69
-    title: "Mystery Thriller Suspense Panel"
+    source_id: "rec9vbDGrm18U1yDy"
+    title: "Mystery, Thriller, Suspense Panel"
     date: "2026-11-13"
     day: Friday
     start: "1:00 PM"
     duration_min: 60
-    speakers: ["Cheryl Bradshaw", "Douglas Pratt", "Mary Stone"]
+    speakers: ["Cheryl Bradshaw", "Douglas Pratt", "Mary Stone", "T.D. Donnelly"]
     location: "Platinum"
-    tags: ["Panel"]
-    description: null
+    tags: ["Craft", "Panel", "All"]
+    description: "Join a panel of bestselling mystery, thriller, and suspense authors for a candid conversation about writing, publishing, and succeeding in today’s ever-changing book industry. We’ll dive into the craft of storytelling, what’s working (and what isn’t), current marketing strategies, tips for writing a bestseller, and the impact of AI on authors and publishing. Whether you’re an aspiring writer or a seasoned author, come ready for an engaging discussion, insider insights, and plenty of practical advice!"
 
   - id: 70
+    source_id: "recHgIsyzvjMElNHT"
     title: "Cozy Mystery Panel"
     date: "2026-11-13"
     day: Friday
     start: "1:00 PM"
     duration_min: 60
-    speakers: ["Sara Rosett", "T. Thorn Coyle", "Jolie Tunnell", "Melissa Bourbon"]
+    speakers: ["Sara Rosett", "T. Thorn Coyle", "Jolie Tunnell", "Carolyn L. Dean"]
     location: "Bronze 3"
     tags: ["Panel"]
     description: null
 
   - id: 71
+    source_id: "recKJ9McBDywLe56Z"
     title: "Fantasy Panel"
     date: "2026-11-13"
     day: Friday
     start: "1:00 PM"
     duration_min: 60
-    speakers: ["AC Cobble", "Z.S. Diamanti", "S.L. Rowland"]
+    speakers: ["AC Cobble", "Z.S. Diamanti", "SA Klopfenstein", "Kaedyn Nedopak"]
     location: "Gold"
     tags: ["Panel"]
     description: null
 
   - id: 72
-    title: "Happily Ever After is a Business Model"
+    source_id: "recOIgn4E5zpCAqhb"
+    title: "Romance panel: Happily Ever After is a Business Model"
     date: "2026-11-13"
     day: Friday
     start: "1:00 PM"
     duration_min: 60
-    speakers: ["Eloisa James", "Penny Reid", "Elizabeth Hunter", "Theodora Taylor", "Damon Suede"]
+    speakers: ["Eloisa James", "Penny Reid", "Elizabeth Hunter", "Damon Suede"]
     location: "Event Center"
-    tags: ["Craft", "Panel"]
-    description: "A money-focused romance panel: moderator Eloisa James questions four bestselling authors who have worked across traditional, indie, and hybrid publishing about series strategy, pricing, what actually pays, and costly lessons. Closes with a live experiment where the panel turns an audience plot idea into a bestseller premise positioned across sub-genres. Attendees are asked to bring a plot idea."
+    tags: ["Panel", "All"]
+    description: "Romance is the best-selling — and most underestimated — genre in fiction, and nobody reaches the top by plunking down a trope. Penny Reid, Elizabeth Hunter, Theodora Taylor, and Damon Suede have built bestselling careers across traditional, indie, and hybrid publishing — in contemporary, paranormal, and more — and moderator Eloisa James will be asking about the money: series strategy, pricing, what actually pays, and the expensive lessons nobody posts about. The session closes with a live experiment: audience members offer plot ideas, and the panel develops one into a bestseller premise — the same idea, positioned differently across sub-genres, no formula involved. Come with a plot in mind."
 
   - id: 73
+    source_id: "recjlCgLlD6673YoJ"
     title: "Science Fiction Panel"
     date: "2026-11-13"
     day: Friday
     start: "1:00 PM"
     duration_min: 60
-    speakers: ["Skyler Ramirez", "Anthony Melchiorri", "Julia Huni", "Andrew Moriarty"]
+    speakers: ["Skyler Ramirez", "Julia Huni", "Andrew Moriarty"]
     location: "Bronze 4"
     tags: ["Panel"]
     description: null
 
   - id: 74
+    source_id: "recspPcCwvrXhwpKW"
     title: "YA Panel"
     date: "2026-11-13"
     day: Friday
     start: "1:00 PM"
     duration_min: 60
-    speakers: ["Cidney Swanson"]
+    speakers: ["Cidney Swanson", "Kristen Illarmo", "Christopher Locke", "L. L. Nelson"]
     location: "Bronze 1 / Learning Lab"
     tags: ["Panel"]
     description: null
 
   - id: 75
+    source_id: "recU5ualP7uC2TDvP"
     title: "Andy Weir Interview"
     date: "2026-11-13"
     day: Friday
@@ -836,3 +841,891 @@ sessions:
     location: "Event Center"
     tags: ["Keynote", "Live Education"]
     description: null
+
+  - id: 76
+    source_id: "ah-rec6rChxP2g2MgGRK"
+    title: "CrossWrite Meet Up"
+    date: "2026-11-10"
+    day: Tuesday
+    start: "11:00 AM"
+    duration_min: 60
+    speakers: ["Elaine Canyon"]
+    location: "Bronze 3"
+    tags: ["After Hours", "Affinity Group"]
+    description: "CrossWrite Warriors! Join us in a celebration of making it through another year of making your writing goals happen!"
+
+  - id: 77
+    source_id: "ah-recIkJ3u2Tq1aef86"
+    title: "KS 101 with Ember Mae Cohort meetup"
+    date: "2026-11-10"
+    day: Tuesday
+    start: "12:00 PM"
+    duration_min: 60
+    speakers: ["Ember Mae"]
+    location: "Bronze 2"
+    tags: ["After Hours", "Affinity Group"]
+    description: "This is a meetup for those who went through the Kickstarter 101 class with Ember Mae. It will give us a chance to catch up and discuss lessons learned on their campaign launches."
+
+  - id: 78
+    source_id: "ah-recdbCWwJuqrwWTQB"
+    title: "Time Lord training"
+    date: "2026-11-10"
+    day: Tuesday
+    start: "2:00 PM"
+    duration_min: 60
+    speakers: ["Jen Green"]
+    location: "Bronze 2"
+    tags: ["After Hours"]
+    description: "For volunteers designated as Time Lords (no Tardis required)"
+
+  - id: 79
+    source_id: "recPv1ZAAsArB2kKo"
+    title: "Find Your People, Find Your Dinner"
+    date: "2026-11-10"
+    day: Tuesday
+    start: "6:30 PM"
+    duration_min: 30
+    speakers: []
+    location: "Event Center"
+    tags: ["Entertainment", "Meetups & Networking"]
+    description: "Looking for fellow authors in your genre or similar interests? Want to find someone to grab dinner with? This is your chance to do both. After the opening session, head to the designated meetup table in the Event Center and start making connections. Come with a plan or come ready to make one. Either way, meet your people early and don’t eat dinner alone unless you really want to. Link to be a table anchor here: https://app.smartsuite.com/form/so8pqexh/9M4Vm9elwG"
+
+  - id: 80
+    source_id: "ah-recFOoCoZnMHTgEe8"
+    title: "Romance Author Meet-Up"
+    date: "2026-11-10"
+    day: Tuesday
+    start: "6:30 PM"
+    duration_min: 30
+    speakers: ["Eloisa James"]
+    location: "Event Center"
+    tags: ["After Hours", "Genre"]
+    description: "Let's talk romance, the genre that's the backbone of the industry. What is working right now? Tropes, business tips, covers, audio... Our boats rise together. 📅 Preferred Day & Time: Tuesday after the opening session, meet-up in a room followed by a walk to dinner for anyone who wants to join! (Dinner details coming based on interest)"
+
+  - id: 81
+    source_id: "ah-recw28Oo6TUDamEIh"
+    title: "Christian Authors Meet-up"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "7:30 AM"
+    duration_min: 60
+    speakers: ["Jennifer Lamont Leo"]
+    location: "Bronze 4"
+    tags: ["After Hours", "Affinity Group"]
+    description: "A time of networking, information sharing, and connection for authors who are Christian and/or write for the Christian market."
+
+  - id: 82
+    source_id: "ah-recrUJJCyhqsXypTb"
+    title: "ProWritingAid Wednesday Morning Writing Sprint"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "7:30 AM"
+    duration_min: 60
+    speakers: ["Tom Wilde"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["After Hours", "Writing Sprint"]
+    description: null
+
+  - id: 83
+    source_id: "ah-recBmrS9KtNsVC2Rj"
+    title: "Tai Chi for Authors"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "7:30 AM"
+    duration_min: 60
+    speakers: ["Wayne R. Key", "Carol Van Natta"]
+    location: "Event Center"
+    tags: ["After Hours", "Fitness"]
+    description: "Tai Chi for Authors warm up in the mornings, a favorite from the last two Author Nation conferences. Come join us!"
+
+  - id: 84
+    source_id: "recsUtZYRJUcY9wcM"
+    title: "Build the System That Fixes It (Part 2 of 2)"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Jocelyn Lindsay"]
+    location: "Palace 4"
+    tags: ["Craft"]
+    description: "Live workshop. Requires Session 1 prep (Where Your Craft Falls Apart). Every manuscript unravels in the same places. You know this. You've seen it on the last three books you wrote. But you're still revising from scratch every time. No system. No checklist. Just you, the manuscript, and a vague sense of dread. This session fixes that. You'll create a personalized editing checklist. Not generic. Yours. Based on the patterns you identified in Session 1. Three passes: structure first, scenes second, language last. For each pass, you'll write two or three sharp questions that catch YOUR specific weak spots. Do you rush conflict? Your question: \"Does this scene sit in the discomfort long enough?\" Does your dialogue wander? Your question: \"Does every line reveal character or move the plot?\" You'll use a template. You'll build it during the session. This document evolves as you evolve as a writer. Fix one issue now, add questions for the next. You'll use this on every manuscript you write. Then you'll stop revising from scratch."
+
+  - id: 85
+    source_id: "recPiCO1NzdkGPR08"
+    title: "Stop Buying Sh*t You Don't Need (And Start Building What You Do)"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Jocelyn Lindsay"]
+    location: "Palace 4"
+    tags: ["Business & Finance"]
+    description: "Live workshop. Bring your laptop/notebook. Courses you didn't finish. Tools you don't use. Ads that didn't work. Services you're not sure you needed. You've spent money. Lots of it. And you're not sure it was worth it. You think you're bad at business. You're not. You just don't know what business ownership looks like yet. And nobody taught you. You're making the same three mistakes every new author business makes: Mistake 1: Spending money to fix symptoms instead of building systems. (You buy ads when you don't have infrastructure. The problem isn't the ads. It's that you're not ready for them.) Mistake 2: Collecting tactics instead of building strategy. (You're trying everything. Nothing sticks. That's because you don't have a plan—just a pile of tactics.) Mistake 3: Saying yes to everything instead of prioritizing ruthlessly. (You think you should be doing all of it. You're paralyzed because you can't. Pick one thing. Do that first.) This session teaches you how to stop. You'll build a Business Decision Filter during the session. One page. Three sections. Questions you ask yourself before you spend money or time. Then you'll test it on a real decision you're facing right now. Should you run ads? Take that course? Hire that service? Write that book? You'll run it through the filter and make an owner decision, not an employee decision (not panic, not what you saw on TikTok). Stop wasting money on shit that doesn't move your business forward."
+
+  - id: 86
+    source_id: "recQUIHNvZ0nVe3yf"
+    title: "Grow Your Business Between Launches: Tips on Maximizing Value from Your Catalog"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Audrey Derobert"]
+    location: "Bronze 3"
+    tags: ["Vendor", "Vendor Session", "Published Voyagers"]
+    description: "Exciting marketing opportunities aren’t limited to new releases. Your backlist is a key asset that’s brimming with opportunities to engage your existing fans — and convert new readers to your audience! In this session, we’ll cover a wide range of strategies you can use to create new value from your existing books and continue growing your business between releases. For each strategy, we’ll talk about concrete tactics you can use to get readers excited so you walk away with fresh new ideas ready to implement."
+
+  - id: 87
+    source_id: "recWlZNkLHR1EAoPi"
+    title: "Which Path is Right for You? Four Ways to Sell Direct with Lulu"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Kristen Moxley", "Lali Szumowski"]
+    location: "Palace 3"
+    tags: ["Websites, Email & Direct Sales", "Vendor Session"]
+    description: "There’s more than one way to sell print products directly to your audience. Choosing the right setup depends on how you sell, where you reach your readers, how much of the customer experience you want to manage, and how much customization your business needs. In this session, we’ll compare Lulu’s four direct sales solutions: the Direct Buy Button (NEW!), Order Import Tool, Lulu Direct ecommerce integrations, and the Print API. You’ll learn how each tool works, who it’s designed for, and practical use cases. Then, determine which option aligns with your current goals and how your setup can evolve as you grow."
+
+  - id: 88
+    source_id: "recne4CkmhuKfYNmu"
+    title: "Direct Sales Panel"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Ross Lynch", "Damon Courtney", "Matt Briel"]
+    location: "Bronze 2"
+    tags: ["Panel", "All"]
+    description: "What does direct selling look like for indie authors, and how can you make it work for your books and business? Hosted by ALLi's Ross Lynch, this panel brings together companies working with authors to explore direct sales options, the tools and services available, and practical ways to build stronger reader relationships while increasing your control over sales and distribution."
+
+  - id: 89
+    source_id: "receBt4hJNxHhyczu"
+    title: "Sell Books While You Watch TV: My Trial Reels Experiment"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: []
+    location: "Palace 3"
+    tags: ["Advertising and Marketing", "Vendor Session", "All"]
+    description: "Most authors would rather be writing than posting on social media about their books. This session shows you how simple it can be, and how it doesn't have to distract you from your writing. Skye MacKinnon, a USA Today bestselling romance author with over 100 books, will walk through the system behind her posts turning into sales, built around a few minutes in the evening. She started her own Instagram Reel journey skeptical because almost every success story she'd seen came from KU authors, and she's wide. She posted twice a day for two weeks with almost nothing to show for it. Then one morning she woke up to 75 copies sold overnight of a backlist title that normally sells around five a month, from a post that took her five minutes to make using AuthorScale while watching TV. She'll show exactly what she does, live on screen, from picking a scene to posting it as a trial reel on Instagram, and how to apply the same approach to your own backlist, whether you're in Kindle Unlimited or wide. If you've been meaning to start with social media and have no idea where to begin, come to this one. Same if you're already posting and want to push it further. You'll leave with formats you can copy the same day, without ever filming yourself. Presented by Skye MacKinnon with Marvin Wey from AuthorScale."
+
+  - id: 90
+    source_id: "ah-reccLTvEKdnJ82zus"
+    title: "Agentic AI Meet up"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "5:00 PM"
+    duration_min: 60
+    speakers: []
+    location: "Bronze 1 / Learning Lab"
+    tags: ["After Hours", "Affinity Group"]
+    description: "A meet up of authors that are interested in sharing how you are using tools and technology to make a better publishing business."
+
+  - id: 91
+    source_id: "ah-recF7FGS73mJRDW8a"
+    title: "Booklinker Meetup"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "5:00 PM"
+    duration_min: 60
+    speakers: ["Kerrie Flanagan"]
+    location: "Bronze 4"
+    tags: ["After Hours"]
+    description: "More Readers. Smarter Links. Better Book Marketing. Getting readers to click is hard enough. Make sure you're getting the most from every one. Join Booklinker for a casual meetup where we'll share simple ways to connect readers with your books, improve the buying experience, and make your existing marketing work harder. Come talk books and marketing with fellow authors, ask us anything, and pick up a few strategies you can put to work right away. Plus, we'll have meetup-only swag and a special conference giveaway."
+
+  - id: 92
+    source_id: "ah-recUITvM1IfVI2Lg7"
+    title: "Editors, coaches, and other service providers: meet and greet"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "5:00 PM"
+    duration_min: 60
+    speakers: ["Nichelle Seely", "Dave Reed"]
+    location: "Palace 4"
+    tags: ["After Hours", "Affinity Group"]
+    description: "Imagine an event where those who need services can mingle informally with service providers in a low/no-pressure, conversational, ask-me-anything atmosphere. A networking gathering."
+
+  - id: 93
+    source_id: "ah-recagb2e6yuF6ilWh"
+    title: "LGBTQ+ Meetup"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "5:00 PM"
+    duration_min: 60
+    speakers: ["Cody Sisco"]
+    location: "Bronze 2"
+    tags: ["After Hours", "Affinity Group"]
+    description: "Join fellow LGBTQ+ indie authors at Author Nation to connect, collaborate, and talk shop! This community-hosted meetup is an open, inclusive space for queer writers of all genres to discuss craft, share marketing insights for LGBTQ+ fiction, and build lasting professional relationships. Whether you're a multi-published author or prepping your debut, stop by to find your community and support queer voices in indie publishing."
+
+  - id: 94
+    source_id: "ah-recF6A9TdGsHStY50"
+    title: "The Book Marketing Sprint"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "5:00 PM"
+    duration_min: 60
+    speakers: ["Marvin Wey"]
+    location: "Bronze 3"
+    tags: ["After Hours", "Affinity Group"]
+    description: "The Book Marketing Sprint: Create a Month of Social Content Before You Leave Bring your laptop and your book. Leave with weeks of ready-to-post social media content. This is a hands-on working session. Together, we’ll turn scenes from your book into faceless TikTok, Instagram, Facebook, and YouTube content you can start posting immediately. Every attendee will get free access to AuthorScale during the session, and we’ll work alongside you to create hooks, choose scenes, build posts, and help you figure out what works for your specific book and genre. The sprint is led by AuthorScale’s co-founders and Genesis Davies, an indie author who turned social media into a full-time author career. No social media experience required. Just bring your laptop and a digital copy of your book"
+
+  - id: 95
+    source_id: "ah-recq8gHzKsWQg5fQl"
+    title: "Audio meetup"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "6:00 PM"
+    duration_min: 60
+    speakers: ["Christopher Boucher"]
+    location: "Palace 3"
+    tags: ["After Hours"]
+    description: "Connect with fellow audio narrators, audiobook creators, and authors interested in the world of audio. Swap ideas, share experiences, ask questions, and talk all things audiobooks."
+
+  - id: 96
+    source_id: "ah-reckY1rLyXIlpJW29"
+    title: "Non-Fiction Author Gathering"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "6:00 PM"
+    duration_min: 60
+    speakers: ["Matt Landry"]
+    location: "Bronze 3"
+    tags: ["After Hours", "Genre"]
+    description: "Educators, Self-Helpers, and all non-fiction folks alike. Let's talk shop. Non-fiction marketing specific tricks, Craft, and all other nuances associated with non-fiction. 📅 Preferred Day & Time: Wednesday Evening after 6:00"
+
+  - id: 97
+    source_id: "ah-recjJIEXiPfb6IPEi"
+    title: "Urban Fantasy Author Meet Up"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "6:00 PM"
+    duration_min: 60
+    speakers: ["Lauryn Christopher"]
+    location: "Bronze 4"
+    tags: ["After Hours", "Affinity Group"]
+    description: "Fantasy often carries us away to distant, imaginary realms, but urban fantasy insists that the miraculous is right here — driving your Uber, waiting in the checkout line, or watching from the roof of a casino. Join us for a little mischief and magic with your fellow UF authors. We'll explore ideas for creating magic that works within the rules of the \"real world,\" pros and cons of magic being out in the open or practiced in secret, share suggestions for favorite authors, tropes, and maybe (probably!) discuss the projects we're working on."
+
+  - id: 98
+    source_id: "ah-recjmYYoZMjuo3o6V"
+    title: "Wide For the Win Meeting"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "6:00 PM"
+    duration_min: 60
+    speakers: ["Chelle Honiker"]
+    location: "Bronze 2"
+    tags: ["After Hours", "Affinity Group"]
+    description: "Wide for the Win Members gathering to network and put faces to avatars."
+
+  - id: 99
+    source_id: "ah-recVmWgTsfZpY9lqB"
+    title: "Workshop: Build a Social Media Pipeline That Sells Books While You Sleep"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "6:00 PM"
+    duration_min: 60
+    speakers: ["Abbie Emmons"]
+    location: "Bronze 2"
+    tags: ["After Hours", "Affinity Group"]
+    description: "Want to turn social media into an actual reader pipeline without spending your life online? This hands-on workshop is the practical follow-up to Abbie's Author Nation session, “How to Reach the Next Generation of Readers.” Abbie will walk you through setting up a real automation sequence for your book: a content funnel, a keyword DM trigger, and a direct link delivery system that brings readers into your world while you sleep. You'll leave with a working setup customized to your book and brand. Bring your phone and your social media login and get ready to take the stress and guesswork out of book promotion. 📅 Preferred Day & Time: Wednesday evening after 5pm"
+
+  - id: 100
+    source_id: "recP1l3WiiNPNGWb8"
+    title: "Murder at the Museum"
+    date: "2026-11-11"
+    day: Wednesday
+    start: "7:00 PM"
+    duration_min: 90
+    speakers: ["Jolie Tunnell"]
+    location: "Platinum"
+    tags: ["Entertainment", "Meetups & Networking"]
+    description: "Learn the mystery craft at an immersive champagne social where you are both sleuth and suspect. Discover whodunit before the cops carry you away."
+
+  - id: 101
+    source_id: "ah-recKOcHjA0Ay56X8z"
+    title: "Alliance of Independent Authors Meetup"
+    date: "2026-11-12"
+    day: Thursday
+    start: "7:30 AM"
+    duration_min: 60
+    speakers: ["Ross Lynch"]
+    location: "Gold"
+    tags: ["After Hours"]
+    description: "Join us for our annual Alliance of Independent Authors meetup at Author Nation. Meet fellow ALLi members, hear an update from the ALLi team, and connect with the indie author community. Non-members curious to learn more about ALLi and membership are very welcome."
+
+  - id: 102
+    source_id: "ah-recS82v1ZdGEU67r6"
+    title: "ProwritingAid Thursday Writing Sprint"
+    date: "2026-11-12"
+    day: Thursday
+    start: "7:30 AM"
+    duration_min: 60
+    speakers: ["Tom Wilde"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["After Hours", "Writing Sprint"]
+    description: null
+
+  - id: 103
+    source_id: "ah-recX9DW1t50fCwS3l"
+    title: "SIA/IASFA MEET UP"
+    date: "2026-11-12"
+    day: Thursday
+    start: "7:30 AM"
+    duration_min: 60
+    speakers: ["Craig Martelle"]
+    location: "Bronze 3"
+    tags: ["After Hours", "Affinity Group"]
+    description: "a Q&A with any Successful Indie Author and IASFA members who are attending the show. Come hang out with Craig Martelle. 📅 Preferred Day & Time: Thursday before the show starts in a bronze room please"
+
+  - id: 104
+    source_id: "ah-recEMyfjjyg1NbQ9O"
+    title: "Tai Chi for Authors"
+    date: "2026-11-12"
+    day: Thursday
+    start: "7:30 AM"
+    duration_min: 60
+    speakers: ["Wayne R. Key", "Carol Van Natta"]
+    location: "Event Center"
+    tags: ["After Hours"]
+    description: "Tai Chi for Authors warm up in the mornings, a favorite from the last two Author Nation conferences. Come join us!"
+
+  - id: 105
+    source_id: "recIfzZ4QU5jJPgUb"
+    title: "Advanced Amazon Ads"
+    date: "2026-11-12"
+    day: Thursday
+    start: "9:00 AM"
+    duration_min: 60
+    speakers: ["Sara Usera Ciriza"]
+    location: "Platinum"
+    tags: ["Advertising and Marketing", "Live Education"]
+    description: "Get your Amazon Ads to pay for themselves or know when to walk away. We'll cover advanced optimisation rules, smart budgeting, and automating the tedious target-harvesting work."
+
+  - id: 106
+    source_id: "recy5zJW0xN5WnWGK"
+    title: "Advanced Direct Sales Strategies: Build an Asset Amazon doesn't Control"
+    date: "2026-11-12"
+    day: Thursday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["Naomi Rawlings"]
+    location: "Gold"
+    tags: ["Websites, Email & Direct Sales", "Live Education"]
+    description: "Most authors don’t need more traffic, they need direct access to their readers and a revenue structure they control. Direct sales can give you both things, even if you write in a niche or lower-earning genre. In this session, an author with a multi-six figure direct store, gets honest about when direct sales truly makes sense, how to structure products for higher average order value, ways to reduce friction that kills conversions, and which methods will build predictable revenue outside the algorithm. Through real data, case studies (including how the author grew one series from $20,000/year on Amazon to $300,000+ in year one of direct sales), and implementation frameworks, you’ll leave with a clear decision model for whether direct sales fits your catalog — and a concrete plan to optimize it if it does."
+
+  - id: 107
+    source_id: "recJa9yqYocbqVZ5Y"
+    title: "Architecture of a Pageturner"
+    date: "2026-11-12"
+    day: Thursday
+    start: "10:30 AM"
+    duration_min: 60
+    speakers: ["J.D. Barker"]
+    location: "Event Center"
+    tags: ["Craft", "Live Education"]
+    description: "Stephen King read J.D. Barker's debut novel and was impressed enough to grant him the use of one of his most iconic characters. When James Patterson first read J.D. Barker, he immediately brought him in as a co-author. Bram Stoker's family asked him to write the official prequel to DRACULA using Bram's original notes and journals. His books can be found in more than 150 countries and two dozen languages. Eight of his novels have been optioned for film or television. What's all the fuss about? J.D. Barker knows how to craft one hell of a pageturner! Don't miss this unprecedented peek behind the curtain - he'll take you through his writing process and give you the tools you need to take your writing to the next level."
+
+  - id: 108
+    source_id: "receKFSxSKDVmwgrH"
+    title: "Tiara photo"
+    date: "2026-11-12"
+    day: Thursday
+    start: "11:30 AM"
+    duration_min: 15
+    speakers: []
+    location: "Event Center"
+    tags: ["Entertainment", "Meetups & Networking", "Meetup"]
+    description: "Get in on our annual tiara photo! We'll meet on the steps to the Event Center right after we break for lunch. Expect getting there, setting up, and getting our glamour shots taken to last about 15 minutes in total. All tiaras welcome!"
+
+  - id: 109
+    source_id: "recJf8rwIydf1XSZw"
+    title: "Achieving Independent Publishing Success With IngramSpark"
+    date: "2026-11-12"
+    day: Thursday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Jessica Driver", "Emily Davis"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["Vendor", "Vendor Session", "All"]
+    description: "Publishing your book is just the beginning. In this session, we’ll explore how IngramSpark supports independent authors throughout their publishing journey, from navigating the platform and setting up a title for success to optimizing metadata for discoverability. We’ll share practical distribution best practices and discuss what authors can do after publication to build momentum, increase visibility, and take advantage of IngramSpark’s retailer, library, and marketing opportunities."
+
+  - id: 110
+    source_id: "recbPCYSd7vaydd3z"
+    title: "Editing a Bestseller"
+    date: "2026-11-12"
+    day: Thursday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Eloisa James"]
+    location: "Event Center"
+    tags: ["Craft", "Workshop", "All"]
+    description: "As a VP at Gallery Books, Simon & Schuster, with one of the most distinguished editorial careers in commercial fiction, Carrie Feron brings a fresh perspective we cannot get anywhere else on what the editorial relationship looks like at the highest level and what separates a good manuscript from a career-defining one."
+
+  - id: 111
+    source_id: "rec3mBbG0AxVVWAfH"
+    title: "From Low-Hanging Fruit To High-Tech Magic: Exploring The Boundaries Of Author Merchandise"
+    date: "2026-11-12"
+    day: Thursday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Kay Vincent"]
+    location: "Palace 3"
+    tags: ["Intellectual Property Beyond the Book", "Published Voyagers"]
+    description: "Other sessions have encouraged us to think beyond books in order to give readers experiences, artifacts, and other extensions of our IP. But once you’re convinced by the “why,” the next questions become: “what” and “how”? What can you do to create products or experiences your readers will love? How do you get from page to product? How do you create physical items without warehousing, manufacturing headaches, or large upfront costs? This session answers those questions with practical, low-risk (and cool!) pathways authors can implement immediately. If you’re ready to expand beyond the page to strengthen both reader loyalty and your bottom line, you’ll leave with concrete ideas — and some guided walkthroughs — of how to get started."
+
+  - id: 112
+    source_id: "recuHjgoYjBOGdCBI"
+    title: "How to Monetize Your Rough Draft Through Social Storytelling"
+    date: "2026-11-12"
+    day: Thursday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Emilia Rose"]
+    location: "Bronze 4"
+    tags: ["Advertising and Marketing", "Live Education"]
+    description: "What if your rough draft was enough to build a devoted readership? This session shows authors how writing in episodes—even in rough, imperfect form—can naturally create anticipation, conversation, and emotional investment from readers as the story is being written. Instead of chasing algorithms or producing constant promotional content, attendees will learn how to design stories that invite reader interaction, encourage return behavior, and turn casual readers into raving fans, using narrative structure and release cadence alone. Readers show up for momentum, access, and connection, and this session breaks down how to harness that on purpose."
+
+  - id: 113
+    source_id: "recEDTJlVeURkH1nt"
+    title: "Stop Dumping, Start Layering: Adding Backstory and Setting Without Killing Momentum"
+    date: "2026-11-12"
+    day: Thursday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: []
+    location: "Bronze 3"
+    tags: ["Craft", "All"]
+    description: "Every novelist faces the same challenge: Your readers want action, stakes, and characters they care about—but they also need the backstory, worldbuilding, and context to understand why any of it matters. If you front-load too much information, your reader may never make it to the story. If you drop an extended flashback into the middle of the book, it can bring the action to a halt. So how do you give readers what they need to know without losing them? In this session, you’ll learn two methods for delivering backstory and setting. Top-down delivery uses exposition and telling to get readers up to speed efficiently—and despite what most writing advice says, it’s sometimes the right choice. Bottom-up delivery weaves context into the live scene, revealing your story world through character action and dialogue. The key is knowing when to use which—and that depends on your goals for each scene. You’ll also learn: - How to position exposition around action so your pacing doesn’t stall - How to make exposition do double duty by provoking new story questions or adding style and texture - What you really need to include in your opening chapter—and what you can leave out - How to track where different kinds of exposition appears in your story and scenes We’ll see all of these techniques in action through examples from recent novels that solve the backstory and worldbuilding challenge in very different ways."
+
+  - id: 114
+    source_id: "recqqqqJJc3LrzGcz"
+    title: "The Taylor Swift Formula: Building a Fandom That Lasts in the Age of AI"
+    date: "2026-11-12"
+    day: Thursday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Damon Courtney"]
+    location: "Platinum"
+    tags: ["Craft", "Solo Presentation", "Published Voyagers"]
+    description: "What can indie authors learn from the queen of fandom herself? Join Damon Courtney, creator and CEO of BookFunnel, as he shares how authors can turn casual readers into lifelong fans by building genuine connections, community, and trust - even in an AI-saturated world. You’ll discover why community beats algorithms every time, learn practical strategies for engaging readers authentically, and find out how to prepare your platform for whatever the industry does next."
+
+  - id: 115
+    source_id: "reck4IPix8fhQ1fZf"
+    title: "The Ultimate Series Bible: Cross-Referencing Consistency at Scale by using LLMs"
+    date: "2026-11-12"
+    day: Thursday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: []
+    location: "Palace 4"
+    tags: ["AI and Automation", "Live Education"]
+    description: "Maintaining continuity across a multi-book series is one of the hardest tasks in fiction. Authors historically relied on messy wikis, disparate notes, or expensive human editors to catch that a character's eye color changed between Book 1 and Book 3. Furthermore, most authors believe AI can’t help with this because it will steal their IP, standard chatbots \"hallucinate\" or forget details due to small context windows. In essence authors face two major barriers to using AI effectively: Privacy and Amnesia. First, many authors avoid AI because they fear their intellectual property will be used to train future models. They don't realize that \"Enterprise\" and \"Business\" tiers often offer contractual Zero Data Retention policies. Second, standard AI tools fail at developmental editing because they have small context windows—they \"forget\" Chapter 1 by the time they read Chapter 10. They cannot analyze a narrative arc or consistent character voice across a whole novel. This session solves the \"Amnesia\" problem by teaching authors how to use Large Context Models as a dynamic, queryable Series Bible that never forgets a detail. What will attendees be able to DO after your session? Attendees will spend the first 20 minutes configuring their environment and the remaining time executing prompts. By the end, they will: Establish a Secure \"Zero-Training\" Environment: Configure a Business/Enterprise workspace (e.g., Google Workspace) to ensure data privacy terms are active, preventing their intellectual property from being used to train public models. Build the Dynamic Bible: Ingest full manuscripts from multiple books into a single Large Context Window (1M+ tokens) to perform \"Consistency Audits\" instantly cross-referencing timeline events, character descriptions, and lore across the entire series to find contradictions. Generate High-Fidelity Ad Copy: Leverage the AI's deep understanding of the full text to generate blurbs, hooks, and ad copy that accurately reflect the tone and plot, rather than generic AI marketing fluff. I am a Data Scientist and Biomedical Informatician with over 15 years of experience. In my professional life, I teach clinical staff how to deploy Large Language Models in healthcare workflows where data privacy is a federal requirement. I am also an independent author and have been published professionally in the academic textbook market. I bridge the gap between hard technical compliance and creative writing. I don't just \"prompt\" I will teach authors the enterprise-grade architecture needed to protect their IP while leveraging the most powerful editing tools available."
+
+  - id: 116
+    source_id: "rec95NrqA0VlpLnY1"
+    title: "What's Actually Wrong With Novels: The 5 Mistakes in 98% of Manuscripts (and How to Fix Them)"
+    date: "2026-11-12"
+    day: Thursday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["J.H. Bunting Joe Bunting"]
+    location: "Bronze 2"
+    tags: ["Vendor", "Vendor Session", "All"]
+    description: "Twig analyzed hundreds of manuscripts and found 5 issues that showed up in 98% of them. And not only in debuts: writers with 5-10 published books made them too. In this session, Joe Bunting, a Wall Street Journal bestselling writer who has published books with Penguin Random House, HarperCollins and Hachette as well as independently, walks through the 5 problems and shows you how to spot and fix each one in your own draft. You'll learn why 88% of manuscripts sag in the middle, why half of all antagonists are flat, and why the prose you keep polishing is almost never the real problem. Then Joe will run a live demo of Twig and show how it finds these problems in a full manuscript in 30 minutes or less. By the end, you'll know exactly what to fix quickly to publish a better book, get stronger reviews and sell more books."
+
+  - id: 117
+    source_id: "reczqtg4ZNR1OfiYV"
+    title: "Your AI Marketing Team: When Agents Stop Assisting and Start Executing"
+    date: "2026-11-12"
+    day: Thursday
+    start: "1:00 PM"
+    duration_min: 60
+    speakers: ["Chelle Honiker"]
+    location: "Gold"
+    tags: ["AI and Automation", "Live Education"]
+    description: "AI agents can run your email campaigns, schedule your social content, adjust your ad spend, and report back on what worked — without you prompting them every step of the way. This session showcases a working agent workflow for your author marketing so you can stop managing every task manually and start making the decisions that actually need your brain. Right now, most authors interact with AI like a really fast assistant: write me a blurb, suggest some hooks, draft this email. You're still the project manager for every marketing task, every day. Agentic AI changes the job description. You define the goal and the guardrails. The agent handles execution across your channels — drafting, scheduling, monitoring, adjusting — and flags you when something needs a human call. This session puts you inside a working system. You'll see agent workflows executing real author marketing tasks across email, social media, and advertising, with performance data from actual campaigns. You'll map your own marketing operations against an agent-readiness framework, identify which workflows to hand off first, and design the approval checkpoints that keep your voice, your brand, and your ad budget protected. You'll leave with a 90-day plan to deploy your first agent workflow — built around your business, your channels, and your comfort level."
+
+  - id: 118
+    source_id: "recuhimSWCCGXanpO"
+    title: "Building a Sustainable Author Career by Publishing Wide"
+    date: "2026-11-12"
+    day: Thursday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Mark Leslie Lefebvre"]
+    location: "Bronze 4"
+    tags: ["Business & Finance", "Live Education"]
+    description: "The question comes up regularly in author communities: Should I be exclusive to Amazon, or should I publish wide? But there’s more to it than that. (Speaker names) will take writers through a fundamental mindset shift: moving from thinking about wide publishing as a checklist of tasks to embracing it as a sustainable career philosophy. Attendees will discover how to diversify their revenue streams across multiple retail platforms, understand how libraries and bookstores actually operate as businesses, and learn how to position their books for discovery across a global marketplace. From the mechanics of direct versus distributor publishing to the Three A's of Library Strategy—Availability, Awareness, and Acquisition—this session moves well beyond theory and into actionable steps that authors can implement immediately. Whether you are considering leaving Kindle Unlimited exclusivity, have recently gone wide and are wondering why the sales haven't materialized yet, or are building a wide publishing strategy from the ground up, this session will equip you with the knowledge and confidence to grow your readership and your income on your own terms."
+
+  - id: 119
+    source_id: "recoxTyvTfted7fis"
+    title: "Eight Types of Fans Who Can Grow Your Fandom"
+    date: "2026-11-12"
+    day: Thursday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Becca Syme"]
+    location: "Event Center"
+    tags: ["Advertising and Marketing", "All"]
+    description: "Growing fandoms can feel like throwing spaghetti at the wall. Add to that, if you're at all introverted, fandom might sound either frightening or confusing, so we often don't take into consideration that if you have an actual fandom, it should grow itself. In this workshop, we'll cover the roles fans play inside a fandom, and how you can run specific experiments to get them more engaged, at the right time in your business growth. Understanding what fans need from you will help you be empowered to take small actions to increase your fan base growth and be more effective in building a sustainable career."
+
+  - id: 120
+    source_id: "recEfsLBOK3jZK56s"
+    title: "From Idea to The End: The Three-Part System That Helps Writers Actually Finish Their Books"
+    date: "2026-11-12"
+    day: Thursday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: []
+    location: "Bronze 1 / Learning Lab"
+    tags: ["Vendor", "Vendor Session", "Pre-Published Explorers"]
+    description: "Many people start writing novels. Far fewer finish them. The difference isn't usually talent, discipline, or inspiration. It's understanding that finishing a book requires three separate skills: developing your craft, building a sustainable writing habit, and managing the mindset challenges that derail nearly every writer. In this practical session, Hayley Milliman introduces a simple framework that explains why writers get stuck and how to keep moving from first draft to final page. You'll leave with concrete strategies you can apply immediately, whether you're starting your first novel or finishing your tenth."
+
+  - id: 121
+    source_id: "rec2TXYpoelFYc2Je"
+    title: "Inclusive Worldbuilding: Crafting Settings That Act, Not Decorate"
+    date: "2026-11-12"
+    day: Thursday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Eliana West"]
+    location: "Bronze 3"
+    tags: ["Craft", "Live Education"]
+    description: "Worldbuilding isn’t just for fantasy writers—and it’s never neutral. In this craft-driven workshop, authors will learn how to transform setting from passive backdrop into an active force that shapes character behavior, emotion, and plot. This session focuses on practical tools for building worlds that reflect identity, power, belonging, and lived experience. Participants will explore how unconscious defaults show up in setting choices, how sensory detail creates emotional pressure, and how place can welcome, resist, or exclude characters in meaningful ways. Designed for working writers, this workshop delivers immediately usable techniques that deepen immersion, strengthen character motivation, and elevate storytelling across genres."
+
+  - id: 122
+    source_id: "recKo7qKZ2F5sKosk"
+    title: "Planning and Evaluating Series as an IP Asset (Not a Read-Through Rate)"
+    date: "2026-11-12"
+    day: Thursday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["JN Chaney"]
+    location: "Palace 3"
+    tags: ["Intellectual Property Beyond the Book", "Live Education"]
+    description: "Read-through rate isn't a strategy — it should be an emergent property. By the time you're measuring it, most of the important decisions are driving it are behind you. Here's the secret: 90% of what makes a series work as a lasting IP asset is decided before you write a single word. The narrative arcs, the premise architecture, the hooks. These aren't just storytelling choices the drive behaviour in customers. They're business decisions that determine whether you're building an audience of repeat buyers or starting from scratch with every release. We'll work through how to design series from the ground up for reader loyalty, what premise and arc structures create compounding audience investment over time, and how to evaluate your series as an IP asset. You'll leave with a practical planning framework you can apply to a series you're developing now, and a clear-eyed way to audit what you've already built."
+
+  - id: 123
+    source_id: "recFSuab0svfTPdGl"
+    title: "The Invisible Launch: AI Workflows That Run Your Release From Preorder to Post-Launch"
+    date: "2026-11-12"
+    day: Thursday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Chelle Honiker"]
+    location: "Gold"
+    tags: ["AI and Automation", "Live Education"]
+    description: "A book launch has roughly 147 moving pieces, and something always slips — the email that fires late, the social post you forgot to schedule, the price promotion that didn't trigger, the ARC follow-up that disappeared into launch-week chaos. This session maps the complete launch lifecycle and shows you exactly where AI-powered workflows replace the manual effort that causes those failures. You'll see working automations (not mockups) that trigger email sequences based on reader behavior, generate and schedule launch content across platforms, coordinate ARC team communications, and produce real-time performance dashboards. The workflows are built from actual launches with actual results data, including what underperformed and why. The session is structured around your next release. Bring your timeline, your marketing channels, and your launch plan (even a rough one). You'll leave with a customized launch automation blueprint — every task categorized as \"automate,\" \"AI assists but you approve,\" or \"you and only you\" — with sequences outlined and workflows mapped, ready to build the week you get home."
+
+  - id: 124
+    source_id: "recLs3GGYrqfjv3LT"
+    title: "Voices By Inaudio"
+    date: "2026-11-12"
+    day: Thursday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Debbie Slagel"]
+    location: "Bronze 2"
+    tags: ["Vendor", "Vendor Session"]
+    description: null
+
+  - id: 125
+    source_id: "recwndPsgbqhomJLF"
+    title: "YouTube Strategies For Authors"
+    date: "2026-11-12"
+    day: Thursday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: []
+    location: "Platinum"
+    tags: ["Advertising and Marketing", "Workshop"]
+    description: "YouTube is a powerful discovery engine, and for some authors, it's changing the landscape of their careers through community, visibility, and growth on multiple layers. In this practical workshop, indie author and educator Sarra Cannon (with over 80,000+ subscribers on one channel and 14,000+ on another) breaks down the four distinct ways authors can grow readership and community on YouTube. Attendees will learn how to choose the right strategy for their personality, genre, and goals, then create videos that consistently attract new readers instead of only reaching existing fans. Participants will leave with a clear direction and a simple content plan they can start immediately."
+
+  - id: 126
+    source_id: "recnTlsWqy8S22w1V"
+    title: "Crowdfunding Panel"
+    date: "2026-11-12"
+    day: Thursday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Joe Solari", "Oriana Leckert", "Ember Mae", "AC Cobble"]
+    location: "Event Center"
+    tags: ["Panel"]
+    description: "Crowdfunding can be more than a way to raise money. It can help you build an audience, test an idea, and turn readers into invested supporters. This panel will dig into the realities of crowdfunding for authors and explore some of the options."
+
+  - id: 127
+    source_id: "recloTyrCdpYLNwnP"
+    title: "From First Sale to Six Figures: How Direct Sales Can Grow Your Author Career"
+    date: "2026-11-12"
+    day: Thursday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Greg Keogh"]
+    location: "Bronze 2"
+    tags: ["Vendor", "Vendor Session", "All"]
+    description: "Direct sales have specific strategies that work. In this session, Greg Keogh will break down the tactics behind successful direct sales and use real-world examples to show how authors can build toward a six-figure business. As Co-Founder of Curios, Greg sees firsthand what is working, what is not, and which strategies are selling books every day. He will share the playbook behind successful direct-selling authors, including how to create offers that convert, increase the value of each customer, and grow your customer base by getting other people to promote your books. This session is designed to be practical. You will see real examples, learn which tactics are worth focusing on at different stages of your career, and leave with actionable ideas you can put to work immediately. The goal is to stop relying on luck and start building a repeatable direct sales strategy that can grow with you from your first sale to six figures."
+
+  - id: 128
+    source_id: "recioGb9lAg9L0kIk"
+    title: "How to Plan, Write, and Promote a Profitable Series"
+    date: "2026-11-12"
+    day: Thursday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: []
+    location: "Platinum"
+    tags: ["Advertising and Marketing", "Workshop"]
+    description: "Most successful author careers are built on series, but many writers publish book one without a long-term strategy. In this practical workshop, million-copy bestselling indie author Sarra Cannon shares a clear framework for designing, writing, and promoting a series that keeps readers coming back. Drawing from experience writing multiple series across her career, she breaks down the different types of series and how to structure story arcs, keep from burning out, and release books in a way that builds readership instead of restarting with every launch. Attendees will leave with a simple roadmap for turning their books into a lasting career."
+
+  - id: 129
+    source_id: "recibBH9NeygfZ4vB"
+    title: "Pit Crew Panel: Supporting authors without losing your mind"
+    date: "2026-11-12"
+    day: Thursday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["David Emmons", "Melissa Viergutz", "Sara Strickland"]
+    location: "Palace 4"
+    tags: ["Panel"]
+    description: "***Open to support people, with and without a conference ticket*** Writing a book may be a solo act, but building a sustainable author career takes a team. In this panel, spouses, parents, and partners of successful authors pull back the curtain on the invisible support systems that make the creative life possible. From managing logistics to protecting creative time, discover practical ways loved ones can transition from supportive cheerleaders to strategic partners. Come away with honest perspectives and practical ways to clarify roles and build an author home team that helps both the writer and the people who love them thrive. 1. Identify practical ways loved ones can support the business 2. Learn how to set boundaries so the \"help\" doesn't become a source of stress. 3. Discover how to align family support with the author's long-term goals."
+
+  - id: 130
+    source_id: "recjN8kWb0lCn4rXs"
+    title: "Press Play on your Book: How ElevenLabs v4 is Redefining AI Audio for Authors"
+    date: "2026-11-12"
+    day: Thursday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Simon Patrick"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["Vendor", "Vendor Session", "All"]
+    description: "You wrote the book. Now it's time to hear it. ElevenLabs v4 voice model is the biggest leap in AI narration yet, with extraordinary emotion and delivery, dialogue that sounds like a real conversation, and characters who whisper, laugh, hesitate, and even break. In this lively, demo-packed session, audiobook producer, and ElevenLabs ambassador, Simon Patrick, shows you how to direct performances that make listeners forget they're hearing AI at all. Using live demonstrations, you'll hear how v4 handles the things that once gave AI narration away: rapid exchanges between characters, emotional turning points, tension, humor, and quiet moments of grief. You'll learn how to direct a performance rather than simply generate one, shaping delivery scene by scene so your audiobook feels as alive as the book in your reader's head. We'll put it all to work inside the dedicated audiobook workflow for authors before following your finished book through to distribution on the major platforms, and specifically ElevenReader, where listeners can discover it and you can start earning. AI audiobook narration has just grown up. Press play on your book, and hear it the way you always imagined."
+
+  - id: 131
+    source_id: "recgheBeBFLpBWqLb"
+    title: "What’s Next for Authors: New Tech and Author-Hub Ideas to Stand Out and Turn Readers Into Fans"
+    date: "2026-11-12"
+    day: Thursday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Stuart Grant"]
+    location: "Gold"
+    tags: ["Intellectual Property Beyond the Book", "Live Education"]
+    description: "Discoverability is changing fast, and standing out is getting harder. Readers are overwhelmed with choice, AI is influencing recommendations, and “having a website” is no longer enough on its own. Authors need fresh ways to be more memorable, more clickable, and more shareable. This Innovation session explores new tech and modern author-hub ideas authors can use to stand out and create deeper reader engagement, with real-world examples and practical test ideas. We’ll cover animated covers, augmented reality and QR-driven experiences, NFC in print books, smart speaker and voice-friendly content, plus other emerging approaches that are beginning to shape how readers discover and interact with authors. We’ll also go beyond the tech and look at ways to turn an author website into a richer “author hub” that readers actually enjoy spending time in. That includes world-building elements and fan-friendly content such as Spotify playlists, character art, author readings or short interviews, downloadable book club kits, classroom or children’s party ideas, behind-the-scenes extras, and shareable assets that make it easy for readers to talk about your books. To keep it practical, the session includes a live demonstration of how to create an animated cover using a simple, repeatable workflow, plus guidance on where to use it for maximum impact across websites and social. If you want the latest tech and author-hub ideas you can use right away, this is the session. You’ll leave with fresh, modern ways to stand out and turn casual readers into real fans."
+
+  - id: 132
+    source_id: "recoJET9fj1rWBPZc"
+    title: "Why You Most Likely Won't Be A 7-Figure Author: And Why That's Okay"
+    date: "2026-11-12"
+    day: Thursday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Mark Leslie Lefebvre"]
+    location: "Bronze 4"
+    tags: ["Mindset & Wellness", "Live Education"]
+    description: "THIS ONE MIGHT ALSO BE TITLED SOMETHING LESS \"OFFENSIVE\" SUCH AS SOMETHING LIKE: \"The 25-Year Overnight Success: Reframing Author Career Timelines and Definitions of Success\" The stories we celebrate as sudden successes almost universally involve decades of invisible effort—yet the self-publishing industry continues to sell the myth of rapid discovery, and the fact that anyone can do it. After all \"I did it, so can you!\" is such an enticing lie that we all fall prey to. But what are the realistic chances of getting to a six and seven-figure income as an author when it's clear through numerous industry statistics that most books published selling fewer than a few thousand copies and most authors earning no more than between $2,000 to $5,000 annually. Andy Weir spent twenty-five years writing before THE MARTIAN landed him a seven-figure film deal. Hugh Howey wrote and published for years in relative obscurity before WOOL caught fire. This session confronts the uncomfortable mathematics of author careers head-on. Not to discourage, but to liberate. When authors understand what realistic timelines and income expectations actually look like, they can stop measuring themselves against lottery winners and start building sustainable creative lives. We'll examine the data on author earnings—including why six-figure incomes remain statistically rare and seven-figure incomes rarer still—and explore what the authors who do build lasting careers have in common. Spoiler: it's rarely a single breakout book. It's almost always a long accumulation of work, learning, and reader relationships built over years. Whether you're pursuing traditional publishing, self-publishing, or a hybrid path, you're walking through a different door into the same room. Both paths demand the same fundamental qualities: patience, persistence, continuous improvement, and the ability to find meaning in the work itself rather than solely in external validation. This talk offers a realistic framework for thinking about your author career in decades rather than launches—and why that reframe might be the most important mindset shift you ever make."
+
+  - id: 133
+    source_id: "recZVwF3IyrZkPzXj"
+    title: "YouTube for Authors 301: Publish Once. Multiply Everywhere."
+    date: "2026-11-12"
+    day: Thursday
+    start: "4:00 PM"
+    duration_min: 60
+    speakers: ["Bradley Charbonneau"]
+    location: "Palace 3"
+    tags: ["Intellectual Property Beyond the Book", "Live Education"]
+    description: "Many authors are creating content—but still feel overworked and underexposed. Growth feels disconnected from effort. This advanced session focuses on leverage. Attendees will see how one 30-minute video can be transformed into dozens of short clips, distributed across platforms, reused as audio, and structured into what I call an exponential content engine. A single creative act can power weeks—or even months—of visibility. Then comes the acceleration. We’ll explore collaboration models where views, clicks, and even revenue are shared across creators, along with lightweight YouTube promotion strategies that amplify high-performing content without complex funnels. Often overlooked by authors, these tools act as quiet multipliers. Real performance data and examples—including insights gathered from author interviews conducted in the months leading up to the conference—will demonstrate measurable benchmarks across genres. The focus is not performance. It’s leverage. Publish less. Multiply more. Remain a writer first. (Speaker name) is the author of 40 books and has built a YouTube platform of over 200,000 subscribers with more than 5,000 videos published, actively testing the systems shared in this session. (2025 attendee: “Best session I attended all week — actionable and specific.”)"
+
+  - id: 134
+    source_id: "ah-reclyY4RgG70QOGhg"
+    title: "Entrepreneurial Authors + the Service Providers Who Support Them"
+    date: "2026-11-12"
+    day: Thursday
+    start: "5:00 PM"
+    duration_min: 60
+    speakers: ["Robbie Samuels"]
+    location: "Bronze 2"
+    tags: ["After Hours", "Affinity Group"]
+    description: "Are you using a book to grow your business, or do you provide services that support entrepreneurial authors? Join us for a casual, no-pitch gathering to meet potential collaborators, exchange ideas, and strengthen connections within the entrepreneurial author community."
+
+  - id: 135
+    source_id: "ah-rect3Ky99foRvjISB"
+    title: "Horror Authors Meetup"
+    date: "2026-11-12"
+    day: Thursday
+    start: "5:00 PM"
+    duration_min: 60
+    speakers: ["Edward Martin III"]
+    location: "Bronze 3"
+    tags: ["After Hours", "Genre"]
+    description: "Let’s hang out, socialize, and talk a little shop. We’re all trying to write wild stuff, and it’s kinda nice to not have other writers slowly edge away from you once they learn what you write."
+
+  - id: 136
+    source_id: "ah-rec3CvTPDIp23ro9N"
+    title: "Using AI to Improve Your Blurbs"
+    date: "2026-11-12"
+    day: Thursday
+    start: "5:00 PM"
+    duration_min: 60
+    speakers: ["Julie C. Gilbert"]
+    location: "Bronze 3"
+    tags: ["After Hours", "Affinity Group"]
+    description: "Bring a laptop. Let's refine some blurbs. I can show you what I do, then we can just workshop yours individually and in small groups. 📅 Preferred Day & Time: Thursday early evening"
+
+  - id: 137
+    source_id: "ah-reciNFLPzb7xum0tR"
+    title: "Cozy Mystery after hours mingle"
+    date: "2026-11-12"
+    day: Thursday
+    start: "6:00 PM"
+    duration_min: 60
+    speakers: ["Carolyn L. Dean"]
+    location: "Bronze 4"
+    tags: ["After Hours", "Genre"]
+    description: "after dinner party for cozy mystery authors: music, conversation pit seating, some festive decorations, etc."
+
+  - id: 138
+    source_id: "ah-recPsFhM7Yf6avCWZ"
+    title: "Sci-fi ARC swap"
+    date: "2026-11-12"
+    day: Thursday
+    start: "6:00 PM"
+    duration_min: 60
+    speakers: ["Steve Krizman"]
+    location: "Bronze 3"
+    tags: ["After Hours", "Genre"]
+    description: "For sci-fi writers looking to meet others interested in finding and reviewing ARCs."
+
+  - id: 139
+    source_id: "ah-recVbnBdhQHpkxVdx"
+    title: "Thriller Author Meet-Up"
+    date: "2026-11-12"
+    day: Thursday
+    start: "6:00 PM"
+    duration_min: 60
+    speakers: ["T.O. Paine"]
+    location: "Bronze 4"
+    tags: ["After Hours", "Genre"]
+    description: "Thrillers cover a lot of ground — psychological, domestic, crime, legal, techno, action — so let's find out who's in the room and where we overlap. Bring what's working: hooks, covers, blurbs, series starters, ads, audio, direct sales. Bring what isn't, too. We can also discuss setting up newsletter swaps, group promos, and co-promotions."
+
+  - id: 140
+    source_id: "recvULaNJ0CWtaGzs"
+    title: "Happily Ever After Hours"
+    date: "2026-11-12"
+    day: Thursday
+    start: "7:00 PM"
+    duration_min: 90
+    speakers: ["Eloisa James"]
+    location: "Platinum"
+    tags: ["Entertainment", "Meetups & Networking"]
+    description: "Romancelandia, ahoy! Join four bestselling romance authors for an evening of craft-tastic games built for anyone who loves a love story: Trope Transplant, HEA Bingo, Glad Libs, and more. Whether you write in the genre or only have a hankering, just bring your romance-aficionado bona fides and a sense of humor. You could win real professional feedback from your hosts: first-page analyses, craft coaching, voice development, or a pitch-n-blurb review... But the real prize is the room itself: a night with your fellow genre fictioneers to talk plot, swap know-how, and make friends with folks who get why you're still working out that meet cute at 11pm."
+
+  - id: 141
+    source_id: "rec4Mdj82x696vM4z"
+    title: "You're Already Playing"
+    date: "2026-11-12"
+    day: Thursday
+    start: "7:00 PM"
+    duration_min: 90
+    speakers: ["David Sherrer"]
+    location: "Gold"
+    tags: ["Entertainment", "Meetups & Networking"]
+    description: "Fiction should be fun. So, why is Candyland technically not a game, and how can knowing that fact fix a saggy middle or a dodgy climax? Join tabletop game designer David Sherrer for a fun, hands-on playtime that unpacks game mechanics to solve story problems and career choices. Armed with a single die and an index card, you'll work in small groups to fix broken game loops, build a living world one rule at a time (then break it), and re-scope your powers for maximum story punch. Come ready to roll dice, experiment with interactive mechanics, and leave with a practical framework for drafting, worldbuilding, and reader engagement. No game design experience required — just bring a pen and a willingness to explore."
+
+  - id: 142
+    source_id: "recPN7AUXGqfAogMG"
+    title: "Karaoke with Spoken"
+    date: "2026-11-12"
+    day: Thursday
+    start: "9:00 PM"
+    duration_min: 120
+    speakers: ["Stacy Smith Rogers"]
+    location: "Palace 3"
+    tags: ["Entertainment", "Meetups & Networking"]
+    description: "You spend all day putting words on pages. Now it’s time to put them somewhere slightly more dangerous: a karaoke microphone. Come sing, cheer, and bond with fellow authors. Talent is absolutely not required. Enthusiasm is. Sponsored by Spoken."
+
+  - id: 143
+    source_id: "ah-rec7KyYKPxnC9Vu6Q"
+    title: "Tai Chi for Authors"
+    date: "2026-11-13"
+    day: Friday
+    start: "7:30 AM"
+    duration_min: 60
+    speakers: ["Wayne R. Key", "Carol Van Natta"]
+    location: "Event Center"
+    tags: ["After Hours"]
+    description: "Tai Chi for Authors warm up in the mornings, a favorite from the last two Author Nation conferences. Come join us!"
+
+  - id: 144
+    source_id: "recfRJuDlx6iiMGeR"
+    title: "Build an Author Assistant Workshop"
+    date: "2026-11-13"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 180
+    speakers: ["Chelle Honiker"]
+    location: "Bronze 1 / Learning Lab"
+    tags: ["AI and Automation", "Paid Workshop"]
+    description: "Your assistant gets up before you do. By the time you're at the desk there's a brief waiting: what sold yesterday, what the ads cost you per page read, and the short list of things nobody else can do — today's thousand words, a yes or no on the blurb it wrote at 2 a.m., forty seconds of b-roll for Thursday. You handle those. It handles the rest of the day, building the launch campaign and cutting your b-roll into TikToks. The newsletter swap with the other cozy-mystery author is already three emails deep and you haven't touched it. You've cloned yourself and taught the clone how your business runs. Then you went back to writing, which is the only part of this you ever wanted to do. In this workshop I’ll take you from running ad hoc automations to a comprehensive system. One that knows how you work and doesn't chat about it — it does what you ask, efficiently and securely. Yours might say the sweet pen name and the spicy one never share an ad account, or that nothing reaches a reader without your yes. We'll write those in the room. They're what let you stop checking behind it. A one-year subscription to Author Automations Social comes with your seat. That's the piece that posts, schedules, and handles reader comments and DMs, so the assistant you build on Friday has somewhere to send the work on Monday. Upgrade to the ads tier and it reports on your ad spend and sales alongside everything else. Required: A laptop you can install software on. A Claude subscription, set up before you arrive. Claude Code installed and verified — I'll send instructions and a short setup video a week out, and I'd genuinely rather you email me than show up stuck. Optional but recommended. Spark Mail, if you want your assistant reading your calendar, your email, and your meeting notes. Everything in the session works without it. Everything works better with it. This is a PAID workshop https://www.authornation.live/Addedworkshops"
+
+  - id: 145
+    source_id: "recfjdgCk6ZfVAHrl"
+    title: "Indie Author Lab: Workshop"
+    date: "2026-11-13"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 180
+    speakers: ["Orna Ross"]
+    location: "Platinum"
+    tags: ["Mindset & Wellness", "Workshop", "All"]
+    description: "Author Nation has brought you best-practice information, expert insight and the latest publishing trends. It’s super valuable—and it’s a lot. Now use the proven, guided processes of Indie Author Lab to step back, identify what's most relevant for you, and prioritise the most valuable things you can do, in the next few weeks. Understand what's flowing and what's failing and what to let go. Leave with a focused, creative plan that takes your writing and publishing and profits to the next level. Created by author and ALLi founder Orna Ross, the Lab combines guided planning, practical tools, selected talks from leading author events, and a live monthly workshop. It’s not another generic checklist of everything you could be doing. It’s a supported process for identifying what you should do next—and completing it."
+
+  - id: 146
+    source_id: "rec5t0aoaBZdG1fwN"
+    title: "Indie Author Mastermind Private"
+    date: "2026-11-13"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 180
+    speakers: []
+    location: "Bronze 3"
+    tags: ["Invite Only", "Meetup"]
+    description: "This is an invite only session."
+
+  - id: 147
+    source_id: "recdYXqvDbjIVSq4C"
+    title: "Maximize Your Strengths for Author Business Growth"
+    date: "2026-11-13"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 180
+    speakers: ["Becca Syme"]
+    location: "Gold"
+    tags: ["Mindset & Wellness", "Paid Workshop"]
+    description: "Maximize Your Strengths for Author Business Growth Growing an author business is a complicated task and there are a thousand tactics you could be using. Which one is right for you? How you are wired matters more than anything in selecting where to spend your time, and where you are the most likely to see results. Join Becca Syme, Gallup-Certified Strengths Coach, in a deep dive workshop into how Strengths can help you grow your author business, and how to question the premise of some common tactics people suggest. This workshop assumes you have taken the Strengths test, and the goal is to leave with some tactics that you can start immediately applying to grow your business, based on how your brain is wired. You will leave with action steps for both strengths development and author business growth. Join the personality nerds and grow better-faster. This is a paid workshop and requires an additional fee to attend. https://www.authornation.live/Addedworkshops"
+
+  - id: 148
+    source_id: "recFuQ8eT470vh8HI"
+    title: "Writing Sprint Space"
+    date: "2026-11-13"
+    day: Friday
+    start: "9:00 AM"
+    duration_min: 180
+    speakers: []
+    location: "Bronze 4"
+    tags: ["Entertainment", "Meetups & Networking", "Meetup"]
+    description: "Need some focused writing time? Come claim a seat, put your head down, and get some words on the page. This room is for writing sprints, quiet accountability, and making actual progress while surrounded by people doing the same thing."
+
+  - id: 149
+    source_id: "recTPGNBRPIPJRWy6"
+    title: "Closing Session"
+    date: "2026-11-13"
+    day: Friday
+    start: "2:30 PM"
+    duration_min: 60
+    speakers: ["Joe Solari", "Suze Solari"]
+    location: "Event Center"
+    tags: ["Keynote"]
+    description: "Join us as we wrap up Author Nation 2026 and share what's coming in 2017 our new venue and keynote speaker."

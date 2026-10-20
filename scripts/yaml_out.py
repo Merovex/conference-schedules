@@ -4,7 +4,7 @@ import json
 from datetime import date
 from pathlib import Path
 
-FIELDS = ["id", "event_number", "title", "date", "day", "start", "duration_min",
+FIELDS = ["id", "event_number", "source_id", "title", "date", "day", "start", "duration_min",
           "speakers", "location", "tags", "description"]
 
 def yq(v):

@@ -11,7 +11,7 @@ tzLong: "All times Pacific (PT)"
 storagePrefix: "an2026"
 pdfFilename: "author-nation-2026-schedule.pdf"
 aiPlaceholder: "Describe your interests — e.g. cozy-mystery marketing without ads, plus AI writing tools"
-source: "https://authornation.live/"
-endTags: ["Keynote", "Vendor", "Vendor Session", "Panel", "Solo Presentation", "Workshop"]
+source: "https://1dp8xdamzb.zite.so/"
+endTags: ["Keynote", "Vendor", "Vendor Session", "Panel", "Solo Presentation", "Workshop", "Paid Workshop", "Live Education", "After Hours", "Affinity Group", "Genre", "Meetup", "Writing Sprint", "Fitness", "Invite Only", "All", "Pre-Published Explorers", "Published Voyagers"]
 sponsor: software   # sponsor key or category (see data/sponsors.yaml)
 ---
