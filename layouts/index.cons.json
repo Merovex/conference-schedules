@@ -1,0 +1,34 @@
+{{- /* /cons.json — every conference with its metadata and full session list, in one pull. */ -}}
+{{- $cons := sort (where site.Sections "Type" "con") "Params.startDate" "desc" -}}
+{{- $out := slice -}}
+{{- $updated := "" -}}
+{{- range $cons -}}
+  {{- $d := index site.Data.cons .Section -}}
+  {{- if not $d }}{{ errorf "no data file data/cons/%s.yaml for section %q" .Section .RelPermalink }}{{ end -}}
+  {{- if gt $d.updated_at $updated }}{{ $updated = $d.updated_at }}{{ end -}}
+  {{- $out = $out | append (dict
+      "slug" .Section
+      "name" (.Params.conference | default .Title)
+      "subtitle" .Params.subtitle
+      "city" .Params.city
+      "start_date" .Params.startDate
+      "end_date" (.Params.endDate | default .Params.startDate)
+      "venue_timezone" $d.venue_timezone
+      "time_note" .Params.tzLong
+      "url" .Permalink
+      "sessions_url" (printf "%ssessions.json" .Permalink)
+      "source" ($d.source | default .Params.source)
+      "filter" $d.filter
+      "updated_at" $d.updated_at
+      "session_count" (len $d.sessions)
+      "sessions" $d.sessions
+  ) -}}
+{{- end -}}
+{{- dict
+    "site" site.Params.siteName
+    "url" site.BaseURL
+    "description" "Session schedules for every conference on this site. Each session has a date (ISO), day, start (12-hour, venue-local time), duration_min, speakers, location, tags (first = primary track/type) and description. Session ids are positional per conference and key the site's bookmark Share links."
+    "updated_at" $updated
+    "count" (len $out)
+    "conferences" $out
+  | jsonify (dict "indent" "  ") -}}

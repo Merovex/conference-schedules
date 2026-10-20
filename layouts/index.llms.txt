@@ -1,0 +1,12 @@
+# {{ site.Params.siteName }}
+
+> {{ site.Params.tagline }} Session schedules for writing and gaming conferences.
+
+## Data for AI agents
+
+- [All conferences, one JSON pull]({{ "cons.json" | absURL }}): every conference with its dates, city, venue time zone, and full session list (title, date, day, start, duration_min, speakers, location, tags, description). Start here.
+{{- range sort (where site.Sections "Type" "con") "Params.startDate" "desc" }}
+- [{{ .Params.conference | default .Title }}]({{ .Permalink }}sessions.json): {{ with .Params.city }}{{ . }}, {{ end }}{{ .Params.startDate }} to {{ .Params.endDate | default .Params.startDate }}; this con's sessions only.
+{{- end }}
+
+Times are venue-local, 12-hour clock. `tags[0]` is the session's primary track or type.

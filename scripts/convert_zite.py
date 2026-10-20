@@ -144,7 +144,8 @@ def main():
     for o in dropped:
         print(f"dropped id {o['id']}: {o['title']} ({o['date']} {o['start']})")
 
-    extra = {k: prev[k] for k in ("conference", "venue_timezone", "filter") if k in prev}
+    extra = {k: prev[k] for k in ("conference", "filter") if k in prev}
+    extra["venue_timezone"] = a.tz
     extra["source"] = f"Zite schedule app, getScheduleData export ({a.src.name})"
     write_sessions(a.out, sessions, extra=extra)
 

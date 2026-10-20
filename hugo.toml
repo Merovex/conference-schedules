@@ -7,13 +7,27 @@ disableKinds = ["taxonomy", "term", "page", "RSS", "sitemap"]
   siteName = "Con Schedules"
   tagline  = "Pick your sessions, share your picks, print your agenda."
 
+# Home also renders /cons.json (every con + every session in one pull, for AI
+# agents and scripts) and /llms.txt (a plain-text pointer to it).
 # Each conference section renders its HTML page plus /<slug>/sessions.json
 [outputs]
-  home    = ["HTML"]
+  home    = ["HTML", "cons", "llms"]
   section = ["HTML", "sessions"]
 
 [outputFormats.sessions]
   mediaType = "application/json"
   baseName  = "sessions"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.cons]
+  mediaType = "application/json"
+  baseName  = "cons"
+  isPlainText = true
+  notAlternative = true
+
+[outputFormats.llms]
+  mediaType = "text/plain"
+  baseName  = "llms"
   isPlainText = true
   notAlternative = true

@@ -3,6 +3,7 @@
 <head>
 <title>{{ site.Params.siteName }}</title>
 {{ partial "head-meta.html" . }}
+<link rel="alternate" type="application/json" href="{{ "cons.json" | relURL }}" title="All conference schedules (JSON)">
 </head>
 <body>
 <a href="#cons" class="u-skip button button-accent">Skip to conferences</a>
